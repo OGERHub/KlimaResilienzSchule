@@ -60,7 +60,6 @@ format:
   html:
     theme:
       light: [lumen]
-
     css: css/styles.css
     toc: true
     code-copy: true
