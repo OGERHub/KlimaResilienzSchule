@@ -1,104 +1,36 @@
-# Schulhof KlimaLab
+# KlimaResilienzSchule
 
-[**Schulhof KlimaLab**](https://ogerhub.github.io/KlimaCheck-Schulhof/) ist ein vereinfachtes, physikalisch basiertes Vergleichsmodell für das Klima auf einem Schulhof. Es zeigt, wie Flächen, Gebäude, Bäume, Schatten, Dächer und Fassadenbegrünung auf Wärme, Abkühlung und Hitzelast wirken.
+[**KlimaResilienzSchule**](https://ogerhub.github.io/KlimaResilienzSchule/) ist eine wachsende Sammlung von Unterrichtsbausteinen zu Klimawandel, Klimaresilienz und wissenschaftlichem Arbeiten. Die Materialien richten sich an Lehrkräfte, die für ihren Unterricht konkrete, zugängliche und fachlich begründete Zugänge zu Klimathemen suchen.
 
-Das Modell ist **kein Vorhersagemodell** für reale Temperaturen. Es dient dazu, Unterschiede zwischen Varianten sichtbar zu machen und Maßnahmen vergleichend zu untersuchen.
+Die Sammlung verbindet analoge Experimente, digitale Modelle, Karten, Messdaten und Reflexionsaufgaben. Dadurch können Klimathemen auf verschiedenen Wegen erschlossen werden: durch Beobachten, Messen, Vergleichen, Modellieren, Diskutieren und Bewerten.
 
-## Ziel des Modells
+Der Schwerpunkt liegt auf Unterrichtszugängen, die mit konkreten Phänomenen beginnen: Treibhauseffekt, Eis und Albedo, Hitzebelastung auf dem Schulhof, Stadtklima im Sommer und klimaangepasste Gestaltung. Die Bausteine können einzeln genutzt oder zu längeren Unterrichtsreihen, Projekttagen oder Schülerlabor-Formaten kombiniert werden.
 
-Mit dem Modell lassen sich Fragen untersuchen wie:
+## Was Lehrkräfte hier finden
 
--   Wo ist es auf dem Schulhof besonders heiß?
--   Welche Flächen heizen sich stark auf?
--   Wie unterscheiden sich Asphalt, Pflaster, Sand, Sportbelag und Rasen?
--   Welche Wirkung haben Bäume, Hecken und Schatten?
--   Was bringen Gründächer oder begrünte Fassaden?
--   Wie verändert sich die Hitzelast durch eine Maßnahme?
+KlimaResilienzSchule bietet keine fertige Einheitsstunde, sondern eine offene Materialstruktur für unterschiedliche Unterrichtssituationen. Lehrkräfte können mit einem kurzen Experiment einsteigen, ein digitales Modell für Vergleichsaufgaben nutzen, Karten und Daten in eine Auswertung einbinden oder Reflexionsaufgaben zu Modellen, Messungen und KI anschließen.
 
-## Modellidee
+Die Bausteine sind so angelegt, dass sie unterschiedliche Zugänge zum selben Grundproblem eröffnen: Klimawandel wird über konkrete Wirkungen erfahrbar. Schülerinnen und Schüler untersuchen, warum sich Oberflächen unterschiedlich erwärmen, wie Schatten und Vegetation wirken, wie Eis und Albedo zusammenhängen, wie Stadtklima sichtbar gemacht werden kann und wie aus Beobachtungen, Modellen und Daten begründete Aussagen entstehen.
 
-Der Schulhof besteht aus vielen Rasterfeldern. Jedes Feld besitzt eine Bodenart, zum Beispiel Asphalt, Pflaster, Sand, Sportbelag oder Rasen. Zusätzlich können Objekte gesetzt werden, etwa Bäume, Hecken oder Gebäude.
+Damit eignet sich die Sammlung für Lehrkräfte, die Klimabildung nicht nur über Begriffe und Schaubilder aufbauen möchten, sondern über nachvollziehbare Arbeitssituationen: etwas beobachten, etwas verändern, ein Ergebnis vergleichen, eine Aussage prüfen.
 
-Das Modell berechnet unter anderem:
+## Aufbau der Sammlung
 
--   Materialien und Elemente
--   Schattenwirkung
--   Oberflächentemperatur
--   lokale Lufttemperatur
--   aktuelle Hitzelast
--   aufsummierte Hitzelast während der Schulzeit
--   Veränderung der Hitzelast im Vorher/Nachher-Vergleich
+Die Sammlung wächst modular. Aktuell gehören Bausteine wie **Treibhaus to Go**, **Arktik Eis**, **KlimaCheck Schulhof** und **Summer in the City** dazu. Weitere Materialien können ergänzt werden, etwa zu Wasser, Boden, Vegetation, Messstationen, Stadtklima, Schulhofkartierung, Klimaanpassung oder KI-gestützter Analyse.
 
-Die Schulzeit wird im Modell von **07:00 bis 16:00 Uhr** betrachtet.
+Die Module folgen keinem starren Ablauf. Sie können einzeln eingesetzt oder miteinander verbunden werden. Ein Unterrichtsgang kann zum Beispiel mit einem analogen Experiment beginnen, anschließend ein digitales Modell nutzen und danach über Karten, Daten oder eine Schulhofbegehung erweitert werden. Ebenso kann ein einzelner Baustein als kurze, klar begrenzte Unterrichtsaktivität genutzt werden.
 
-![Konzeptidee KlimaLab](images/model-3d_neu.png)
 
-## Bedienung
 
-Mit **Modellstart /-reset** wird das Modell in den Ausgangszustand zurückgesetzt.
+## Didaktischer Grundgedanke
 
-Mit **Versuch starten** läuft ein Tagesverlauf durch. Dabei werden Temperatur, Schatten und Hitzelast fortgeschrieben.
+KlimaResilienzSchule verbindet drei Ebenen: konkrete Klimaphänomene verstehen, Methoden nutzen und Aussagen prüfen. Schülerinnen und Schüler arbeiten mit Experimenten, Modellen, Karten oder Daten und lernen dabei, zwischen Beobachtung, Modellannahme, Ergebnis und Bewertung zu unterscheiden.
 
-Mit **Karte bearbeiten** können Flächen und Objekte verändert werden. Über das Auswahlfeld **Element** lassen sich zum Beispiel Asphalt, Pflaster, Rasen, Sand, Sportbelag, Bäume, Hecken, Gebäude oder Messstationen setzen.
+So entsteht ein Zugang zu Klimabildung, der fachliches Verstehen, räumliches Denken und wissenschaftliches Arbeiten verbindet. Die Materialien unterstützen Lehrkräfte dabei, Klimawandel und Klimaresilienz als bearbeitbare Unterrichtsfragen aufzubauen: anschaulich im Einstieg, fachlich kontrolliert in der Auswertung und offen für Diskussionen über Handlungsmöglichkeiten, Unsicherheiten und Grenzen von Modellen.
 
-Mit **Karte aktualisieren** wird die aktuelle Ansicht neu berechnet.
+## Weiterentwicklung
 
-Mit **Legende an/aus** wird die passende Kartenlegende ein- oder ausgeblendet.
-
-## Kartenansichten
-
-Das Modell bietet mehrere Kartenansichten:
-
--   **Materialien & Elemente**: zeigt die räumliche Struktur des Schulhofs.
--   **Schatten aktuell**: zeigt aktuelle Verschattung.
--   **Oberflächentemperatur aktuell**: zeigt die Temperatur der Oberflächen.
--   **Lufttemperatur aktuell**: zeigt die lokale Lufttemperatur.
--   **Hitzelast aktuell**: zeigt die momentane thermische Belastung.
--   **Hitzelast Schulzeit**: zeigt die aufsummierte Belastung während der Schulzeit.
--   **Hitzelast Änderung**: zeigt die Veränderung gegenüber einem Vorher-Zustand.
-
-## Vorher/Nachher-Vergleich
-
-Der Vorher/Nachher-Vergleich ist der zentrale Workflow des Modells.
-
-Ablauf:
-
-1.  **Modellstart /-reset** drücken.
-2.  **Versuch starten** und den ersten Tageslauf vollständig durchführen.
-3.  **Massnahme aktivieren** drücken.
-4.  Maßnahme setzen, zum Beispiel Bäume pflanzen, Rasen anlegen oder Gebäude begrünen.
-5.  **Versuch starten** erneut ausführen.
-6.  Mit **Gebiet-auswählen** eine Aufenthaltsfläche markieren.
-7.  Mit **Auswahlgebiet vergleichen** die Veränderung auswerten.
-
-Der Vergleich zeigt unter anderem, ob kritische Hitzelastklassen kleiner werden und wie viel Fläche in niedrigere Belastungsklassen wechselt.
-
-## Auswertungen
-
-Das Diagramm **Stationen Temperatur** zeigt Temperaturverläufe an gesetzten Messstationen. Linien zeigen die Lufttemperatur, Punkte zeigen die Oberflächentemperatur. Die graue Kurve zeigt den allgemeinen Modellantrieb.
-
-Das Feld **Hitzelast je Klasse für alle Aufenthaltsflächen** zeigt die Verteilung der Aufenthaltsflächen auf fünf Klassen:
-
--   blau: \< 1 h
--   grün: 1–2.5 h
--   gelb: 2.5–5 h
--   orange: 5–6.5 h
--   rot: \> 6.5 h
-
-Bewertet werden nur Aufenthaltsflächen wie Asphalt, Pflaster, Offenpflaster, Rasen, Sportbelag und Sand.
-
-## Einsatzbereich
-
-Das Modell eignet sich für Unterricht, Workshops und didaktische Vergleiche zu Schulhofklima, Hitzebelastung und klimaangepasster Gestaltung.
-
-Sinnvolle Aussagen sind zum Beispiel:
-
--   Diese Maßnahme reduziert die Hitzelast stärker als eine andere.
--   Ein Baum verbessert die Situation an dieser Stelle.
--   Schatten senkt die Belastung deutlich.
--   Asphalt ist problematischer als Rasen oder Offenpflaster.
-
-Nicht sinnvoll ist die Nutzung als exakte Wetter- oder Temperaturvorhersage. Die Hitzelast ist kein medizinischer Grenzwert und ersetzt keine Fachplanung.
+Dieses Repository ist als offene Arbeitsstruktur angelegt. Weitere Unterrichtsbausteine, Modelle, Datensätze, Aufgaben und Dokumentationen können ergänzt werden.
 
 ## Version
 
@@ -108,4 +40,4 @@ Version 1.0
 
 © 2026 Rieke Ammoneit und Chris Reudenbach
 
-Dieses Material steht unter der Lizenz **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Es darf geteilt und bearbeitet werden, solange die Urheber\*innen genannt werden.
+Dieses Material steht unter der Lizenz **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Es darf geteilt und bearbeitet werden, solange die Urheber*innen genannt werden.

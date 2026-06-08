@@ -1,1 +1,1 @@
-Sitemap: https://OGERHub.github.io/KlimaCheck-Schulhof/sitemap.xml
+Sitemap: https://OGERHub.github.io/KlimaResilienzSchule/sitemap.xml
