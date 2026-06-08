@@ -8,7 +8,7 @@ project:
 #  - .
 
 website:
-  title: "Klimalab Schülerlabor 2026"
+  title: "KlimaResilienzSchule"
   site-url: https://OGERHub.github.io/KlimaResilienzSchule
   repo-url: https://github.com/OGERHub/KlimaResilienzSchule
   repo-actions: []   # [source, issue, edit] bei Bedarf manuell setzen

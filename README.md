@@ -16,7 +16,7 @@ Damit eignet sich die Sammlung für Lehrkräfte, die Klimabildung nicht nur übe
 
 ## Aufbau der Sammlung
 
-Die Sammlung wächst modular. Aktuell gehören Bausteine wie **Treibhaus to Go**, **Arktik Eis**, **KlimaCheck Schulhof** und **Summer in the City** dazu. Weitere Materialien können ergänzt werden, etwa zu Wasser, Boden, Vegetation, Messstationen, Stadtklima, Schulhofkartierung, Klimaanpassung oder KI-gestützter Analyse.
+Die Sammlung wächst modular. Aktuell gehören Bausteine wie **Treibhaus to Go**, **Arktik Eis**, **KlimaCheck Schulhof** und **Summer in the City** dazu. Weitere Materialien können und werden ergänzt werden, etwa zu Wasser, Boden, Vegetation, Messstationen, Stadtklima, Schulhofkartierung, Klimaanpassung oder KI-gestützter Analyse.
 
 Die Module folgen keinem starren Ablauf. Sie können einzeln eingesetzt oder miteinander verbunden werden. Ein Unterrichtsgang kann zum Beispiel mit einem analogen Experiment beginnen, anschließend ein digitales Modell nutzen und danach über Karten, Daten oder eine Schulhofbegehung erweitert werden. Ebenso kann ein einzelner Baustein als kurze, klar begrenzte Unterrichtsaktivität genutzt werden.
 
@@ -38,6 +38,6 @@ Version 1.0
 
 ## Lizenz
 
-© 2026 Rieke Ammoneit und Chris Reudenbach
+© 2026 Rieke Ammoneit, Chris Reudenbach
 
 Dieses Material steht unter der Lizenz **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Es darf geteilt und bearbeitet werden, solange die Urheber*innen genannt werden.
