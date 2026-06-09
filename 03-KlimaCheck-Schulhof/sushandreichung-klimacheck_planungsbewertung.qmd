@@ -30,6 +30,7 @@ Im dieser Aufgabe prüft ihr die Planung der Stadt: Auf dem Schulhof sollen neue
 :::
 
 
+
 ::: {.callout-tip appearance="minimal"}
 Auf dem Schulhof wird es nicht überall gleich heiß. Ihr sucht im Modell die heißesten Stellen auf den freien Flächen: Wege, Rasen, Sand, Sportfeld, Pflaster und Asphalt.
 
