@@ -1,5 +1,17 @@
 ---
 title: "KlimaResilienzSchule"
+description: "Materialien zur klimaresilienten Schule, Stadtklima, Satellitendaten und Schulhofmodellierung."
+image: "https://ogerhub.github.io/KlimaResilienzSchule/images/polaroidheader.png"
+
+open-graph:
+  title: "KlimaResilienzSchule"
+  description: "Materialien zur klimaresilienten Schule, Stadtklima, Satellitendaten und Schulhofmodellierung."
+  image: "https://ogerhub.github.io/KlimaResilienzSchule/images/polaroidheader.png"
+  image-width: 1448
+  image-height: 1086
+
+twitter-card:
+  image: "https://ogerhub.github.io/KlimaResilienzSchule/images/polaroidheader.png"
 ---
 <style>
   body {
