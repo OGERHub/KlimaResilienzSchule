@@ -1,5 +1,7 @@
 # KlimaResilienzSchule
 
+![](images/polaroidheader.png)
+
 [**KlimaResilienzSchule**](https://ogerhub.github.io/KlimaResilienzSchule/) ist eine wachsende Sammlung von Unterrichtsbausteinen zu Klimawandel, Klimaresilienz und wissenschaftlichem Arbeiten. Die Materialien richten sich an Lehrkräfte, die für ihren Unterricht konkrete, zugängliche und fachlich begründete Zugänge zu Klimathemen suchen.
 
 Die Sammlung verbindet analoge Experimente, digitale Modelle, Karten, Messdaten und Reflexionsaufgaben. Dadurch können Klimathemen auf verschiedenen Wegen erschlossen werden: durch Beobachten, Messen, Vergleichen, Modellieren, Diskutieren und Bewerten.
