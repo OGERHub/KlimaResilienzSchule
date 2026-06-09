@@ -264,8 +264,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html",
     "title": "Technische Dokumentation",
     "section": "",
     "text": "KlimaCheck-Schulhof ist ein vereinfachtes, didaktisches Mikroklima-Modell für Schulhof-Workshops. Es bildet keinen realen Schulhof prognostisch exakt ab, sondern dient als physikalisch begründetes Vergleichsmodell. Schülerinnen und Schüler können damit untersuchen, wie Materialien, Gebäude, Schatten, Vegetation, Dachbegrünung und Fassadenbegrünung die thermische Belastung auf Aufenthaltsflächen verändern.\nDie Modellphysik ist semi-mechanistisch. Oberflächentemperaturen werden aus einer vereinfachten Energiebilanz berechnet und an ein parametrisiertes bodennahes Luftfeld gekoppelt. Material-, Schatten-, Wasser-, Vegetations- und Fassadeneffekte wirken dabei über getrennte Prozesspfade. Der Variantenvergleich ist deshalb physikalisch begründet, solange er relativ und modellintern interpretiert wird. Die absolute Temperaturhöhe und die exakte Stärke einzelner Maßnahmen sind dagegen nicht validiert und daher nicht als standortspezifische Prognose zu verwenden.\nDas Modell verwendet effektive Prozessparameter. Diese Parameter sind keine willkürlichen didaktischen Stellgrößen, sondern notwendige Näherungen für physikalische Prozesse, die in einem vereinfachten zweidimensionalen Modell nicht vollständig aufgelöst werden können. Insbesondere löst das Modell keine vollständige Massen- und Impulserhaltung des bodennahen Luftvolumens. Deshalb werden Wärmeübergang, vertikale und laterale Luftmischung, Verdunstung, Substratkopplung und Fassadenwirkung über effektive Koeffizienten beschrieben. Diese Parametrisierung ersetzt keine Physik, sondern schließt die vereinfachte Modellstruktur so, dass bekannte Wirkungsrichtungen und relative Unterschiede zwischen Materialien und Maßnahmen plausibel abgebildet werden.\n\nDie Physik ist hart genug für relative Wirkungsvergleiche, aber nicht hart genug für quantitative Planungsaussagen.\n\nDer zentrale Einsatzfall ist daher nicht die Vorhersage absoluter Temperaturen, sondern der kontrollierte Vergleich von Varianten:\n\nAusgangszustand gegen Maßnahme\nAsphalt gegen Rasen\nnormale Dächer gegen Gründächer\nnormale Fassaden gegen begrünte Fassaden\noffene Flächen gegen verschattete oder vegetationsnahe Flächen\nflächige Maßnahmen gegen punktuelle Maßnahmen",
@@ -276,8 +276,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#was-bedeutet-physikalisch-plausibel",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#was-bedeutet-physikalisch-plausibel",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#was-bedeutet-physikalisch-plausibel",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#was-bedeutet-physikalisch-plausibel",
     "title": "Technische Dokumentation",
     "section": "Was bedeutet „physikalisch plausibel“?",
     "text": "Was bedeutet „physikalisch plausibel“?\nPhysikalisch plausibel bedeutet in diesem Modell nicht, dass jede reale Luftbewegung, jeder Bodenprozess und jede Pflanze exakt berechnet wird. Es bedeutet: Die wichtigsten Wirkungsrichtungen sind physikalisch begründet und voneinander getrennt modelliert.\nEin Beispiel:\n\nAsphalt wird nicht einfach rot eingefärbt, weil Asphalt „heiß sein soll“.\nAsphalt wird heiß, weil er dunkel ist, kaum reflektiert, nicht verdunstet und wenig Kühlung durch Wasser liefert.\nRasen bleibt kühler, weil er Wasser speichern und über Verdunstung Energie abführen kann.\nBäume wirken zusätzlich über Schatten, nicht nur über eine grüne Oberfläche.\n\nDas Modell bildet also keine beliebigen Farben ab, sondern eine vereinfachte Wirklogik: Strahlung, Material, Wasser, Schatten, Luftaustausch und Vegetation greifen zusammen.",
@@ -288,8 +288,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#was-wird-im-modell-eigentlich-verglichen",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#was-wird-im-modell-eigentlich-verglichen",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#was-wird-im-modell-eigentlich-verglichen",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#was-wird-im-modell-eigentlich-verglichen",
     "title": "Technische Dokumentation",
     "section": "Was wird im Modell eigentlich verglichen?",
     "text": "Was wird im Modell eigentlich verglichen?\nDas Modell vergleicht immer Varianten unter denselben Randbedingungen. Das heißt: Tagesgang, Jahreszeit, Wind, Sonne und Modelllogik bleiben gleich. Verändert wird nur der Schulhofzustand, zum Beispiel Asphalt gegen Rasen oder normales Dach gegen Gründach.\nDadurch sind Aussagen dieser Art begründet:\n\nIm Modell senkt diese Maßnahme die Hitzelast stärker als jene Maßnahme.\n\nNicht begründet sind Aussagen dieser Art:\n\nDiese Maßnahme senkt auf einem realen Schulhof die Lufttemperatur exakt um 2.3 °C.\n\nDer Vergleich ist also relativ stark, aber absolut nicht kalibriert.",
@@ -300,8 +300,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#die-drei-temperaturbegriffe-im-modell",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#die-drei-temperaturbegriffe-im-modell",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#die-drei-temperaturbegriffe-im-modell",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#die-drei-temperaturbegriffe-im-modell",
     "title": "Technische Dokumentation",
     "section": "Die drei Temperaturbegriffe im Modell",
     "text": "Die drei Temperaturbegriffe im Modell\nIm Modell gibt es nicht nur „die Temperatur“. Es werden mehrere Temperaturarten unterschieden.\n\n\n\n\n\n\n\n\nBegriff\nVariable\nBedeutung\n\n\n\n\nHintergrundlufttemperatur\nair-temp\nallgemeiner Tagesgang der Lufttemperatur, also der meteorologische Antrieb\n\n\nlokale Lufttemperatur\nair-temp-local\nLufttemperatur über einem bestimmten Patch des Schulhofs\n\n\nOberflächentemperatur\nsurface-temp\nTemperatur der Oberfläche, zum Beispiel Asphalt, Rasen, Dach oder Sand\n\n\nSubstrattemperatur\nsubstrate-temp\nvereinfachter Wärmespeicher unter oder hinter der Oberfläche\n\n\n\nDiese Trennung ist zentral. Eine Oberfläche kann sehr heiß sein, ohne dass die Luft darüber genauso heiß ist. Asphalt kann zum Beispiel deutlich heißer werden als die lokale Luft. Die Luft reagiert verzögert, weil sie durch Wind, Mischung und Austausch mit der Umgebung beeinflusst wird.",
@@ -312,8 +312,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#patch-fläche-und-objekt",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#patch-fläche-und-objekt",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#patch-fläche-und-objekt",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#patch-fläche-und-objekt",
     "title": "Technische Dokumentation",
     "section": "Patch, Fläche und Objekt",
     "text": "Patch, Fläche und Objekt\nDer Schulhof besteht aus Rasterzellen. In NetLogo heißen diese Rasterzellen patches.\nEin Patch kann zwei unterschiedliche Dinge besitzen:\n\n\n\n\n\n\n\n\nEbene\nBeispiel\nBedeutung\n\n\n\n\nBoden\nAsphalt, Pflaster, Rasen, Sand\nDas Material der Fläche\n\n\nObjekt\nBaum, Hecke, Gebäude\nEtwas, das auf der Fläche steht oder sie ersetzt\n\n\n\nDiese Trennung ist wichtig. Ein Baum ist nicht einfach Rasen. Ein Baum hat Höhe, wirft Schatten und beeinflusst seine Umgebung. Ein Gebäude ist nicht einfach eine graue Fläche. Es besitzt Dach, Wand, Höhe und Schattenwirkung.",
@@ -324,8 +324,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#prozessgruppen-des-modells",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#prozessgruppen-des-modells",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#prozessgruppen-des-modells",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#prozessgruppen-des-modells",
     "title": "Technische Dokumentation",
     "section": "Prozessgruppen des Modells",
     "text": "Prozessgruppen des Modells\nDas Modell setzt sich aus mehreren Prozessgruppen zusammen.\n\n\n\n\n\n\n\n\nProzessgruppe\nEinfache Erklärung\nWirkung im Modell\n\n\n\n\nkurzwellige Strahlung\nSonnenstrahlung trifft auf eine Oberfläche\nerwärmt Oberflächen abhängig von Sonne, Schatten und Albedo\n\n\nlangwellige Strahlung\nwarme Oberflächen geben Wärmestrahlung ab\nkann Oberflächen nachts abkühlen\n\n\nWärmespeicherung\nMaterialien speichern Wärme unterschiedlich stark\nbestimmt, wie schnell Flächen warm oder kalt werden\n\n\nfühlbarer Wärmefluss\nWärmeübergang zwischen Oberfläche und Luft\nkoppelt heiße Oberflächen an die lokale Luft\n\n\nlatenter Wärmefluss\nEnergieverlust durch Verdunstung\nkühlt feuchte oder vegetationsnahe Flächen\n\n\nBodenwärmefluss\nWärme geht in einen vereinfachten Untergrundspeicher\npuffert Erwärmung und Abkühlung\n\n\nLuftmischung\nlokale Luft wird mit Nachbarschaft und Hintergrundluft gemischt\nverhindert, dass Lufttemperaturen sofort Oberflächentemperaturen werden\n\n\nSchattenwurf\nGebäude und Vegetation schirmen direkte Sonne ab\nreduziert solare Aufheizung\n\n\nHitzelast\nvereinfachte Aufenthaltsbelastung für Menschen\nfasst Luft, Sonne, Oberflächenwärme, Wind und Vegetation zusammen",
@@ -336,8 +336,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#harte-und-weichere-modellteile",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#harte-und-weichere-modellteile",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#harte-und-weichere-modellteile",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#harte-und-weichere-modellteile",
     "title": "Technische Dokumentation",
     "section": "Harte und weichere Modellteile",
     "text": "Harte und weichere Modellteile\nNicht alle Teile des Modells sind gleich hart.\n\n\n\n\n\n\n\n\nModellteil\nEinordnung\nBegründung\n\n\n\n\nMaterialunterschiede\nrelativ stark begründet\nAlbedo, Verdunstung, Wärmespeicherung und Oberfläche werden getrennt modelliert\n\n\nSchattenwirkung\nrelativ stark begründet\nSchatten reduziert direkte Einstrahlung geometrisch\n\n\nOberflächentemperatur\nstark vereinfacht, aber physikalisch strukturiert\nvereinfachte Energiebilanz mit Strahlung, Wärmefluss, Verdunstung und Speicher\n\n\nlokale Lufttemperatur\nstärker parametrisiert\nkeine echte 3D-Strömung, sondern Kopplung, Mischung und Austausch\n\n\nVegetationswirkung\nplausibel, aber parametrisiert\nSchatten und Verdunstung werden abgebildet, aber keine echte Pflanzenphysiologie\n\n\nFassadenbegrünung\nplausibel, aber stark parametrisiert\nlokale Wandwirkung und ET-Kühlung, aber keine echte Fassadenströmung\n\n\nHitzelastindex\ndidaktischer Proxy\nkein UTCI, PET oder medizinischer Grenzwert\n\n\n\nKurz gesagt: Die Modellphysik ist besonders belastbar für relative Wirkungsvergleiche, weniger für absolute Zahlenwerte.",
@@ -348,8 +348,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#raum",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#raum",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#raum",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#raum",
     "title": "Technische Dokumentation",
     "section": "Raum",
     "text": "Raum\nDer Schulhof wird als zweidimensionales Raster aus NetLogo-Patches modelliert. In der aktuellen Version wird die Welt mit folgenden Einstellungen aufgebaut:\n\n\n\nEigenschaft\nWert\n\n\n\n\nx-Koordinaten\n-25 bis 25\n\n\ny-Koordinaten\n-25 bis 25\n\n\nRastergröße\n51 × 51 Patches\n\n\nPatchgröße in der Anzeige\n10\n\n\nAnzahl Patches\n2601\n\n\n\nJeder Patch repräsentiert eine kleine Fläche des Schulhofs. Die tatsächliche reale Kantenlänge eines Patches wird nicht als feste metrische Größe erzwungen. Für die didaktische Interpretation kann ein Patch als Rasterzelle eines vereinfachten Lageplans gelesen werden.",
@@ -360,8 +360,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#zeit",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#zeit",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#zeit",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#zeit",
     "title": "Technische Dokumentation",
     "section": "Zeit",
     "text": "Zeit\nDie Modellphysik läuft mit einem festen internen Zeitschritt:\n\n\n\nGröße\nWert\n\n\n\n\ninterner Zeitschritt\n0.25 h\n\n\nAusgabeintervall\n1 h\n\n\nTageslauf\n0 bis 24 h\n\n\nSchulzeit für Hitzelast\n07:00 bis 16:00 Uhr\n\n\n\nDer interne Zeitschritt von 0.25 h entspricht 15 Minuten. Viele Ausgaben und Protokolle werden nur zu vollen Stunden aktualisiert, die thermische Dynamik wird aber in 15-Minuten-Schritten berechnet.",
@@ -372,8 +372,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#zustandslogik",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#zustandslogik",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#zustandslogik",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#zustandslogik",
     "title": "Technische Dokumentation",
     "section": "Zustandslogik",
     "text": "Zustandslogik\nDas Modell unterscheidet drei zentrale Ebenen:\n\nOberfläche: Temperatur der Boden-, Dach-, Vegetations- oder Objektoberfläche.\nSubstrat: vereinfachter Wärmespeicher unter oder hinter der Oberfläche.\nbodennahes Luftfeld: lokale Lufttemperatur über dem Patch.\n\nDiese Trennung ist didaktisch wichtig. Heiße Oberflächen und warme Luft sind nicht identisch. Asphalt kann deutlich heißer werden als die Luft darüber. Die Luft reagiert verzögert und wird zusätzlich durch Mischung, Wind, Vegetation und Fassaden beeinflusst.",
@@ -384,8 +384,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#bodenklassen",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#bodenklassen",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#bodenklassen",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#bodenklassen",
     "title": "Technische Dokumentation",
     "section": "Bodenklassen",
     "text": "Bodenklassen\nDie Bodenklassen sind:\n\nAsphalt\nPflaster\nOffenpflaster\nSand\nSportbelag\nRasen\nnone\n\nnone wird für Gebäudepatches verwendet, weil dort keine begehbare Bodenfläche modelliert wird.",
@@ -396,8 +396,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#objektklassen",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#objektklassen",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#objektklassen",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#objektklassen",
     "title": "Technische Dokumentation",
     "section": "Objektklassen",
     "text": "Objektklassen\nDie Objektklassen sind:\n\nnone\nbuilding\ntree\nhedge\n\nGebäude besitzen eine Höhe, einen Dachstil und einen Wandstil. Bäume und Hecken besitzen eine Vegetationshöhe und werfen Schatten.",
@@ -408,8 +408,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#bodenflächen",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#bodenflächen",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#bodenflächen",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#bodenflächen",
     "title": "Technische Dokumentation",
     "section": "Bodenflächen",
     "text": "Bodenflächen\n\n\n\n\n\n\n\n\n\n\nBodenklasse\nAlbedo\nEmissivität\nthermische Masse\nVerdunstungsfaktor\n\n\n\n\nAsphalt\n0.10\n0.95\n0.58\n0.00\n\n\nPflaster\n0.20\n0.94\n0.58\n0.00\n\n\nOffenpflaster\n0.24\n0.95\n0.62\n0.30\n\n\nSand\n0.35\n0.92\n0.40\n0.09\n\n\nSportbelag\n0.14\n0.95\n0.48\n0.00\n\n\nRasen\n0.26\n0.98\n0.65\n1.00\n\n\nnone\n0.00\n0.00\n0.00\n0.00\n\n\n\nDie Werte sind effektive Modellparameter. Asphalt ist dunkel und ohne Verdunstung. Pflaster ist heller als Asphalt, aber ebenfalls trocken. Offenpflaster erhält einen kleinen Verdunstungsanteil. Rasen erhält eine starke Verdunstungsfähigkeit, bleibt aber wasserlimitiert.",
@@ -420,8 +420,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#dächer",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#dächer",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#dächer",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#dächer",
     "title": "Technische Dokumentation",
     "section": "Dächer",
     "text": "Dächer\n\n\n\n\n\n\n\n\n\n\nDachtyp\nAlbedo\nEmissivität\nthermische Masse\nVerdunstungsfaktor\n\n\n\n\nnormales Dach\n0.10\n0.93\n0.35\n0.00\n\n\nGründach\n0.22\n0.96\n0.38\n0.30\n\n\n\nDas normale Dach wird als dunkles Bitumendach behandelt. Das Gründach wird als extensives Gründach modelliert: kühler als Bitumen, aber flacher, trockener und weniger leistungsfähig als bodengebundener Rasen.",
@@ -432,8 +432,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#vegetation",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#vegetation",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#vegetation",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#vegetation",
     "title": "Technische Dokumentation",
     "section": "Vegetation",
     "text": "Vegetation\n\n\n\n\n\n\n\n\n\n\nObjekt\nAlbedo\nEmissivität\nthermische Masse\nVerdunstungsfaktor\n\n\n\n\nBaum\n0.18\n0.98\n0.32\n1.15\n\n\nHecke\n0.18\n0.97\n0.30\n1.10\n\n\n\nBäume und Hecken wirken nicht nur über Materialparameter. Sie wirken zusätzlich über Schattenwurf, Vegetationsnähe, Wasserhaushalt und geringere direkte Strahlungsbelastung.",
@@ -444,8 +444,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#wasserspeicherparameter",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#wasserspeicherparameter",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#wasserspeicherparameter",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#wasserspeicherparameter",
     "title": "Technische Dokumentation",
     "section": "Wasserspeicherparameter",
     "text": "Wasserspeicherparameter\n\n\n\nFläche/Objekt\nMaximaler Speicher\nFeuchtefaktor\nAnfangsfüllung\n\n\n\n\nnormales Dach\n0.05\n0.01\n0.00\n\n\nGründach\n10.0\n0.65\n0.70\n\n\nBaum\n30.0\n1.00\n0.80\n\n\nHecke\n20.0\n0.90\n0.80\n\n\nAsphalt\n0.02\n0.01\n0.00\n\n\nPflaster\n0.10\n0.03\n0.05\n\n\nOffenpflaster\n2.5\n0.20\n0.20\n\n\nSand\n1.00\n0.06\n0.10\n\n\nSportbelag\n0.02\n0.01\n0.00\n\n\nRasen\n24.0\n0.80\n0.70\n\n\n\nDie Speicherwerte sind didaktische Effektivwerte. Sie steuern, ob ein Patch Verdunstung liefern kann. Trockene, versiegelte Materialien erhalten praktisch keinen wirksamen Speicher.",
@@ -456,8 +456,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#nachlieferung-aus-tieferem-boden",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#nachlieferung-aus-tieferem-boden",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#nachlieferung-aus-tieferem-boden",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#nachlieferung-aus-tieferem-boden",
     "title": "Technische Dokumentation",
     "section": "Nachlieferung aus tieferem Boden",
     "text": "Nachlieferung aus tieferem Boden\nDie Modellversion enthält eine vereinfachte stündliche Nachlieferung für Vegetationsflächen:\n\n\n\nFläche/Objekt\nNachlieferung pro Stunde\n\n\n\n\nRasen\n0.03\n\n\nBaum\n0.05\n\n\nHecke\n0.04\n\n\n\nDie Nachlieferung wird zusätzlich mit dem freien Speicherraum skaliert. Ist der Speicher voll, wird nichts nachgefüllt. Ist er leer, ist die Nachlieferung maximal.",
@@ -468,8 +468,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#jahreszeitliche-parameter",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#jahreszeitliche-parameter",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#jahreszeitliche-parameter",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#jahreszeitliche-parameter",
     "title": "Technische Dokumentation",
     "section": "Jahreszeitliche Parameter",
     "text": "Jahreszeitliche Parameter\n\n\n\n\n\n\n\n\n\n\n\n\n\nJahreszeit\nTageslänge\nmaximale Sonnenhöhe\nmittlere Lufttemperatur\nTagesamplitude\nStunde des Maximums\nmaximale Kurzwellige Strahlung\nTiefentemperatur\n\n\n\n\nSommer\n14 h\n60°\n25 °C\n7 K\n16 Uhr\n850\n24 °C\n\n\nFrühling/Herbst\n11 h\n45°\n16 °C\n7 K\n15 Uhr\n680\n15 °C\n\n\nWinter\n8 h\n22°\n5 °C\n5 K\n14 Uhr\n320\n4 °C",
@@ -480,8 +480,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#sonnenaufgang-und-sonnenuntergang",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#sonnenaufgang-und-sonnenuntergang",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#sonnenaufgang-und-sonnenuntergang",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#sonnenaufgang-und-sonnenuntergang",
     "title": "Technische Dokumentation",
     "section": "Sonnenaufgang und Sonnenuntergang",
     "text": "Sonnenaufgang und Sonnenuntergang\nAus der Tageslänge werden Sonnenaufgang und Sonnenuntergang berechnet:\n\\[\nt_\\mathrm{rise} = 12 - \\frac{\\mathrm{daylight}}{2}\n\\]\n\\[\nt_\\mathrm{set} = 12 + \\frac{\\mathrm{daylight}}{2}\n\\]\nAußerhalb dieses Zeitraums ist der solare Antrieb null.",
@@ -492,8 +492,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#sonnenfaktor",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#sonnenfaktor",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#sonnenfaktor",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#sonnenfaktor",
     "title": "Technische Dokumentation",
     "section": "Sonnenfaktor",
     "text": "Sonnenfaktor\nWährend des Tages wird die relative Tagesposition berechnet:\n\\[\np = \\frac{t - t_\\mathrm{rise}}{\\mathrm{daylight}}\n\\]\nDer Sonnenfaktor folgt einer Sinuskurve:\n\\[\nS = \\max\\left(0,\\sin(180^\\circ \\cdot p)\\right)\n\\]\nIn NetLogo werden trigonometrische Funktionen mit Gradwerten verwendet. Der Sonnenfaktor ist eine dimensionslose Größe zwischen 0 und 1.",
@@ -504,8 +504,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#sonnenhöhe-und-azimut",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#sonnenhöhe-und-azimut",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#sonnenhöhe-und-azimut",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#sonnenhöhe-und-azimut",
     "title": "Technische Dokumentation",
     "section": "Sonnenhöhe und Azimut",
     "text": "Sonnenhöhe und Azimut\nDie Sonnenhöhe wird aus dem Sonnenfaktor abgeleitet:\n\\[\n\\alpha = \\alpha_\\mathrm{max} \\cdot S\n\\]\nDer Sonnenazimut läuft vereinfacht von 90° bis 270°:\n\\[\nA = 90^\\circ + 180^\\circ \\cdot p\n\\]\nDas ist keine astronomisch exakte Sonnenstandsberechnung, sondern eine vereinfachte didaktische Tagesbahn.",
@@ -516,8 +516,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#hintergrundlufttemperatur",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#hintergrundlufttemperatur",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#hintergrundlufttemperatur",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#hintergrundlufttemperatur",
     "title": "Technische Dokumentation",
     "section": "Hintergrundlufttemperatur",
     "text": "Hintergrundlufttemperatur\nDie Hintergrundlufttemperatur wird als asymmetrischer Tagesgang berechnet:\n\\[\n\\phi = 360^\\circ \\cdot \\frac{t - t_\\mathrm{max}}{24}\n\\]\n\\[\nB = 0.82\\cos(\\phi) + 0.18\\cos(2\\phi - 35^\\circ)\n\\]\n\\[\nT_\\mathrm{air} = T_\\mathrm{mean} + A_T \\cdot B\n\\]\nDer zweite Cosinus-Term verhindert einen vollständig symmetrischen Tagesgang. Dadurch fällt die Temperatur am Nachmittag und Abend nicht exakt spiegelbildlich zum Vormittag.",
@@ -528,8 +528,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#relative-luftfeuchte",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#relative-luftfeuchte",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#relative-luftfeuchte",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#relative-luftfeuchte",
     "title": "Technische Dokumentation",
     "section": "Relative Luftfeuchte",
     "text": "Relative Luftfeuchte\nDie relative Luftfeuchte wird ebenfalls als Tagesgang gesetzt:\n\n\n\nJahreszeit\nmittlere relative Feuchte\nAmplitude\n\n\n\n\nSommer\n58 %\n16\n\n\nFrühling/Herbst\n68 %\n14\n\n\nWinter\n78 %\n10\n\n\n\nDie Formel lautet:\n\\[\nRH = \\max\\left(25,\\min\\left(95,RH_\\mathrm{mean} + RH_\\mathrm{amp}\\cos\\left(360^\\circ\\cdot\\frac{t-5}{24}\\right)\\right)\\right)\n\\]",
@@ -540,8 +540,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#vegetationseinfluss",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#vegetationseinfluss",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#vegetationseinfluss",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#vegetationseinfluss",
     "title": "Technische Dokumentation",
     "section": "Vegetationseinfluss",
     "text": "Vegetationseinfluss\nDer Vegetationseinfluss veg-nearby wird aus nahen Bäumen und Hecken berechnet. Dafür werden Radien von 1.5 und 3.5 Patches genutzt.\n\\[\nI_\\mathrm{tree} = 0.55 \\cdot N_\\mathrm{tree,1.5} + 0.18 \\cdot N_\\mathrm{tree,3.5}\n\\]\n\\[\nI_\\mathrm{hedge} = 0.35 \\cdot N_\\mathrm{hedge,1.5} + 0.12 \\cdot N_\\mathrm{hedge,3.5}\n\\]\n\\[\nveg\\_nearby = \\min\\left(1,\\frac{I_\\mathrm{tree}+I_\\mathrm{hedge}}{2.2}\\right)\n\\]\nVegetation wirkt dadurch nicht nur auf dem Patch selbst, sondern auch in der Umgebung. Bäume werden stärker gewichtet als Hecken.",
@@ -552,8 +552,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#wandkontext",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#wandkontext",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#wandkontext",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#wandkontext",
     "title": "Technische Dokumentation",
     "section": "Wandkontext",
     "text": "Wandkontext\nDer Wandkontext wird für Nicht-Gebäudepatches berechnet. Direkt angrenzende Gebäude über neighbors4 erzeugen volle Fassadenwirkung. Gebäudekanten im Radius 2 erzeugen eine abgeschwächte Nahbereichswirkung.\nDirekt an Gebäuden:\n\\[\nwall\\_exposure = \\min\\left(1,\\frac{N_\\mathrm{adjacent\\ buildings}}{2}\\right)\n\\]\nIm Nahbereich ohne direkte Gebäudenachbarschaft:\n\\[\nwall\\_exposure = 0.35\n\\]\nDie Fassadenbegrünung wird lokal als Mittelwert der angrenzenden oder nahen Gebäudekanten übernommen. Im Nahbereich wird sie abgeschwächt:\n\\[\nwall\\_green\\_local = 0.55 \\cdot \\overline{wall\\_green}\n\\]",
@@ -564,8 +564,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#wand-albedo-und-wandbegrünung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#wand-albedo-und-wandbegrünung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#wand-albedo-und-wandbegrünung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#wand-albedo-und-wandbegrünung",
     "title": "Technische Dokumentation",
     "section": "Wand-Albedo und Wandbegrünung",
     "text": "Wand-Albedo und Wandbegrünung\nDer Wandstil wird über zwei Reporter umgesetzt:\n\n\n\nWandstil\nWand-Albedo\nBegrünungswert\n\n\n\n\nnormale Wand\n0.35\n0\n\n\ngrüne Wand\n0.25\n1\n\n\n\nDie grüne Wand reduziert Wandwärmelasten und erzeugt zusätzlich eine aktive evapotranspirative Entlastung.",
@@ -576,8 +576,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#einfassung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#einfassung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#einfassung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#einfassung",
     "title": "Technische Dokumentation",
     "section": "Einfassung",
     "text": "Einfassung\nDie räumliche Einfassung enclosedness wird aus Gebäuden und Hecken im Radius 3 berechnet:\n\\[\nenclosedness = \\min\\left(1,\\frac{N_\\mathrm{building}+0.35N_\\mathrm{hedge}}{N_\\mathrm{total}}\\right)\n\\]\nEinfassung reduziert Luftaustausch und Windentlastung. Hecken zählen nur abgeschwächt, weil sie weniger massiv wirken als Gebäude.",
@@ -588,8 +588,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#gebäudeschatten",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#gebäudeschatten",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#gebäudeschatten",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#gebäudeschatten",
     "title": "Technische Dokumentation",
     "section": "Gebäudeschatten",
     "text": "Gebäudeschatten\nNur Gebäudekanten werfen Schatten. Ein Gebäudepatch gilt als Gebäudekante, wenn mindestens einer seiner vier direkten Nachbarn kein Gebäude ist.\nDie Schattenrichtung wird aus dem Sonnenazimut berechnet:\n\\[\nd_x = -\\sin(A)\n\\]\n\\[\nd_y = -\\cos(A)\n\\]\nDie Schattenlänge eines Gebäudes lautet:\n\\[\nL_\\mathrm{building} = \\mathrm{round}\\left(\\frac{1.00 \\cdot h_\\mathrm{building}}{\\max(0.18,\\tan(\\alpha))}\\right)\n\\]\nDie Schattenstärke von Gebäuden beträgt:\n\\[\nshadow\\_strength_\\mathrm{building} = 0.96\n\\]\nGebäude verschatten keine anderen Gebäudepatches. Ziel ist die Wirkung auf Aufenthaltsflächen.",
@@ -600,8 +600,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#vegetationsschatten",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#vegetationsschatten",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#vegetationsschatten",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#vegetationsschatten",
     "title": "Technische Dokumentation",
     "section": "Vegetationsschatten",
     "text": "Vegetationsschatten\nBäume und Hecken werfen eigene Schatten.\nFür Bäume gilt:\n\\[\nL_\\mathrm{tree} = \\mathrm{round}\\left(\\frac{1.15 \\cdot h_\\mathrm{veg}}{\\max(0.18,\\tan(\\alpha))}\\right)\n\\]\n\\[\nr_\\mathrm{canopy} = \\max\\left(1,\\mathrm{round}\\left(\\frac{h_\\mathrm{veg}}{4}\\right)\\right)\n\\]\n\\[\nshadow\\_strength_\\mathrm{canopy} = 0.72\n\\]\n\\[\ntail\\_decay = 0.035\n\\]\nFür Hecken werden andere Parameter verwendet:\n\\[\nL_\\mathrm{hedge} = \\mathrm{round}\\left(\\frac{0.75 \\cdot h_\\mathrm{veg}}{\\max(0.18,\\tan(\\alpha))}\\right)\n\\]\n\\[\nr_\\mathrm{hedge} = \\max\\left(1,\\mathrm{round}\\left(\\frac{h_\\mathrm{veg}}{2}\\right)\\right)\n\\]\n\\[\nshadow\\_strength_\\mathrm{hedge} = 0.58\n\\]\n\\[\ntail\\_decay_\\mathrm{hedge} = 0.055\n\\]\nDie Schattenstärke im Schattenschweif wird mit zunehmender Distanz reduziert:\n\\[\nshadow\\_level = \\max\\left(shadow\\_level, \\max(0.18, shadow\\_strength - tail\\_decay \\cdot step)\\right)\n\\]",
@@ -612,8 +612,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#solare-einstrahlung-auf-einen-patch",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#solare-einstrahlung-auf-einen-patch",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#solare-einstrahlung-auf-einen-patch",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#solare-einstrahlung-auf-einen-patch",
     "title": "Technische Dokumentation",
     "section": "Solare Einstrahlung auf einen Patch",
     "text": "Solare Einstrahlung auf einen Patch\nDer direkte und diffuse Strahlungsanteil wird mit diffuse-share = 0.18 berechnet:\n\\[\nS_\\mathrm{patch} = S \\cdot \\left(0.18 + (1 - 0.18)(1 - shadow\\_level)\\right)\n\\]\nBei Nacht oder ohne Sonne gilt:\n\\[\nS_\\mathrm{patch} = 0\n\\]",
@@ -624,8 +624,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#absorbierte-kurzwellige-strahlung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#absorbierte-kurzwellige-strahlung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#absorbierte-kurzwellige-strahlung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#absorbierte-kurzwellige-strahlung",
     "title": "Technische Dokumentation",
     "section": "Absorbierte kurzwellige Strahlung",
     "text": "Absorbierte kurzwellige Strahlung\n\\[\nQ_\\mathrm{SW} = SW_\\mathrm{max} \\cdot S_\\mathrm{patch} \\cdot (1 - \\alpha)\n\\]\nDabei ist SW_max die jahreszeitliche maximale kurzwellige Strahlung und albedo der Reflexionsanteil des Materials.",
@@ -636,8 +636,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#wandnahe-zusätzliche-strahlung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#wandnahe-zusätzliche-strahlung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#wandnahe-zusätzliche-strahlung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#wandnahe-zusätzliche-strahlung",
     "title": "Technische Dokumentation",
     "section": "Wandnahe zusätzliche Strahlung",
     "text": "Wandnahe zusätzliche Strahlung\nDie Wandbelastung wird als Zusatzterm modelliert:\n\\[\nf_h = \\min\\left(1.2,\\frac{wall\\_height\\_local}{8}\\right)\n\\]\n\\[\nQ_\\mathrm{wall} = 38 \\cdot wall\\_exposure \\cdot S \\cdot f_h \\cdot (1 - wall\\_albedo\\_local) \\cdot (1 - 0.75 \\cdot wall\\_green\\_local)\n\\]\nFür Nicht-Gebäudepatches wird dieser Term reduziert:\n\\[\nQ_\\mathrm{wall} = 0.65 \\cdot Q_\\mathrm{wall}\n\\]\nDamit wird berücksichtigt, dass die Wand eine angrenzende Strahlungsquelle ist, aber nicht die ganze Patchoberfläche bildet.",
@@ -648,8 +648,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#langwellige-bilanz",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#langwellige-bilanz",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#langwellige-bilanz",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#langwellige-bilanz",
     "title": "Technische Dokumentation",
     "section": "Langwellige Bilanz",
     "text": "Langwellige Bilanz\nDer Himmel wird als effektive Strahlungstemperatur vereinfacht:\n\\[\nT_\\mathrm{sky,K} = T_\\mathrm{air} + 273.15 - (18 - 10S)\n\\]\nDie Oberfläche wird in Kelvin umgerechnet:\n\\[\nT_\\mathrm{surf,K} = T_\\mathrm{surface} + 273.15\n\\]\nDie Netto-Langwellenbilanz lautet:\n\\[\nQ_\\mathrm{LW} = \\epsilon \\sigma \\left(T_\\mathrm{sky,K}^4 - T_\\mathrm{surf,K}^4\\right)\n\\]\nDabei ist:\n\\[\n\\sigma = 5.67 \\cdot 10^{-8}\n\\]\nQ_LW ist negativ, wenn die Oberfläche langwellig mehr Energie verliert als sie erhält.",
@@ -660,8 +660,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#fühlbarer-wärmefluss",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#fühlbarer-wärmefluss",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#fühlbarer-wärmefluss",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#fühlbarer-wärmefluss",
     "title": "Technische Dokumentation",
     "section": "Fühlbarer Wärmefluss",
     "text": "Fühlbarer Wärmefluss\nDer aerodynamische Austauschkoeffizient wird zunächst aus Windgeschwindigkeit berechnet:\n\\[\ng_h = 0.0020 + 0.0015\\sqrt{u + 0.2}\n\\]\nEinfassung reduziert den Austausch:\n\\[\ng_h = \\frac{g_h}{1 + 0.55 \\cdot enclosedness}\n\\]\nVegetation reduziert ihn weiter:\n\\[\ng_h = 0.70 \\cdot g_h\n\\]\nRasen reduziert ihn leicht:\n\\[\ng_h = 0.85 \\cdot g_h\n\\]\nDer fühlbare Wärmefluss lautet:\n\\[\nQ_H = \\rho_\\mathrm{air} c_p g_h (T_\\mathrm{surface} - T_\\mathrm{air,local})\n\\]\nMit:\n\\[\n\\rho_\\mathrm{air} = 1.20\n\\]\n\\[\nc_p = 1005\n\\]",
@@ -672,8 +672,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#effektive-oberflächenwärmekapazität",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#effektive-oberflächenwärmekapazität",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#effektive-oberflächenwärmekapazität",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#effektive-oberflächenwärmekapazität",
     "title": "Technische Dokumentation",
     "section": "Effektive Oberflächenwärmekapazität",
     "text": "Effektive Oberflächenwärmekapazität\nDie Grundformel lautet:\n\\[\nC_\\mathrm{surface} = 180000 + 380000 \\cdot thermal\\_mass\n\\]\nDanach werden Sonderfälle gesetzt:\n\n\n\nFläche/Objekt\neffektive Oberflächenwärmekapazität\n\n\n\n\nAsphalt\n340000\n\n\nPflaster\n360000\n\n\nRasen\n300000\n\n\nBaum/Hecke\n480000\n\n\nGründach\n360000\n\n\n\nDie Einheit ist modelllogisch eine flächenbezogene Wärmekapazität:\n\\[\nJ \\cdot m^{-2} \\cdot K^{-1}\n\\]\nDiese Werte steuern, wie schnell eine Oberfläche auf Energieflüsse reagiert. Rasen wird in der aktuellen Version schnell auskühlend modelliert. Baum und Hecke bleiben stärker gedämpft.",
@@ -684,8 +684,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#substratkopplung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#substratkopplung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#substratkopplung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#substratkopplung",
     "title": "Technische Dokumentation",
     "section": "Substratkopplung",
     "text": "Substratkopplung\nDie Grundformel für die Wärmekapazität des Substrats lautet:\n\\[\nC_\\mathrm{substrate} = 420000 + 620000 \\cdot thermal\\_mass\n\\]\nDie Grundformel für die Kopplung zwischen Oberfläche und Substrat lautet:\n\\[\nk_\\mathrm{substrate} = 4 + 6 \\cdot thermal\\_mass\n\\]\nSonderfälle:\n\n\n\nFläche/Objekt\nSubstratkopplung\n\n\n\n\nAsphalt\n5.0\n\n\nPflaster\n5.4\n\n\nRasen\n3.8\n\n\nBaum/Hecke\n8.5\n\n\nGründach\n5.2\n\n\n\nDer Bodenwärmefluss lautet:\n\\[\nQ_G = k_\\mathrm{substrate}(T_\\mathrm{surface} - T_\\mathrm{substrate})\n\\]\nDie Substrattemperatur wird zusätzlich langsam in Richtung Tiefentemperatur relaxiert:\n\\[\nQ_\\mathrm{relax} = \\frac{C_\\mathrm{substrate}(T_\\mathrm{deep} - T_\\mathrm{substrate})}{(30 + 52 \\cdot thermal\\_mass)\\cdot 3600}\n\\]",
@@ -696,8 +696,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#wasserverfügbarkeit",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#wasserverfügbarkeit",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#wasserverfügbarkeit",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#wasserverfügbarkeit",
     "title": "Technische Dokumentation",
     "section": "Wasserverfügbarkeit",
     "text": "Wasserverfügbarkeit\nDie Wasserverfügbarkeit wird aus der relativen Speicherfüllung berechnet:\n\\[\nr_w = \\frac{water\\_store}{water\\_store\\_max}\n\\]\n\\[\nwater\\_availability = \\max\\left(0,\\min\\left(1,\\frac{r_w - 0.05}{0.80}\\right)\\right)\n\\]\nUnter 5 Prozent Speicherfüllung wird praktisch keine Verdunstung angenommen. Ab etwa 85 Prozent Speicherfüllung ist die Verdunstung nicht mehr wasserlimitiert.",
@@ -708,8 +708,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#sättigungsdampfdruck",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#sättigungsdampfdruck",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#sättigungsdampfdruck",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#sättigungsdampfdruck",
     "title": "Technische Dokumentation",
     "section": "Sättigungsdampfdruck",
     "text": "Sättigungsdampfdruck\nDas Modell nutzt eine Tetens-Formel:\n\\[\ne_s(T) = 0.6108 \\cdot \\exp\\left(\\frac{17.27T}{T+237.3}\\right)\n\\]\nDie aktuelle Luftdampfdruckgröße lautet:\n\\[\ne_a = \\frac{RH}{100} \\cdot e_s(T_\\mathrm{air,local})\n\\]\nDas Dampfdruckdefizit an der Oberfläche wird berechnet als:\n\\[\nVPD = \\max\\left(0,e_s(T_\\mathrm{surface}) - e_a\\right)\n\\]",
@@ -720,8 +720,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#potenzielle-verdunstungsleistung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#potenzielle-verdunstungsleistung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#potenzielle-verdunstungsleistung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#potenzielle-verdunstungsleistung",
     "title": "Technische Dokumentation",
     "section": "Potenzielle Verdunstungsleistung",
     "text": "Potenzielle Verdunstungsleistung\nDie potenzielle aerodynamische Verdunstungsleistung lautet:\n\\[\nE_\\mathrm{aero} =\n(22 + 52\\sqrt{u+0.2})\n\\cdot evap\\_factor\n\\cdot wetness\\_factor\n\\cdot\n\\left(0.30 + 0.70 \\cdot \\min\\left(1,\\frac{VPD}{1.6}\\right)\\right)\n\\]\nDanach werden Oberflächentypen skaliert:\n\n\n\nFläche/Objekt\nMultiplikator\n\n\n\n\nRasen\n1.95\n\n\nBaum/Hecke\n1.25\n\n\nGründach\n1.05\n\n\n\nDie potenzielle Verdunstung wird durch die verfügbare Strahlungsenergie begrenzt:\n\\[\nQ_{LE,pot} = \\min\\left(0.92 \\cdot Q_\\mathrm{available}, E_\\mathrm{aero}\\right)\n\\]\nDabei gilt:\n\\[\nQ_\\mathrm{available} = \\max(0,Q_\\mathrm{SW} + Q_\\mathrm{wall} + Q_\\mathrm{LW})\n\\]\nBei sehr geringer Sonneneinstrahlung wird die potenzielle Verdunstung reduziert:\n\\[\nQ_{LE,pot} = 0.35 \\cdot Q_{LE,pot}\n\\]",
@@ -732,8 +732,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#wasserlimit",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#wasserlimit",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#wasserlimit",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#wasserlimit",
     "title": "Technische Dokumentation",
     "section": "Wasserlimit",
     "text": "Wasserlimit\nDer latente Fluss kann nicht mehr Wasser verdunsten, als im Speicher vorhanden ist:\n\\[\nQ_{LE,water} = \\frac{water\\_store \\cdot L_v}{\\Delta t}\n\\]\nMit:\n\\[\nL_v = 2.45 \\cdot 10^6\n\\]\nDer wirksame latente Fluss lautet:\n\\[\nQ_{LE} = \\min\\left(Q_{LE,pot}\\cdot water\\_availability, Q_{LE,water}\\right)\n\\]\nDie Verdunstungsmenge wird berechnet als:\n\\[\nevap\\_mm = \\frac{Q_{LE}\\Delta t}{L_v}\n\\]\nDer Wasserspeicher wird danach fortgeschrieben:\n\\[\nwater\\_store =\n\\max\\left(0,\\min\\left(water\\_store\\_max,water\\_store - evap\\_mm + recharge\\_mm\\right)\\right)\n\\]",
@@ -744,8 +744,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#maximale-erwärmungsraten",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#maximale-erwärmungsraten",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#maximale-erwärmungsraten",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#maximale-erwärmungsraten",
     "title": "Technische Dokumentation",
     "section": "Maximale Erwärmungsraten",
     "text": "Maximale Erwärmungsraten\n\n\n\nFläche/Objekt\nmaximale Erwärmung in °C pro Stunde\n\n\n\n\nnormales Dach\n5.4\n\n\nGründach\n3.6\n\n\nGebäude sonst\n4.0\n\n\nBaum\n2.2\n\n\nHecke\n2.5\n\n\nAsphalt\n5.0\n\n\nSportbelag\n4.6\n\n\nSand\n4.2\n\n\nPflaster\n3.4\n\n\nOffenpflaster\n3.1\n\n\nRasen\n2.5\n\n\nStandard\n3.8",
@@ -756,8 +756,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#maximale-abkühlungsraten",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#maximale-abkühlungsraten",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#maximale-abkühlungsraten",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#maximale-abkühlungsraten",
     "title": "Technische Dokumentation",
     "section": "Maximale Abkühlungsraten",
     "text": "Maximale Abkühlungsraten\n\n\n\nFläche/Objekt\nmaximale Abkühlung in °C pro Stunde\n\n\n\n\nnormales Dach\n4.2\n\n\nGründach\n6.4\n\n\nGebäude sonst\n4.0\n\n\nBaum\n2.8\n\n\nHecke\n3.0\n\n\nAsphalt\n4.4\n\n\nSportbelag\n4.0\n\n\nSand\n4.6\n\n\nPflaster\n3.6\n\n\nOffenpflaster\n3.8\n\n\nRasen\n7.8\n\n\nStandard\n3.8\n\n\n\nDiese asymmetrische Kappung ist wichtig. Rasen darf sich langsam erwärmen, aber schnell auskühlen. Dadurch bleibt die didaktisch gewünschte Dynamik erhalten: Rasen wird nicht wie ein starker Wärmespeicher behandelt.",
@@ -768,8 +768,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#oberflächen-footprint",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#oberflächen-footprint",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#oberflächen-footprint",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#oberflächen-footprint",
     "title": "Technische Dokumentation",
     "section": "Oberflächen-Footprint",
     "text": "Oberflächen-Footprint\nZuerst wird ein lokaler Oberflächen-Footprint gebildet. Das eigene Patch wird am stärksten gewichtet, direkte Nachbarn mittel und diagonale Nachbarn schwächer:\n\\[\nT_\\mathrm{footprint} =\n\\frac{3.2T_\\mathrm{surface}\n+0.9\\overline{T}_\\mathrm{axial}\n+0.3\\overline{T}_\\mathrm{diagonal}}{4.4}\n\\]",
@@ -780,8 +780,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#horizontale-luftmischung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#horizontale-luftmischung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#horizontale-luftmischung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#horizontale-luftmischung",
     "title": "Technische Dokumentation",
     "section": "Horizontale Luftmischung",
     "text": "Horizontale Luftmischung\nDie horizontale Mischung nutzt eine diskrete Nachbarschaftsdifferenz. Direkte Nachbarn werden voll, diagonale Nachbarn halb gewichtet.\nDer Mischungskoeffizient lautet:\n\\[\nm_\\mathrm{lat} = 0.010 + 0.006u\n\\]\nEinfassung reduziert die Mischung:\n\\[\nm_\\mathrm{lat} = \\frac{m_\\mathrm{lat}}{1 + 0.30 \\cdot enclosedness}\n\\]",
@@ -792,8 +792,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#oberfläche-luft-kopplung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#oberfläche-luft-kopplung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#oberfläche-luft-kopplung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#oberfläche-luft-kopplung",
     "title": "Technische Dokumentation",
     "section": "Oberfläche-Luft-Kopplung",
     "text": "Oberfläche-Luft-Kopplung\nDie Kopplung der lokalen Luft an die Oberfläche lautet:\n\\[\nc_\\mathrm{surf} = 0.095 + 0.030\\sqrt{u+0.2}\n\\]\nEinfassung reduziert die Kopplung:\n\\[\nc_\\mathrm{surf} = \\frac{c_\\mathrm{surf}}{1 + 0.40 \\cdot enclosedness}\n\\]\nBäume und Hecken reduzieren sie weiter:\n\\[\nc_\\mathrm{surf} = 0.90 \\cdot c_\\mathrm{surf}\n\\]\nGebäude reduzieren sie ebenfalls:\n\\[\nc_\\mathrm{surf} = 0.85 \\cdot c_\\mathrm{surf}\n\\]\nDie Oberflächenwirkung auf die Luft lautet:\n\\[\n\\Delta T_\\mathrm{surface-air} =\nc_\\mathrm{surf}\n(T_\\mathrm{footprint} - T_\\mathrm{air,local})\n\\Delta t\n\\]",
@@ -804,8 +804,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#vertikale-mischung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#vertikale-mischung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#vertikale-mischung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#vertikale-mischung",
     "title": "Technische Dokumentation",
     "section": "Vertikale Mischung",
     "text": "Vertikale Mischung\nDie vertikale Mischung gegen die Hintergrundluft lautet:\n\\[\nm_\\mathrm{vert} = 0.015 + 0.015S + 0.008\\sqrt{u+0.2}\n\\]\nEinfassung reduziert auch diesen Austausch:\n\\[\nm_\\mathrm{vert} = \\frac{m_\\mathrm{vert}}{1 + 0.45 \\cdot enclosedness}\n\\]\nVegetation reduziert ihn:\n\\[\nm_\\mathrm{vert} = 0.85 \\cdot m_\\mathrm{vert}\n\\]\nDie Wirkung der Hintergrundluft lautet:\n\\[\n\\Delta T_\\mathrm{background} =\nm_\\mathrm{vert}\n(T_\\mathrm{air} - T_\\mathrm{air,local})\n\\Delta t\n\\]",
@@ -816,8 +816,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#fassadenwärmelast",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#fassadenwärmelast",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#fassadenwärmelast",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#fassadenwärmelast",
     "title": "Technische Dokumentation",
     "section": "Fassadenwärmelast",
     "text": "Fassadenwärmelast\nDie lokale Luft erhält einen zusätzlichen Fassadenwärmeterm:\n\\[\nL_\\mathrm{wall-air}\n=\n0.25\n\\cdot wall\\_exposure\n\\cdot S\n\\cdot f_h\n\\cdot (1 - 0.60 \\cdot wall\\_green\\_local)\n\\]\nDaraus wird:\n\\[\n\\Delta T_\\mathrm{wall} = L_\\mathrm{wall-air}\\Delta t\n\\]",
@@ -828,8 +828,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#aktive-luftkühlung-durch-begrünte-fassaden",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#aktive-luftkühlung-durch-begrünte-fassaden",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#aktive-luftkühlung-durch-begrünte-fassaden",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#aktive-luftkühlung-durch-begrünte-fassaden",
     "title": "Technische Dokumentation",
     "section": "Aktive Luftkühlung durch begrünte Fassaden",
     "text": "Aktive Luftkühlung durch begrünte Fassaden\nBegrünte Fassaden erhalten eine eigene evapotranspirative Luftkühlung. Dafür wird ein Dampfdruckdefizit auf Basis der lokalen Lufttemperatur berechnet:\n\\[\nVPD_\\mathrm{wall} =\n\\max\\left(0,e_s(T_\\mathrm{air,local}) - \\frac{RH}{100}e_s(T_\\mathrm{air,local})\\right)\n\\]\nDer Faktor lautet:\n\\[\nf_\\mathrm{wall,ET} = \\min\\left(1,\\frac{VPD_\\mathrm{wall}}{1.6}\\right)\n\\]\nDie Kühlung lautet:\n\\[\nC_\\mathrm{wall-air}\n=\n0.55\n\\cdot wall\\_exposure\n\\cdot wall\\_green\\_local\n\\cdot S\n\\cdot f_h\n\\cdot\n\\left(0.35 + 0.65f_\\mathrm{wall,ET}\\right)\n\\]\nDie Temperaturwirkung ist negativ:\n\\[\n\\Delta T_\\mathrm{wall-cooling} = -C_\\mathrm{wall-air}\\Delta t\n\\]",
@@ -840,8 +840,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#direkte-luftkühlung-durch-rasen",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#direkte-luftkühlung-durch-rasen",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#direkte-luftkühlung-durch-rasen",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#direkte-luftkühlung-durch-rasen",
     "title": "Technische Dokumentation",
     "section": "Direkte Luftkühlung durch Rasen",
     "text": "Direkte Luftkühlung durch Rasen\nRasen erhält zusätzlich eine direkte lokale Luftkühlung durch ET:\n\\[\nVPD_\\mathrm{grass} =\n\\max\\left(0,e_s(T_\\mathrm{air,local}) - \\frac{RH}{100}e_s(T_\\mathrm{air,local})\\right)\n\\]\n\\[\nf_\\mathrm{grass,ET} = \\min\\left(1,\\frac{VPD_\\mathrm{grass}}{1.6}\\right)\n\\]\n\\[\nC_\\mathrm{grass-air}\n=\n0.70\n\\cdot water\\_stress\n\\cdot S\n\\cdot\n\\left(0.35 + 0.65f_\\mathrm{grass,ET}\\right)\n\\]\nIm Code bezeichnet water-stress hier funktional die Wasserverfügbarkeit. Der Name ist missverständlich, weil höhere Werte mehr verfügbare Feuchte bedeuten.\nDie Temperaturwirkung ist:\n\\[\n\\Delta T_\\mathrm{grass-cooling} = -C_\\mathrm{grass-air}\\Delta t\n\\]",
@@ -852,8 +852,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#gesamte-lufttemperaturänderung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#gesamte-lufttemperaturänderung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#gesamte-lufttemperaturänderung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#gesamte-lufttemperaturänderung",
     "title": "Technische Dokumentation",
     "section": "Gesamte Lufttemperaturänderung",
     "text": "Gesamte Lufttemperaturänderung\nDie gesamte lokale Lufttemperaturänderung lautet:\n\\[\n\\Delta T_\\mathrm{air,local}\n=\n\\Delta T_\\mathrm{surface-air}\n+\n\\Delta T_\\mathrm{lateral}\n+\n\\Delta T_\\mathrm{background}\n+\n\\Delta T_\\mathrm{wall}\n+\n\\Delta T_\\mathrm{wall-cooling}\n+\n\\Delta T_\\mathrm{grass-cooling}\n\\]\nDie Änderung wird materialabhängig begrenzt.",
@@ -864,8 +864,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#maximale-lokale-luftänderung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#maximale-lokale-luftänderung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#maximale-lokale-luftänderung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#maximale-lokale-luftänderung",
     "title": "Technische Dokumentation",
     "section": "Maximale lokale Luftänderung",
     "text": "Maximale lokale Luftänderung\n\n\n\nFläche/Objekt\nmaximale Änderung in °C pro Stunde\n\n\n\n\nnormales Dach\n2.4\n\n\nGründach\n1.6\n\n\nGebäude sonst\n2.0\n\n\nBaum\n1.4\n\n\nHecke\n1.5\n\n\nAsphalt\n3.2\n\n\nSportbelag\n3.0\n\n\nSand\n2.6\n\n\nPflaster\n2.9\n\n\nOffenpflaster\n2.1\n\n\nRasen\n1.8\n\n\nStandard\n2.2",
@@ -876,8 +876,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#direkte-sonne",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#direkte-sonne",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#direkte-sonne",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#direkte-sonne",
     "title": "Technische Dokumentation",
     "section": "Direkte Sonne",
     "text": "Direkte Sonne\n\\[\nS_\\mathrm{direct} = S(1 - shadow\\_level)\n\\]\nDer kurzwellige Beitrag zum Menschen lautet:\n\\[\nSW_\\mathrm{eq} = 7.0 \\cdot S_\\mathrm{direct}\n\\]\nBei Bäumen und Hecken wird dieser Beitrag reduziert:\n\\[\nSW_\\mathrm{eq} = 0.65 \\cdot SW_\\mathrm{eq}\n\\]",
@@ -888,8 +888,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#langwellige-und-oberflächenbelastung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#langwellige-und-oberflächenbelastung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#langwellige-und-oberflächenbelastung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#langwellige-und-oberflächenbelastung",
     "title": "Technische Dokumentation",
     "section": "Langwellige und Oberflächenbelastung",
     "text": "Langwellige und Oberflächenbelastung\nZunächst werden Temperaturüberschüsse berechnet:\n\\[\nE_\\mathrm{surface} = \\max(0,T_\\mathrm{surface} - T_\\mathrm{air,local})\n\\]\n\\[\nE_\\mathrm{axial} = \\max(0,\\overline{T}_\\mathrm{axial} - T_\\mathrm{air,local})\n\\]\n\\[\nE_\\mathrm{diagonal} = \\max(0,\\overline{T}_\\mathrm{diagonal} - T_\\mathrm{air,local})\n\\]\nDer langwellige Belastungsbeitrag lautet:\n\\[\nLW_\\mathrm{eq}\n=\n0.38E_\\mathrm{surface}\n+\n0.22E_\\mathrm{axial}\n+\n0.10E_\\mathrm{diagonal}\n+\n2.8\n\\cdot wall\\_exposure\n\\cdot S\n\\cdot f_h\n\\cdot\n(1 - 0.80 \\cdot wall\\_green\\_local)\n\\]",
@@ -900,8 +900,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#feuchtebelastung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#feuchtebelastung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#feuchtebelastung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#feuchtebelastung",
     "title": "Technische Dokumentation",
     "section": "Feuchtebelastung",
     "text": "Feuchtebelastung\n\\[\nH_\\mathrm{humidity} = 0.03 \\cdot \\max(0,RH - 55)\n\\]",
@@ -912,8 +912,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#windentlastung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#windentlastung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#windentlastung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#windentlastung",
     "title": "Technische Dokumentation",
     "section": "Windentlastung",
     "text": "Windentlastung\n\\[\nR_\\mathrm{wind} = 0.9\\sqrt{\\max(0.5,u)}\n\\]\nEinfassung reduziert die Windentlastung:\n\\[\nR_\\mathrm{wind} = R_\\mathrm{wind}(1 - 0.20 \\cdot enclosedness)\n\\]",
@@ -924,8 +924,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#vegetationsentlastung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#vegetationsentlastung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#vegetationsentlastung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#vegetationsentlastung",
     "title": "Technische Dokumentation",
     "section": "Vegetationsentlastung",
     "text": "Vegetationsentlastung\n\\[\nR_\\mathrm{veg} = 0.35 \\cdot veg\\_nearby\n\\]",
@@ -936,8 +936,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#fassaden-et-entlastung-im-komfortindex",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#fassaden-et-entlastung-im-komfortindex",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#fassaden-et-entlastung-im-komfortindex",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#fassaden-et-entlastung-im-komfortindex",
     "title": "Technische Dokumentation",
     "section": "Fassaden-ET-Entlastung im Komfortindex",
     "text": "Fassaden-ET-Entlastung im Komfortindex\nDie aktive Entlastung durch begrünte Fassaden lautet:\n\\[\nR_\\mathrm{wall,ET}\n=\n3.2\n\\cdot wall\\_exposure\n\\cdot wall\\_green\\_local\n\\cdot S\n\\cdot\n(0.35 + 0.65 f_\\mathrm{wall,ET})\n\\]",
@@ -948,8 +948,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#gesamter-aufenthaltsindex",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#gesamter-aufenthaltsindex",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#gesamter-aufenthaltsindex",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#gesamter-aufenthaltsindex",
     "title": "Technische Dokumentation",
     "section": "Gesamter Aufenthaltsindex",
     "text": "Gesamter Aufenthaltsindex\n\\[\ncomfort\\_index =\nT_\\mathrm{air,local}\n+\nSW_\\mathrm{eq}\n+\nLW_\\mathrm{eq}\n+\nH_\\mathrm{humidity}\n-\nR_\\mathrm{wind}\n-\nR_\\mathrm{veg}\n-\nR_\\mathrm{wall,ET}\n\\]\nZusätzlich speichert das Modell die Einzelkomponenten shortwave-human, longwave-human und exposure-temp.",
@@ -960,8 +960,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#belastungsfaktor-sommer",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#belastungsfaktor-sommer",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#belastungsfaktor-sommer",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#belastungsfaktor-sommer",
     "title": "Technische Dokumentation",
     "section": "Belastungsfaktor Sommer",
     "text": "Belastungsfaktor Sommer\nFür Sommer gilt:\n\n\n\nIndexbereich\nBelastungsfaktor\n\n\n\n\nbis 24\n0\n\n\n24 bis 29\nlinear von 0.08 bis 0.25\n\n\n29 bis 38\nlinear von 0.25 bis 1.00\n\n\nüber 38\n1\n\n\n\nFormelbereiche:\n\\[\nidx \\leq 24 \\Rightarrow score = 0\n\\]\n\\[\n24 &lt; idx \\leq 29 \\Rightarrow score = 0.08 + 0.17\\frac{idx-24}{5}\n\\]\n\\[\n29 &lt; idx \\leq 38 \\Rightarrow score = 0.25 + 0.75\\frac{idx-29}{9}\n\\]\n\\[\nidx &gt; 38 \\Rightarrow score = 1\n\\]",
@@ -972,8 +972,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#belastungsfaktor-frühlingherbst",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#belastungsfaktor-frühlingherbst",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#belastungsfaktor-frühlingherbst",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#belastungsfaktor-frühlingherbst",
     "title": "Technische Dokumentation",
     "section": "Belastungsfaktor Frühling/Herbst",
     "text": "Belastungsfaktor Frühling/Herbst\n\\[\nidx \\leq 18 \\Rightarrow score = 0\n\\]\n\\[\n18 &lt; idx \\leq 23 \\Rightarrow score = 0.08 + 0.17\\frac{idx-18}{5}\n\\]\n\\[\n23 &lt; idx \\leq 31 \\Rightarrow score = 0.25 + 0.75\\frac{idx-23}{8}\n\\]\n\\[\nidx &gt; 31 \\Rightarrow score = 1\n\\]",
@@ -984,8 +984,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#belastungsfaktor-winter",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#belastungsfaktor-winter",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#belastungsfaktor-winter",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#belastungsfaktor-winter",
     "title": "Technische Dokumentation",
     "section": "Belastungsfaktor Winter",
     "text": "Belastungsfaktor Winter\n\\[\nidx \\leq 8 \\Rightarrow score = 0\n\\]\n\\[\n8 &lt; idx \\leq 12 \\Rightarrow score = 0.08 + 0.17\\frac{idx-8}{4}\n\\]\n\\[\n12 &lt; idx \\leq 18 \\Rightarrow score = 0.25 + 0.75\\frac{idx-12}{6}\n\\]\n\\[\nidx &gt; 18 \\Rightarrow score = 1\n\\]",
@@ -996,8 +996,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#dosisgrößen",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#dosisgrößen",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#dosisgrößen",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#dosisgrößen",
     "title": "Technische Dokumentation",
     "section": "Dosisgrößen",
     "text": "Dosisgrößen\nWährend der Schulzeit werden drei Dosisgrößen integriert:\n\\[\nheat\\_dose\\_air\n=\nheat\\_dose\\_air\n+\n\\max(0,T_\\mathrm{air,local}-28)\\Delta t\n\\]\n\\[\nheat\\_dose\\_surface\n=\nheat\\_dose\\_surface\n+\n\\max(0,T_\\mathrm{surface}-36)\\Delta t\n\\]\n\\[\nheat\\_dose\\_comfort\n=\nheat\\_dose\\_comfort\n+\nscore\\Delta t\n\\]\nDie wichtigste Auswertung ist heat-dose-comfort. Sie wird als äquivalente Belastungsstunden während der Schulzeit gelesen.",
@@ -1008,8 +1008,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#hitzelast-änderung",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#hitzelast-änderung",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#hitzelast-änderung",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#hitzelast-änderung",
     "title": "Technische Dokumentation",
     "section": "Hitzelast Änderung",
     "text": "Hitzelast Änderung\nDie Hitzelaständerung wird als Differenz berechnet:\n\\[\n\\Delta H = heat\\_dose\\_comfort - ref\\_heat\\_dose\\_comfort\n\\]\nNegative Werte bedeuten Entlastung. Positive Werte bedeuten Verschlechterung.\nDie Farblogik lautet:\n\n\n\nDifferenz\nFarbe\nBedeutung\n\n\n\n\nbis -2.5\nblau\nstark besser\n\n\n-2.5 bis -1.0\ngrün\nbesser\n\n\n-1.0 bis 1.0\ngrau\nkaum anders\n\n\n1.0 bis 2.5\norange\nschlechter\n\n\nab 2.5\nrot\nstark schlechter",
@@ -1020,8 +1020,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#vergleichsmetriken",
-    "href": "03-KlimaCheck-Schulhof/klimacheck_dokumentation.html#vergleichsmetriken",
+    "objectID": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#vergleichsmetriken",
+    "href": "03-KlimaCheck-Schulhof/klimacheck-dokumentation.html#vergleichsmetriken",
     "title": "Technische Dokumentation",
     "section": "Vergleichsmetriken",
     "text": "Vergleichsmetriken\nFür eine ausgewählte Fläche werden berechnet:\n\nmittlere Hitzelast vorher/nachher\nmaximale Hitzelast vorher/nachher\nSchattenanteil vorher/nachher\nLuftwärmedosis vorher/nachher\nOberflächenwärme vorher/nachher\nAnteil orange/rot\nAnteil rot\nAnteil blau/grün/gelb\nverbesserte Fläche\nmindestens eine Klasse besser\nmindestens zwei Klassen besser\nKlassenwanderungen aus kritischen Klassen",
@@ -1032,11 +1032,47 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/sushandreichung-klimacheck_planungsbewertung.html",
-    "href": "03-KlimaCheck-Schulhof/sushandreichung-klimacheck_planungsbewertung.html",
+    "objectID": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html",
+    "href": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html",
+    "title": "Interaktives Schulhofklima-Modell",
+    "section": "",
+    "text": "KlimaCheck-Schulhof ist ein vereinfachtes, physikalisch basiertes Vergleichsmodell für das Klima auf einem Schulhof. Es zeigt, wie sich Flächen, Gebäude, Bäume, Schatten und Begrünung auf Wärme, Abkühlung und Hitzelast auswirken.\nDas Modell ist kein exaktes Vorhersagemodell. Es dient dazu, Unterschiede sichtbar zu machen: zum Beispiel zwischen Asphalt und Rasen, zwischen offenen und verschatteten Bereichen oder zwischen einem normalen Gebäude und einem begrünten Gebäude.\n Modell in eigenem Tab öffnen",
+    "crumbs": [
+      "Ilias",
+      "03 KlimaCheck Schulhof",
+      "Interaktives Schulhofklima-Modell"
+    ]
+  },
+  {
+    "objectID": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html#interaktives-modell",
+    "href": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html#interaktives-modell",
+    "title": "Interaktives Schulhofklima-Modell",
+    "section": "",
+    "text": "KlimaCheck-Schulhof ist ein vereinfachtes, physikalisch basiertes Vergleichsmodell für das Klima auf einem Schulhof. Es zeigt, wie sich Flächen, Gebäude, Bäume, Schatten und Begrünung auf Wärme, Abkühlung und Hitzelast auswirken.\nDas Modell ist kein exaktes Vorhersagemodell. Es dient dazu, Unterschiede sichtbar zu machen: zum Beispiel zwischen Asphalt und Rasen, zwischen offenen und verschatteten Bereichen oder zwischen einem normalen Gebäude und einem begrünten Gebäude.\n Modell in eigenem Tab öffnen",
+    "crumbs": [
+      "Ilias",
+      "03 KlimaCheck Schulhof",
+      "Interaktives Schulhofklima-Modell"
+    ]
+  },
+  {
+    "objectID": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html#arbeiten-mit-dem-modell",
+    "href": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html#arbeiten-mit-dem-modell",
+    "title": "Interaktives Schulhofklima-Modell",
+    "section": "Arbeiten mit dem Modell",
+    "text": "Arbeiten mit dem Modell\nFür einen einfachen Vorher/Nachher-Vergleich wird zuerst der Ausgangszustand vollständig simuliert. Danach wird mit Massnahme aktivieren der Vergleichszustand vorbereitet. Anschließend kann eine Maßnahme gesetzt werden, zum Beispiel Rasen, Bäume, Hecken oder Gebäudebegrünung. Nach dem zweiten Tageslauf zeigt die Ansicht Hitzelast Änderung, wo sich die Belastung verbessert oder verschlechtert hat.\nMit Gebiet-auswählen kann zusätzlich eine konkrete Aufenthaltsfläche markiert werden. Der Button Auswahlgebiet vergleichen wertet dann nur diese Fläche aus.",
+    "crumbs": [
+      "Ilias",
+      "03 KlimaCheck Schulhof",
+      "Interaktives Schulhofklima-Modell"
+    ]
+  },
+  {
+    "objectID": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html",
+    "href": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html",
     "title": "Hitzebelastung auf dem Schulhof untersuchen",
     "section": "",
-    "text": "Im dieser Aufgabe prüft ihr die Planung der Stadt: Auf dem Schulhof sollen neue Sportflächen entstehen. Eure Aufgabe ist es, klimatologisch zu bewerten, ob diese Planung während der Schulzeit zu mehr oder weniger Hitzebelastung auf den freien Flächen führt.\n\nTeamname:\n\n\n\n\n\n\nAuf dem Schulhof wird es nicht überall gleich heiß. Ihr sucht im Modell die heißesten Stellen auf den freien Flächen: Wege, Rasen, Sand, Sportfeld, Pflaster und Asphalt.\nWichtig ist die Schulzeit: Welche heißen Flächen liegen dort, wo sich Schüler*innen aufhalten können?\nDanach aktiviert ihr die geplante Umgestaltung und prüft, ob die Hitzebelastung besser oder schlechter wird. Am Ende entscheidet ihr: Soll die Planung so umgesetzt werden?\n\n\n\n\n\n\n\nAbbildung 1: Visualisierung des Modell-Schulhofs",
+    "text": "Im dieser Aufgabe prüft ihr die Planung der Stadt: Auf dem Schulhof sollen neue Sportflächen entstehen. Eure Aufgabe ist es, klimatologisch zu bewerten, ob diese Planung während der Schulzeit zu mehr oder weniger Hitzebelastung auf den freien Flächen führt.\n\nTeamname\n\n\n\n\n\n\n\nAuf dem Schulhof wird es nicht überall gleich heiß. Ihr sucht im Modell die heißesten Stellen auf den freien Flächen: Wege, Rasen, Sand, Sportfeld, Pflaster und Asphalt.\nWichtig ist die Schulzeit: Welche heißen Flächen liegen dort, wo sich Schüler*innen aufhalten können?\nDanach aktiviert ihr die geplante Umgestaltung und prüft, ob die Hitzebelastung besser oder schlechter wird. Am Ende entscheidet ihr: Soll die Planung so umgesetzt werden?\n\n\n\n\n\n\nAbbildung 1: Visualisierung des Modell-Schulhofs",
     "crumbs": [
       "Ilias",
       "03 KlimaCheck Schulhof",
@@ -1044,8 +1080,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/sushandreichung-klimacheck_planungsbewertung.html#wo-entstehen-hitzestellen",
-    "href": "03-KlimaCheck-Schulhof/sushandreichung-klimacheck_planungsbewertung.html#wo-entstehen-hitzestellen",
+    "objectID": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#wo-entstehen-hitzestellen",
+    "href": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#wo-entstehen-hitzestellen",
     "title": "Hitzebelastung auf dem Schulhof untersuchen",
     "section": "1. Wo entstehen Hitzestellen?",
     "text": "1. Wo entstehen Hitzestellen?\nStartet das Modell mit Modellstart / Reset.\nDrückt danach Tageslauf berechnen.\nSchaut euch diese Karten an:\n\nHitzelast aktuell\nHitzelast Schulzeit\n\nSucht zuerst die heißesten Stellen auf dem Schulhof. Achtet dabei nur auf Flächen außerhalb der Gebäude, also zum Beispiel Wege, Rasen, Sand, Sportflächen, Pflaster und Asphalt. Entscheidend ist nicht nur, wo es heiß wird, sondern ob diese Stellen während der Schulzeit für Schüler*innen wichtig sind.\nMarkiert oder merkt euch:\n\nWo sind die stärksten Hotspots?\nLiegen diese Hotspots auf Flächen, die in der Schulzeit genutzt werden?\nWelche Oberflächen liegen dort: Asphalt, Pflaster, Rasen, Sand oder Bäume?\n\n\n\n\nModell-Karte\n\n\nUnsere Beobachtung:\n\nHotspot 1:\n\n\nHotspot 2:",
@@ -1056,8 +1092,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/sushandreichung-klimacheck_planungsbewertung.html#was-verändert-die-geplante-umgestaltung",
-    "href": "03-KlimaCheck-Schulhof/sushandreichung-klimacheck_planungsbewertung.html#was-verändert-die-geplante-umgestaltung",
+    "objectID": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#was-verändert-die-geplante-umgestaltung",
+    "href": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#was-verändert-die-geplante-umgestaltung",
     "title": "Hitzebelastung auf dem Schulhof untersuchen",
     "section": "2. Was verändert die geplante Umgestaltung?",
     "text": "2. Was verändert die geplante Umgestaltung?\nDie Stadt möchte den Schulhof verändern: Es sollen neue Sportflächen entstehen. Im Modell prüft ihr, ob diese Planung die Hitzebelastung während der Schulzeit verbessert oder verschlechtert.\nDrückt Städtische Planung aktivieren.\nDas Modell setzt automatisch:\n\nein Sportfeld im südwestlichen Bereich,\nzwei Sandflächen für Beachvolleyball im nördlicheren Bereich.\n\nDrückt danach wieder Tageslauf berechnen.\nSchaltet auf die Karte:\n\nHitzelast Änderung\n\nBeschreibt kurz:\n\nWo wird die Hitzelast größer? Wo wird sie kleiner?",
@@ -1068,8 +1104,8 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/sushandreichung-klimacheck_planungsbewertung.html#ist-die-planung-sinnvoll",
-    "href": "03-KlimaCheck-Schulhof/sushandreichung-klimacheck_planungsbewertung.html#ist-die-planung-sinnvoll",
+    "objectID": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#ist-die-planung-sinnvoll",
+    "href": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#ist-die-planung-sinnvoll",
     "title": "Hitzebelastung auf dem Schulhof untersuchen",
     "section": "3. Ist die Planung sinnvoll?",
     "text": "3. Ist die Planung sinnvoll?\nEntscheidet euch für eine Position:\n\nDie Planung ist sinnvoll.\nDie Planung ist problematisch.\nDie Planung ist nur mit Änderungen sinnvoll.\n\nUnsere Entscheidung:\n\nWir entscheiden uns für:\n\nUnsere Begründung aus dem Modell:\n\nWelche Hotspots und welche Schulzeit-Flächen sind für eure Entscheidung wichtig?",
@@ -1077,42 +1113,6 @@
       "Ilias",
       "03 KlimaCheck Schulhof",
       "Hitzebelastung auf dem Schulhof untersuchen"
-    ]
-  },
-  {
-    "objectID": "03-KlimaCheck-Schulhof/lehrerin_handreichung-klimacheck.html",
-    "href": "03-KlimaCheck-Schulhof/lehrerin_handreichung-klimacheck.html",
-    "title": "Interaktives Schulhofklima-Modell",
-    "section": "",
-    "text": "KlimaCheck-Schulhof ist ein vereinfachtes, physikalisch basiertes Vergleichsmodell für das Klima auf einem Schulhof. Es zeigt, wie sich Flächen, Gebäude, Bäume, Schatten und Begrünung auf Wärme, Abkühlung und Hitzelast auswirken.\nDas Modell ist kein exaktes Vorhersagemodell. Es dient dazu, Unterschiede sichtbar zu machen: zum Beispiel zwischen Asphalt und Rasen, zwischen offenen und verschatteten Bereichen oder zwischen einem normalen Gebäude und einem begrünten Gebäude.\n Modell in eigenem Tab öffnen",
-    "crumbs": [
-      "Ilias",
-      "03 KlimaCheck Schulhof",
-      "Interaktives Schulhofklima-Modell"
-    ]
-  },
-  {
-    "objectID": "03-KlimaCheck-Schulhof/lehrerin_handreichung-klimacheck.html#interaktives-modell",
-    "href": "03-KlimaCheck-Schulhof/lehrerin_handreichung-klimacheck.html#interaktives-modell",
-    "title": "Interaktives Schulhofklima-Modell",
-    "section": "",
-    "text": "KlimaCheck-Schulhof ist ein vereinfachtes, physikalisch basiertes Vergleichsmodell für das Klima auf einem Schulhof. Es zeigt, wie sich Flächen, Gebäude, Bäume, Schatten und Begrünung auf Wärme, Abkühlung und Hitzelast auswirken.\nDas Modell ist kein exaktes Vorhersagemodell. Es dient dazu, Unterschiede sichtbar zu machen: zum Beispiel zwischen Asphalt und Rasen, zwischen offenen und verschatteten Bereichen oder zwischen einem normalen Gebäude und einem begrünten Gebäude.\n Modell in eigenem Tab öffnen",
-    "crumbs": [
-      "Ilias",
-      "03 KlimaCheck Schulhof",
-      "Interaktives Schulhofklima-Modell"
-    ]
-  },
-  {
-    "objectID": "03-KlimaCheck-Schulhof/lehrerin_handreichung-klimacheck.html#arbeiten-mit-dem-modell",
-    "href": "03-KlimaCheck-Schulhof/lehrerin_handreichung-klimacheck.html#arbeiten-mit-dem-modell",
-    "title": "Interaktives Schulhofklima-Modell",
-    "section": "Arbeiten mit dem Modell",
-    "text": "Arbeiten mit dem Modell\nFür einen einfachen Vorher/Nachher-Vergleich wird zuerst der Ausgangszustand vollständig simuliert. Danach wird mit Massnahme aktivieren der Vergleichszustand vorbereitet. Anschließend kann eine Maßnahme gesetzt werden, zum Beispiel Rasen, Bäume, Hecken oder Gebäudebegrünung. Nach dem zweiten Tageslauf zeigt die Ansicht Hitzelast Änderung, wo sich die Belastung verbessert oder verschlechtert hat.\nMit Gebiet-auswählen kann zusätzlich eine konkrete Aufenthaltsfläche markiert werden. Der Button Auswahlgebiet vergleichen wertet dann nur diese Fläche aus.",
-    "crumbs": [
-      "Ilias",
-      "03 KlimaCheck Schulhof",
-      "Interaktives Schulhofklima-Modell"
     ]
   },
   {
