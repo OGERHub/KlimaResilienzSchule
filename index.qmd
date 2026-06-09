@@ -1,6 +1,7 @@
 ---
 title: "KlimaResilienzSchule"
 description: "Materialien zur klimaresilienten Schule, Stadtklima, Satellitendaten und Schulhofmodellierung."
+image: "https://ogerhub.github.io/KlimaResilienzSchule/images/polaroidheader-og.jpg"
 
 
 open-graph:
