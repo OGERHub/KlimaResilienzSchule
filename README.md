@@ -40,6 +40,5 @@ Version 1.0
 
 ## Lizenz
 
-© 2026 Rieke Ammoneit, Chris Reudenbach
-
+© 2026 Rieke Ammoneit
 Dieses Material steht unter der Lizenz **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Es darf geteilt und bearbeitet werden, solange die Urheber*innen genannt werden.
