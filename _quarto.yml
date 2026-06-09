@@ -15,7 +15,7 @@ website:
   page-navigation: true
   bread-crumbs: false
   open-graph: true
-  image: images/banner.png
+  image: images/polaroidheader.png
   page-footer:
     center: |
       Geographiedidaktik - Schwerpunkt Physische Geographie (<span class="year"></span>) —
