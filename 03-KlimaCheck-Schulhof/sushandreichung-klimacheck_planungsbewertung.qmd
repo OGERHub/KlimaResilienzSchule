@@ -1,0 +1,157 @@
+---
+title: "Hitzebelastung auf dem Schulhof untersuchen"
+subtitle: "Städtische Planung im Modell bewerten"
+author: "Rieke Ammoneit"
+date: "2026-04-28"
+order: 30
+title-block-banner: ../images/netlogo-sp.png
+title-block-banner-color: black
+#page-layout: full
+format-links: [html, pdf, docx]
+format:
+  html:
+    toc: false
+    code-fold: false
+    number-sections: false
+  pdf:
+    pdf-engine: lualatex
+  docx: default     
+---
+
+
+# Die Modellsimulation – Schulhofplanung bewerten
+
+::: question-box
+**Teamname:**
+:::
+
+::: {.callout-tip appearance="minimal"}
+
+Ihr untersucht mit dem Modell, wo es auf dem Schulhof während der Schulzeit besonders heiß wird.
+
+Wichtig sind die freien Flächen: Wege, Rasen, Sand, Sportfeld, Pflaster und Asphalt. Gebäude bewertet ihr nicht.
+
+Am Ende entscheidet ihr: Ist die geplante Umgestaltung sinnvoll?
+
+:::
+
+
+![Abbildung 1: Visualisierung des Modell-Schulhofs](../images/model-3d_neu.png)
+
+# Erst beobachten – dann bewerten
+
+## 1. Wo entstehen Hitzestellen?
+
+Startet das Modell mit `Modellstart / Reset`.
+
+Drückt danach `Tageslauf berechnen`.
+
+Schaut euch diese Karten an:
+
+* **Hitzelast aktuell**
+* **Hitzelast Schulzeit**
+
+Sucht zuerst die heißesten Stellen auf dem Schulhof. Achtet dabei nur auf Flächen außerhalb der Gebäude, also zum Beispiel Wege, Rasen, Sand, Sportflächen, Pflaster und Asphalt. Entscheidend ist nicht nur, wo es heiß wird, sondern ob diese Stellen während der Schulzeit für Schüler*innen wichtig sind.
+
+**Markiert oder merkt euch:**
+
+* Wo sind die stärksten Hotspots?
+* Liegen diese Hotspots auf Flächen, die in der Schulzeit genutzt werden?
+* Welche Oberflächen liegen dort: Asphalt, Pflaster, Rasen, Sand oder Bäume?
+
+![Modell-Karte](../images/model-karte.png)
+
+**Unsere Beobachtung:**
+
+::: answer-box-medium
+**Hotspot 1:**
+:::
+
+::: answer-box-medium
+**Hotspot 2:**
+:::
+
+## 2. Was verändert die geplante Umgestaltung?
+
+Die Stadt möchte den Schulhof verändern: Es sollen neue Sportflächen entstehen. Im Modell prüft ihr, ob diese Planung die Hitzebelastung während der Schulzeit verbessert oder verschlechtert.
+
+Drückt `Städtische Planung aktivieren`.
+
+Das Modell setzt automatisch:
+
+* ein Sportfeld im südwestlichen Bereich,
+* zwei Sandflächen für Beachvolleyball im nördlicheren Bereich.
+
+Drückt danach wieder `Tageslauf berechnen`.
+
+Schaltet auf die Karte:
+
+* **Hitzelast Änderung**
+
+**Beschreibt kurz:**
+
+::: answer-box
+Wo wird die Hitzelast größer? Wo wird sie kleiner?
+:::
+
+## 3. Ist die Planung sinnvoll?
+
+Entscheidet euch für eine Position:
+
+* Die Planung ist sinnvoll.
+* Die Planung ist problematisch.
+* Die Planung ist nur mit Änderungen sinnvoll.
+
+**Unsere Entscheidung:**
+
+::: answer-box-medium
+Wir entscheiden uns für:
+:::
+
+**Unsere Begründung aus dem Modell:**
+
+::: answer-box
+Welche Hotspots und welche Schulzeit-Flächen sind für eure Entscheidung wichtig?
+:::
+
+# Kurzanleitung
+
+1. `Modellstart / Reset`
+2. `Tageslauf berechnen`
+3. **Hitzelast aktuell** ansehen
+4. **Hitzelast Schulzeit** ansehen
+5. Hotspots außerhalb der Gebäude finden
+6. `Städtische Planung aktivieren`
+7. Wieder `Tageslauf berechnen`
+8. **Hitzelast Änderung** ansehen
+9. Planung bewerten
+
+::: {.callout-important appearance="minimal"}
+In dieser Runde verändert ihr den Schulhof noch nicht selbst. Ihr prüft zuerst nur die geplante Umgestaltung.
+:::
+
+# Weiterdenken: Kann die Planung besser werden?
+
+Wenn ihr fertig seid, könnt ihr eine eigene bessere Variante testen.
+
+Mögliche Ideen:
+
+* mehr Schatten an heißen Stellen,
+* Bäume ersetzen, die verloren gehen,
+* Sand- oder Sportflächen verschieben,
+* Pflaster oder Asphalt durch kühlere Flächen ersetzen,
+* Rasen, Hecken oder Bäume ergänzen.
+
+Nutzt dafür die Bearbeitungswerkzeuge im Modell.
+
+**Unsere bessere Variante:**
+
+::: answer-box
+Was habt ihr verändert?
+:::
+
+**Warum ist diese Variante besser?**
+
+::: answer-box
+Welche Hitzestellen werden dadurch kleiner?
+:::
