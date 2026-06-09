@@ -19,21 +19,25 @@ format:
 ---
 
 
+
 # Die Modellsimulation – Schulhofplanung bewerten
+
+Im dieser Aufgabe prüft ihr die Planung der Stadt: Auf dem Schulhof sollen neue Sportflächen entstehen. Eure Aufgabe ist es, klimatologisch zu bewerten, ob diese Planung während der Schulzeit zu mehr oder weniger Hitzebelastung auf den freien Flächen führt.
 
 ::: question-box
 **Teamname:**
-:::
 
 ::: {.callout-tip appearance="minimal"}
 
-Ihr untersucht mit dem Modell, wo es auf dem Schulhof während der Schulzeit besonders heiß wird.
+Auf dem Schulhof wird es nicht überall gleich heiß. Ihr sucht im Modell die heißesten Stellen auf den freien Flächen: Wege, Rasen, Sand, Sportfeld, Pflaster und Asphalt.
 
-Wichtig sind die freien Flächen: Wege, Rasen, Sand, Sportfeld, Pflaster und Asphalt. Gebäude bewertet ihr nicht.
+Wichtig ist die Schulzeit: Welche heißen Flächen liegen dort, wo sich Schüler*innen aufhalten können?
 
-Am Ende entscheidet ihr: Ist die geplante Umgestaltung sinnvoll?
+Danach aktiviert ihr die geplante Umgestaltung und prüft, ob die Hitzebelastung besser oder schlechter wird. Am Ende entscheidet ihr: Soll die Planung so umgesetzt werden?
 
 :::
+:::
+
 
 
 ![Abbildung 1: Visualisierung des Modell-Schulhofs](../images/model-3d_neu.png)
