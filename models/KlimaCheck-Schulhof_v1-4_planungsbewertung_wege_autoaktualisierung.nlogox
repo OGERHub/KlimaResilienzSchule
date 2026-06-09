@@ -5920,7 +5920,6 @@ Versuch bearbeiten</note>
     <button x="523" y="25" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Modellstart / Reset">reset-demo-szenario</button>
     <button x="715" y="25" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Städtische Planung aktivieren">staedtische-planung-aktivieren</button>
     <button x="525" y="65" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Tageslauf berechnen">tageslauf-berechnen-schueler</button>
-    <button x="715" y="65" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Auswahlgebiet vergleichen">auswahl-vergleichen</button>
     <chooser x="715" y="155" height="60" variable="Kartenansicht" current="0" width="187" display="Kartenansicht">
       <choice type="string" value="Materialien &amp; Elemente"></choice>
       <choice type="string" value="Schatten aktuell"></choice>
@@ -5936,10 +5935,11 @@ Versuch bearbeiten</note>
     <button x="525" y="175" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="180" display="Legende an/aus">toggle-legende</button>
     <input x="525" multiline="false" y="220" height="65" variable="Versuchsname" type="string" width="180">Standard</input>
     <button x="715" y="245" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="180" display="Versuch speichern">szenario-speichern</button>
-    <note x="720" y="415" backgroundDark="0" fontSize="10" width="186" markdown="true" height="32" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
+    <note x="715" y="392" backgroundDark="0" fontSize="10" width="186" markdown="true" height="32" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
 Versuche vergleichen</note>
-    <button x="720" y="485" height="42" disableUntilTicks="false" forever="true" kind="Observer" width="185" display="Freien Versuch starten">erweiterungslauf-starten</button>
-    <button x="720" y="443" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Maßnahme aktivieren">massnahme-aktivieren</button>
+    <button x="715" y="420" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Maßnahme aktivieren">massnahme-aktivieren</button>
+    <button x="715" y="460" height="35" disableUntilTicks="false" forever="true" kind="Observer" width="185" display="Freien Versuch starten">erweiterungslauf-starten</button>
+    <button x="715" y="500" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Auswahlgebiet vergleichen">auswahl-vergleichen</button>
   </widgets>
   <info><![CDATA[# Schulhof KlimaLab
 
