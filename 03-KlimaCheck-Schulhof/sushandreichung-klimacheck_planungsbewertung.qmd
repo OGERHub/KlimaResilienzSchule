@@ -24,10 +24,10 @@ format:
 
 Im dieser Aufgabe prüft ihr die Planung der Stadt: Auf dem Schulhof sollen neue Sportflächen entstehen. Eure Aufgabe ist es, klimatologisch zu bewerten, ob diese Planung während der Schulzeit zu mehr oder weniger Hitzebelastung auf den freien Flächen führt.
 
-
 ::: question-box
-**Teamname:**
+**Teamname**
 :::
+
 
 
 
