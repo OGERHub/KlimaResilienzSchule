@@ -15,7 +15,7 @@ format:
     number-sections: false
 
 resources:
-  - "../models/KlimaCheck-Schulhof_v1-0-web.html"
+  - "../models/KlimaCheck-Schulhof_v1-1-web.html"
 ---
 
 <style>
