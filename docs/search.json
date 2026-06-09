@@ -1,7 +1,7 @@
 [
   {
-    "objectID": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html",
-    "href": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html",
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html",
     "title": "Technische Dokumentation",
     "section": "",
     "text": "Diese Seite dokumentiert die lokale Materialproduktion für das Köln-Demo-Paket. Sie richtet sich an Personen, die die Datenprodukte, das QGIS-Projekt und die Drucklayouts neu erzeugen, prüfen oder für einen anderen Ausschnitt anpassen wollen.\nDer Workflow erzeugt aus einem Untersuchungsgebiet, einem Zeitraum und einer DOP-CIR-basierten Oberflächenmaske ein QGIS-Projekt mit passgenauen Drucklayouts. Die Skripte erzeugen das Material. Im Unterricht liegen anschließend fertige Karten, Folien und Beobachtungsaufgaben vor.\n\n\n\nDas Datenpaket entsteht aus AOI, Zeitraum und Extremmodus.",
@@ -12,8 +12,8 @@
     ]
   },
   {
-    "objectID": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html#qgis-wird-nicht-gefunden",
-    "href": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html#qgis-wird-nicht-gefunden",
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#qgis-wird-nicht-gefunden",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#qgis-wird-nicht-gefunden",
     "title": "Technische Dokumentation",
     "section": "QGIS wird nicht gefunden",
     "text": "QGIS wird nicht gefunden\nWenn der R-Workflow am Ende bei run_create_qgis_project.bat abbricht, ist meist QGIS_BIN nicht korrekt gesetzt. Dann zuerst prüfen, wo QGIS installiert ist. Typische Pfade sind:\nC:\\Program Files\\QGIS 3.34.4\\bin\\qgis-bin.exe\nC:\\OSGeo4W\\bin\\qgis-ltr-bin.exe\nDer Pfad wird vor dem Start gesetzt:\nset QGIS_BIN=C:\\Program Files\\QGIS 3.34.4\\bin\\qgis-bin.exe\nRscript scripts\\00_run_lst_oberflaechenmaske_dop_cir.R",
@@ -24,8 +24,8 @@
     ]
   },
   {
-    "objectID": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html#pyqgis-importfehler",
-    "href": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html#pyqgis-importfehler",
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#pyqgis-importfehler",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#pyqgis-importfehler",
     "title": "Technische Dokumentation",
     "section": "PyQGIS-Importfehler",
     "text": "PyQGIS-Importfehler\nEin Fehler wie ModuleNotFoundError: No module named 'qgis' bedeutet: Das Skript wurde mit normalem Python gestartet oder QGIS hat eine falsche Python-Umgebung geerbt. Der Aufruf muss über die BAT-Datei laufen:\nscripts\\run_create_qgis_project.bat\nNicht über:\npython scripts\\create_qgis_project.py\nDie BAT-Datei leert PYTHONHOME, PYTHONPATH, VIRTUAL_ENV, RETICULATE_PYTHON und RETICULATE_PYTHON_FALLBACK, damit QGIS seine eigene Python-Umgebung nutzt.",
@@ -36,8 +36,8 @@
     ]
   },
   {
-    "objectID": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html#file__-ist-nicht-definiert",
-    "href": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html#file__-ist-nicht-definiert",
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#file__-ist-nicht-definiert",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#file__-ist-nicht-definiert",
     "title": "Technische Dokumentation",
     "section": "__file__ ist nicht definiert",
     "text": "__file__ ist nicht definiert\nQGIS --code setzt kein __file__. Die BAT-Datei setzt deshalb:\nQGIS_SCRIPT_DIR\nPROJECT_ROOT\nund das Python-Skript liest genau diese Variablen. Path(__file__) darf in diesem Skript nicht verwendet werden.",
@@ -48,8 +48,8 @@
     ]
   },
   {
-    "objectID": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html#r-pakete-fehlen",
-    "href": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html#r-pakete-fehlen",
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#r-pakete-fehlen",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#r-pakete-fehlen",
     "title": "Technische Dokumentation",
     "section": "R-Pakete fehlen",
     "text": "R-Pakete fehlen\nDer R-Workflow benötigt unter anderem:\nsf\nterra\nrstac\ndplyr\npurrr\ntibble\nreadr\njsonlite\npng\nhere\nFehlende Pakete werden installiert oder müssen manuell installiert werden:\ninstall.packages(c(\n  \"sf\", \"terra\", \"rstac\", \"dplyr\", \"purrr\",\n  \"tibble\", \"readr\", \"jsonlite\", \"png\", \"here\"\n))\nBei Paketinstallationen aus Quellcode wird Rtools passend zur R-Version benötigt. CRAN-Binaries vermeiden diesen Schritt meist.",
@@ -60,8 +60,8 @@
     ]
   },
   {
-    "objectID": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html#keine-oder-leere-printprodukte",
-    "href": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html#keine-oder-leere-printprodukte",
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#keine-oder-leere-printprodukte",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#keine-oder-leere-printprodukte",
     "title": "Technische Dokumentation",
     "section": "Keine oder leere Printprodukte",
     "text": "Keine oder leere Printprodukte\nZuerst die Eingabedateien prüfen:\ndata/landsat_lst/koeln/05_teaching_layers/projected_lst/koeln_LST_hot_q90_C_EPSG25832.tif\ndata/landsat_lst/koeln/05_teaching_layers/dop_cir_surface_mask/koeln_dop_cir_30m_3klassen.gpkg\nDanach prüfen, ob die Exporte geschrieben wurden:\ndata/landsat_lst/koeln/06_qgis_project/print_exports/\nEin erzeugtes QGIS-Projekt ohne PDFs verweist auf den PyQGIS-Layoutteil als Fehlerort.",
@@ -72,8 +72,8 @@
     ]
   },
   {
-    "objectID": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html#ausdrucke-passen-nicht-exakt-übereinander",
-    "href": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_technisch.html#ausdrucke-passen-nicht-exakt-übereinander",
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#ausdrucke-passen-nicht-exakt-übereinander",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#ausdrucke-passen-nicht-exakt-übereinander",
     "title": "Technische Dokumentation",
     "section": "Ausdrucke passen nicht exakt übereinander",
     "text": "Ausdrucke passen nicht exakt übereinander\nSeitenskalierung zerstört die Passgenauigkeit. Alle Ausdrucke müssen mit 100 % beziehungsweise tatsächliche Größe gedruckt werden.",
@@ -84,15 +84,111 @@
     ]
   },
   {
-    "objectID": "04-summer-in-the-city/konfigurator_lst_paket.html",
-    "href": "04-summer-in-the-city/konfigurator_lst_paket.html",
-    "title": "LST-Datenpaket konfigurieren",
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html",
+    "title": "Warum sind manche Stadtflächen heißer?",
     "section": "",
-    "text": "Zweck dieser Seite\nDer Konfigurator ist ein Hilfswerkzeug für Lehrkräfte, die ein eigenes LST-Materialpaket erzeugen möchten. Er berechnet keine Karten im Browser. Er erzeugt nur eine saubere Konfiguration für den lokalen R-Workflow.\nFür den direkten Unterrichtseinsatz ist diese Seite nicht notwendig. Dafür reicht das vorbereitete Köln-Demo-Paket. Der Konfigurator ist sinnvoll, wenn ein anderer Ausschnitt, ein anderer Zeitraum oder ein eigenes AOI getestet werden soll.\nDie aktuelle Version ist auf den reduzierten Unterrichtsworkflow ausgerichtet: Hot-LST q90, DOP-RGB, DOP-CIR-Oberflächenmaske und vier passgenaue QGIS-Printlayouts. Cold-Produkte und OSM-Zusatzlayer werden hier nicht mehr als Standardoption geführt.\n\n\n\nDer Konfigurator übersetzt didaktische Entscheidungen in Skriptparameter.\n\n\n\n\nWas wird konfiguriert?\nDer Konfigurator beschreibt vier Entscheidungen:\n\nWelcher Raum wird analysiert?\nAus welchem Zeitraum werden Landsat-Szenen gesucht?\nNach welcher heißen Temperaturtendenz werden Szenen ausgewählt?\nSoll danach automatisch ein QGIS-Projekt mit Printlayouts erzeugt werden?\n\n\n\n\nDas Datenpaket entsteht aus AOI, Zeitraum und Extremmodus.\n\n\nDie technische Umsetzung bleibt lokal. Der Browser erzeugt nur JSON oder einen R-Konfigurationsblock. Die eigentliche Verarbeitung läuft über:\nRscript scripts/00_run_lst_oberflaechenmaske_dop_cir.R\nAm Ende kann dieses Skript den QGIS-Launcher starten:\nscripts/run_create_qgis_project.sh\nscripts/run_create_qgis_project.bat\n\n\nKonfigurator\n\n\n\n  Empfehlung für den ersten eigenen Lauf: kleine AOI, Sommermonate Juni–August, Hot-Modus q90, DOP-CIR-Maske aktiv, QGIS-Projekt automatisch erzeugen.\n\n\n\n  Aktueller Unterrichtsstandard: Es werden drei Oberflächenklassen verwendet: Vegetation, Wasser und Versiegelung / Bebauung. Die QGIS-Ausgabe nutzt nur das Hot-q90-Produkt.\n\n\n\n  \n    1. Untersuchungsraum\n    Der AOI bestimmt, für welchen Raum LST-Produkte, DOP-CIR-Maske und QGIS-Layouts erzeugt werden.\n\n    AOI-Name\n    \n\n    AOI-Modus\n    \n      Köln Stadtbezirke\n      Bounding Box\n      eigene Datei im Skript setzen\n    \n\n    \n      Bounding Box xmin\n      Bounding Box ymin\n      Bounding Box xmax\n      Bounding Box ymax\n    \n  \n\n  \n    2. Zeitraum und Szenenfilter\n    Für Stadtwärme sind Sommermonate am sinnvollsten. Der aktuelle Köln-Demo-Workflow nutzt Juni bis August.\n\n    Startdatum\n    \n\n    Enddatum\n    \n\n    Monate\n    \n      Sommer Juni–August\n      Sommerhalbjahr April–September\n      Ganzes Jahr\n    \n\n    max. Szenen-Wolkenanteil [%]\n    \n  \n\n  \n    3. Hot-LST-Produkt\n    Der aktuelle Unterrichtsworkflow nutzt nur den Hot-Modus. Szenen werden nach hoher q90-Temperatur ausgewählt.\n\n    Extremmodus\n    \n      hot / heiße Szenen\n    \n\n    Hot-Metrik\n    \n      q90_C / obere Temperaturtendenz\n    \n\n    Anzahl heißer Szenen\n    \n\n    Mindestzahl gültiger Pixel\n    \n  \n\n  \n    4. DOP-CIR-Maske und QGIS-Ausgabe\n    Die DOP-CIR-Maske erzeugt drei didaktische Oberflächenklassen. Danach kann automatisch das QGIS-Projekt mit Printlayouts erstellt werden.\n\n    DOP-CIR-Maske erzeugen\n    \n      ja\n    \n\n    DOP-CIR-Zielauflösung [m]\n    \n\n    QGIS-Projekt und Printlayouts erzeugen\n    \n      ja\n      nein\n    \n\n    LST-Deckkraft im QGIS-Projekt\n    \n  \n\n\n\n  JSON erzeugen\n  R-Block erzeugen\n  run_config.json herunterladen\n\n\n\n\n\n\n\nNutzung\nDer erzeugte R-Block kann in den Konfigurationsteil von scripts/00_run_lst_oberflaechenmaske_dop_cir.R übernommen werden. Alternativ kann die JSON-Ausgabe als Dokumentation der gewählten Parameter gespeichert werden.\nDer Browser erzeugt keine LST-Karte und keine Maske. Die Verarbeitung läuft lokal. Für die Köln-Demo ist der zentrale Start:\nRscript scripts/00_run_lst_oberflaechenmaske_dop_cir.R\nWenn run_external_qgis_project &lt;- TRUE gesetzt ist, startet der R-Runner anschließend den passenden QGIS-Launcher und erzeugt das QGIS-Projekt mit vier Printlayouts.\n\n\nWas der aktuelle Workflow erzeugt\n\n\n\nTechnischer Datenfluss vom AOI zur QGIS-Projektdatei.\n\n\nDer konfigurierte Workflow erzeugt:\nAOI\n→ Landsat-LST-Szenen\n→ Auswahl heißer Szenen nach q90_C\n→ Hot-q90-Komposit\n→ DOP-CIR-Oberflächenmaske mit drei Klassen\n→ QGIS-Projekt\n→ vier passgleiche Drucklayouts\nDie didaktische Reduktion bleibt in allen Ausgaben gleich:\nVegetation\nWasser\nVersiegelung / Bebauung\n\n\n\nDie drei Unterrichtsklassen bündeln reale Oberflächen: versiegelte und bebaute Flächen, Vegetation und Wasser.\n\n\n\n\nHinweise zur Anpassung\nFür eigene Räume sollte zuerst mit einer kleinen AOI getestet werden. Große Stadtgebiete erhöhen Downloadzeit, WMS-Last, Rastergröße und QGIS-Exportzeit. Der DOP-CIR-WMS wird für die Maske auf ein Zielraster geladen. Im Standard sind das 30 m, weil die Maske didaktisch zur Landsat-LST-Ebene passen soll.\nDas QGIS-Projekt nutzt in der aktuellen Fassung nur noch:\nkoeln_LST_hot_q90_C_EPSG25832.tif\nkoeln_dop_cir_30m_3klassen.gpkg\nDOP RGB WMS\nKartenrahmen-Layer\nDie übrigen LST-Produkte können weiterhin als Zwischenprodukte entstehen, werden aber nicht in das reduzierte Unterrichtsprojekt geladen.\n\n\nTechnische Grenzen\nDer Konfigurator ersetzt keine Plausibilitätsprüfung. Nach jedem neuen Lauf sollten diese Punkte kontrolliert werden:\n\nGibt es genügend gültige Landsat-Pixel?\nIst die AOI nicht zu groß?\nWurde das DOP-CIR-WMS vollständig geladen?\nSind Wasser und Vegetation in der Maske plausibel?\nStimmen Kartenrahmen und Ausdrucke im QGIS-Layout überein?\nWurde beim Drucken 100 % / tatsächliche Größe verwendet?\n\nWenn das DOP in der QGIS-Layoutvorschau grob erscheint, ist zuerst der PDF-Export zu prüfen. Die Vorschau kann WMS-Layer gröber darstellen als der finale Export. Wenn auch der PDF grob ist, sollte für den festen Kartenausschnitt ein lokales, hochaufgelöstes DOP-Raster verwendet werden.\n\n\nGit-Hinweis\nDie erzeugten Daten gehören nicht ins Repository. In .gitignore sollten mindestens diese Einträge stehen:\n/data/\n/.venv-folienvorlage/\nDas Repository sollte Skripte, Quarto-Seiten und Abbildungen enthalten, nicht Landsat-Szenen, DOP-Downloads, GeoPackages, QGIS-Projektdateien oder Print-PDFs.",
+    "text": "Teamname\n\n\n\n\n\n\n\nWir wissen: Städte bestehen aus sehr unterschiedlichen Oberflächen. Es gibt Asphalt, Dächer, Beton, Wiesen, Bäume, Wasser, offene Plätze und dicht bebaute Bereiche. Diese Oberflächen erwärmen sich an heißen Sommertagen unterschiedlich stark.\nEine Satellitenkarte kann diese Unterschiede sichtbar machen. Sie zeigt die Oberflächentemperatur. Gemeint ist die Temperatur der Dinge, die der Satellit von oben sieht: Straßen, Dächer, Plätze, Wasserflächen, Wiesen oder Baumkronen. Die Lufttemperatur in 2 m Höhe ist eine andere Messgröße.\nIn dieser Aufgabe überprüft ihr deshalb selbst: Welche Stadtflächen erscheinen in der Satellitenkarte heißer oder kühler? Und welche Erklärung passt dazu?\n\n\n\n\n\n\nDie LST-Karte zeigt die Temperatur der Oberfläche. Die Lufttemperatur in 2 m Höhe ist eine andere Messgröße.",
     "crumbs": [
       "Ilias",
       "04 Summer in the City",
-      "LST-Datenpaket konfigurieren"
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-1-luftbild-untersuchen",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-1-luftbild-untersuchen",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Teil 1: Luftbild untersuchen",
+    "text": "Teil 1: Luftbild untersuchen\nIhr bekommt ein Luftbild und eine transparente Folie. Legt die Folie zuerst auf das Luftbild.\nMarkiert mindestens fünf größere Flächen, die gut unterscheidbare Oberflächen zeigen. Geeignet sind zum Beispiel Straßen, Parkplätze, Dächer, Wiesen, Parks, Wasserflächen, Innenhöfe oder gemischte Stadtflächen.\nNutzt einfache Kürzel:\n\n\n\nKürzel\nOberfläche\n\n\n\n\nS\nStraße, Parkplatz, versiegelter Platz\n\n\nD\ngroßes Dach oder Gebäudefläche\n\n\nG\nWiese, Park, Baumfläche\n\n\nW\nWasserfläche\n\n\nM\nMischfläche, zum Beispiel Blockrand, Innenhof oder Bahnanlage\n\n\n\nWelche Oberflächen habt ihr markiert?\n\nAntwort:",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-2-oberflächentemperatur-prüfen",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-2-oberflächentemperatur-prüfen",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Teil 2: Oberflächentemperatur prüfen",
+    "text": "Teil 2: Oberflächentemperatur prüfen\nLegt dieselbe Folie nun auf die LST-Karte. LST bedeutet Land Surface Temperature, also Oberflächentemperatur.\nPrüft für jede markierte Fläche: erscheint sie eher heiß, mittel oder kühl?\n\n\n\nIhr arbeitet zuerst mit dem Luftbild und danach mit der LST-Karte.\n\n\nWelche Vermutung passt nach dem ersten Vergleich besser? Kreuzt an!\n\n☐ Vermutung 1: Versiegelte und bebaute Flächen erscheinen häufiger warm.\n☐ Vermutung 0: Die Unterschiede wirken zufällig.\n☐ unklar",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-3-ergebnisse-sichern",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-3-ergebnisse-sichern",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Teil 3: Ergebnisse sichern",
+    "text": "Teil 3: Ergebnisse sichern\nFüllt die Tabelle aus. Die Erklärung ist wichtiger als das genaue einzelne Pixel.\n\n\n\nNr.\nmarkierte Fläche\nOberfläche\nLST-Tendenz\nkurze Erklärung\n\n\n\n\n1\n\n\nheiß / mittel / kühl\n\n\n\n2\n\n\nheiß / mittel / kühl\n\n\n\n3\n\n\nheiß / mittel / kühl\n\n\n\n4\n\n\nheiß / mittel / kühl\n\n\n\n5\n\n\nheiß / mittel / kühl",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-4-erklärung-entwickeln",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-4-erklärung-entwickeln",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Teil 4: Erklärung entwickeln",
+    "text": "Teil 4: Erklärung entwickeln\nEine gute Erklärung verbindet drei Dinge: Was ist im Luftbild zu sehen? Wie erscheint die Fläche auf der LST-Karte? Welcher Prozess könnte die Temperatur erklären?\n\n\n\nEine gute Erklärung verbindet Beobachtung, Zuordnung, Vergleich und Prozess.\n\n\nNutzt diese Begriffe, wenn sie zu euren Flächen passen:\n\n\n\nBegriff\nBedeutung für die Karte\n\n\n\n\nVersiegelung\nwenig Verdunstung, oft starke Erwärmung\n\n\nWärmespeicherung\nMaterial nimmt Wärme auf und gibt sie langsam ab\n\n\nVerdunstung\nentzieht der Oberfläche Wärme\n\n\nSchatten\nverringert direkte Erwärmung\n\n\nVegetation\nkühlt oft durch Schatten und Verdunstung\n\n\nWasser\nerwärmt sich anders als feste Stadtoberflächen\n\n\nBebauungsdichte\nviele warme Oberflächen liegen dicht nebeneinander\n\n\n\nWelche Erklärung passt zu eurer deutlichsten warmen Fläche?\n\nAntwort:\n\nWelche Erklärung passt zu eurer deutlichsten kühlen Fläche?\n\nAntwort:",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-5-grenzen-der-karte-prüfen",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-5-grenzen-der-karte-prüfen",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Teil 5: Grenzen der Karte prüfen",
+    "text": "Teil 5: Grenzen der Karte prüfen\nDie LST-Karte zeigt Oberflächentemperaturen. Dadurch erkennt man räumliche Muster sehr gut. Für die Bewertung von Aufenthaltsqualität braucht man zusätzlich weitere Informationen, zum Beispiel Schatten, Wind, Lufttemperatur, Nutzung und Tageszeit.\nWelche Aussage könnt ihr mit eurer Karte gut begründen?\n\nAntwort:\n\nWelche Aussage wäre mit dieser Karte allein zu unsicher?\n\nAntwort:",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#schlussfolgerung",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#schlussfolgerung",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Schlussfolgerung",
+    "text": "Schlussfolgerung\nUnsere Antwort auf die Fragestellung lautet:\nWir entscheiden uns für:\n\n☐ Vermutung 1: Versiegelte und bebaute Flächen erscheinen häufiger warm.\n☐ Vermutung 0: Die Unterschiede wirken zufällig.\n☐ Unklar\n\n\nBegründung:",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#merksatz",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#merksatz",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Merksatz",
+    "text": "Merksatz\n\nDie LST-Karte zeigt, wie unterschiedlich sich Stadtoberflächen erwärmen. Dadurch wird sichtbar, dass Wärme in der Stadt mit Oberflächen, Materialien, Vegetation, Wasser und Stadtstruktur zusammenhängt.",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#material",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#material",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Material",
+    "text": "Material\n\nMaterial 1\nLuftbild des Untersuchungsraums\n\n\nMaterial 2\nLST-Karte des gleichen Ausschnitts\n\n\nMaterial 3\nTransparente Folie und Stift zur Markierung der Vergleichsflächen",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
     ]
   },
   {
@@ -132,8 +228,8 @@
     ]
   },
   {
-    "objectID": "01-Treibhaus-to-Go/sushandreichung_co2_lab.html",
-    "href": "01-Treibhaus-to-Go/sushandreichung_co2_lab.html",
+    "objectID": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html",
+    "href": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html",
     "title": "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche",
     "section": "",
     "text": "Teamname:",
@@ -144,8 +240,8 @@
     ]
   },
   {
-    "objectID": "01-Treibhaus-to-Go/sushandreichung_co2_lab.html#aufgabe-a-experiment-planen",
-    "href": "01-Treibhaus-to-Go/sushandreichung_co2_lab.html#aufgabe-a-experiment-planen",
+    "objectID": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html#aufgabe-a-experiment-planen",
+    "href": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html#aufgabe-a-experiment-planen",
     "title": "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche",
     "section": "Aufgabe A – Experiment planen",
     "text": "Aufgabe A – Experiment planen\n\n1. Aufbau planen\nWie müssen die beiden Flaschen vorbereitet werden, damit man sie vergleichen kann?\n\nVersuchsaufbau-Zeichnung/Beschreibung\n\n\n\n2. Durchführung planen\nWer macht was? Wann wird gemessen? Wie lange läuft das Experiment? Erstellt eine geeignete Tabelle.\n\nDurchführungsplan und Tabelle\n\n\n\n\n\n\n\nDas Experiment muss mindestens 15 Minuten lang durchgeführt werden\n\n\n\n\n\nMaterial\n\nzwei gleich große, durchsichtige Flaschen\nThermometer\nKnete zum Abdichten\nStoppuhr oder Timer (Tablet)\nWärmelampe\nEssig und Backpulver, damit kann CO₂ hergestellt werden\nMessprotokoll",
@@ -156,8 +252,8 @@
     ]
   },
   {
-    "objectID": "01-Treibhaus-to-Go/sushandreichung_co2_lab.html#aufgabe-b-experiment-durchführen",
-    "href": "01-Treibhaus-to-Go/sushandreichung_co2_lab.html#aufgabe-b-experiment-durchführen",
+    "objectID": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html#aufgabe-b-experiment-durchführen",
+    "href": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html#aufgabe-b-experiment-durchführen",
     "title": "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche",
     "section": "Aufgabe B – Experiment durchführen",
     "text": "Aufgabe B – Experiment durchführen\n\nStellt eure Ergebnisse übersichtlich dar (z. B. Tabelle oder Diagramm)\nBeschreibt, was ihr beobachtet habt\nEntscheidet: Welche Vermutung passt besser?\n\nStreicht die falsche Vermutung durch und macht ein Häkchen bei der richtigen.",
@@ -1163,8 +1259,20 @@
     ]
   },
   {
-    "objectID": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_inhaltlich.html",
-    "href": "04-summer-in-the-city/lehrerinhandreichung_lst_stadtklima_inhaltlich.html",
+    "objectID": "04-summer-in-the-city/konfigurator-lst-paket.html",
+    "href": "04-summer-in-the-city/konfigurator-lst-paket.html",
+    "title": "LST-Datenpaket konfigurieren",
+    "section": "",
+    "text": "Zweck dieser Seite\nDer Konfigurator ist ein Hilfswerkzeug für Lehrkräfte, die ein eigenes LST-Materialpaket erzeugen möchten. Er berechnet keine Karten im Browser. Er erzeugt nur eine saubere Konfiguration für den lokalen R-Workflow.\nFür den direkten Unterrichtseinsatz ist diese Seite nicht notwendig. Dafür reicht das vorbereitete Köln-Demo-Paket. Der Konfigurator ist sinnvoll, wenn ein anderer Ausschnitt, ein anderer Zeitraum oder ein eigenes AOI getestet werden soll.\nDie aktuelle Version ist auf den reduzierten Unterrichtsworkflow ausgerichtet: Hot-LST q90, DOP-RGB, DOP-CIR-Oberflächenmaske und vier passgenaue QGIS-Printlayouts. Cold-Produkte und OSM-Zusatzlayer werden hier nicht mehr als Standardoption geführt.\n\n\n\nDer Konfigurator übersetzt didaktische Entscheidungen in Skriptparameter.\n\n\n\n\nWas wird konfiguriert?\nDer Konfigurator beschreibt vier Entscheidungen:\n\nWelcher Raum wird analysiert?\nAus welchem Zeitraum werden Landsat-Szenen gesucht?\nNach welcher heißen Temperaturtendenz werden Szenen ausgewählt?\nSoll danach automatisch ein QGIS-Projekt mit Printlayouts erzeugt werden?\n\n\n\n\nDas Datenpaket entsteht aus AOI, Zeitraum und Extremmodus.\n\n\nDie technische Umsetzung bleibt lokal. Der Browser erzeugt nur JSON oder einen R-Konfigurationsblock. Die eigentliche Verarbeitung läuft über:\nRscript scripts/00_run_lst_oberflaechenmaske_dop_cir.R\nAm Ende kann dieses Skript den QGIS-Launcher starten:\nscripts/run_create_qgis_project.sh\nscripts/run_create_qgis_project.bat\n\n\nKonfigurator\n\n\n\n  Empfehlung für den ersten eigenen Lauf: kleine AOI, Sommermonate Juni–August, Hot-Modus q90, DOP-CIR-Maske aktiv, QGIS-Projekt automatisch erzeugen.\n\n\n\n  Aktueller Unterrichtsstandard: Es werden drei Oberflächenklassen verwendet: Vegetation, Wasser und Versiegelung / Bebauung. Die QGIS-Ausgabe nutzt nur das Hot-q90-Produkt.\n\n\n\n  \n    1. Untersuchungsraum\n    Der AOI bestimmt, für welchen Raum LST-Produkte, DOP-CIR-Maske und QGIS-Layouts erzeugt werden.\n\n    AOI-Name\n    \n\n    AOI-Modus\n    \n      Köln Stadtbezirke\n      Bounding Box\n      eigene Datei im Skript setzen\n    \n\n    \n      Bounding Box xmin\n      Bounding Box ymin\n      Bounding Box xmax\n      Bounding Box ymax\n    \n  \n\n  \n    2. Zeitraum und Szenenfilter\n    Für Stadtwärme sind Sommermonate am sinnvollsten. Der aktuelle Köln-Demo-Workflow nutzt Juni bis August.\n\n    Startdatum\n    \n\n    Enddatum\n    \n\n    Monate\n    \n      Sommer Juni–August\n      Sommerhalbjahr April–September\n      Ganzes Jahr\n    \n\n    max. Szenen-Wolkenanteil [%]\n    \n  \n\n  \n    3. Hot-LST-Produkt\n    Der aktuelle Unterrichtsworkflow nutzt nur den Hot-Modus. Szenen werden nach hoher q90-Temperatur ausgewählt.\n\n    Extremmodus\n    \n      hot / heiße Szenen\n    \n\n    Hot-Metrik\n    \n      q90_C / obere Temperaturtendenz\n    \n\n    Anzahl heißer Szenen\n    \n\n    Mindestzahl gültiger Pixel\n    \n  \n\n  \n    4. DOP-CIR-Maske und QGIS-Ausgabe\n    Die DOP-CIR-Maske erzeugt drei didaktische Oberflächenklassen. Danach kann automatisch das QGIS-Projekt mit Printlayouts erstellt werden.\n\n    DOP-CIR-Maske erzeugen\n    \n      ja\n    \n\n    DOP-CIR-Zielauflösung [m]\n    \n\n    QGIS-Projekt und Printlayouts erzeugen\n    \n      ja\n      nein\n    \n\n    LST-Deckkraft im QGIS-Projekt\n    \n  \n\n\n\n  JSON erzeugen\n  R-Block erzeugen\n  run_config.json herunterladen\n\n\n\n\n\n\n\nNutzung\nDer erzeugte R-Block kann in den Konfigurationsteil von scripts/00_run_lst_oberflaechenmaske_dop_cir.R übernommen werden. Alternativ kann die JSON-Ausgabe als Dokumentation der gewählten Parameter gespeichert werden.\nDer Browser erzeugt keine LST-Karte und keine Maske. Die Verarbeitung läuft lokal. Für die Köln-Demo ist der zentrale Start:\nRscript scripts/00_run_lst_oberflaechenmaske_dop_cir.R\nWenn run_external_qgis_project &lt;- TRUE gesetzt ist, startet der R-Runner anschließend den passenden QGIS-Launcher und erzeugt das QGIS-Projekt mit vier Printlayouts.\n\n\nWas der aktuelle Workflow erzeugt\n\n\n\nTechnischer Datenfluss vom AOI zur QGIS-Projektdatei.\n\n\nDer konfigurierte Workflow erzeugt:\nAOI\n→ Landsat-LST-Szenen\n→ Auswahl heißer Szenen nach q90_C\n→ Hot-q90-Komposit\n→ DOP-CIR-Oberflächenmaske mit drei Klassen\n→ QGIS-Projekt\n→ vier passgleiche Drucklayouts\nDie didaktische Reduktion bleibt in allen Ausgaben gleich:\nVegetation\nWasser\nVersiegelung / Bebauung\n\n\n\nDie drei Unterrichtsklassen bündeln reale Oberflächen: versiegelte und bebaute Flächen, Vegetation und Wasser.\n\n\n\n\nHinweise zur Anpassung\nFür eigene Räume sollte zuerst mit einer kleinen AOI getestet werden. Große Stadtgebiete erhöhen Downloadzeit, WMS-Last, Rastergröße und QGIS-Exportzeit. Der DOP-CIR-WMS wird für die Maske auf ein Zielraster geladen. Im Standard sind das 30 m, weil die Maske didaktisch zur Landsat-LST-Ebene passen soll.\nDas QGIS-Projekt nutzt in der aktuellen Fassung nur noch:\nkoeln_LST_hot_q90_C_EPSG25832.tif\nkoeln_dop_cir_30m_3klassen.gpkg\nDOP RGB WMS\nKartenrahmen-Layer\nDie übrigen LST-Produkte können weiterhin als Zwischenprodukte entstehen, werden aber nicht in das reduzierte Unterrichtsprojekt geladen.\n\n\nTechnische Grenzen\nDer Konfigurator ersetzt keine Plausibilitätsprüfung. Nach jedem neuen Lauf sollten diese Punkte kontrolliert werden:\n\nGibt es genügend gültige Landsat-Pixel?\nIst die AOI nicht zu groß?\nWurde das DOP-CIR-WMS vollständig geladen?\nSind Wasser und Vegetation in der Maske plausibel?\nStimmen Kartenrahmen und Ausdrucke im QGIS-Layout überein?\nWurde beim Drucken 100 % / tatsächliche Größe verwendet?\n\nWenn das DOP in der QGIS-Layoutvorschau grob erscheint, ist zuerst der PDF-Export zu prüfen. Die Vorschau kann WMS-Layer gröber darstellen als der finale Export. Wenn auch der PDF grob ist, sollte für den festen Kartenausschnitt ein lokales, hochaufgelöstes DOP-Raster verwendet werden.\n\n\nGit-Hinweis\nDie erzeugten Daten gehören nicht ins Repository. In .gitignore sollten mindestens diese Einträge stehen:\n/data/\n/.venv-folienvorlage/\nDas Repository sollte Skripte, Quarto-Seiten und Abbildungen enthalten, nicht Landsat-Szenen, DOP-Downloads, GeoPackages, QGIS-Projektdateien oder Print-PDFs.",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "LST-Datenpaket konfigurieren"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-fachlich.html",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-fachlich.html",
     "title": "Oberflächentemperaturen in der Stadt",
     "section": "",
     "text": "Worum es in dieser Stunde geht\nKöln ist im Sommer kein gleichmäßig warmer Raum. Wer sich an einem heißen Tag durch die Stadt bewegt, erlebt deutliche Unterschiede zwischen großen Platzflächen, breiten Straßen, Parkplätzen, dichten Baublöcken, Gewerbeflächen, Parks, Wiesen, Baumgruppen, dem Rhein und offenen Bodenflächen. Diese Unterschiede lassen sich fachlich als Unterschiede der Oberfläche lesen: Asphalt, Beton, Pflaster, Dachmaterial, Vegetation, Wasser, Schotter und Boden nehmen Strahlung unterschiedlich auf, speichern Wärme unterschiedlich lange und geben Energie unterschiedlich stark über Verdunstung ab.\nDie Stadt Köln beschreibt diesen städtischen Wärmehaushalt ausdrücklich als verändert: Gebäude, Straßen und versiegelte Flächen erhitzen sich intensiver und speichern Wärme länger als unbebaute Landschaftsräume (Stadt Köln: Stadtklima). Köln behandelt Hitze außerdem als kommunales Anpassungs- und Gesundheitsthema; das Hitze-Portal verweist darauf, dass sommerliche Hitzeperioden im Klimawandel zunehmen und gesundheitlich belastend sein können (Stadt Köln: Hitze-Portal). Der Kölner Hitzeknigge ordnet Hitze als praktisches Vorsorgethema für die Bevölkerung ein (Stadt Köln: Hitzeknigge). Die Stunde greift diese lokale Relevanz auf, behandelt Hitze aber nicht zuerst als Verhaltensthema, sondern als räumlich sichtbares Oberflächenproblem.\n\n\n\nBekannte Kölner Orte dienen nicht als fertige Antwort, sondern als Hypothesenräume.\n\n\nDer Einstieg sollte deshalb nicht lauten: „Hier sieht man die heißesten Orte Kölns.“ Treffender ist: „Welche Oberflächen erkennen wir hier, und welche davon müssten sich an einem sonnigen Sommertag besonders stark erwärmen?“ Die Lernenden sollen zuerst aus dem Luftbild argumentieren. Erst danach wird die LST-Karte als Prüfebene eingesetzt.\n\n\nVom bekannten Ort zur Oberflächenklasse\nFür Schülerinnen und Schüler ist Stadthitze zunächst eine Alltagserfahrung. Man sucht Schatten, meidet aufgeheizte Platzflächen, bleibt lieber im Park oder am Wasser und spürt die Hitze an Straßen, Fassaden und Haltestellen. Diese Erfahrung ist ein guter Einstieg, aber sie muss fachlich übersetzt werden. Die zentrale Frage lautet nicht: „Wo fühlt es sich heiß an?“, sondern: „Welche Oberfläche liegt dort, und wie reagiert diese Oberfläche thermisch?“\nEin großer Platz kann aus hellem Pflaster bestehen, wenig Schatten haben und sich stark aufheizen. Eine breite Straße ist nicht nur Verkehrsraum, sondern eine dunkle, trockene, versiegelte Oberfläche. Ein Parkplatz kombiniert Asphalt, Blech, wenig Verdunstung und oft wenig Schatten. Ein Gewerbe- oder Industriegebiet besteht häufig aus großen Dachflächen, Zufahrten, Ladeflächen und Parkplätzen. Ein Park enthält dagegen Baumkronen, Rasen, Wege, trockene Wiesen, beschattete Bereiche und manchmal Wasser. Genau diese Mischung macht den Vergleich von Luftbild und LST-Karte fachlich interessant.\nAus diesen realen Oberflächen werden für die Stunde drei Arbeitsklassen gebildet. Versiegelung / Bebauung umfasst Straßen, Parkplätze, Plätze, Dächer, Gewerbe- und Industrieflächen, Bahnanlagen, befestigte Innenhöfe und stark versiegelte Schulhöfe. Vegetation umfasst Parks, Wiesen, Baumgruppen, Alleen, Friedhöfe, Grünzüge und begrünte Innenhöfe. Wasser umfasst Rhein, Hafenbecken, Weiher, Teiche und größere offene Wasserflächen.\nDiese drei Klassen sind kein Ersatz für eine vollständige Stadtklimaanalyse. Sie sind ein bewusst reduziertes Unterrichtsmodell: Die Lernenden sollen die drei dominanten Oberflächentypen erkennen und prüfen, wie sie sich in der LST-Karte räumlich niederschlagen. Offene Böden, Schotter, Baustellen oder trockene Brachen werden nicht als vierte Hauptklasse geführt, sondern als Misch- und Grenzfälle im Gespräch aufgegriffen, wenn sie im Ausschnitt auffallen.\n\n\nWas Oberflächentemperaturen (LST) messen\nLST bedeutet Land Surface Temperature. Gemeint ist die Temperatur der Landoberfläche, die aus der thermischen Infrarotstrahlung der Oberfläche abgeleitet wird. Die ESA Climate Change Initiative beschreibt LST als wichtige Variable des Klimasystems, weil sie Prozesse des Energie- und Wasseraustauschs zwischen Landoberfläche und Atmosphäre beschreibt (ESA CCI: Land Surface Temperature). LST ist damit eine Oberflächengröße und keine direkte Messung der Lufttemperatur in zwei Metern Höhe.\nDiese Unterscheidung ist für die Stunde zentral. Eine Asphaltfläche, ein Dach oder ein Parkplatz kann in der LST-Karte sehr warm erscheinen, während die Lufttemperatur in zwei Metern Höhe niedriger und räumlich weniger scharf abgegrenzt ist. Menschen erleben Hitze zusätzlich über Lufttemperatur, Luftfeuchte, Wind, direkte Sonnenstrahlung, Schatten, Kleidung, körperliche Aktivität und Aufenthaltsdauer. Die LST-Karte zeigt deshalb nicht die gesamte gefühlte Hitze, sondern die thermische Antwort der Oberfläche.\n\n\n\nDer Satellit erfasst die thermische Antwort der Oberfläche. Die 2-m-Lufttemperatur ist eine andere Messgröße.\n\n\nEine präzise Unterrichtssprache vermeidet deshalb den Satz „dort ist die Luft heißer“. Treffender ist: „Diese Oberfläche erscheint in dieser Satellitenszene wärmer.“ Diese Formulierung ist nicht nur sprachlich genauer, sondern führt direkt zur fachlichen Frage: Welche Oberfläche kann diese thermische Antwort erklären?\n\n\nWarum Oberflächen unterschiedlich warm sind\nOberflächen erwärmen sich nicht nur, weil Sonne auf sie fällt. Entscheidend ist, was mit der eingehenden Strahlungsenergie geschieht. Ein Teil wird reflektiert, ein Teil wird als Wärme gespeichert, ein Teil wird an die Luft abgegeben, und bei feuchten oder bewachsenen Oberflächen kann ein Teil der Energie in Verdunstung umgesetzt werden. Die Oberflächentemperatur ist deshalb das Ergebnis von Materialeigenschaften, Feuchte, Vegetation, Schatten, Wasseranteil, Oberflächenstruktur und Aufnahmezeitpunkt.\nVersiegelte Flächen sind häufig warm, weil sie wenig Wasser verdunsten und Wärme speichern können. NASA beschreibt den urbanen Wärmeinseleffekt unter anderem damit, dass Asphalt, Beton, Stein, Stahl und andere undurchlässige Oberflächen Wärme aufnehmen und die natürliche Kühlwirkung von Vegetation unterbrechen (NASA Earth Observatory: Vegetation Limits City Warming Effects). Die Stadt Köln beschreibt denselben Grundzusammenhang lokal: Gebäude, Straßen und versiegelte Flächen erhitzen sich stärker und speichern Wärme länger (Stadt Köln: Stadtklima).\nVegetation kann die Erwärmung abschwächen, weil sie Schatten erzeugt und Wasser verdunstet. NASA beschreibt die natürliche Kühlwirkung von Vegetation im Zusammenhang mit städtischer Erwärmung (NASA Earth Observatory: Vegetation Limits City Warming Effects). Für den Unterricht ist wichtig, Vegetation nicht zu idealisieren. Ein dichter Baumbestand kann durch Schatten und Verdunstung deutlich kühler wirken als ein trockener kurzrasiger Bereich. Eine sonnige, trockene Wiese kann dagegen deutlich wärmer erscheinen als Schülerinnen und Schüler zunächst erwarten.\nWasserflächen reagieren träger als viele feste Oberflächen. Wasser hat eine hohe Wärmekapazität, verteilt Wärme im Wasserkörper und erwärmt sich am Tag oft langsamer als Asphalt, Beton oder trockener Boden. In LST-Karten können Rhein, Weiher oder Hafenbecken deshalb als kühlere Flächen erscheinen. Diese Wirkung ist aber zeitabhängig: Wasser speichert Wärme und kann sich im Tages- und Jahresgang anders verhalten als feste Oberflächen.\nOffene Böden, Schotterflächen oder Baustellen bleiben als Grenzfälle wichtig. Sie werden in diesem Unterrichtsmaterial nicht als eigene Hauptklasse geführt, weil die Stunde auf die drei zentralen Kontraste fokussiert: versiegelt/bebaut, Vegetation und Wasser. Fachlich sind solche Grenzflächen wertvoll, weil sie zeigen, dass „nicht bebaut“ nicht automatisch „kühl“ bedeutet. Entscheidend bleiben Material, Feuchte, Bewuchs und Sonnenexposition.\n\n\n\nDie drei Unterrichtsklassen bündeln reale Oberflächen: versiegelte und bebaute Flächen, Vegetation und Wasser.\n\n\n\n\nDie drei Oberflächenklassen als Arbeitsmodell\nDie Klasse Versiegelung / Bebauung bündelt alle stark befestigten und baulich geprägten Oberflächen: Straßen, Kreuzungen, Parkplätze, Plätze, Dächer, Gewerbe- und Industrieflächen, Bahnanlagen, befestigte Schulhöfe und Innenhöfe. In der LST-Karte erscheinen solche Flächen häufig warm bis sehr warm, besonders wenn sie groß, trocken und unbeschattet sind. Helle Materialien, Schatten, Dachaufbauten oder unterschiedliche Beläge können das Muster abschwächen.\nDie Klasse Vegetation bündelt alle Flächen, bei denen Pflanzen die thermische Wirkung prägen: Baumgruppen, Parks, Wiesen, Grünzüge, Friedhöfe, Alleen und begrünte Innenhöfe. Vegetation kann durch Schatten und Verdunstung kühlen. Die Wirkung hängt aber vom Zustand der Vegetation ab. Ein schattiger Baumbestand, eine bewässerte Wiese und eine trockene Rasenfläche sind im Luftbild alle „grün“, thermisch aber nicht identisch.\nDie Klasse Wasser bleibt eigenständig. Rhein, Weiher, Hafenbecken und Teiche sind keine Sonderform von „kühl“, sondern Oberflächen mit eigener thermischer Dynamik. Sie reagieren träge, können tagsüber kühl erscheinen und Wärme zeitlich verzögert speichern oder abgeben. Gerade am Rhein können Lernende gut sehen, dass eine Wasserfläche im LST-Bild oft anders reagiert als die angrenzende befestigte Uferzone.\n\n\nVerwendung der Landoberflächen Schablone\nDie automatische Maske wird im Unterricht nicht als Lösung gezeigt. Die Lernenden erhalten nur neutrale Umrisse. Sie sollen diese Umrisse zuerst im Luftbild interpretieren und anschließend dieselben Flächen mit der LST-Karte vergleichen. Die Klassennamen stehen nur in der Lehrkraftversion.\nDas hat einen fachlichen Grund. Fernerkundungsdaten liefern keine fertige Erklärung. Sie liefern Beobachtungen, die interpretiert werden müssen. Wenn die Karte sofort „Versiegelung / Bebauung“, „Vegetation“ und „Wasser“ anzeigt, wird die Deutungsarbeit vorweggenommen. Wenn die Umrisse blind bleiben, müssen die Lernenden selbst begründen, welche Oberfläche sie erkennen und warum diese Oberfläche thermisch plausibel wärmer oder kühler erscheint.\n\n\n\nDie Schablone trennt typisiert grob die Hauptklassen der Landoberflächen. Die SuS sehen die Flächen, die Lehrkraft hat die Klassenzuordnung der Fläche aus der automatisierten Erstellung.\n\n\nDie Maske ist deshalb ein Arbeitsgerüst, kein Wahrheitslayer. Besonders wertvoll sind uneindeutige Flächen: Parkplätze mit Bäumen, helle Dächer, trockene Wiesen, Baustellen, schmale Uferzonen oder Mischbereiche zwischen Straße und Park. Dort wird sichtbar, dass Oberflächenklassen Vereinfachungen sind und reale Stadträume aus Mischflächen bestehen.\n\n\nUnterrichtsablauf\nDie Stunde beginnt mit dem Luftbild. Die LST-Karte bleibt zunächst verdeckt. Die Lernenden orientieren sich im Kölner Ausschnitt: Rhein, Parks, große Straßen, Plätze, dichte Bebauung, Gewerbeflächen, Parkplätze und Dachlandschaften werden gesucht und beschrieben. Danach markieren sie auf Folie oder Transparentpapier Flächen, die sie für eher warm oder eher kühl halten.\nErst danach wird die LST-Karte aufgelegt. Jetzt prüfen die Lernenden ihre Vermutungen. Stimmen große versiegelte Flächen mit warmen Bereichen überein? Erscheinen Wasser und größere Vegetationsflächen kühler? Gibt es überraschend warme Rand- oder Mischflächen oder überraschend kühle versiegelte Teilflächen? Der Unterrichtsgewinn liegt im Vergleich, nicht im bloßen Ablesen der Farbskala.\n\n\n\nDer Ablauf führt von der sichtbaren Oberfläche zur thermischen Prüfung.\n\n\nDie Sicherung sollte nicht aus einer starren Tabelle bestehen. Ziel ist eine begründete Deutung. Eine gute Schüleraussage verbindet sichtbare Oberfläche, Temperaturtendenz, Prozess und Unsicherheit. Ein Beispiel wäre: „Diese Fläche wirkt wie ein großer Parkplatz. Sie erscheint in der LST-Karte warm. Das passt zu Versiegelung, Wärmespeicherung und geringer Verdunstung. Wenn ein Teil weniger warm ist, könnte dort Schatten oder ein anderes Material liegen.“\n\n\nDas Materialpaket\nDas vorbereitete Paket enthält ein RGB-Luftbild, eine LST-hot-Karte, Folienvorlagen beziehungsweise blinde Umrisse und ein QGIS-Projekt. Für den direkten Unterrichtseinsatz reichen Luftbild, LST-Karte und transparente Markierebene. Das QGIS-Projekt ist für Anpassungen gedacht: Ausschnitt ändern, Ebenen ein- oder ausblenden, Layout neu drucken.\n\n\n\nDas Materialpaket trennt direkte Unterrichtsmaterialien von optionaler technischer Anpassung.\n\n\nMaterialpaket Köln-Demo herunterladen\nAlle Materialien müssen denselben Ausschnitt und denselben Maßstab verwenden. Die Lernenden markieren nicht auf der Karte selbst, sondern auf einer eigenen Ebene. Dadurch bleibt sichtbar, dass ihre Markierung eine Interpretation ist. Diese Interpretation kann zuerst auf das Luftbild und danach auf die LST-Karte gelegt werden.\n\n\nFachliche Gesprächsführung\nWenn Lernende sagen: „Dort ist die Luft heißer“, sollte die Lehrkraft präzisieren: „Die Karte zeigt die Oberfläche. Die Lufttemperatur ist eine andere Messgröße.“ Wenn Lernende sagen: „Alles Grüne ist kühl“, sollte die Antwort differenzieren: „Vegetation kann durch Schatten und Verdunstung kühlen, aber trockene oder kurzrasige Flächen können warm sein.“ Wenn Lernende sagen: „Alles, was nicht Straße oder Dach ist, ist kühl“, lohnt der Blick auf Mischflächen, trockene Randflächen, Schotter, Baustellen oder kurzrasige Bereiche. Diese Flächen werden nicht als eigene Hauptklasse geführt, müssen aber im Gespräch als mögliche Abweichungen benannt werden.\nDie zentrale fachliche Sprache sollte vorsichtig bleiben. Geeignete Formulierungen sind: „erscheint wärmer“, „passt zu“, „könnte erklärt werden durch“, „abweichend davon“, „vermutlich wegen“. Ungeeignet sind absolute Sätze wie „Asphalt ist immer heiß“ oder „Wasser ist immer kalt“.\n\n\nSicherung\nAm Ende steht keine perfekte Klassifikation, sondern eine fachlich begründete Deutung des Kartenausschnitts. Die Lernenden sollen mehrere Flächen beschreiben, ihre Temperaturtendenz aus der LST-Karte ablesen und eine plausible Ursache nennen. Eine gute Sicherung enthält außerdem eine Ausnahme oder Unsicherheit.\nEin möglicher Sicherungssatz lautet: „Große versiegelte Flächen wie Straßenräume, Plätze, Parkplätze oder Dächer erscheinen in dieser Szene häufig wärmer als Vegetations- und Wasserflächen. Das passt zu Wärmespeicherung und geringer Verdunstung. Abweichungen können durch Schatten, Materialfarbe, Feuchte, Mischflächen oder Aufnahmezeitpunkt entstehen.“\nEin zweiter Sicherungssatz lautet: „Vegetation und Wasser erscheinen häufig kühler, aber aus unterschiedlichen Gründen. Vegetation wirkt über Schatten und Verdunstung, Wasser über seine thermische Trägheit. Grenzflächen wie Schotter, trockener Boden oder Baustellen müssen gesondert beschrieben werden, weil Feuchte und Material dort stark entscheiden.“\n\n\nQuellen\nStadt Köln. Stadtklima. Gebäude, Straßen und versiegelte Flächen erhitzen sich intensiver und speichern Wärme länger als unbebaute Landschaftsräume. https://www.stadt-koeln.de/artikel/60838/index.html\nStadt Köln. Hitze-Portal Köln. Sommerliche Hitzeperioden nehmen im Klimawandel zu und können gesundheitlich belasten. https://www.stadt-koeln.de/leben-in-koeln/umwelt-tiere/klima/hitzeportal/index.html\nStadt Köln. Der Hitzeknigge. Lokale Hinweise und Verhaltenstipps zum Umgang mit Hitze in Köln. https://www.stadt-koeln.de/artikel/69221/index.html\nESA Climate Change Initiative. Land Surface Temperature. LST beschreibt Prozesse des Energie- und Wasseraustauschs zwischen Landoberfläche und Atmosphäre. https://climate.esa.int/en/projects/land-surface-temperature/\nNASA Earth Observatory. Vegetation Limits City Warming Effects. Impervious surfaces wie Asphalt, Beton, Stein und Stahl tragen zur städtischen Erwärmung bei; Vegetation wirkt kühlend. https://science.nasa.gov/earth/earth-observatory/vegetation-limits-city-warming-effects-86440/",
@@ -1172,114 +1280,6 @@
       "Ilias",
       "04 Summer in the City",
       "Oberflächentemperaturen in der Stadt"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html",
-    "href": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "",
-    "text": "Teamname\n\n\n\n\n\n\n\nWir wissen: Städte bestehen aus sehr unterschiedlichen Oberflächen. Es gibt Asphalt, Dächer, Beton, Wiesen, Bäume, Wasser, offene Plätze und dicht bebaute Bereiche. Diese Oberflächen erwärmen sich an heißen Sommertagen unterschiedlich stark.\nEine Satellitenkarte kann diese Unterschiede sichtbar machen. Sie zeigt die Oberflächentemperatur. Gemeint ist die Temperatur der Dinge, die der Satellit von oben sieht: Straßen, Dächer, Plätze, Wasserflächen, Wiesen oder Baumkronen. Die Lufttemperatur in 2 m Höhe ist eine andere Messgröße.\nIn dieser Aufgabe überprüft ihr deshalb selbst: Welche Stadtflächen erscheinen in der Satellitenkarte heißer oder kühler? Und welche Erklärung passt dazu?\n\n\n\n\n\n\nDie LST-Karte zeigt die Temperatur der Oberfläche. Die Lufttemperatur in 2 m Höhe ist eine andere Messgröße.",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#teil-1-luftbild-untersuchen",
-    "href": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#teil-1-luftbild-untersuchen",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Teil 1: Luftbild untersuchen",
-    "text": "Teil 1: Luftbild untersuchen\nIhr bekommt ein Luftbild und eine transparente Folie. Legt die Folie zuerst auf das Luftbild.\nMarkiert mindestens fünf größere Flächen, die gut unterscheidbare Oberflächen zeigen. Geeignet sind zum Beispiel Straßen, Parkplätze, Dächer, Wiesen, Parks, Wasserflächen, Innenhöfe oder gemischte Stadtflächen.\nNutzt einfache Kürzel:\n\n\n\nKürzel\nOberfläche\n\n\n\n\nS\nStraße, Parkplatz, versiegelter Platz\n\n\nD\ngroßes Dach oder Gebäudefläche\n\n\nG\nWiese, Park, Baumfläche\n\n\nW\nWasserfläche\n\n\nM\nMischfläche, zum Beispiel Blockrand, Innenhof oder Bahnanlage\n\n\n\nWelche Oberflächen habt ihr markiert?\n\nAntwort:",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#teil-2-oberflächentemperatur-prüfen",
-    "href": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#teil-2-oberflächentemperatur-prüfen",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Teil 2: Oberflächentemperatur prüfen",
-    "text": "Teil 2: Oberflächentemperatur prüfen\nLegt dieselbe Folie nun auf die LST-Karte. LST bedeutet Land Surface Temperature, also Oberflächentemperatur.\nPrüft für jede markierte Fläche: erscheint sie eher heiß, mittel oder kühl?\n\n\n\nIhr arbeitet zuerst mit dem Luftbild und danach mit der LST-Karte.\n\n\nWelche Vermutung passt nach dem ersten Vergleich besser? Kreuzt an!\n\n☐ Vermutung 1: Versiegelte und bebaute Flächen erscheinen häufiger warm.\n☐ Vermutung 0: Die Unterschiede wirken zufällig.\n☐ unklar",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#teil-3-ergebnisse-sichern",
-    "href": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#teil-3-ergebnisse-sichern",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Teil 3: Ergebnisse sichern",
-    "text": "Teil 3: Ergebnisse sichern\nFüllt die Tabelle aus. Die Erklärung ist wichtiger als das genaue einzelne Pixel.\n\n\n\nNr.\nmarkierte Fläche\nOberfläche\nLST-Tendenz\nkurze Erklärung\n\n\n\n\n1\n\n\nheiß / mittel / kühl\n\n\n\n2\n\n\nheiß / mittel / kühl\n\n\n\n3\n\n\nheiß / mittel / kühl\n\n\n\n4\n\n\nheiß / mittel / kühl\n\n\n\n5\n\n\nheiß / mittel / kühl",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#teil-4-erklärung-entwickeln",
-    "href": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#teil-4-erklärung-entwickeln",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Teil 4: Erklärung entwickeln",
-    "text": "Teil 4: Erklärung entwickeln\nEine gute Erklärung verbindet drei Dinge: Was ist im Luftbild zu sehen? Wie erscheint die Fläche auf der LST-Karte? Welcher Prozess könnte die Temperatur erklären?\n\n\n\nEine gute Erklärung verbindet Beobachtung, Zuordnung, Vergleich und Prozess.\n\n\nNutzt diese Begriffe, wenn sie zu euren Flächen passen:\n\n\n\nBegriff\nBedeutung für die Karte\n\n\n\n\nVersiegelung\nwenig Verdunstung, oft starke Erwärmung\n\n\nWärmespeicherung\nMaterial nimmt Wärme auf und gibt sie langsam ab\n\n\nVerdunstung\nentzieht der Oberfläche Wärme\n\n\nSchatten\nverringert direkte Erwärmung\n\n\nVegetation\nkühlt oft durch Schatten und Verdunstung\n\n\nWasser\nerwärmt sich anders als feste Stadtoberflächen\n\n\nBebauungsdichte\nviele warme Oberflächen liegen dicht nebeneinander\n\n\n\nWelche Erklärung passt zu eurer deutlichsten warmen Fläche?\n\nAntwort:\n\nWelche Erklärung passt zu eurer deutlichsten kühlen Fläche?\n\nAntwort:",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#teil-5-grenzen-der-karte-prüfen",
-    "href": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#teil-5-grenzen-der-karte-prüfen",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Teil 5: Grenzen der Karte prüfen",
-    "text": "Teil 5: Grenzen der Karte prüfen\nDie LST-Karte zeigt Oberflächentemperaturen. Dadurch erkennt man räumliche Muster sehr gut. Für die Bewertung von Aufenthaltsqualität braucht man zusätzlich weitere Informationen, zum Beispiel Schatten, Wind, Lufttemperatur, Nutzung und Tageszeit.\nWelche Aussage könnt ihr mit eurer Karte gut begründen?\n\nAntwort:\n\nWelche Aussage wäre mit dieser Karte allein zu unsicher?\n\nAntwort:",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#schlussfolgerung",
-    "href": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#schlussfolgerung",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Schlussfolgerung",
-    "text": "Schlussfolgerung\nUnsere Antwort auf die Fragestellung lautet:\nWir entscheiden uns für:\n\n☐ Vermutung 1: Versiegelte und bebaute Flächen erscheinen häufiger warm.\n☐ Vermutung 0: Die Unterschiede wirken zufällig.\n☐ Unklar\n\n\nBegründung:",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#merksatz",
-    "href": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#merksatz",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Merksatz",
-    "text": "Merksatz\n\nDie LST-Karte zeigt, wie unterschiedlich sich Stadtoberflächen erwärmen. Dadurch wird sichtbar, dass Wärme in der Stadt mit Oberflächen, Materialien, Vegetation, Wasser und Stadtstruktur zusammenhängt.",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#material",
-    "href": "04-summer-in-the-city/sushandreichung_lst_stadtklima.html#material",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Material",
-    "text": "Material\n\nMaterial 1\nLuftbild des Untersuchungsraums\n\n\nMaterial 2\nLST-Karte des gleichen Ausschnitts\n\n\nMaterial 3\nTransparente Folie und Stift zur Markierung der Vergleichsflächen",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
     ]
   }
 ]
