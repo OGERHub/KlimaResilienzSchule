@@ -3,7 +3,7 @@ title: "Hitzebelastung auf dem Schulhof untersuchen"
 subtitle: "Städtische Planung im Modell bewerten"
 author: "Rieke Ammoneit"
 date: "2026-04-28"
-order: 30
+order: 10
 title-block-banner: ../images/netlogo-sp.png
 title-block-banner-color: black
 #page-layout: full

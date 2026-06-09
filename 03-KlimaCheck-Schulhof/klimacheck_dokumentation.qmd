@@ -1,12 +1,12 @@
 ---
 title: "Technische Dokumentation"
 subtitle: "Modellkonzept und Physik"
-author: "Rieke Ammoneit & Chris Reudenbach"
+author: "Rieke Ammoneit"
 date: "2026-04-28"
 title-block-banner: ../images/netlogo-sp.png
 title-block-banner-color: black
 page-layout: full
-
+order: 50
 format:
   html:
     toc: true
