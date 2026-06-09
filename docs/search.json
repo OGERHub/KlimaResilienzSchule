@@ -1036,7 +1036,7 @@
     "href": "03-KlimaCheck-Schulhof/sushandreichung-klimacheck_planungsbewertung.html",
     "title": "Hitzebelastung auf dem Schulhof untersuchen",
     "section": "",
-    "text": "Teamname:\n\n\n\n\n\n\n\nIhr untersucht mit dem Modell, wo es auf dem Schulhof während der Schulzeit besonders heiß wird.\nWichtig sind die freien Flächen: Wege, Rasen, Sand, Sportfeld, Pflaster und Asphalt. Gebäude bewertet ihr nicht.\nAm Ende entscheidet ihr: Ist die geplante Umgestaltung sinnvoll?\n\n\n\n\n\n\nAbbildung 1: Visualisierung des Modell-Schulhofs",
+    "text": "Im dieser Aufgabe prüft ihr die Planung der Stadt: Auf dem Schulhof sollen neue Sportflächen entstehen. Eure Aufgabe ist es, klimatologisch zu bewerten, ob diese Planung während der Schulzeit zu mehr oder weniger Hitzebelastung auf den freien Flächen führt.\n\nTeamname:\n\n\n\n\n\n\nAuf dem Schulhof wird es nicht überall gleich heiß. Ihr sucht im Modell die heißesten Stellen auf den freien Flächen: Wege, Rasen, Sand, Sportfeld, Pflaster und Asphalt.\nWichtig ist die Schulzeit: Welche heißen Flächen liegen dort, wo sich Schüler*innen aufhalten können?\nDanach aktiviert ihr die geplante Umgestaltung und prüft, ob die Hitzebelastung besser oder schlechter wird. Am Ende entscheidet ihr: Soll die Planung so umgesetzt werden?\n\n\n\n\n\n\n\nAbbildung 1: Visualisierung des Modell-Schulhofs",
     "crumbs": [
       "Ilias",
       "03 KlimaCheck Schulhof",
@@ -1048,7 +1048,7 @@
     "href": "03-KlimaCheck-Schulhof/sushandreichung-klimacheck_planungsbewertung.html#wo-entstehen-hitzestellen",
     "title": "Hitzebelastung auf dem Schulhof untersuchen",
     "section": "1. Wo entstehen Hitzestellen?",
-    "text": "1. Wo entstehen Hitzestellen?\nStartet das Modell mit Modellstart / Reset.\nDrückt danach Tageslauf berechnen.\nSchaut euch diese Karten an:\n\nHitzelast aktuell\nHitzelast Schulzeit\n\nAchtet nur auf die Flächen außerhalb der Gebäude.\nMarkiert oder merkt euch:\n\nWo sind die stärksten Hotspots?\nSind diese Hotspots während der Schulzeit wichtig?\nWelche Oberflächen liegen dort: Asphalt, Pflaster, Rasen, Sand oder Bäume?\n\n\n\n\nModell-Karte\n\n\nUnsere Beobachtung:\n\nHotspot 1:\n\n\nHotspot 2:",
+    "text": "1. Wo entstehen Hitzestellen?\nStartet das Modell mit Modellstart / Reset.\nDrückt danach Tageslauf berechnen.\nSchaut euch diese Karten an:\n\nHitzelast aktuell\nHitzelast Schulzeit\n\nSucht zuerst die heißesten Stellen auf dem Schulhof. Achtet dabei nur auf Flächen außerhalb der Gebäude, also zum Beispiel Wege, Rasen, Sand, Sportflächen, Pflaster und Asphalt. Entscheidend ist nicht nur, wo es heiß wird, sondern ob diese Stellen während der Schulzeit für Schüler*innen wichtig sind.\nMarkiert oder merkt euch:\n\nWo sind die stärksten Hotspots?\nLiegen diese Hotspots auf Flächen, die in der Schulzeit genutzt werden?\nWelche Oberflächen liegen dort: Asphalt, Pflaster, Rasen, Sand oder Bäume?\n\n\n\n\nModell-Karte\n\n\nUnsere Beobachtung:\n\nHotspot 1:\n\n\nHotspot 2:",
     "crumbs": [
       "Ilias",
       "03 KlimaCheck Schulhof",
@@ -1060,7 +1060,7 @@
     "href": "03-KlimaCheck-Schulhof/sushandreichung-klimacheck_planungsbewertung.html#was-verändert-die-geplante-umgestaltung",
     "title": "Hitzebelastung auf dem Schulhof untersuchen",
     "section": "2. Was verändert die geplante Umgestaltung?",
-    "text": "2. Was verändert die geplante Umgestaltung?\nDrückt Städtische Planung aktivieren.\nDas Modell setzt automatisch:\n\nein Sportfeld im südwestlichen Bereich,\nzwei Sandflächen für Beachvolleyball im nördlicheren Bereich.\n\nDrückt danach wieder Tageslauf berechnen.\nSchaltet auf die Karte:\n\nHitzelast Änderung\n\nBeschreibt kurz:\n\nWo wird die Hitzelast größer? Wo wird sie kleiner?",
+    "text": "2. Was verändert die geplante Umgestaltung?\nDie Stadt möchte den Schulhof verändern: Es sollen neue Sportflächen entstehen. Im Modell prüft ihr, ob diese Planung die Hitzebelastung während der Schulzeit verbessert oder verschlechtert.\nDrückt Städtische Planung aktivieren.\nDas Modell setzt automatisch:\n\nein Sportfeld im südwestlichen Bereich,\nzwei Sandflächen für Beachvolleyball im nördlicheren Bereich.\n\nDrückt danach wieder Tageslauf berechnen.\nSchaltet auf die Karte:\n\nHitzelast Änderung\n\nBeschreibt kurz:\n\nWo wird die Hitzelast größer? Wo wird sie kleiner?",
     "crumbs": [
       "Ilias",
       "03 KlimaCheck Schulhof",

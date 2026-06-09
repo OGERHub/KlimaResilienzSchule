@@ -26,6 +26,8 @@ Im dieser Aufgabe prüft ihr die Planung der Stadt: Auf dem Schulhof sollen neue
 
 ::: question-box
 **Teamname:**
+:::
+
 
 ::: {.callout-tip appearance="minimal"}
 
@@ -35,7 +37,7 @@ Wichtig ist die Schulzeit: Welche heißen Flächen liegen dort, wo sich Schüler
 
 Danach aktiviert ihr die geplante Umgestaltung und prüft, ob die Hitzebelastung besser oder schlechter wird. Am Ende entscheidet ihr: Soll die Planung so umgesetzt werden?
 
-:::
+
 :::
 
 
