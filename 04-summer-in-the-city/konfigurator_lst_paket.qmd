@@ -6,12 +6,15 @@ date: "2026-06-05"
 order: 100
 title-block-banner: ../images/01-splash.png
 title-block-banner-color: white
-lang: de
+format-links: [html, pdf, docx]
 format:
   html:
-    toc: true
-    toc-depth: 3
+    toc: false
+    code-fold: false
     number-sections: false
+  pdf:
+    pdf-engine: lualatex
+  docx: default
 execute:
   echo: false
   warning: false
@@ -26,7 +29,7 @@ Für den direkten Unterrichtseinsatz ist diese Seite nicht notwendig. Dafür rei
 
 Die aktuelle Version ist auf den reduzierten Unterrichtsworkflow ausgerichtet: **Hot-LST q90**, **DOP-RGB**, **DOP-CIR-Oberflächenmaske** und **vier passgenaue QGIS-Printlayouts**. Cold-Produkte und OSM-Zusatzlayer werden hier nicht mehr als Standardoption geführt.
 
-![Der Konfigurator übersetzt didaktische Entscheidungen in Skriptparameter.](../images/figures/fig10_standardweg_lehrkraft.svg){fig-align="center" width="95%"}
+![Der Konfigurator übersetzt didaktische Entscheidungen in Skriptparameter.](../images/figures/konfigurator-leherflow.png){fig-align="center" width="95%"}
 
 # Was wird konfiguriert?
 
