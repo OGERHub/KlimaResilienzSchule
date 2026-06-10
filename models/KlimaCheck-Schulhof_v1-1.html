@@ -80906,7 +80906,7 @@ _nS('controllers.Local'); _root['controllers']['Local']['standalone'] =
 </script>
 
     <!-- This can be used to insert NetLogo code into this page -->
-    <script type="text/nlogo" id="nlogo-code" data-filename="KlimaCheck-Schulhof_v1-0-web.nlogox"><?xml version="1.0" encoding="utf-8"?>
+    <script type="text/nlogo" id="nlogo-code" data-filename="KlimaCheck-Schulhof_v1-6_webfix_no_file_io_reset.nlogox"><?xml version="1.0" encoding="utf-8"?>
 <model version="NetLogo 7.0.0" snapToGrid="true">
   <code><![CDATA[; =============================================================================
 ; Schulhofklima 2D
@@ -81032,7 +81032,7 @@ stations-own [
 ; Bedienung oder die Auswertung betreffen.
 ; -----------------------------------------------------------------------------
 globals [
-  
+  planung?
   Legende-an?
 
   ;; Zustand und Kennwerte einer rechteckigen Gebietsauswahl
@@ -81114,8 +81114,6 @@ globals [
   ;; Zustand der Maus
   mouse-was-down?
   
-  Szenario-Name
-  Aktive-Geometrie-Datei
 ]
 
 ; -----------------------------------------------------------------------------
@@ -81315,8 +81313,6 @@ to setup
     "Loeschen"
   ]) [ Element ] [ "Rasen" ]
 
-  let keep-geom-file ifelse-value (is-string? Aktive-Geometrie-Datei) [ Aktive-Geometrie-Datei ] [ "" ]
-  let keep-versuchsname ifelse-value (is-string? Versuchsname) [ Versuchsname ] [ "Standard" ]
 
   ; --------------------------------------------------------------------------
   ; 3. Alles zurücksetzen und gesicherte Schlüsselwerte wiederherstellen
@@ -81324,16 +81320,11 @@ to setup
   clear-output
   clear-all
 
-  set Aktive-Geometrie-Datei keep-geom-file
-  set Versuchsname keep-versuchsname
 
   ; --------------------------------------------------------------------------
   ; 4. Namen und Basiseinstellungen normieren
   ; --------------------------------------------------------------------------
-  if not is-string? Versuchsname [ set Versuchsname "Standard" ]
-  if empty? trim Versuchsname [ set Versuchsname "Standard" ]
-  set Szenario-Name trim Versuchsname
-
+  set planung? false
   set naechste-protokoll-stunde 0
   set protokoll-kopf-gedruckt? false
   set taglauf-aktiv? false
@@ -81373,8 +81364,7 @@ to setup
 
   ; --------------------------------------------------------------------------
   ; 8. Weltgeometrie laden
-  ;    - entweder aus Szenariodatei
-  ;    - oder aus der eingebauten Standardgeometrie
+  ;    - ausschließlich aus der eingebauten Standardgeometrie
   ; --------------------------------------------------------------------------
   load-default-world
 
@@ -81468,8 +81458,7 @@ to setup
   reset-ticks
   recolor-world
   refresh-station-appearance
-  ;; display  ;; NetLogo-Web: automatische Aktualisierung
-   szenarien-anzeigen
+  display
   user-message "Simulation ist startklar."
 end
 
@@ -81509,7 +81498,7 @@ to interaktiv
   update-indicators
   update-station-readings
   ;update-hitzelastklassen-plot
-  ;; display  ;; NetLogo-Web: automatische Aktualisierung
+  display
 end
 
 ; ----------------------------------------------------------------------------
@@ -81523,7 +81512,7 @@ to refresh-display
   refresh-station-appearance
   update-indicators
   update-station-readings
-  ;; display  ;; NetLogo-Web: automatische Aktualisierung
+  display
 end
 
 
@@ -81535,27 +81524,6 @@ end
 ; wird damit ein neuer Tageslauf gestartet, ohne die Auswahlfläche zu verlieren.
 ; ----------------------------------------------------------------------------
 to lauf-neu-vorbereiten
-  ;; Web-Workflow: Es gibt keinen sichtbaren Button "Referenz speichern".
-  ;; Deshalb wird die Vorher-Referenz automatisch gesichert, sobald nach
-  ;; einem vollständig simulierten ersten Lauf "Massnahme aktivieren" gedrückt wird.
-  ;;
-  ;; Schutz gegen Fehlbedienung:
-  ;; Wird "Massnahme aktivieren" zu früh gedrückt, würde sonst eine leere oder
-  ;; unvollständige Referenz gespeichert. Deshalb nur bei abgeschlossenem Lauf.
-  if not is-boolean? ref-selection-saved? [
-    set ref-selection-saved? false
-  ]
-
-  if not ref-selection-saved? [
-    if simulationszeit < 24 - zeit-epsilon [
-      user-message "Erst den Ausgangszustand mit 'Versuch starten' bis 24:00 vollständig simulieren. Danach 'Massnahme aktivieren' drücken."
-      stop
-    ]
-
-    referenz-speichern
-    print "Referenz automatisch gespeichert (Massnahme aktivieren)."
-  ]
-
   set simulationsblock-aktiv? false
   set taglauf-aktiv? false
   set protokoll-kopf-gedruckt? false
@@ -81602,8 +81570,235 @@ to lauf-neu-vorbereiten
   setup-station-plot
   ;update-hitzelastklassen-plot
   reset-ticks
-  ;; display  ;; NetLogo-Web: automatische Aktualisierung
-  print "Massnahmenlauf vorbereitet. Auswahl und Referenz wurden nicht gelöscht. Jetzt Maßnahme setzen und erneut 'Versuch starten'."
+  display
+  print "Neuer Tageslauf vorbereitet. Auswahl und Referenz wurden nicht gelöscht."
+end
+
+
+to massnahme-aktivieren
+  ;; Desktop- und Web-kompatibler Vorher/Nachher-Workflow.
+  ;; Es wird KEINE Datei geschrieben.
+  ;; Die Referenz wird nur in den ref-* Patchvariablen gemerkt.
+  ;;
+  ;; Zweck:
+  ;; 1. Nach Lauf 1 aktuellen Zustand als Vorher-Referenz merken.
+  ;; 2. Tageswerte zurücksetzen.
+  ;; 3. Geometrie, Auswahl, Stationen und Referenz behalten.
+  ;; 4. Danach kann die Maßnahme gesetzt und Lauf 2 gestartet werden.
+
+  if not ref-selection-saved? [
+    if simulationszeit < 24 - zeit-epsilon [
+      user-message "Der erste Versuch ist noch nicht vollständig bis 24:00 gelaufen. Erst 'Versuch starten' bis zum Ende laufen lassen."
+      stop
+    ]
+
+    referenz-speichern
+    print "Vorher-Zustand für den Vergleich gemerkt."
+  ]
+
+  lauf-neu-vorbereiten
+  print "Maßnahme kann jetzt gesetzt werden. Danach 'Versuch starten' erneut ausführen."
+end
+
+; ----------------------------------------------------------------------------
+; staedtische-planung-aktivieren
+; Additiver Pflicht-Workflow für die Schüleransicht.
+; Bestehende Modellphysik, Materialparameter, Klassengrenzen und alte
+; Button-Prozeduren bleiben unverändert.
+; ----------------------------------------------------------------------------
+to tageslauf-berechnen-schueler
+  ;; Additiver Wrapper für den Schüler-Pflichtbutton.
+  ;; simuliere-tag bleibt unverändert.
+  simuliere-tag
+
+  if ref-selection-saved? and simulationszeit >= 24 - zeit-epsilon and planung?  [
+    set Kartenansicht "Hitzelast Änderung"
+    set Legende-an? true
+    refresh-display
+    draw-selection-overlay
+    display
+  ]
+end
+
+to staedtische-planung-aktivieren
+  if simulationszeit < 24 - zeit-epsilon [
+    user-message "Der Ist-Zustand ist noch nicht vollständig bis 24:00 gelaufen. Erst 'Tageslauf berechnen' bis zum Ende ausführen."
+    stop
+  ]
+ set planung? true
+  if not ref-selection-saved? [
+    referenz-speichern
+    print "Ist-Zustand für die städtische Planung gemerkt."
+  ]
+
+  lauf-neu-vorbereiten
+  setze-staedtisches-sportfeld
+  setze-staedtisches-beachfeld
+  setze-staedtische-pflasterwege
+  verlege-staedtische-messstation
+  markiere-staedtische-planungsflaechen
+
+  set Kartenansicht "Materialien & Elemente"
+  refresh-display
+  draw-selection-overlay
+  display
+
+  user-message "Die städtische Planung ist aktiviert. Jetzt 'Tageslauf berechnen' für den Planungszustand ausführen."
+end
+
+; ----------------------------------------------------------------------------
+; setze-staedtisches-sportfeld
+; Additive Planungsfläche. Das alte toggle-tartanfeld bleibt unverändert.
+; ----------------------------------------------------------------------------
+to setze-staedtisches-sportfeld
+  ask patches with [
+    pxcor >= -23 and pxcor <= -5 and
+    pycor >= -22 and pycor <= -10
+  ] [
+    set-ground-kind "Sportbelag"
+    set-object-kind "none"
+  ]
+end
+
+; ----------------------------------------------------------------------------
+; setze-staedtisches-beachfeld
+; Additive Planungsfläche. Das alte toggle-sand bleibt unverändert.
+; ----------------------------------------------------------------------------
+to setze-staedtisches-beachfeld
+  ;; Zwei Sandfelder nach Skizze, getrennt durch einen breiteren Rasenstreifen.
+  ;; Das alte toggle-sand bleibt unverändert.
+
+  ;; linkes Sandfeld
+  ask patches with [
+    pxcor >= 5 and pxcor <= 11 and
+    pycor >= -5 and pycor <= 6
+  ] [
+    set-ground-kind "Sand"
+    set-object-kind "none"
+  ]
+
+  ;; mittlerer Rasenstreifen als Teiler
+  ask patches with [
+    pxcor >= 12 and pxcor <= 14 and
+    pycor >= -5 and pycor <= 6
+  ] [
+    set-ground-kind "Rasen"
+    set-object-kind "none"
+  ]
+
+  ;; rechtes Sandfeld
+  ask patches with [
+    pxcor >= 15 and pxcor <= 23 and
+    pycor >= -5 and pycor <= 6
+  ] [
+    set-ground-kind "Sand"
+    set-object-kind "none"
+  ]
+
+  ;; linker Grünstreifen vor dem Beachbereich nach Skizze
+  ask patches with [
+    pxcor >= 0 and pxcor <= 3 and
+    pycor >= -5 and pycor <= 8
+  ] [
+    set-ground-kind "Rasen"
+    set-object-kind "none"
+  ]
+end
+
+; ----------------------------------------------------------------------------
+; markiere-staedtische-planungsflaechen
+; Markiert ausschließlich die beiden Planungsflächen als Vergleichsgebiet.
+; ----------------------------------------------------------------------------
+to setze-staedtische-pflasterwege
+  ;; Schmale gepflasterte Wege als Bestandteil der städtischen Planung.
+  ;; Korrektur nach Skizze: keine breiten Flächen, sondern schmale Anschlüsse.
+
+  ;; Zugang zum Sportfeld: kurzer schmaler Anschluss vom bestehenden Hof
+  ;; an die obere rechte Sportfeldecke.
+  ask patches with [
+    pxcor >= -4 and pxcor <= -3 and
+    pycor >= -10 and pycor <= -5
+  ] [
+    set-ground-kind "Pflaster"
+    set-object-kind "none"
+  ]
+
+  ask patches with [
+    pxcor >= -5 and pxcor <= -3 and
+    pycor >= -10 and pycor <= -9
+  ] [
+    set-ground-kind "Pflaster"
+    set-object-kind "none"
+  ]
+
+  ;; Zugang zum Beachvolleyballbereich: kurzer schmaler Anschluss
+  ;; vom Hof an die linke Seite des Beachbereichs.
+  ask patches with [
+    pxcor >= -1 and pxcor <= 4 and
+    pycor >= 6 and pycor <= 7
+  ] [
+    set-ground-kind "Pflaster"
+    set-object-kind "none"
+  ]
+end
+
+to verlege-staedtische-messstation
+  ;; Messstation M1 in die Ecke des Klimafelds verlegen.
+  ;; Die allgemeine Stationslogik bleibt unverändert.
+  let ziel patch 5 -6
+
+  ifelse any? stations with [station-id = 1] [
+    ask stations with [station-id = 1] [
+      move-to ziel
+      set current-reading [air-temp-local] of patch-here
+    ]
+  ] [
+    if count stations < max-stations [
+      Station-setzen ziel
+    ]
+  ]
+
+  update-station-readings
+  refresh-station-appearance
+end
+
+to erweiterungslauf-starten
+  ;; Additiver Safe-Guard-Wrapper für den freien Erweiterungsteil.
+  ;; Die alte Prozedur simulieren bleibt unverändert.
+
+  if not ref-selection-saved? [
+    user-message "Dieser Button gehört zur Zusatzaufgabe. Für den Pflichtteil zuerst 'Modellstart / Reset' und 'Tageslauf berechnen' verwenden. Freie Versuche erst nach gespeichertem Ist-Zustand starten."
+    stop
+  ]
+
+  if simulationszeit >= 24 - zeit-epsilon [
+    user-message "Der aktuelle Tageslauf ist bereits vollständig. Für einen weiteren freien Versuch zuerst 'Maßnahme aktivieren' verwenden oder mit 'Modellstart / Reset' neu beginnen."
+    stop
+  ]
+
+  simulieren
+end
+
+to markiere-staedtische-planungsflaechen
+  ;; Vergleichsgebiet exakt als rote Kästen der Skizze:
+  ;; Sportfeldumfeld links unten und Beachvolleyballumfeld rechts.
+  ask patches [
+    set selected-area? false
+  ]
+
+  ask patches with [
+    pxcor >= -23 and pxcor <= 3 and
+    pycor >= -22 and pycor <= -5
+  ] [
+    set selected-area? true
+  ]
+
+  ask patches with [
+    pxcor >= 0 and pxcor <= 25 and
+    pycor >= -5 and pycor <= 8
+  ] [
+    set selected-area? true
+  ]
 end
 
 ; ----------------------------------------------------------------------------
@@ -81625,9 +81820,8 @@ to simulieren
       update-station-plot
       protokolliere-faellige-stunden
     ]
-    ;; display  ;; NetLogo-Web: automatische Aktualisierung
-    szenarien-anzeigen
-  ]
+    display
+   ]
 
   if simulationszeit >= 24 [
     set simulationsblock-aktiv? false
@@ -81653,23 +81847,14 @@ to simulieren
   update-station-plot
   protokolliere-faellige-stunden
   ;update-hitzelastklassen-plot
-  ;; display  ;; NetLogo-Web: automatische Aktualisierung
+  display
   tick-advance (simulationszeit - start-time)
 
   if simulationszeit >= 24 [
-    ;; Am Ende des ersten vollständigen Laufs wird die Vorher-Referenz
-    ;; automatisch gespeichert. Das ersetzt in der Web-Version den alten
-    ;; separaten Button "Referenz speichern".
-    if not is-boolean? ref-selection-saved? [
-      set ref-selection-saved? false
-    ]
-
-    if not ref-selection-saved? [
-      referenz-speichern
-      print "Referenz automatisch gespeichert (Ende Lauf 1)."
-      print "Jetzt 'Massnahme aktivieren' drücken, Maßnahme setzen und erneut 'Versuch starten'."
-    ]
-
+       if not ref-selection-saved? [
+    referenz-speichern
+    print "Referenz automatisch gespeichert (Ende Lauf 1)."
+  ]
     set simulationsblock-aktiv? false
     stop
   ]
@@ -81730,12 +81915,12 @@ to Kartenansicht-aktualisieren
   refresh-station-appearance
   update-indicators
   update-station-readings
-  ;; display  ;; NetLogo-Web: automatische Aktualisierung
+  display
 end
 
 ; ============================================================================
 ; Dieser Block enthält die Funktionen, die Standardwerte absichern, 
-; Reset-Szenarien herstellen und über Buttons aufrufbare Komfortabläufe kapseln.
+; Resetzustände herstellen und über Buttons aufrufbare Komfortabläufe kapseln.
 ; ============================================================================
 
 ; ----------------------------------------------------------------------------
@@ -81744,7 +81929,6 @@ end
 ; ----------------------------------------------------------------------------
 to apply-defaults
   if not is-boolean? mouse-was-down? [ set mouse-was-down? false ]
-  ;if not is-string? Aktive-Geometrie-Datei [ set Aktive-Geometrie-Datei "" ]
   if not is-boolean? Legende-an? [ set Legende-an? false ]
   if not (member? Jahreszeit ["Sommer" "Frühling/Herbst" "Winter"]) [ set Jahreszeit "Sommer" ]
   if not is-number? Stunde                    [ set-model-time 13 ]
@@ -81896,7 +82080,7 @@ end
 ; ============================================================================
 ; Szenenaufbau, Weltaufbau und Geometrie laden
 ; ----------------------------------------------------------------------------
-; Hier werden Ausgangswelten und Demo-Szenarien erzeugt oder aus der rechteckbasierten Geometriebeschreibung wieder aufgebaut.
+; Hier werden Ausgangswelten erzeugt oder aus der rechteckbasierten Geometriebeschreibung wieder aufgebaut.
 ; ============================================================================
 
 ; ----------------------------------------------------------------------------
@@ -81908,7 +82092,7 @@ to setup-empty-schoolyard
     set-ground-kind "Pflaster"
     set-object-kind "none"
   ]
-  ;; display  ;; NetLogo-Web: automatische Aktualisierung
+  display
 end
 
 ; ----------------------------------------------------------------------------
@@ -81963,7 +82147,7 @@ recolor-world
 refresh-station-appearance
 update-indicators
 update-station-readings
-;; display  ;; NetLogo-Web: automatische Aktualisierung
+display
 end
 
 ; ----------------------------------------------------------------------------
@@ -81981,9 +82165,8 @@ end
 ; Lädt die Referenzwelt aus der Rechteckgeometrie und setzt Plot- sowie Stationszustände auf einen sauberen Start zurück.
 ; ----------------------------------------------------------------------------
 to load-default-world
-  ;; NetLogo-Web-Version:
-  ;; Keine lokalen Dateien lesen. Die Web-Variante nutzt immer die
-  ;; fest im Code gespeicherte Referenzgeometrie.
+  ;; Webversion: keine Dateiablage und keine Dateiladung.
+  ;; Die Welt wird ausschließlich aus der eingebauten Referenzgeometrie aufgebaut.
   build-world-from-rects geometry-rects-half
 
   ask patches [
@@ -81996,107 +82179,9 @@ to load-default-world
   set-current-plot "Stationen Temperatur"
   clear-plot
 end
-to reset-demo-szenario
-  ;; NetLogo-Web-Version:
-  ;; Vollständiger Neustart mit eingebauter Referenzgeometrie.
-  ;; Keine Szenariodateien, kein lokaler Dateizugriff.
+to reset-modellstart
   set reset-scene? false
   set Kartenansicht "Materialien & Elemente"
-  set Aktive-Geometrie-Datei ""
-  setup
-end
-;to load-default-world
-;  prepare-legacy-plot-import
-;  import-world "schoolyard_climate2.csv"
-;
-;  ;; import-world überschreibt Globals aus der alten Welt
-;  if not is-boolean? taglauf-aktiv? [ set taglauf-aktiv? false ]
-;  if not is-boolean? simulationsblock-aktiv? [ set simulationsblock-aktiv? false ]
-;  if not is-boolean? reset-scene? [ set reset-scene? false ]
-;  ;if not is-boolean? Auto-Update-Kartenansicht? [ set Auto-Update-Kartenansicht? true ]
-;
-;  ask patches [
-;   set plabel ""
-;    set plabel-color black
-;    migrate-legacy-patch
-;  ]
-;
-;ifelse any? stations [
-;    set next-station-id (max [station-id] of stations) + 1
-;  ] [
-;    set next-station-id 1
-;  ]
-;
-;  ;; alten importierten Plotzustand verwerfen
-;  set-current-plot "Stationen Temperatur"
-;  clear-plot
-;end
-;
-
-;to prepare-legacy-plot-import
-;  set-current-plot "Stationen Temperatur"
-;  clear-plot
-;  auto-plot-off
-;
-;  ;; alter Pen aus der importierten Welt
-;  ensure-plot-pen "T-Luft" black
-;
-;  ;; aktuelle Pens
-;  ensure-plot-pen "T-Modellantrieb" (sky + 2)
-;  ensure-plot-pen "T-Luft lokal" blue
-;  ensure-plot-pen "T-Oberfläche" black
-;
-;  ;; Stationspens vorsorglich
-;  let i 1
-;  while [i <= 12] [
-;    ensure-plot-pen (word "M" i) blue
-;    set i i + 1
-;  ]
-;end
-
-;to migrate-legacy-patch  ;; patch context
-;  let legacy Oberfläche
-;
-;  if member? legacy ["Asphalt" "Pflaster" "Beton" "Sand" "Sportbelag" "Rasen"] [
-;    set ground-kind legacy
-;    set object-kind "none"
-;    sync-patch-semantics
-;    stop
-;  ]
-;
-;  if legacy = "Baum" [
-;    if not member? ground-kind ["Asphalt" "Pflaster" "Beton" "Sand" "Sportbelag" "Rasen"] [ set ground-kind "Rasen" ]
-;    set object-kind "tree"
-;    sync-patch-semantics
-;    stop
-;  ]
-;
-;  if legacy = "Hecke" [
-;    if not member? ground-kind ["Asphalt" "Pflaster" "Beton" "Sand" "Sportbelag" "Rasen"] [ set ground-kind "Rasen" ]
-;    set object-kind "hedge"
-;    sync-patch-semantics
-;    stop
-;  ]
-;
-;  if legacy = "Gebaeude" [
-;    set ground-kind "none"
-;    set object-kind "building"
-;    if building-height <= 0 [ set building-height Gebäudehöhe ]
-;    sync-patch-semantics
-;    stop
-;  ]
-;
-;  set ground-kind "Pflaster"
-;  set object-kind "none"
-;  sync-patch-semantics
-;end
-
-
-to setup-szenario
-  ;; NetLogo-Web-Version:
-  ;; Kein Laden externer Szenariodateien. Der Startzustand ist fest
-  ;; im Reporter geometry-rects-half hinterlegt.
-  set Aktive-Geometrie-Datei ""
   setup
 end
 ; -----------------------------------------------------------------------------
@@ -83691,7 +83776,7 @@ to handle-area-selection
       update-selection-stats
       recolor-world
       refresh-station-appearance
-      ;; display  ;; NetLogo-Web: automatische Aktualisierung
+      display
     ]
   ]
 
@@ -84085,7 +84170,7 @@ to toggle-legende
   set Legende-an? not Legende-an?
   recolor-world
   refresh-station-appearance
-  ;; display  ;; NetLogo-Web: automatische Aktualisierung
+  display
 end
 
 to toggle-sand
@@ -84289,7 +84374,7 @@ to protokolliere-messwerte
 
   if not protokoll-kopf-gedruckt? [
     clear-output
-    print (word "# Simulation: " Versuchsname)
+    print "# Simulation: Webversion"
     print output-table-separator
     print "| Zeit  |   Tbg |   TLm |   TLx |   TOm |   TOx |   BIm |   BIx |  HSmh |  HSxh |   M1L |   M2L |   M3L |   M4L |   M1O |   M2O |   M3O |   M4O |"
     print output-table-separator
@@ -84356,7 +84441,7 @@ end
 ; Referenzvergleich für ausgewählte Aufenthaltsflächen
 ; ----------------------------------------------------------------------------
 ; Diese Logik nutzt die bestehende rechteckige Gebietsauswahl. Sie speichert
-; keine komplette Welt und keine Szenarien, sondern nur wenige belastungsrelevante
+; keine komplette Welt und keine externe Ablage, sondern nur wenige belastungsrelevante
 ; Kennwerte pro ausgewähltem Patch. Dadurch bleibt der Vorher/Nachher-Vergleich
 ; bewusst klein und NetLogo-tauglich.
 ; ============================================================================
@@ -84389,7 +84474,7 @@ to referenz-speichern
   ]
 
   set ref-selection-count count patches
-  set ref-selection-name Szenario-Name
+  set ref-selection-name "Ist-Zustand"
   set ref-selection-saved? true
 
   set ref-heat-mean mean [heat-dose-comfort] of patches
@@ -84406,30 +84491,13 @@ to referenz-speichern
 end
 
 to auswahl-vergleichen
-  ;; Web-Workflow: Referenz wird nicht über einen eigenen sichtbaren Button gesetzt,
-  ;; sondern automatisch am Ende von Lauf 1 oder spätestens bei "Massnahme aktivieren".
-  ;; Deshalb hier getrennte Fehlermeldungen statt der alten Desktop-Meldung
-  ;; "Referenz speichern ausführen".
-  if not is-boolean? ref-selection-saved? [
-    set ref-selection-saved? false
-  ]
-
-  if not ref-selection-saved? [
-    user-message "Es gibt noch keine Vorher-Referenz. Erst den Ausgangszustand bis 24:00 simulieren, dann 'Massnahme aktivieren' drücken und danach den zweiten Lauf starten."
-    stop
-  ]
-
-  if not any? patches with [selected-area?] [
-    user-message "Erst mit 'Gebiet-auswählen' eine Fläche markieren. Danach 'Auswahlgebiet vergleichen' drücken."
-    stop
-  ]
-
   let comp comparison-patches
 
   if not any? comp [
-    user-message "Die Auswahl enthält keine Referenzwerte. Drücke nach einem vollständigen ersten Lauf 'Massnahme aktivieren' und starte den zweiten Lauf erneut."
+    user-message "Es gibt keine gespeicherte Referenz für die aktuelle Auswahl. Erst 'Referenz speichern' ausführen."
     stop
   ]
+
   let n count comp
   let mean-before mean [ref-heat-dose-comfort] of comp
   let mean-after mean [heat-dose-comfort] of comp
@@ -86010,177 +86078,12 @@ end
 
 
 ; ============================================================================
-; Geometrieexport und gespeicherte Referenzgeometrie
-; ----------------------------------------------------------------------------
-; Hier liegen die Hilfsfunktionen zum Verdichten der Welt in Rechteckgeometrien, zum Export in Reporterform und die aktuell fest eingetragene Referenzgeometrie.
+; Persistente Dateiablage deaktiviert
 ; ============================================================================
+; Webversion: Alle Dateioperationen zum Speichern, Laden, Indexieren oder
+; Exportieren wurden entfernt. Die eingebaute Referenzgeometrie
+; bleibt erhalten und wird direkt aus geometry-rects-half aufgebaut.
 
-; ----------------------------------------------------------------------------
-; same-geom?
-; Vergleicht, ob ein Patch die gleiche geometrisch-semantische Signatur wie eine Referenzsignatur besitzt.
-; ----------------------------------------------------------------------------
-to-report same-geom? [p sig]
-  report
-    [ground-kind] of p = item 0 sig and
-    [object-kind] of p = item 1 sig and
-    [roof-style] of p = item 2 sig and
-    [wall-style] of p = item 3 sig and
-    [building-height] of p = item 4 sig and
-    [veg-height] of p = item 5 sig
-end
-
-; ----------------------------------------------------------------------------
-; patch-geom-sig
-; Erzeugt die geometrisch-semantische Signatur eines Patches.
-; ----------------------------------------------------------------------------
-to-report patch-geom-sig [p]
-  report (list
-    [ground-kind] of p
-    [object-kind] of p
-    [roof-style] of p
-    [wall-style] of p
-    [building-height] of p
-    [veg-height] of p
-  )
-end
-
-; ----------------------------------------------------------------------------
-; extract-geometry-rects
-; Verdichtet die aktuelle Welt in rechteckige Blöcke gleicher Geometriesignatur.
-; ----------------------------------------------------------------------------
-to-report extract-geometry-rects
-  ask patches [ set geom-done? false ]
-
-  let rects []
-  let y max-pycor
-
-  while [y >= min-pycor] [
-    let x min-pxcor
-
-    while [x <= max-pxcor] [
-      let p patch x y
-
-      if not [geom-done?] of p [
-        let sig patch-geom-sig p
-
-        ;; maximale Breite nach rechts
-        let w 0
-        while [
-          (x + w <= max-pxcor) and
-          (not [geom-done?] of (patch (x + w) y)) and
-          same-geom? (patch (x + w) y) sig
-        ] [
-          set w w + 1
-        ]
-
-        ;; maximale Höhe nach unten
-        let h 1
-        let can-grow true
-
-        while [can-grow and (y - h >= min-pycor)] [
-          let xx x
-          while [can-grow and (xx < x + w)] [
-            let q patch xx (y - h)
-            if [geom-done?] of q or not same-geom? q sig [
-              set can-grow false
-            ]
-            set xx xx + 1
-          ]
-          if can-grow [
-            set h h + 1
-          ]
-        ]
-
-        ;; Rechteck markieren
-        ask patches with [
-          pxcor >= x and pxcor < (x + w) and
-          pycor <= y and pycor > (y - h)
-        ] [
-          set geom-done? true
-        ]
-
-        ;; Format:
-        ;; [x1 x2 y1 y2 ground-kind object-kind roof-style wall-style building-height veg-height]
-        set rects lput
-          (sentence (list x (x + w - 1) (y - h + 1) y) sig)
-          rects
-      ]
-
-      set x x + 1
-    ]
-
-    set y y - 1
-  ]
-
-  ask patches [ set geom-done? false ]
-  report rects
-end
-
-; ----------------------------------------------------------------------------
-; write-geometry-rects
-; Schreibt eine extrahierte Rechteckgeometrie als NetLogo-Reporter in eine Datei.
-; ----------------------------------------------------------------------------
-to write-geometry-rects [path reporter-name]
-  ;; NetLogo-Web-Version:
-  ;; Kein Dateiexport. Geometrieexport bleibt der Desktop-Version vorbehalten.
-  clear-output
-  output-print "Geometrieexport ist in der Web-Version deaktiviert."
-end
-;write-geometry-rects "geometry_modell2.nls" "geometry-rects-modell2"
-; reinkopieren
-to szenario-speichern
-  ;; NetLogo-Web-Version:
-  ;; Lokales Speichern/Laden von Szenariodateien ist deaktiviert.
-  ;; Der nutzbare Workflow ist der laufende Vorher/Nachher-Vergleich:
-  ;; 1. Ausgangszustand simulieren.
-  ;; 2. Referenz automatisch oder manuell speichern.
-  ;; 3. Maßnahme setzen.
-  ;; 4. Massnahme aktivieren.
-  ;; 5. Versuch erneut starten.
-  ;; 6. Auswahlgebiet vergleichen.
-  clear-output
-  output-print "Web-Version: Lokales Speichern von Szenarien ist deaktiviert."
-  output-print "Nutze den Vorher/Nachher-Vergleich im laufenden Modell:"
-  output-print "1. Ausgangszustand simulieren."
-  output-print "2. Maßnahme setzen."
-  output-print "3. Massnahme aktivieren."
-  output-print "4. Versuch erneut starten."
-  output-print "5. Auswahlgebiet vergleichen."
-end
-to index-szenario [name]
-  ;; NetLogo-Web-Version:
-  ;; Kein Szenarioindex, weil kein lokaler Dateizugriff verwendet wird.
-end
-to szenarien-anzeigen
-  ;; NetLogo-Web-Version:
-  ;; Keine Ausgabe und kein clear-output.
-  ;; Wichtig: Diese Prozedur wird während setup/simulieren aufgerufen.
-  ;; Ein leerer Rumpf verhindert, dass Protokoll- und Vergleichsausgaben
-  ;; durch eine Szenarioliste überschrieben werden.
-end
-to szenario-laden
-  ;; NetLogo-Web-Version:
-  ;; Kein Laden externer Szenariodateien.
-  clear-output
-  output-print "Web-Version: Laden externer Szenariodateien ist deaktiviert."
-  output-print "Der Startzustand wird aus der eingebauten Referenzgeometrie erzeugt."
-end
-to-report trim [s]
-  let out s
-  while [length out > 0 and substring out 0 1 = " "] [
-    set out substring out 1 length out
-  ]
-  while [length out > 0 and substring out (length out - 1) length out = " "] [
-    set out substring out 0 (length out - 1)
-  ]
-  report out
-end
-
-to synchronisiere-szenario-name
-  if not is-string? Versuchsname [ set Versuchsname "Standard" ]
-  if empty? trim Versuchsname [ set Versuchsname "Standard" ]
-  set Szenario-Name trim Versuchsname
-end
 ; ----------------------------------------------------------------------------
 ; geometry-rects
 ; Enthält die fest gespeicherte Referenzgeometrie des Schulhofs.
@@ -86498,7 +86401,7 @@ end
   <widgets>
     <view x="5" wrappingAllowedX="false" y="15" frameRate="30.0" minPycor="-25" height="514" showTickCounter="true" patchSize="10.0" fontSize="10" wrappingAllowedY="false" width="514" tickCounterLabel="ticks" maxPycor="25" updateMode="1" maxPxcor="25" minPxcor="-25"></view>
     <button x="523" y="318" height="42" disableUntilTicks="false" forever="true" kind="Observer" width="182" display="Karte bearbeiten">interaktiv</button>
-    <chooser x="523" y="363" height="60" variable="Element" current="3" width="182" display="Element">
+    <chooser x="523" y="363" height="60" variable="Element" current="0" width="182" display="Element">
       <choice type="string" value="Gebiet-auswählen"></choice>
       <choice type="string" value="Station-setzen"></choice>
       <choice type="string" value="Station-entfernen"></choice>
@@ -86513,25 +86416,33 @@ end
     </chooser>
     <slider x="523" step="1" y="425" max="3" width="182" display="Pinselgrösse" height="50" min="0" direction="Horizontal" default="2.0" variable="Pinselgrösse"></slider>
     <slider x="523" step="1" y="480" max="20" width="182" display="Baumhöhe" height="50" min="3" direction="Horizontal" default="20.0" variable="Baumhöhe"></slider>
-    <note x="525" y="5" backgroundDark="0" fontSize="10" width="370" markdown="true" height="31" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">Versuch Einsteillungen</note>
-    <button x="523" y="71" height="42" disableUntilTicks="false" forever="true" kind="Observer" width="187" display=" Versuch starten">simulieren</button>
+    <note x="525" y="5" backgroundDark="0" fontSize="10" width="370" markdown="true" height="31" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">Pflicht: Planung bewerten</note>
     <button x="720" y="318" height="36" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Gebäude begrünen">toggle-alle-daecher
 toggle-alle-waende</button>
-    <button x="720" y="453" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Massnahme aktivieren">lauf-neu-vorbereiten</button>
-    <button x="720" y="495" height="36" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Auswahlgebiet vergleichen">auswahl-vergleichen</button>
     <button x="810" y="356" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="95" display="Sportfeld">toggle-tartanfeld</button>
     <monitor x="910" precision="17" y="420" height="60" fontSize="11" width="195" display="Fläche mittlerer Hitzebelastung">report-yellow-area comparison-patches</monitor>
     <monitor x="910" precision="17" y="368" height="60" fontSize="11" width="195" display="Fläche extremer Hitzebelastung">report-red-area comparison-patches</monitor>
     <button x="720" y="355" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="85" display="Sandplatz">toggle-sand</button>
-    <note x="520" y="285" backgroundDark="0" fontSize="10" width="383" markdown="true" height="32" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
-Versuch bearbeiten</note>
-    <button x="523" y="25" height="42" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Modellstart /-reset">reset-demo-szenario</button>
     <monitor x="910" precision="17" y="475" height="60" fontSize="11" width="415" display="Zusammenfassender Vergleich der Veränderungen">report-improvement-summary comparison-patches</monitor>
-    <monitor x="1130" precision="17" y="420" height="60" fontSize="11" width="195" display="Unkritische Hitzeblastung">report-lowmid-area comparison-patches</monitor>
-    <monitor x="1130" precision="17" y="368" height="60" fontSize="11" width="195" display="Fläche Kritischer Hitzbelastung">report-orange-area comparison-patches</monitor>
-    <button x="525" y="240" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="180" display="Legende an/aus">toggle-legende</button>
-    <button x="525" y="195" height="40" disableUntilTicks="false" forever="true" kind="Observer" width="180" display="Karte aktualisieren">Kartenansicht-aktualisieren</button>
-    <chooser x="715" y="220" height="60" variable="Kartenansicht" current="0" width="187" display="Kartenansicht">
+    <monitor x="1130" precision="17" y="420" height="60" fontSize="11" width="195" display="Unkritische Hitzebelastung">report-lowmid-area comparison-patches</monitor>
+    <monitor x="1130" precision="17" y="368" height="60" fontSize="11" width="195" display="Fläche kritischer Hitzebelastung">report-orange-area comparison-patches</monitor>
+    <monitor x="910" precision="1" y="285" height="60" fontSize="11" width="415" display="                                                                                                                                                                                   []">hitzelast-legende-horizontal</monitor>
+    <note x="910" y="286" backgroundDark="0" fontSize="8" width="410" markdown="true" height="25" textColorDark="-1" textColorLight="-16777216" backgroundLight="0"><![CDATA[**Hitzelastklassen [h] der Aufenhaltsfläche [%]:** |blau  <1|grün1–2.5|gelb 2.5–5|orange 5–6.5|rot > 6.5| <br>Aufenhaltsflächen= Asphalt, Pflaster, Offenpfl., Rasen, Sportbelag, Sand]]></note>
+    <note x="910" y="350" backgroundDark="0" fontSize="10" width="190" markdown="true" height="18" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">Veränderungen im Auswahlgebiet</note>
+    <plot x="910" autoPlotX="false" yMax="30.0" autoPlotY="false" yAxis="Luft-Temperatur [°C]" y="0" xMin="0.0" height="275" legend="true" xMax="24.0" yMin="8.0" width="415" xAxis="Uhrzeit [h]" display="Stationen Temperatur">
+      <setup>clear-plot</setup>
+      <update></update>
+    </plot>
+    <monitor x="1220" precision="0" y="0" height="60" fontSize="11" width="103" display="Uhrzeit">modell-uhr</monitor>
+    <note x="910" y="5" backgroundDark="0" fontSize="8" width="166" markdown="true" height="25" textColorDark="-1" textColorLight="-16777216" backgroundLight="14868697">Punkte: Oberflächentemperatur
+Linie: Lufttemperatur
+</note>
+    <note x="520" y="285" backgroundDark="0" fontSize="10" width="383" markdown="true" height="20" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
+Versuch bearbeiten</note>
+    <button x="523" y="25" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Modellstart / Reset">reset-modellstart</button>
+    <button x="715" y="25" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Städtische Planung aktivieren">staedtische-planung-aktivieren</button>
+    <button x="525" y="65" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Tageslauf berechnen">tageslauf-berechnen-schueler</button>
+    <chooser x="715" y="155" height="60" variable="Kartenansicht" current="0" width="187" display="Kartenansicht">
       <choice type="string" value="Materialien &amp; Elemente"></choice>
       <choice type="string" value="Schatten aktuell"></choice>
       <choice type="string" value="Oberflächentemperatur aktuell"></choice>
@@ -86540,24 +86451,15 @@ Versuch bearbeiten</note>
       <choice type="string" value="Hitzelast Schulzeit"></choice>
       <choice type="string" value="Hitzelast Änderung"></choice>
     </chooser>
-    <input x="725" multiline="false" y="5" height="65" variable="Versuchsname" type="string" width="180">Standard</input>
-    <button x="725" y="75" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="180" display="Web-Hinweis">szenario-speichern</button>
-    <note x="720" y="425" backgroundDark="0" fontSize="10" width="186" markdown="true" height="32" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
-Versuche vergleichen</note>
-    <output x="725" y="125" height="50" fontSize="10" width="182"></output>
-    <note x="725" y="120" backgroundDark="0" fontSize="10" width="175" markdown="true" height="18" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">Verfügbare Versuche</note>
-    <note x="525" y="185" backgroundDark="0" fontSize="11" width="380" markdown="true" height="35" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
+    <note x="525" y="105" backgroundDark="0" fontSize="11" width="380" markdown="true" height="25" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
                                            Kartenansicht wählen</note>
-    <monitor x="910" precision="1" y="285" height="60" fontSize="11" width="415" display="                                                                                                                                                                            []">hitzelast-legende-horizontal</monitor>
-    <note x="915" y="288" backgroundDark="15000798" fontSize="8" width="405" markdown="true" height="25" textColorDark="-1" textColorLight="-16777216" backgroundLight="0"><![CDATA[**Hitzelastklassen [h] der Aufenhaltsfläche [%]:** |blau  <1|grün1–2.5|gelb 2.5–5|orange 5–6.5|rot > 6.5| <br>Aufenhaltsflächen= Asphalt, Pflaster, Offenpfl., Rasen, Sportbelag, Sand]]></note>
-    <note x="910" y="350" backgroundDark="0" fontSize="10" width="170" markdown="true" height="18" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">Veränderungen im Auswahlgebiet</note>
-    <plot x="910" autoPlotX="false" yMax="30.0" autoPlotY="false" yAxis="Luft-Temperatur [°C]" y="0" xMin="0.0" height="280" legend="true" xMax="24.0" yMin="8.0" width="415" xAxis="Uhrzeit [h]" display="Stationen Temperatur">
-      <setup>clear-plot</setup>
-      <update></update>
-    </plot>
-    <note x="910" y="5" backgroundDark="0" fontSize="8" width="135" markdown="true" height="20" textColorDark="-1" textColorLight="-16777216" backgroundLight="14868697">Punkte: Oberflächentemperatur
-Linie: Lufttemperatur
-</note>
+    <button x="525" y="130" height="40" disableUntilTicks="false" forever="true" kind="Observer" width="180" display="Karte aktualisieren">Kartenansicht-aktualisieren</button>
+    <button x="525" y="175" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="180" display="Legende an/aus">toggle-legende</button>
+    <note x="715" y="392" backgroundDark="0" fontSize="10" width="186" markdown="true" height="32" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
+Versuche vergleichen</note>
+    <button x="715" y="420" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Maßnahme aktivieren">massnahme-aktivieren</button>
+    <button x="715" y="460" height="35" disableUntilTicks="false" forever="true" kind="Observer" width="185" display="Freien Versuch starten">erweiterungslauf-starten</button>
+    <button x="715" y="500" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Auswahlgebiet vergleichen">auswahl-vergleichen</button>
   </widgets>
   <info><![CDATA[# Schulhof KlimaLab
 
@@ -86594,7 +86496,7 @@ Wichtig ist: Das Modell soll vor allem **Zusammenhänge** und **Unterschiede** s
 
 ## Das Interface
 
-Mit **Modellstart /-reset** wird das Modell in den Ausgangszustand zurückgesetzt. Dabei werden Szene, Zeit, Temperaturzustände, Stationen und Vergleichsdaten neu aufgebaut.
+Mit **Modellstart /-reset** wird das Modell in den Ausgangszustand zurückgesetzt. Dabei werden Szene, Zeit, Temperaturzustände, Stationen und Vergleichswerte neu aufgebaut.
 
 Mit **Versuch starten** läuft ein Tagesverlauf durch. Dabei werden die Temperaturen, Schattenwerte und Hitzelasten über den Tag fortgeschrieben.
 
@@ -86602,7 +86504,6 @@ Mit **Karte aktualisieren** wird die aktuelle Darstellung neu berechnet und neu 
 
 Mit **Legende an/aus** kann die passende Legende zur gewählten Kartenansicht ein- oder ausgeblendet werden.
 
-Mit **Versuch speichern** werden die aktuelle Schulhofgeometrie und die Versuchsdaten unter dem eingetragenen **Versuchsnamen** gespeichert.
 
 Oben rechts im Diagramm **Stationen Temperatur** können Temperaturverläufe über den Tag verfolgt werden. Die graue Kurve zeigt den Modellantrieb, also den allgemeinen Temperaturverlauf im Hintergrund. Die farbigen Linien gehören zu den gesetzten Messstationen. Zusätzlich zeigen die Punkt-Kurven die Oberflächentemperaturen an diesen Stationen.
 
