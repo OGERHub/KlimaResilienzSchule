@@ -1,5 +1,5 @@
 ---
-title: "Welche Oberflaeche wird am heissesten?"
+title: "Welche Oberfläche wird am heißesten?"
 subtitle: "Ein Strahlungsexperiment mit Sand, Wasser und Steinen"
 author: "Rieke Ammoneit"
 date: "2026-04-28"
@@ -18,126 +18,193 @@ format:
   docx: default
 ---
 
-# Strahlungsexperiment: Was wird am heissesten?
+# Strahlungsexperiment: Welche Oberfläche wird am heißesten?
 
 ::: question-box
 **Teamname:**
 :::
 
 ::: {.callout-tip appearance="minimal"}
-Draussen fuehlen sich Oberflaechen oft sehr unterschiedlich warm an. Heller Sand, dunkler Sand, Wasser und Kieselsteine reagieren nicht gleich auf Strahlung.
+Oberflächen nehmen Strahlung unterschiedlich auf und geben Wärme unterschiedlich schnell wieder ab.
 
-Ihr testet vier Oberflaechen unter einer Waermelampe. Gemessen wird mit einer Thermalkamera und einem beruehrungslosen Thermometer.
+Ihr testet vier Materialien unter einer Wärmelampe: hellen Sand, dunklen Sand, Wasser und Kieselsteine.
 
-Der dunkle Sand ist ein deutliches Beispiel: An ihm kann man gut erkennen, was dunkle Oberflaechen mit Strahlung machen.
+Gemessen wird mit einer Thermalkamera und einem berührungslosen Thermometer.
 :::
 
-![Abbildung 1: Aufbau des Strahlungsexperiments](../images/strahlungs-experiment-aufbau.png)
+![Abbildung 1: Aufbau des Strahlungsexperiments](../images/strahlungs-experiment-aufbau.png){fig-align="center" width="95%"}
 
-# Die Frage
+# Forschungsfrage
 
-Welche Oberflaeche wird unter gleicher Bestrahlung am heissesten?
+::: question-box
+**Welche Oberfläche wird unter gleicher Bestrahlung am heißesten?**
+:::
 
-Schaut euch die Materialien kurz an. Achtet auf Farbe, Feuchtigkeit und Material: Heller Sand, dunkler Sand, Wasser und Kieselsteine nehmen Strahlung nicht auf die gleiche Weise auf.
+# Vermutung
 
-Gebt vor dem Messen einen Tipp ab.
+Welche Oberfläche wird am heißesten?
 
 ::: answer-box-medium
-**Unser Tipp:**
+**Unsere Vermutung:**
 :::
 
-Warum glaubt ihr das?
+Warum vermutet ihr das?
 
 ::: answer-box
-**Unsere Begruendung vor dem Messen:**
+**Begründung:**
 :::
 
-# Der Versuch
+# Aufgabe 1: Aufbau vorbereiten
 
-Es gibt vier flache Schalen:
+Stellt vier flache Schalen nebeneinander unter eine Wärmelampe.
 
-- heller Sand
-- dunkler Sand
+Die vier Schalen enthalten:
+
+- hellen Sand
+- dunklen Sand
 - Wasser
-- Kieselsteine / Lahnkies
+- Kieselsteine
 
-Alle Schalen stehen gleich weit von der Waermelampe entfernt. Die Lampe bleibt waehrend des Versuchs an derselben Stelle. Ihr messt immer von oben auf die Oberflaeche.
+Die Wärmelampe soll alle vier Oberflächen möglichst gleichmäßig bestrahlen.
+
+Messt die Oberflächentemperatur mit:
+
+- Thermalkamera
+- berührungslosem Thermometer
 
 ::: {.callout-note appearance="minimal"}
-Nicht in die helle Lampe schauen. Die Lampe nicht anfassen.
+Achtet darauf, dass die Schalen gleich weit von der Lampe entfernt stehen und dass ihr immer aus ähnlicher Entfernung messt.
 :::
 
-# Messen
+::: answer-box
+**Kurze Beschreibung des Aufbaus:**
+:::
 
-Messt zuerst die Temperatur ohne Waermelampe.
+# Aufgabe 2: Starttemperatur messen
 
-Schaltet dann die Waermelampe ein. Messt nach 3, 6, 9 und 12 Minuten.
+Messt zuerst alle Oberflächen, bevor die Wärmelampe eingeschaltet wird.
 
-Nutzt das beruehrungslose Thermometer fuer die Zahlenwerte. Nutzt die Thermalkamera, um die Temperaturunterschiede sichtbar zu machen.
+```{=html}
+<table class="messprotokoll">
+  <thead>
+    <tr>
+      <th>Oberfläche</th>
+      <th>Temperatur<br><span>in °C</span></th>
+      <th>Farbe im<br><span>Thermalbild</span></th>
+      <th>Bemerkung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>heller Sand</td><td></td><td></td><td></td></tr>
+    <tr><td>dunkler Sand</td><td></td><td></td><td></td></tr>
+    <tr><td>Wasser</td><td></td><td></td><td></td></tr>
+    <tr><td>Kieselsteine</td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
+````
 
-| Zeit | heller Sand | dunkler Sand | Wasser | Kieselsteine |
-|---|---:|---:|---:|---:|
-| 0 min |  |  |  |  |
-| 3 min |  |  |  |  |
-| 6 min |  |  |  |  |
-| 9 min |  |  |  |  |
-| 12 min |  |  |  |  |
+# Aufgabe 3: Erwärmung messen
 
-# Ergebnis
+Schaltet die Wärmelampe ein.
 
-Schaut nach 12 Minuten auf eure Messwerte und auf das Thermalbild.
+Messt die Temperatur der Oberflächen nach 3, 6, 9 und 12 Minuten.
+
+```{=html}
+<table class="messprotokoll">
+  <thead>
+    <tr>
+      <th>Zeit</th>
+      <th>heller Sand<br><span>°C</span></th>
+      <th>dunkler Sand<br><span>°C</span></th>
+      <th>Wasser<br><span>°C</span></th>
+      <th>Kieselsteine<br><span>°C</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>0 min</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>3 min</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>6 min</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>9 min</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>12 min</td><td></td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
+```
+
+# Aufgabe 4: Ergebnisse ordnen
+
+Welche Oberfläche wurde am heißesten?
 
 ::: answer-box-medium
-**Am heissesten wurde:**
+**Am heißesten wurde:**
 :::
+
+Welche Oberfläche blieb am kühlsten?
 
 ::: answer-box-medium
-**Am kuehlsten blieb:**
+**Am kühlsten blieb:**
 :::
+
+Welche Oberfläche hat sich am stärksten verändert?
+
+::: answer-box-medium
+**Am stärksten verändert hat sich:**
+:::
+
+Was war im Thermalbild besonders auffällig?
 
 ::: answer-box
-**Das war im Thermalbild besonders auffaellig:**
+**Antwort:**
 :::
 
-# Auswertung
+# Aufgabe 5: Auswertung
 
-Vergleicht euren Tipp mit den Messwerten.
+War eure Vermutung richtig?
+
+::: checkbox-block
+☐ ja
+
+☐ nein
+:::
+
+Begründet mit euren Messwerten.
 
 ::: answer-box
-**Unser Tipp war richtig / falsch, weil:**
+**Begründung:**
 :::
 
-Versucht nun zu begruenden, warum die Oberflaechen unterschiedlich warm wurden. Nutzt dafuer eure Beobachtungen zu Farbe, Wasser und Material.
+Formuliert eine einfache Regel aus eurem Versuch.
 
 ::: answer-box
-**Unsere Erklaerung:**
-
-Die Oberflaeche ______________________________ wurde besonders warm, weil sie wahrscheinlich ______________________________.
-
-Die Oberflaeche ______________________________ blieb eher kuehl, weil sie wahrscheinlich ______________________________.
-
-Auffaellig war ausserdem:
+**Unsere Regel:**
 :::
 
-# Realwelt
+# Aufgabe 6: Realwelt
 
-Solche Unterschiede kann man draussen an vielen Orten bemerken: auf Wegen, an Straenden, an Ufern, auf Kiesflaechen, auf Parkplaetzen oder an Pfuetzen.
+An welchen Orten draußen könnte man solche Temperaturunterschiede spüren?
 
-Dunkle Oberflaechen werden in der Sonne oft deutlich waermer als helle Oberflaechen. Wasser erwaermt sich anders als Sand oder Stein, weil es Waerme staerker aufnimmt, verteilt und speichert.
+Beschreibt einen Ort oder eine Situation.
 
 ::: answer-box
-**Ein Ort draussen, an dem man so einen Temperaturunterschied merken koennte:**
+**Antwort:**
 :::
 
-# Ergebnis
+Was könnte das für Menschen an heißen Tagen bedeuten?
 
 ::: answer-box
-
-
-
-In unserem Versuch wurde ______________________________ am heissesten.
-
-Am kuehlsten blieb ______________________________.
-
-Unter gleicher Strahlung werden Oberflaechen unterschiedlich warm, weil ______________________________.
+**Antwort:**
 :::
+
+# Merksatz
+
+Ergänzt den Merksatz mit euren Ergebnissen.
+
+::: answer-box.medium
+In unserem Versuch wurde __________________________ am heißesten.
+
+Am kühlsten blieb __________________________.
+
+Unsere Messwerte zeigen:
+
+__________________________________________________________________________________________________
+:::
+
