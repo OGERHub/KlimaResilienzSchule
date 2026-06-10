@@ -1,362 +1,169 @@
 [
   {
-    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html",
-    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html",
-    "title": "Technische Dokumentation",
+    "objectID": "00-surface-temperature/sus-handreichung-surface-temperature.html",
+    "href": "00-surface-temperature/sus-handreichung-surface-temperature.html",
+    "title": "Welche Oberfläche wird am heißesten?",
     "section": "",
-    "text": "Diese Seite dokumentiert die lokale Materialproduktion für das Köln-Demo-Paket. Sie richtet sich an Personen, die die Datenprodukte, das QGIS-Projekt und die Drucklayouts neu erzeugen, prüfen oder für einen anderen Ausschnitt anpassen wollen.\nDer Workflow erzeugt aus einem Untersuchungsgebiet, einem Zeitraum und einer DOP-CIR-basierten Oberflächenmaske ein QGIS-Projekt mit passgenauen Drucklayouts. Die Skripte erzeugen das Material. Im Unterricht liegen anschließend fertige Karten, Folien und Beobachtungsaufgaben vor.\n\n\n\nDas Datenpaket entsteht aus AOI, Zeitraum und Extremmodus.",
+    "text": "Strahlungsexperiment: Was wird am heißesten?\n\nTeamname:\n\n\n\n\n\n\n\nDraußen fühlen sich Oberflächen oft sehr unterschiedlich warm an. Heller Sand, dunkler Sand, Wasser und Kieselsteine reagieren nicht gleich auf Strahlung.\nIhr testet vier Oberflächen unter einer Wärmelampe. Gemessen wird mit einer Thermalkamera und einem berührungslosen Thermometer.\nDer dunkle Sand ist ein deutliches Beispiel: An ihm kann man gut erkennen, was dunkle Oberflächen mit Strahlung machen.\n\n\n\n\n\n\nAbbildung 1: Aufbau des Strahlungsexperiments\n\n\n\n\nDie Frage\nWelche Oberfläche wird unter gleicher Bestrahlung am heißesten?\nSchaut euch die Materialien kurz an. Gebt vor dem Messen einen Tipp ab.\n\nUnser Tipp:\n\n\n\nDer Versuch\nEs gibt vier flache Schalen:\n\nheller Sand\ndunkler Sand\nWasser\nKieselsteine / Lahnkies\n\nAlle Schalen stehen gleich weit von der Wärmelampe entfernt. Die Lampe bleibt während des Versuchs an derselben Stelle. Ihr messt immer von oben auf die Oberfläche.\n\n\n\n\n\n\nNicht in die helle Lampe schauen. Die Lampe nicht anfassen.\n\n\n\n\n\nMessen\nMesst zuerst die Temperatur ohne Wärmelampe.\nSchaltet dann die Wärmelampe ein. Messt nach 3, 6, 9 und 12 Minuten.\nNutzt das berührungslose Thermometer für die Zahlenwerte. Nutzt die Thermalkamera, um die Temperaturunterschiede sichtbar zu machen.\n\n\n\nZeit\nheller Sand\ndunkler Sand\nWasser\nKieselsteine\n\n\n\n\n0 min\n\n\n\n\n\n\n3 min\n\n\n\n\n\n\n6 min\n\n\n\n\n\n\n9 min\n\n\n\n\n\n\n12 min\n\n\n\n\n\n\n\n\n\nErgebnis\nSchaut nach 12 Minuten auf eure Messwerte und auf das Thermalbild.\n\nAm heißesten wurde:\n\n\nAm kühlsten blieb:\n\n\nDas war im Thermalbild besonders auffällig:\n\n\n\nAuswertung\nVergleicht euren Tipp mit den Messwerten.\n\nUnser Tipp war richtig / falsch, weil:\n\nFormuliert eine einfache Regel aus eurem Versuch.\n\nUnsere Regel:\n\n\n\nRealwelt\nSolche Unterschiede kann man draußen an vielen Orten bemerken: auf Wegen, an Stränden, an Ufern, auf Kiesflächen, auf Parkplätzen oder an Pfützen.\nDunkle Oberflächen werden in der Sonne oft deutlich wärmer als helle Oberflächen. Wasser erwärmt sich anders als Sand oder Stein, weil es Wärme stärker aufnimmt, verteilt und speichert.\n\nEin Ort draußen, an dem man so einen Temperaturunterschied merken könnte:\n\n\n\nMerksatz\n\nIn unserem Versuch wurde ______________________________ am heißesten.\nAm kühlsten blieb ______________________________.\nDas zeigt: Oberflächen werden unter gleicher Strahlung ______________________________ warm.",
     "crumbs": [
       "Ilias",
-      "04 Summer in the City",
-      "Technische Dokumentation"
+      "00 Surface Temperature",
+      "Welche Oberfläche wird am heißesten?"
     ]
   },
   {
-    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#qgis-wird-nicht-gefunden",
-    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#qgis-wird-nicht-gefunden",
-    "title": "Technische Dokumentation",
-    "section": "QGIS wird nicht gefunden",
-    "text": "QGIS wird nicht gefunden\nWenn der R-Workflow am Ende bei run_create_qgis_project.bat abbricht, ist meist QGIS_BIN nicht korrekt gesetzt. Dann zuerst prüfen, wo QGIS installiert ist. Typische Pfade sind:\nC:\\Program Files\\QGIS 3.34.4\\bin\\qgis-bin.exe\nC:\\OSGeo4W\\bin\\qgis-ltr-bin.exe\nDer Pfad wird vor dem Start gesetzt:\nset QGIS_BIN=C:\\Program Files\\QGIS 3.34.4\\bin\\qgis-bin.exe\nRscript scripts\\00_run_lst_oberflaechenmaske_dop_cir.R",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Technische Dokumentation"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#pyqgis-importfehler",
-    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#pyqgis-importfehler",
-    "title": "Technische Dokumentation",
-    "section": "PyQGIS-Importfehler",
-    "text": "PyQGIS-Importfehler\nEin Fehler wie ModuleNotFoundError: No module named 'qgis' bedeutet: Das Skript wurde mit normalem Python gestartet oder QGIS hat eine falsche Python-Umgebung geerbt. Der Aufruf muss über die BAT-Datei laufen:\nscripts\\run_create_qgis_project.bat\nNicht über:\npython scripts\\create_qgis_project.py\nDie BAT-Datei leert PYTHONHOME, PYTHONPATH, VIRTUAL_ENV, RETICULATE_PYTHON und RETICULATE_PYTHON_FALLBACK, damit QGIS seine eigene Python-Umgebung nutzt.",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Technische Dokumentation"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#file__-ist-nicht-definiert",
-    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#file__-ist-nicht-definiert",
-    "title": "Technische Dokumentation",
-    "section": "__file__ ist nicht definiert",
-    "text": "__file__ ist nicht definiert\nQGIS --code setzt kein __file__. Die BAT-Datei setzt deshalb:\nQGIS_SCRIPT_DIR\nPROJECT_ROOT\nund das Python-Skript liest genau diese Variablen. Path(__file__) darf in diesem Skript nicht verwendet werden.",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Technische Dokumentation"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#r-pakete-fehlen",
-    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#r-pakete-fehlen",
-    "title": "Technische Dokumentation",
-    "section": "R-Pakete fehlen",
-    "text": "R-Pakete fehlen\nDer R-Workflow benötigt unter anderem:\nsf\nterra\nrstac\ndplyr\npurrr\ntibble\nreadr\njsonlite\npng\nhere\nFehlende Pakete werden installiert oder müssen manuell installiert werden:\ninstall.packages(c(\n  \"sf\", \"terra\", \"rstac\", \"dplyr\", \"purrr\",\n  \"tibble\", \"readr\", \"jsonlite\", \"png\", \"here\"\n))\nBei Paketinstallationen aus Quellcode wird Rtools passend zur R-Version benötigt. CRAN-Binaries vermeiden diesen Schritt meist.",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Technische Dokumentation"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#keine-oder-leere-printprodukte",
-    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#keine-oder-leere-printprodukte",
-    "title": "Technische Dokumentation",
-    "section": "Keine oder leere Printprodukte",
-    "text": "Keine oder leere Printprodukte\nZuerst die Eingabedateien prüfen:\ndata/landsat_lst/koeln/05_teaching_layers/projected_lst/koeln_LST_hot_q90_C_EPSG25832.tif\ndata/landsat_lst/koeln/05_teaching_layers/dop_cir_surface_mask/koeln_dop_cir_30m_3klassen.gpkg\nDanach prüfen, ob die Exporte geschrieben wurden:\ndata/landsat_lst/koeln/06_qgis_project/print_exports/\nEin erzeugtes QGIS-Projekt ohne PDFs verweist auf den PyQGIS-Layoutteil als Fehlerort.",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Technische Dokumentation"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#ausdrucke-passen-nicht-exakt-übereinander",
-    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#ausdrucke-passen-nicht-exakt-übereinander",
-    "title": "Technische Dokumentation",
-    "section": "Ausdrucke passen nicht exakt übereinander",
-    "text": "Ausdrucke passen nicht exakt übereinander\nSeitenskalierung zerstört die Passgenauigkeit. Alle Ausdrucke müssen mit 100 % beziehungsweise tatsächliche Größe gedruckt werden.",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Technische Dokumentation"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html",
-    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html",
-    "title": "Warum sind manche Stadtflächen heißer?",
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-fachlich.html",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-fachlich.html",
+    "title": "Oberflächentemperaturen in der Stadt",
     "section": "",
-    "text": "Teamname\n\n\n\n\n\n\n\nWir wissen: Städte bestehen aus sehr unterschiedlichen Oberflächen. Es gibt Asphalt, Dächer, Beton, Wiesen, Bäume, Wasser, offene Plätze und dicht bebaute Bereiche. Diese Oberflächen erwärmen sich an heißen Sommertagen unterschiedlich stark.\nEine Satellitenkarte kann diese Unterschiede sichtbar machen. Sie zeigt die Oberflächentemperatur. Gemeint ist die Temperatur der Dinge, die der Satellit von oben sieht: Straßen, Dächer, Plätze, Wasserflächen, Wiesen oder Baumkronen. Die Lufttemperatur in 2 m Höhe ist eine andere Messgröße.\nIn dieser Aufgabe überprüft ihr deshalb selbst: Welche Stadtflächen erscheinen in der Satellitenkarte heißer oder kühler? Und welche Erklärung passt dazu?\n\n\n\n\n\n\nDie LST-Karte zeigt die Temperatur der Oberfläche. Die Lufttemperatur in 2 m Höhe ist eine andere Messgröße.",
+    "text": "Worum es in dieser Stunde geht\nKöln ist im Sommer kein gleichmäßig warmer Raum. Wer sich an einem heißen Tag durch die Stadt bewegt, erlebt deutliche Unterschiede zwischen großen Platzflächen, breiten Straßen, Parkplätzen, dichten Baublöcken, Gewerbeflächen, Parks, Wiesen, Baumgruppen, dem Rhein und offenen Bodenflächen. Diese Unterschiede lassen sich fachlich als Unterschiede der Oberfläche lesen: Asphalt, Beton, Pflaster, Dachmaterial, Vegetation, Wasser, Schotter und Boden nehmen Strahlung unterschiedlich auf, speichern Wärme unterschiedlich lange und geben Energie unterschiedlich stark über Verdunstung ab.\nDie Stadt Köln beschreibt diesen städtischen Wärmehaushalt ausdrücklich als verändert: Gebäude, Straßen und versiegelte Flächen erhitzen sich intensiver und speichern Wärme länger als unbebaute Landschaftsräume (Stadt Köln: Stadtklima). Köln behandelt Hitze außerdem als kommunales Anpassungs- und Gesundheitsthema; das Hitze-Portal verweist darauf, dass sommerliche Hitzeperioden im Klimawandel zunehmen und gesundheitlich belastend sein können (Stadt Köln: Hitze-Portal). Der Kölner Hitzeknigge ordnet Hitze als praktisches Vorsorgethema für die Bevölkerung ein (Stadt Köln: Hitzeknigge). Die Stunde greift diese lokale Relevanz auf, behandelt Hitze aber nicht zuerst als Verhaltensthema, sondern als räumlich sichtbares Oberflächenproblem.\n\n\n\nBekannte Kölner Orte dienen nicht als fertige Antwort, sondern als Hypothesenräume.\n\n\nDer Einstieg sollte deshalb nicht lauten: „Hier sieht man die heißesten Orte Kölns.“ Treffender ist: „Welche Oberflächen erkennen wir hier, und welche davon müssten sich an einem sonnigen Sommertag besonders stark erwärmen?“ Die Lernenden sollen zuerst aus dem Luftbild argumentieren. Erst danach wird die LST-Karte als Prüfebene eingesetzt.\n\n\nVom bekannten Ort zur Oberflächenklasse\nFür Schülerinnen und Schüler ist Stadthitze zunächst eine Alltagserfahrung. Man sucht Schatten, meidet aufgeheizte Platzflächen, bleibt lieber im Park oder am Wasser und spürt die Hitze an Straßen, Fassaden und Haltestellen. Diese Erfahrung ist ein guter Einstieg, aber sie muss fachlich übersetzt werden. Die zentrale Frage lautet nicht: „Wo fühlt es sich heiß an?“, sondern: „Welche Oberfläche liegt dort, und wie reagiert diese Oberfläche thermisch?“\nEin großer Platz kann aus hellem Pflaster bestehen, wenig Schatten haben und sich stark aufheizen. Eine breite Straße ist nicht nur Verkehrsraum, sondern eine dunkle, trockene, versiegelte Oberfläche. Ein Parkplatz kombiniert Asphalt, Blech, wenig Verdunstung und oft wenig Schatten. Ein Gewerbe- oder Industriegebiet besteht häufig aus großen Dachflächen, Zufahrten, Ladeflächen und Parkplätzen. Ein Park enthält dagegen Baumkronen, Rasen, Wege, trockene Wiesen, beschattete Bereiche und manchmal Wasser. Genau diese Mischung macht den Vergleich von Luftbild und LST-Karte fachlich interessant.\nAus diesen realen Oberflächen werden für die Stunde drei Arbeitsklassen gebildet. Versiegelung / Bebauung umfasst Straßen, Parkplätze, Plätze, Dächer, Gewerbe- und Industrieflächen, Bahnanlagen, befestigte Innenhöfe und stark versiegelte Schulhöfe. Vegetation umfasst Parks, Wiesen, Baumgruppen, Alleen, Friedhöfe, Grünzüge und begrünte Innenhöfe. Wasser umfasst Rhein, Hafenbecken, Weiher, Teiche und größere offene Wasserflächen.\nDiese drei Klassen sind kein Ersatz für eine vollständige Stadtklimaanalyse. Sie sind ein bewusst reduziertes Unterrichtsmodell: Die Lernenden sollen die drei dominanten Oberflächentypen erkennen und prüfen, wie sie sich in der LST-Karte räumlich niederschlagen. Offene Böden, Schotter, Baustellen oder trockene Brachen werden nicht als vierte Hauptklasse geführt, sondern als Misch- und Grenzfälle im Gespräch aufgegriffen, wenn sie im Ausschnitt auffallen.\n\n\nWas Oberflächentemperaturen (LST) messen\nLST bedeutet Land Surface Temperature. Gemeint ist die Temperatur der Landoberfläche, die aus der thermischen Infrarotstrahlung der Oberfläche abgeleitet wird. Die ESA Climate Change Initiative beschreibt LST als wichtige Variable des Klimasystems, weil sie Prozesse des Energie- und Wasseraustauschs zwischen Landoberfläche und Atmosphäre beschreibt (ESA CCI: Land Surface Temperature). LST ist damit eine Oberflächengröße und keine direkte Messung der Lufttemperatur in zwei Metern Höhe.\nDiese Unterscheidung ist für die Stunde zentral. Eine Asphaltfläche, ein Dach oder ein Parkplatz kann in der LST-Karte sehr warm erscheinen, während die Lufttemperatur in zwei Metern Höhe niedriger und räumlich weniger scharf abgegrenzt ist. Menschen erleben Hitze zusätzlich über Lufttemperatur, Luftfeuchte, Wind, direkte Sonnenstrahlung, Schatten, Kleidung, körperliche Aktivität und Aufenthaltsdauer. Die LST-Karte zeigt deshalb nicht die gesamte gefühlte Hitze, sondern die thermische Antwort der Oberfläche.\n\n\n\nDer Satellit erfasst die thermische Antwort der Oberfläche. Die 2-m-Lufttemperatur ist eine andere Messgröße.\n\n\nEine präzise Unterrichtssprache vermeidet deshalb den Satz „dort ist die Luft heißer“. Treffender ist: „Diese Oberfläche erscheint in dieser Satellitenszene wärmer.“ Diese Formulierung ist nicht nur sprachlich genauer, sondern führt direkt zur fachlichen Frage: Welche Oberfläche kann diese thermische Antwort erklären?\n\n\nWarum Oberflächen unterschiedlich warm sind\nOberflächen erwärmen sich nicht nur, weil Sonne auf sie fällt. Entscheidend ist, was mit der eingehenden Strahlungsenergie geschieht. Ein Teil wird reflektiert, ein Teil wird als Wärme gespeichert, ein Teil wird an die Luft abgegeben, und bei feuchten oder bewachsenen Oberflächen kann ein Teil der Energie in Verdunstung umgesetzt werden. Die Oberflächentemperatur ist deshalb das Ergebnis von Materialeigenschaften, Feuchte, Vegetation, Schatten, Wasseranteil, Oberflächenstruktur und Aufnahmezeitpunkt.\nVersiegelte Flächen sind häufig warm, weil sie wenig Wasser verdunsten und Wärme speichern können. NASA beschreibt den urbanen Wärmeinseleffekt unter anderem damit, dass Asphalt, Beton, Stein, Stahl und andere undurchlässige Oberflächen Wärme aufnehmen und die natürliche Kühlwirkung von Vegetation unterbrechen (NASA Earth Observatory: Vegetation Limits City Warming Effects). Die Stadt Köln beschreibt denselben Grundzusammenhang lokal: Gebäude, Straßen und versiegelte Flächen erhitzen sich stärker und speichern Wärme länger (Stadt Köln: Stadtklima).\nVegetation kann die Erwärmung abschwächen, weil sie Schatten erzeugt und Wasser verdunstet. NASA beschreibt die natürliche Kühlwirkung von Vegetation im Zusammenhang mit städtischer Erwärmung (NASA Earth Observatory: Vegetation Limits City Warming Effects). Für den Unterricht ist wichtig, Vegetation nicht zu idealisieren. Ein dichter Baumbestand kann durch Schatten und Verdunstung deutlich kühler wirken als ein trockener kurzrasiger Bereich. Eine sonnige, trockene Wiese kann dagegen deutlich wärmer erscheinen als Schülerinnen und Schüler zunächst erwarten.\nWasserflächen reagieren träger als viele feste Oberflächen. Wasser hat eine hohe Wärmekapazität, verteilt Wärme im Wasserkörper und erwärmt sich am Tag oft langsamer als Asphalt, Beton oder trockener Boden. In LST-Karten können Rhein, Weiher oder Hafenbecken deshalb als kühlere Flächen erscheinen. Diese Wirkung ist aber zeitabhängig: Wasser speichert Wärme und kann sich im Tages- und Jahresgang anders verhalten als feste Oberflächen.\nOffene Böden, Schotterflächen oder Baustellen bleiben als Grenzfälle wichtig. Sie werden in diesem Unterrichtsmaterial nicht als eigene Hauptklasse geführt, weil die Stunde auf die drei zentralen Kontraste fokussiert: versiegelt/bebaut, Vegetation und Wasser. Fachlich sind solche Grenzflächen wertvoll, weil sie zeigen, dass „nicht bebaut“ nicht automatisch „kühl“ bedeutet. Entscheidend bleiben Material, Feuchte, Bewuchs und Sonnenexposition.\n\n\n\nDie drei Unterrichtsklassen bündeln reale Oberflächen: versiegelte und bebaute Flächen, Vegetation und Wasser.\n\n\n\n\nDie drei Oberflächenklassen als Arbeitsmodell\nDie Klasse Versiegelung / Bebauung bündelt alle stark befestigten und baulich geprägten Oberflächen: Straßen, Kreuzungen, Parkplätze, Plätze, Dächer, Gewerbe- und Industrieflächen, Bahnanlagen, befestigte Schulhöfe und Innenhöfe. In der LST-Karte erscheinen solche Flächen häufig warm bis sehr warm, besonders wenn sie groß, trocken und unbeschattet sind. Helle Materialien, Schatten, Dachaufbauten oder unterschiedliche Beläge können das Muster abschwächen.\nDie Klasse Vegetation bündelt alle Flächen, bei denen Pflanzen die thermische Wirkung prägen: Baumgruppen, Parks, Wiesen, Grünzüge, Friedhöfe, Alleen und begrünte Innenhöfe. Vegetation kann durch Schatten und Verdunstung kühlen. Die Wirkung hängt aber vom Zustand der Vegetation ab. Ein schattiger Baumbestand, eine bewässerte Wiese und eine trockene Rasenfläche sind im Luftbild alle „grün“, thermisch aber nicht identisch.\nDie Klasse Wasser bleibt eigenständig. Rhein, Weiher, Hafenbecken und Teiche sind keine Sonderform von „kühl“, sondern Oberflächen mit eigener thermischer Dynamik. Sie reagieren träge, können tagsüber kühl erscheinen und Wärme zeitlich verzögert speichern oder abgeben. Gerade am Rhein können Lernende gut sehen, dass eine Wasserfläche im LST-Bild oft anders reagiert als die angrenzende befestigte Uferzone.\n\n\nVerwendung der Landoberflächen Schablone\nDie automatische Maske wird im Unterricht nicht als Lösung gezeigt. Die Lernenden erhalten nur neutrale Umrisse. Sie sollen diese Umrisse zuerst im Luftbild interpretieren und anschließend dieselben Flächen mit der LST-Karte vergleichen. Die Klassennamen stehen nur in der Lehrkraftversion.\nDas hat einen fachlichen Grund. Fernerkundungsdaten liefern keine fertige Erklärung. Sie liefern Beobachtungen, die interpretiert werden müssen. Wenn die Karte sofort „Versiegelung / Bebauung“, „Vegetation“ und „Wasser“ anzeigt, wird die Deutungsarbeit vorweggenommen. Wenn die Umrisse blind bleiben, müssen die Lernenden selbst begründen, welche Oberfläche sie erkennen und warum diese Oberfläche thermisch plausibel wärmer oder kühler erscheint.\n\n\n\nDie Schablone trennt typisiert grob die Hauptklassen der Landoberflächen. Die SuS sehen die Flächen, die Lehrkraft hat die Klassenzuordnung der Fläche aus der automatisierten Erstellung.\n\n\nDie Maske ist deshalb ein Arbeitsgerüst, kein Wahrheitslayer. Besonders wertvoll sind uneindeutige Flächen: Parkplätze mit Bäumen, helle Dächer, trockene Wiesen, Baustellen, schmale Uferzonen oder Mischbereiche zwischen Straße und Park. Dort wird sichtbar, dass Oberflächenklassen Vereinfachungen sind und reale Stadträume aus Mischflächen bestehen.\n\n\nUnterrichtsablauf\nDie Stunde beginnt mit dem Luftbild. Die LST-Karte bleibt zunächst verdeckt. Die Lernenden orientieren sich im Kölner Ausschnitt: Rhein, Parks, große Straßen, Plätze, dichte Bebauung, Gewerbeflächen, Parkplätze und Dachlandschaften werden gesucht und beschrieben. Danach markieren sie auf Folie oder Transparentpapier Flächen, die sie für eher warm oder eher kühl halten.\nErst danach wird die LST-Karte aufgelegt. Jetzt prüfen die Lernenden ihre Vermutungen. Stimmen große versiegelte Flächen mit warmen Bereichen überein? Erscheinen Wasser und größere Vegetationsflächen kühler? Gibt es überraschend warme Rand- oder Mischflächen oder überraschend kühle versiegelte Teilflächen? Der Unterrichtsgewinn liegt im Vergleich, nicht im bloßen Ablesen der Farbskala.\n\n\n\nDer Ablauf führt von der sichtbaren Oberfläche zur thermischen Prüfung.\n\n\nDie Sicherung sollte nicht aus einer starren Tabelle bestehen. Ziel ist eine begründete Deutung. Eine gute Schüleraussage verbindet sichtbare Oberfläche, Temperaturtendenz, Prozess und Unsicherheit. Ein Beispiel wäre: „Diese Fläche wirkt wie ein großer Parkplatz. Sie erscheint in der LST-Karte warm. Das passt zu Versiegelung, Wärmespeicherung und geringer Verdunstung. Wenn ein Teil weniger warm ist, könnte dort Schatten oder ein anderes Material liegen.“\n\n\nDas Materialpaket\nDas vorbereitete Paket enthält ein RGB-Luftbild, eine LST-hot-Karte, Folienvorlagen beziehungsweise blinde Umrisse und ein QGIS-Projekt. Für den direkten Unterrichtseinsatz reichen Luftbild, LST-Karte und transparente Markierebene. Das QGIS-Projekt ist für Anpassungen gedacht: Ausschnitt ändern, Ebenen ein- oder ausblenden, Layout neu drucken.\n\n\n\nDas Materialpaket trennt direkte Unterrichtsmaterialien von optionaler technischer Anpassung.\n\n\nMaterialpaket Köln-Demo herunterladen\nAlle Materialien müssen denselben Ausschnitt und denselben Maßstab verwenden. Die Lernenden markieren nicht auf der Karte selbst, sondern auf einer eigenen Ebene. Dadurch bleibt sichtbar, dass ihre Markierung eine Interpretation ist. Diese Interpretation kann zuerst auf das Luftbild und danach auf die LST-Karte gelegt werden.\n\n\nFachliche Gesprächsführung\nWenn Lernende sagen: „Dort ist die Luft heißer“, sollte die Lehrkraft präzisieren: „Die Karte zeigt die Oberfläche. Die Lufttemperatur ist eine andere Messgröße.“ Wenn Lernende sagen: „Alles Grüne ist kühl“, sollte die Antwort differenzieren: „Vegetation kann durch Schatten und Verdunstung kühlen, aber trockene oder kurzrasige Flächen können warm sein.“ Wenn Lernende sagen: „Alles, was nicht Straße oder Dach ist, ist kühl“, lohnt der Blick auf Mischflächen, trockene Randflächen, Schotter, Baustellen oder kurzrasige Bereiche. Diese Flächen werden nicht als eigene Hauptklasse geführt, müssen aber im Gespräch als mögliche Abweichungen benannt werden.\nDie zentrale fachliche Sprache sollte vorsichtig bleiben. Geeignete Formulierungen sind: „erscheint wärmer“, „passt zu“, „könnte erklärt werden durch“, „abweichend davon“, „vermutlich wegen“. Ungeeignet sind absolute Sätze wie „Asphalt ist immer heiß“ oder „Wasser ist immer kalt“.\n\n\nSicherung\nAm Ende steht keine perfekte Klassifikation, sondern eine fachlich begründete Deutung des Kartenausschnitts. Die Lernenden sollen mehrere Flächen beschreiben, ihre Temperaturtendenz aus der LST-Karte ablesen und eine plausible Ursache nennen. Eine gute Sicherung enthält außerdem eine Ausnahme oder Unsicherheit.\nEin möglicher Sicherungssatz lautet: „Große versiegelte Flächen wie Straßenräume, Plätze, Parkplätze oder Dächer erscheinen in dieser Szene häufig wärmer als Vegetations- und Wasserflächen. Das passt zu Wärmespeicherung und geringer Verdunstung. Abweichungen können durch Schatten, Materialfarbe, Feuchte, Mischflächen oder Aufnahmezeitpunkt entstehen.“\nEin zweiter Sicherungssatz lautet: „Vegetation und Wasser erscheinen häufig kühler, aber aus unterschiedlichen Gründen. Vegetation wirkt über Schatten und Verdunstung, Wasser über seine thermische Trägheit. Grenzflächen wie Schotter, trockener Boden oder Baustellen müssen gesondert beschrieben werden, weil Feuchte und Material dort stark entscheiden.“\n\n\nQuellen\nStadt Köln. Stadtklima. Gebäude, Straßen und versiegelte Flächen erhitzen sich intensiver und speichern Wärme länger als unbebaute Landschaftsräume. https://www.stadt-koeln.de/artikel/60838/index.html\nStadt Köln. Hitze-Portal Köln. Sommerliche Hitzeperioden nehmen im Klimawandel zu und können gesundheitlich belasten. https://www.stadt-koeln.de/leben-in-koeln/umwelt-tiere/klima/hitzeportal/index.html\nStadt Köln. Der Hitzeknigge. Lokale Hinweise und Verhaltenstipps zum Umgang mit Hitze in Köln. https://www.stadt-koeln.de/artikel/69221/index.html\nESA Climate Change Initiative. Land Surface Temperature. LST beschreibt Prozesse des Energie- und Wasseraustauschs zwischen Landoberfläche und Atmosphäre. https://climate.esa.int/en/projects/land-surface-temperature/\nNASA Earth Observatory. Vegetation Limits City Warming Effects. Impervious surfaces wie Asphalt, Beton, Stein und Stahl tragen zur städtischen Erwärmung bei; Vegetation wirkt kühlend. https://science.nasa.gov/earth/earth-observatory/vegetation-limits-city-warming-effects-86440/",
     "crumbs": [
       "Ilias",
       "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
+      "Oberflächentemperaturen in der Stadt"
     ]
   },
   {
-    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-1-luftbild-untersuchen",
-    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-1-luftbild-untersuchen",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Teil 1: Luftbild untersuchen",
-    "text": "Teil 1: Luftbild untersuchen\nIhr bekommt ein Luftbild und eine transparente Folie. Legt die Folie zuerst auf das Luftbild.\nMarkiert mindestens fünf größere Flächen, die gut unterscheidbare Oberflächen zeigen. Geeignet sind zum Beispiel Straßen, Parkplätze, Dächer, Wiesen, Parks, Wasserflächen, Innenhöfe oder gemischte Stadtflächen.\nNutzt einfache Kürzel:\n\n\n\nKürzel\nOberfläche\n\n\n\n\nS\nStraße, Parkplatz, versiegelter Platz\n\n\nD\ngroßes Dach oder Gebäudefläche\n\n\nG\nWiese, Park, Baumfläche\n\n\nW\nWasserfläche\n\n\nM\nMischfläche, zum Beispiel Blockrand, Innenhof oder Bahnanlage\n\n\n\nWelche Oberflächen habt ihr markiert?\n\nAntwort:",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-2-oberflächentemperatur-prüfen",
-    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-2-oberflächentemperatur-prüfen",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Teil 2: Oberflächentemperatur prüfen",
-    "text": "Teil 2: Oberflächentemperatur prüfen\nLegt dieselbe Folie nun auf die LST-Karte. LST bedeutet Land Surface Temperature, also Oberflächentemperatur.\nPrüft für jede markierte Fläche: erscheint sie eher heiß, mittel oder kühl?\n\n\n\nIhr arbeitet zuerst mit dem Luftbild und danach mit der LST-Karte.\n\n\nWelche Vermutung passt nach dem ersten Vergleich besser? Kreuzt an!\n\n☐ Vermutung 1: Versiegelte und bebaute Flächen erscheinen häufiger warm.\n☐ Vermutung 0: Die Unterschiede wirken zufällig.\n☐ unklar",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-3-ergebnisse-sichern",
-    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-3-ergebnisse-sichern",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Teil 3: Ergebnisse sichern",
-    "text": "Teil 3: Ergebnisse sichern\nFüllt die Tabelle aus. Die Erklärung ist wichtiger als das genaue einzelne Pixel.\n\n\n\nNr.\nmarkierte Fläche\nOberfläche\nLST-Tendenz\nkurze Erklärung\n\n\n\n\n1\n\n\nheiß / mittel / kühl\n\n\n\n2\n\n\nheiß / mittel / kühl\n\n\n\n3\n\n\nheiß / mittel / kühl\n\n\n\n4\n\n\nheiß / mittel / kühl\n\n\n\n5\n\n\nheiß / mittel / kühl",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-4-erklärung-entwickeln",
-    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-4-erklärung-entwickeln",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Teil 4: Erklärung entwickeln",
-    "text": "Teil 4: Erklärung entwickeln\nEine gute Erklärung verbindet drei Dinge: Was ist im Luftbild zu sehen? Wie erscheint die Fläche auf der LST-Karte? Welcher Prozess könnte die Temperatur erklären?\n\n\n\nEine gute Erklärung verbindet Beobachtung, Zuordnung, Vergleich und Prozess.\n\n\nNutzt diese Begriffe, wenn sie zu euren Flächen passen:\n\n\n\nBegriff\nBedeutung für die Karte\n\n\n\n\nVersiegelung\nwenig Verdunstung, oft starke Erwärmung\n\n\nWärmespeicherung\nMaterial nimmt Wärme auf und gibt sie langsam ab\n\n\nVerdunstung\nentzieht der Oberfläche Wärme\n\n\nSchatten\nverringert direkte Erwärmung\n\n\nVegetation\nkühlt oft durch Schatten und Verdunstung\n\n\nWasser\nerwärmt sich anders als feste Stadtoberflächen\n\n\nBebauungsdichte\nviele warme Oberflächen liegen dicht nebeneinander\n\n\n\nWelche Erklärung passt zu eurer deutlichsten warmen Fläche?\n\nAntwort:\n\nWelche Erklärung passt zu eurer deutlichsten kühlen Fläche?\n\nAntwort:",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-5-grenzen-der-karte-prüfen",
-    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-5-grenzen-der-karte-prüfen",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Teil 5: Grenzen der Karte prüfen",
-    "text": "Teil 5: Grenzen der Karte prüfen\nDie LST-Karte zeigt Oberflächentemperaturen. Dadurch erkennt man räumliche Muster sehr gut. Für die Bewertung von Aufenthaltsqualität braucht man zusätzlich weitere Informationen, zum Beispiel Schatten, Wind, Lufttemperatur, Nutzung und Tageszeit.\nWelche Aussage könnt ihr mit eurer Karte gut begründen?\n\nAntwort:\n\nWelche Aussage wäre mit dieser Karte allein zu unsicher?\n\nAntwort:",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#schlussfolgerung",
-    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#schlussfolgerung",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Schlussfolgerung",
-    "text": "Schlussfolgerung\nUnsere Antwort auf die Fragestellung lautet:\nWir entscheiden uns für:\n\n☐ Vermutung 1: Versiegelte und bebaute Flächen erscheinen häufiger warm.\n☐ Vermutung 0: Die Unterschiede wirken zufällig.\n☐ Unklar\n\n\nBegründung:",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#merksatz",
-    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#merksatz",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Merksatz",
-    "text": "Merksatz\n\nDie LST-Karte zeigt, wie unterschiedlich sich Stadtoberflächen erwärmen. Dadurch wird sichtbar, dass Wärme in der Stadt mit Oberflächen, Materialien, Vegetation, Wasser und Stadtstruktur zusammenhängt.",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#material",
-    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#material",
-    "title": "Warum sind manche Stadtflächen heißer?",
-    "section": "Material",
-    "text": "Material\n\nMaterial 1\nLuftbild des Untersuchungsraums\n\n\nMaterial 2\nLST-Karte des gleichen Ausschnitts\n\n\nMaterial 3\nTransparente Folie und Stift zur Markierung der Vergleichsflächen",
-    "crumbs": [
-      "Ilias",
-      "04 Summer in the City",
-      "Warum sind manche Stadtflächen heißer?"
-    ]
-  },
-  {
-    "objectID": "Über/impressum.html",
-    "href": "Über/impressum.html",
-    "title": "Impressum",
+    "objectID": "04-summer-in-the-city/konfigurator-lst-paket.html",
+    "href": "04-summer-in-the-city/konfigurator-lst-paket.html",
+    "title": "LST-Datenpaket konfigurieren",
     "section": "",
-    "text": "This website is brought with the background of Open Educational Resources initiative coordinated by the Leibniz-Institut für Bildungsforschung und Bildungsinformation and integrated in the official teaching and reproducible research framework of the Cologne University, Germany. It is developed at the Didactic Institute of Geography under responsibility of the Didactic of Physical Geography.\n\n\nThe responsibility for the content rests with the instructors. Statements, opinions and/or conclusions are the ones from the instructors and do not necessarily reflect the opinion of the representatives of Marburg University.\n\n\n\nThis work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.\n\n\nAs of 16. March 2026\n\n\n\nWith the following data protection declaration, we would like to inform you about the types of your personal data (hereinafter also referred to as “data” for short) that we process, for what purposes and to what extent. The privacy policy applies to all processing of personal data carried out by us, both in the context of the provision of our services and in particular on our websites, in mobile applications and within external online presences, such as our social media profiles (hereinafter collectively referred to as “Online Offerings”).\n\n\nThe terms used are not gender-specific.\n\n\n\nProf. Dr. Rieke AmmoneitGronewaldstr. 250931 Köln\n\n\nEmail address: rammoneit[at]uni-koeln.de.\n\n\nImprint: webadress impressum uni koeln\n\n\n\nThe following overview summarizes the types of data processed and the purposes of their processing, and refers to the data subjects.\n\n\n\n\nContent data (e.g. input in online forms).\n\n\nContact data (e.g. email, phone numbers).\n\n\nMeta/communication data (e.g. device information, IP addresses).\n\n\nUse data (e.g. websites visited, interest in content, access times).\n\n\n\n\n\nCommunication partners.\n\n\nUsers (e.g.. Website visitors, users of online services).\n\n\n\n\n\nDirect marketing (e.g., by email or postal mail).\n\n\nContact requests and communications.\n\n\n\n\nThe following is an overview of the legal basis of the GDPR on the basis of which we process personal data. Please note that in addition to the provisions of the GDPR, national data protection regulations may apply in your or our country of residence or domicile. Furthermore, should more specific legal bases be decisive in individual cases, we will inform you of these in the data protection declaration.\n\n \n\n\nConsent (Art. 6 para. 1 p. 1 lit. a. DSGVO) - The data subject has given his or her consent to the processing of personal data concerning him or her for a specific purpose or purposes.\n\n\nRegistered interests (Art. 6 para. 1 p. 1 lit. f. DSGVO) - Processing is necessary to protect the legitimate interests of the controller or a third party, unless such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require the protection of personal data.\n\n\n\nNational data protection regulations in Germany: In addition to the data protection regulations of the General Data Protection Regulation, national regulations on data protection apply in Germany. These include, in particular, the Act on Protection against Misuse of Personal Data in Data Processing (Federal Data Protection Act - BDSG). In particular, the BDSG contains special regulations on the right to information, the right to erasure, the right to object, the processing of special categories of personal data, processing for other purposes and transmission, as well as automated decision-making in individual cases, including profiling. Furthermore, it regulates data processing for employment purposes (Section 26 BDSG), in particular with regard to the establishment, implementation or termination of employment relationships as well as the consent of employees. Furthermore, state data protection laws of the individual federal states may apply.\n\n \n\n\nWe take appropriate technical and organizational measures in accordance with the legal requirements, taking into account the state of the art, the implementation costs and the nature, scope, circumstances and purposes of the processing, as well as the different probabilities of occurrence and the extent of the threat to the rights and freedoms of natural persons, in order to ensure a level of protection appropriate to the risk.\n\n.\n\nMeasures include, in particular, ensuring the confidentiality, integrity, and availability of data by controlling physical and electronic access to data as well as access to, entry into, disclosure of, assurance of availability of, and segregation of data concerning them. Furthermore, we have established procedures to ensure the exercise of data subjects’ rights, the deletion of data, and responses to data compromise. Furthermore, we take the protection of personal data into account as early as the development or selection of hardware, software as well as procedures in accordance with the principle of data protection, through technology design and through data protection-friendly default settings.\n\n \n\n\nThe data processed by us will be deleted in accordance with legal requirements as soon as their consents permitted for processing are revoked or other permissions cease to apply (e.g. if the purpose of processing this data has ceased to apply or it is not necessary for the purpose).\n\n \n\nIf the data are not deleted because they are required for other and legally permissible purposes, their processing will be limited to these purposes. That is, the data will be blocked and not processed for other purposes. This applies, for example, to data that must be retained for reasons of commercial or tax law or whose storage is necessary for the assertion, exercise or defense of legal claims or for the protection of the rights of another natural person or legal entity.\n\n \n\nOur privacy notices may also include further information on the retention and deletion of data that takes precedence for the processing operations in question.\n\n \n\n\nCookies are text files that contain data from websites or domains visited and are stored by a browser on the user’s computer. The primary purpose of a cookie is to store information about a user during or after their visit within an online site. Stored information may include, for example, language settings on a website, login status, a shopping cart, or where a video was watched. We further include in the term cookies other technologies that perform the same functions as cookies (e.g., when user details are stored using pseudonymous online identifiers, also referred to as “user IDs”)\n\n.\n\nThe following cookie types and functions are distinguished:\n\n\n\nTemporary cookies (also: session or session cookies): Temporary cookies are deleted at the latest after a user has left an online offer and closed his browser.\n\n\nPermanent cookies: Permanent cookies remain stored even after closing the browser. For example, the login status can be saved or preferred content can be displayed directly when the user revisits a website. Likewise, the interests of users used for range measurement or marketing purposes can be stored in such a cookie.\n\n\nFirst-party cookies: First-party cookies are set by ourselves.\n\n\nThird-party cookies (also: third-party cookies): Third-party cookies are mainly used by advertisers (so-called third parties) to process user information.\n\n\nNecessary (also: essential or absolutely necessary) cookies: Cookies may be absolutely necessary for the operation of a website (e.g. to store logins or other user input or for security reasons).\n\n\nStatistics, marketing and personalization cookies: Furthermore, cookies are usually also used in the context of range measurement and when the interests of a user or his behavior (e.g. viewing certain content, use of functions, etc.) on individual web pages are stored in a user profile. Such profiles are used, for example, to show users content that matches their potential interests. This process is also referred to as “tracking”, i.e., tracking the potential interests of users. Insofar as we use cookies or “tracking” technologies, we will inform you separately in our privacy policy or in the context of obtaining consent.\n\n\n\nNotes on legal bases: On which legal basis we process your personal data using cookies depends on whether we ask you for consent. If this is the case and you consent to the use of cookies, the legal basis for the processing of your data is the declared consent. Otherwise, the data processed with the help of cookies is processed on the basis of our legitimate interests (e.g. in a business operation of our online offer and its improvement) or, if the use of cookies is necessary to fulfill our contractual obligations.\n\n.\n\nDuration of storage: If we do not provide you with explicit information about the storage period of permanent cookies (e.g. in the context of a so-called cookie opt-in), please assume that the storage period can be up to two years.\n\n.\n\nGeneral information on revocation and objection (opt-out):  Depending on whether the processing is based on consent or legal permission, you have the option at any time to revoke any consent given or to object to the processing of your data by cookie technologies (collectively referred to as “opt-out”). You can initially declare your objection by means of your browser settings, e.g. by deactivating the use of cookies (whereby this may also restrict the functionality of our online offer). An objection to the use of cookies for online marketing purposes can also be declared by means of a variety of services, especially in the case of tracking, via the websites https://optout.aboutads.info and https://www.youronlinechoices.com/. In addition, you can receive further objection notices in the context of the information on the service providers and cookies used.\n\n.\n\nProcessing of cookie data on the basis of consent: We use a cookie consent management procedure, in the context of which the consent of users to the use of cookies, or the processing and providers mentioned in the cookie consent management procedure can be obtained and managed and revoked by users. Here, the declaration of consent is stored in order not to have to repeat its query and to be able to prove the consent in accordance with the legal obligation. The storage can take place on the server side and/or in a cookie (so-called opt-in cookie, or with the help of comparable technologies), in order to be able to assign the consent to a user or their device. Subject to individual information on the providers of cookie management services, the following information applies: The duration of the storage of consent can be up to two years. Here, a pseudonymous user identifier is formed and stored with the time of consent, information on the scope of consent (e.g., which categories of cookies and/or service providers) as well as the browser, system and end device used.\n\n.\n\n\nTypes of data processed: Usage data (e.g. websites visited, interest in content, access times), meta/communication data (e.g. device information, IP addresses).\n\n\nPersons concerned: Users (e.g. website visitors, users of online services).\n\n\nLegal basis: Consent (Art. 6 para. 1 p. 1 lit. a. DSGVO), Legitimate Interests (Art. 6 para. 1 p. 1 lit. f. DSGVO).\n\n\n\n\nThe surveys and polls (hereinafter “surveys”) conducted by us are evaluated anonymously. Personal data is only processed insofar as this is necessary for the provision and technical implementation of the surveys (e.g. processing of the IP address to display the survey in the user’s browser or to enable a resumption of the survey with the help of a temporary cookie (session cookie)) or users have consented.\n\n.\n\nNotes on legal basis: If we ask participants for consent to process their data, this is the legal basis of the processing, otherwise the processing of participants’ data is based on our legitimate interests in conducting an objective survey.\n\n \n\n\nTypes of data processed: Contact data (e.g. email, phone numbers), content data (e.g. input in online forms), usage data (e.g. web pages visited, interest in content, access times), meta/communication data (e.g. device information, IP addresses).\n\n\nParticipants concerned: Communication partners.\n\n\nPurposes of processing: Contact requests and communication, direct marketing (e.g. by e-mail or postal mail).\n\n\nLegal basis: Consent (Art. 6 para. 1 p. 1 lit. a. DSGVO), Legitimate Interests (Art. 6 para. 1 p. 1 lit. f. DSGVO).\n\n\n\n\nWe encourage you to periodically review the contents of our Privacy Policy. We adapt the Privacy Policy as soon as the changes in the data processing activities we carry out make it necessary. We will inform you as soon as the changes require an act of cooperation on your part (e.g. consent) or other individual notification.\n\n.\n\nWhere we provide addresses and contact information for companies and organizations in this Privacy Policy, please note that addresses may change over time and please check the information before contacting us.\n\n.\n\n\nAs a data subject, you are entitled to various rights under the GDPR, which arise in particular from Art. 15 to 21 DSGVO:\n\n\n\nRight to object: You have the right to object at any time, on grounds relating to your particular situation, to the processing of personal data relating to you which is carried out on the basis of Art. 6(1)(e) or (f) DSGVO; this also applies to profiling based on these provisions. If the personal data concerning you is processed for the purpose of direct marketing, you have the right to object at any time to the processing of personal data concerning you for the purpose of such marketing; this also applies to profiling, insofar as it is associated with such direct marketing.\n\n\nRight of withdrawal in the case of consent: You have the right to withdraw any consent you have given at any time.\n\n\nRight of access: You have the right to request confirmation as to whether data in question is being processed and to information about this data, as well as further information and copy of the data in accordance with the legal requirements.\n\n\nRight of rectification: You have the right, in accordance with the legal requirements, to request the completion of the data concerning you or the correction of incorrect data concerning you.\n\n\nRight to erasure and restriction of processing: You have, in accordance with the law, the right to request that data concerning you be erased without undue delay, or alternatively, in accordance with the law, to request restriction of the processing of the data.\n\n\nRight to data portability: You have the right to receive data concerning you, which you have provided to us, in a structured, common and machine-readable format in accordance with the legal requirements, or to demand its transfer to another responsible party.\n\n\nComplaint to supervisory authority: Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority, in particular in the Member State of your habitual residence, place of work or the place of the alleged infringement, if you consider that the processing of personal data concerning you infringes the requirements of the GDPR.\n\n\n.\n\n\nThis section provides you with an overview of the terms used in this Privacy Policy. Many of the terms are taken from the law and defined primarily in Article 4 of the GDPR. The legal definitions are binding. The following explanations, on the other hand, are primarily intended to aid understanding. The terms are sorted alphabetically.\n\n \n\n\nPersonal data: “Personal data” means any information relating to an identified or identifiable natural person (hereinafter “data subject”); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier (eg. e.g. cookie) or to one or more special characteristics that are an expression of the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.\n\n\nController: The “controller” is the natural or legal person, public authority, agency or other body which alone or jointly with others determines the purposes and means of the processing of personal data.\n\n\nProcessing: “Processing” means any operation or set of operations which is performed upon personal data, whether or not by automatic means. The term is broad and includes virtually any handling of data, whether collecting, evaluating, storing, transmitting or deleting.\n\n\n\nCreated with free Datenschutz-Generator.de by Dr. Thomas Schwenke",
+    "text": "Zweck dieser Seite\nDer Konfigurator ist ein Hilfswerkzeug für Lehrkräfte, die ein eigenes LST-Materialpaket erzeugen möchten. Er berechnet keine Karten im Browser. Er erzeugt nur eine saubere Konfiguration für den lokalen R-Workflow.\nFür den direkten Unterrichtseinsatz ist diese Seite nicht notwendig. Dafür reicht das vorbereitete Köln-Demo-Paket. Der Konfigurator ist sinnvoll, wenn ein anderer Ausschnitt, ein anderer Zeitraum oder ein eigenes AOI getestet werden soll.\nDie aktuelle Version ist auf den reduzierten Unterrichtsworkflow ausgerichtet: Hot-LST q90, DOP-RGB, DOP-CIR-Oberflächenmaske und vier passgenaue QGIS-Printlayouts. Cold-Produkte und OSM-Zusatzlayer werden hier nicht mehr als Standardoption geführt.\n\n\n\nDer Konfigurator übersetzt didaktische Entscheidungen in Skriptparameter.\n\n\n\n\nWas wird konfiguriert?\nDer Konfigurator beschreibt vier Entscheidungen:\n\nWelcher Raum wird analysiert?\nAus welchem Zeitraum werden Landsat-Szenen gesucht?\nNach welcher heißen Temperaturtendenz werden Szenen ausgewählt?\nSoll danach automatisch ein QGIS-Projekt mit Printlayouts erzeugt werden?\n\n\n\n\nDas Datenpaket entsteht aus AOI, Zeitraum und Extremmodus.\n\n\nDie technische Umsetzung bleibt lokal. Der Browser erzeugt nur JSON oder einen R-Konfigurationsblock. Die eigentliche Verarbeitung läuft über:\nRscript scripts/00_run_lst_oberflaechenmaske_dop_cir.R\nAm Ende kann dieses Skript den QGIS-Launcher starten:\nscripts/run_create_qgis_project.sh\nscripts/run_create_qgis_project.bat\n\n\nKonfigurator\n\n\n\n  Empfehlung für den ersten eigenen Lauf: kleine AOI, Sommermonate Juni–August, Hot-Modus q90, DOP-CIR-Maske aktiv, QGIS-Projekt automatisch erzeugen.\n\n\n\n  Aktueller Unterrichtsstandard: Es werden drei Oberflächenklassen verwendet: Vegetation, Wasser und Versiegelung / Bebauung. Die QGIS-Ausgabe nutzt nur das Hot-q90-Produkt.\n\n\n\n  \n    1. Untersuchungsraum\n    Der AOI bestimmt, für welchen Raum LST-Produkte, DOP-CIR-Maske und QGIS-Layouts erzeugt werden.\n\n    AOI-Name\n    \n\n    AOI-Modus\n    \n      Köln Stadtbezirke\n      Bounding Box\n      eigene Datei im Skript setzen\n    \n\n    \n      Bounding Box xmin\n      Bounding Box ymin\n      Bounding Box xmax\n      Bounding Box ymax\n    \n  \n\n  \n    2. Zeitraum und Szenenfilter\n    Für Stadtwärme sind Sommermonate am sinnvollsten. Der aktuelle Köln-Demo-Workflow nutzt Juni bis August.\n\n    Startdatum\n    \n\n    Enddatum\n    \n\n    Monate\n    \n      Sommer Juni–August\n      Sommerhalbjahr April–September\n      Ganzes Jahr\n    \n\n    max. Szenen-Wolkenanteil [%]\n    \n  \n\n  \n    3. Hot-LST-Produkt\n    Der aktuelle Unterrichtsworkflow nutzt nur den Hot-Modus. Szenen werden nach hoher q90-Temperatur ausgewählt.\n\n    Extremmodus\n    \n      hot / heiße Szenen\n    \n\n    Hot-Metrik\n    \n      q90_C / obere Temperaturtendenz\n    \n\n    Anzahl heißer Szenen\n    \n\n    Mindestzahl gültiger Pixel\n    \n  \n\n  \n    4. DOP-CIR-Maske und QGIS-Ausgabe\n    Die DOP-CIR-Maske erzeugt drei didaktische Oberflächenklassen. Danach kann automatisch das QGIS-Projekt mit Printlayouts erstellt werden.\n\n    DOP-CIR-Maske erzeugen\n    \n      ja\n    \n\n    DOP-CIR-Zielauflösung [m]\n    \n\n    QGIS-Projekt und Printlayouts erzeugen\n    \n      ja\n      nein\n    \n\n    LST-Deckkraft im QGIS-Projekt\n    \n  \n\n\n\n  JSON erzeugen\n  R-Block erzeugen\n  run_config.json herunterladen\n\n\n\n\n\n\n\nNutzung\nDer erzeugte R-Block kann in den Konfigurationsteil von scripts/00_run_lst_oberflaechenmaske_dop_cir.R übernommen werden. Alternativ kann die JSON-Ausgabe als Dokumentation der gewählten Parameter gespeichert werden.\nDer Browser erzeugt keine LST-Karte und keine Maske. Die Verarbeitung läuft lokal. Für die Köln-Demo ist der zentrale Start:\nRscript scripts/00_run_lst_oberflaechenmaske_dop_cir.R\nWenn run_external_qgis_project &lt;- TRUE gesetzt ist, startet der R-Runner anschließend den passenden QGIS-Launcher und erzeugt das QGIS-Projekt mit vier Printlayouts.\n\n\nWas der aktuelle Workflow erzeugt\n\n\n\nTechnischer Datenfluss vom AOI zur QGIS-Projektdatei.\n\n\nDer konfigurierte Workflow erzeugt:\nAOI\n→ Landsat-LST-Szenen\n→ Auswahl heißer Szenen nach q90_C\n→ Hot-q90-Komposit\n→ DOP-CIR-Oberflächenmaske mit drei Klassen\n→ QGIS-Projekt\n→ vier passgleiche Drucklayouts\nDie didaktische Reduktion bleibt in allen Ausgaben gleich:\nVegetation\nWasser\nVersiegelung / Bebauung\n\n\n\nDie drei Unterrichtsklassen bündeln reale Oberflächen: versiegelte und bebaute Flächen, Vegetation und Wasser.\n\n\n\n\nHinweise zur Anpassung\nFür eigene Räume sollte zuerst mit einer kleinen AOI getestet werden. Große Stadtgebiete erhöhen Downloadzeit, WMS-Last, Rastergröße und QGIS-Exportzeit. Der DOP-CIR-WMS wird für die Maske auf ein Zielraster geladen. Im Standard sind das 30 m, weil die Maske didaktisch zur Landsat-LST-Ebene passen soll.\nDas QGIS-Projekt nutzt in der aktuellen Fassung nur noch:\nkoeln_LST_hot_q90_C_EPSG25832.tif\nkoeln_dop_cir_30m_3klassen.gpkg\nDOP RGB WMS\nKartenrahmen-Layer\nDie übrigen LST-Produkte können weiterhin als Zwischenprodukte entstehen, werden aber nicht in das reduzierte Unterrichtsprojekt geladen.\n\n\nTechnische Grenzen\nDer Konfigurator ersetzt keine Plausibilitätsprüfung. Nach jedem neuen Lauf sollten diese Punkte kontrolliert werden:\n\nGibt es genügend gültige Landsat-Pixel?\nIst die AOI nicht zu groß?\nWurde das DOP-CIR-WMS vollständig geladen?\nSind Wasser und Vegetation in der Maske plausibel?\nStimmen Kartenrahmen und Ausdrucke im QGIS-Layout überein?\nWurde beim Drucken 100 % / tatsächliche Größe verwendet?\n\nWenn das DOP in der QGIS-Layoutvorschau grob erscheint, ist zuerst der PDF-Export zu prüfen. Die Vorschau kann WMS-Layer gröber darstellen als der finale Export. Wenn auch der PDF grob ist, sollte für den festen Kartenausschnitt ein lokales, hochaufgelöstes DOP-Raster verwendet werden.\n\n\nGit-Hinweis\nDie erzeugten Daten gehören nicht ins Repository. In .gitignore sollten mindestens diese Einträge stehen:\n/data/\n/.venv-folienvorlage/\nDas Repository sollte Skripte, Quarto-Seiten und Abbildungen enthalten, nicht Landsat-Szenen, DOP-Downloads, GeoPackages, QGIS-Projektdateien oder Print-PDFs.",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "LST-Datenpaket konfigurieren"
+    ]
+  },
+  {
+    "objectID": "Über/kontakt.html",
+    "href": "Über/kontakt.html",
+    "title": "Kontakt",
+    "section": "",
+    "text": "Geographiedidaktik mit dem Schwerpunkt Physische Geographie\nGronewaldstr. 2\n50931 Köln\nRaum 1.123\n\nMail an: Jun.-Prof. Rieke Ammoneit",
     "crumbs": [
       "Ilias",
       "Über",
-      "Impressum"
+      "Kontakt"
     ]
   },
   {
-    "objectID": "Über/impressum.html#content-responsibility",
-    "href": "Über/impressum.html#content-responsibility",
-    "title": "Impressum",
+    "objectID": "index.html#klimawandel-verstehen-aber-wie-eigentlich",
+    "href": "index.html#klimawandel-verstehen-aber-wie-eigentlich",
+    "title": "KlimaResilienzSchule",
+    "section": "Klimawandel verstehen – aber wie eigentlich?",
+    "text": "Klimawandel verstehen – aber wie eigentlich?\nDass sich die Erde menschengemacht rasant erwärmt, ist wissenschaftlich sehr gut belegt. Im öffentlichen Raum werden diese Befunde trotzdem immer wieder infrage gestellt. Daraus ergeben sich für Schule zwei zentrale Aufgaben: Klimawandel fachlich verständlich machen und -vielleicht wichtiger- zu zeigen, wie verlässliches Wissen entsteht.\nDie KlimaResilienzSchule setzt dort an, wo Klimawandel im Schulumfeld sichtbar und untersuchbar wird: auf heißen Asphaltflächen, an sonnenexponierten Fassaden, unter Bäumen, auf hellen und dunklen Materialien und in unterschiedlich gestalteten Stadträumen. Treibhauseffekt, Eis-Albedo-Rückkopplung, Stadtklima und Hitzebelastung werden dabei nicht als isolierte Fachbegriffe behandelt, sondern über konkrete Messungen, Karten, Modelle und Gestaltungsfragen erschlossen. Die Schüler*innen arbeiten mit Daten, vergleichen Situationen und leiten daraus ab, welche Maßnahmen lokal wirksam sein können."
+  },
+  {
+    "objectID": "index.html#stationslernen-mit-kritischer-reflexion-von-ki-gestütztem-lernen",
+    "href": "index.html#stationslernen-mit-kritischer-reflexion-von-ki-gestütztem-lernen",
+    "title": "KlimaResilienzSchule",
+    "section": "Stationslernen mit kritischer Reflexion von KI-gestütztem Lernen",
+    "text": "Stationslernen mit kritischer Reflexion von KI-gestütztem Lernen\nIm Schülerlabor werden Klimawandel und KI-gestütztes Lernen gemeinsam bearbeitet. Die fachliche Arbeit an den Stationen steht im Mittelpunkt. Parallel dazu wird sichtbar, wann KI beim Strukturieren, Vergleichen und Erklären unterstützt und wann sie eigenes Verstehen verkürzt.\nDie Schüler*innen arbeiten abwechselnd mit und ohne KI-Unterstützung. Dadurch werden Unterschiede im Arbeitsprozess, im Verständnis und in der Ergebnisqualität direkt vergleichbar. Am Ende stehen fachliche Ergebnisse und eine Reflexion der Lernwege: Welche Aufgabe konnte durch KI besser erschlossen werden? Wo war eigenes Nachdenken entscheidend? Welche Antwort musste überprüft, begründet oder korrigiert werden?"
+  },
+  {
+    "objectID": "index.html#ablauf",
+    "href": "index.html#ablauf",
+    "title": "KlimaResilienzSchule",
+    "section": "Ablauf",
+    "text": "Ablauf\nNach einer kurzen Einführung bearbeiten die Schüler*innen mehrere Stationen zu Klimawandel, Klimaresilienz und wissenschaftlichem Arbeiten. Die Stationen kombinieren Experimente, digitale Modelle, Kartenarbeit und Auswertung. Einzelne Bausteine können auch unabhängig voneinander im Unterricht eingesetzt werden.\nDer gemeinsame Kern aller Stationen ist die Übersetzung von Klimawissen in konkrete Unterrichtshandlungen: ein Phänomen untersuchen, eine Methode nutzen, Ergebnisse vergleichen und die Aussagekraft prüfen. Dadurch entsteht ein Zugang, der fachliches Lernen, räumliches Denken und reflektierten Umgang mit KI verbindet."
+  },
+  {
+    "objectID": "index.html#weiterentwicklung",
+    "href": "index.html#weiterentwicklung",
+    "title": "KlimaResilienzSchule",
+    "section": "Weiterentwicklung",
+    "text": "Weiterentwicklung\nDie KlimaResilienzSchule ist als wachsende Materialstruktur angelegt. Weitere Stationen, Modelle, Aufgaben, Datensätze und Unterrichtsmaterialien können fortlaufend ergänzt werden."
+  },
+  {
+    "objectID": "index.html#lizenz",
+    "href": "index.html#lizenz",
+    "title": "KlimaResilienzSchule",
+    "section": "Lizenz",
+    "text": "Lizenz\n© 2026 Rieke Ammoneit\nDieses Material steht unter der Lizenz Creative Commons Attribution 4.0 International (CC BY 4.0). Es darf geteilt und bearbeitet werden, solange die Urheber*innen genannt werden."
+  },
+  {
+    "objectID": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html",
+    "href": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html",
+    "title": "Hitzebelastung auf dem Schulhof untersuchen",
     "section": "",
-    "text": "The responsibility for the content rests with the instructors. Statements, opinions and/or conclusions are the ones from the instructors and do not necessarily reflect the opinion of the representatives of Marburg University.",
+    "text": "Im dieser Aufgabe prüft ihr die Planung der Stadt: Auf dem Schulhof sollen neue Sportflächen entstehen. Eure Aufgabe ist es, klimatologisch zu bewerten, ob diese Planung während der Schulzeit zu mehr oder weniger Hitzebelastung auf den freien Flächen führt.\n\nTeamname\n\n\n\n\n\n\n\nAuf dem Schulhof wird es nicht überall gleich heiß. Ihr sucht im Modell die heißesten Stellen auf den freien Flächen: Wege, Rasen, Sand, Sportfeld, Pflaster und Asphalt.\nWichtig ist die Schulzeit: Welche heißen Flächen liegen dort, wo sich Schüler*innen aufhalten können?\nDanach aktiviert ihr die geplante Umgestaltung und prüft, ob die Hitzebelastung besser oder schlechter wird. Am Ende entscheidet ihr: Soll die Planung so umgesetzt werden?\n\n\n\n\n\n\nAbbildung 1: Visualisierung des Modell-Schulhofs",
     "crumbs": [
       "Ilias",
-      "Über",
-      "Impressum"
+      "03 KlimaCheck Schulhof",
+      "Hitzebelastung auf dem Schulhof untersuchen"
     ]
   },
   {
-    "objectID": "Über/impressum.html#content-license",
-    "href": "Über/impressum.html#content-license",
-    "title": "Impressum",
+    "objectID": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#wo-entstehen-hitzestellen",
+    "href": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#wo-entstehen-hitzestellen",
+    "title": "Hitzebelastung auf dem Schulhof untersuchen",
+    "section": "1. Wo entstehen Hitzestellen?",
+    "text": "1. Wo entstehen Hitzestellen?\nStartet das Modell mit Modellstart / Reset.\nDrückt danach Tageslauf berechnen.\nSchaut euch diese Karten an:\n\nHitzelast aktuell\nHitzelast Schulzeit\n\nSucht zuerst die heißesten Stellen auf dem Schulhof. Achtet dabei nur auf Flächen außerhalb der Gebäude, also zum Beispiel Wege, Rasen, Sand, Sportflächen, Pflaster und Asphalt. Entscheidend ist nicht nur, wo es heiß wird, sondern ob diese Stellen während der Schulzeit für Schüler*innen wichtig sind.\nMarkiert oder merkt euch:\n\nWo sind die stärksten Hotspots?\nLiegen diese Hotspots auf Flächen, die in der Schulzeit genutzt werden?\nWelche Oberflächen liegen dort: Asphalt, Pflaster, Rasen, Sand oder Bäume?\n\n\n\n\nModell-Karte\n\n\nUnsere Beobachtung:\n\nHotspot 1:\n\n\nHotspot 2:",
+    "crumbs": [
+      "Ilias",
+      "03 KlimaCheck Schulhof",
+      "Hitzebelastung auf dem Schulhof untersuchen"
+    ]
+  },
+  {
+    "objectID": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#was-verändert-die-geplante-umgestaltung",
+    "href": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#was-verändert-die-geplante-umgestaltung",
+    "title": "Hitzebelastung auf dem Schulhof untersuchen",
+    "section": "2. Was verändert die geplante Umgestaltung?",
+    "text": "2. Was verändert die geplante Umgestaltung?\nDie Stadt möchte den Schulhof verändern: Es sollen neue Sportflächen entstehen. Im Modell prüft ihr, ob diese Planung die Hitzebelastung während der Schulzeit verbessert oder verschlechtert.\nDrückt Städtische Planung aktivieren.\nDas Modell setzt automatisch:\n\nein Sportfeld im südwestlichen Bereich,\nzwei Sandflächen für Beachvolleyball im nördlicheren Bereich.\n\nDrückt danach wieder Tageslauf berechnen.\nSchaltet auf die Karte:\n\nHitzelast Änderung\n\nBeschreibt kurz:\n\nWo wird die Hitzelast größer? Wo wird sie kleiner?",
+    "crumbs": [
+      "Ilias",
+      "03 KlimaCheck Schulhof",
+      "Hitzebelastung auf dem Schulhof untersuchen"
+    ]
+  },
+  {
+    "objectID": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#ist-die-planung-sinnvoll",
+    "href": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#ist-die-planung-sinnvoll",
+    "title": "Hitzebelastung auf dem Schulhof untersuchen",
+    "section": "3. Ist die Planung sinnvoll?",
+    "text": "3. Ist die Planung sinnvoll?\nEntscheidet euch für eine Position:\n\nDie Planung ist sinnvoll.\nDie Planung ist problematisch.\nDie Planung ist nur mit Änderungen sinnvoll.\n\nUnsere Entscheidung:\n\nWir entscheiden uns für:\n\nUnsere Begründung aus dem Modell:\n\nWelche Hotspots und welche Schulzeit-Flächen sind für eure Entscheidung wichtig?",
+    "crumbs": [
+      "Ilias",
+      "03 KlimaCheck Schulhof",
+      "Hitzebelastung auf dem Schulhof untersuchen"
+    ]
+  },
+  {
+    "objectID": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html",
+    "href": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html",
+    "title": "Interaktives Schulhofklima-Modell",
     "section": "",
-    "text": "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.\n\n\nAs of 16. March 2026\n\n\n\nWith the following data protection declaration, we would like to inform you about the types of your personal data (hereinafter also referred to as “data” for short) that we process, for what purposes and to what extent. The privacy policy applies to all processing of personal data carried out by us, both in the context of the provision of our services and in particular on our websites, in mobile applications and within external online presences, such as our social media profiles (hereinafter collectively referred to as “Online Offerings”).\n\n\nThe terms used are not gender-specific.\n\n\n\nProf. Dr. Rieke AmmoneitGronewaldstr. 250931 Köln\n\n\nEmail address: rammoneit[at]uni-koeln.de.\n\n\nImprint: webadress impressum uni koeln\n\n\n\nThe following overview summarizes the types of data processed and the purposes of their processing, and refers to the data subjects.\n\n\n\n\nContent data (e.g. input in online forms).\n\n\nContact data (e.g. email, phone numbers).\n\n\nMeta/communication data (e.g. device information, IP addresses).\n\n\nUse data (e.g. websites visited, interest in content, access times).\n\n\n\n\n\nCommunication partners.\n\n\nUsers (e.g.. Website visitors, users of online services).\n\n\n\n\n\nDirect marketing (e.g., by email or postal mail).\n\n\nContact requests and communications.\n\n\n\n\nThe following is an overview of the legal basis of the GDPR on the basis of which we process personal data. Please note that in addition to the provisions of the GDPR, national data protection regulations may apply in your or our country of residence or domicile. Furthermore, should more specific legal bases be decisive in individual cases, we will inform you of these in the data protection declaration.\n\n \n\n\nConsent (Art. 6 para. 1 p. 1 lit. a. DSGVO) - The data subject has given his or her consent to the processing of personal data concerning him or her for a specific purpose or purposes.\n\n\nRegistered interests (Art. 6 para. 1 p. 1 lit. f. DSGVO) - Processing is necessary to protect the legitimate interests of the controller or a third party, unless such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require the protection of personal data.\n\n\n\nNational data protection regulations in Germany: In addition to the data protection regulations of the General Data Protection Regulation, national regulations on data protection apply in Germany. These include, in particular, the Act on Protection against Misuse of Personal Data in Data Processing (Federal Data Protection Act - BDSG). In particular, the BDSG contains special regulations on the right to information, the right to erasure, the right to object, the processing of special categories of personal data, processing for other purposes and transmission, as well as automated decision-making in individual cases, including profiling. Furthermore, it regulates data processing for employment purposes (Section 26 BDSG), in particular with regard to the establishment, implementation or termination of employment relationships as well as the consent of employees. Furthermore, state data protection laws of the individual federal states may apply.\n\n \n\n\nWe take appropriate technical and organizational measures in accordance with the legal requirements, taking into account the state of the art, the implementation costs and the nature, scope, circumstances and purposes of the processing, as well as the different probabilities of occurrence and the extent of the threat to the rights and freedoms of natural persons, in order to ensure a level of protection appropriate to the risk.\n\n.\n\nMeasures include, in particular, ensuring the confidentiality, integrity, and availability of data by controlling physical and electronic access to data as well as access to, entry into, disclosure of, assurance of availability of, and segregation of data concerning them. Furthermore, we have established procedures to ensure the exercise of data subjects’ rights, the deletion of data, and responses to data compromise. Furthermore, we take the protection of personal data into account as early as the development or selection of hardware, software as well as procedures in accordance with the principle of data protection, through technology design and through data protection-friendly default settings.\n\n \n\n\nThe data processed by us will be deleted in accordance with legal requirements as soon as their consents permitted for processing are revoked or other permissions cease to apply (e.g. if the purpose of processing this data has ceased to apply or it is not necessary for the purpose).\n\n \n\nIf the data are not deleted because they are required for other and legally permissible purposes, their processing will be limited to these purposes. That is, the data will be blocked and not processed for other purposes. This applies, for example, to data that must be retained for reasons of commercial or tax law or whose storage is necessary for the assertion, exercise or defense of legal claims or for the protection of the rights of another natural person or legal entity.\n\n \n\nOur privacy notices may also include further information on the retention and deletion of data that takes precedence for the processing operations in question.\n\n \n\n\nCookies are text files that contain data from websites or domains visited and are stored by a browser on the user’s computer. The primary purpose of a cookie is to store information about a user during or after their visit within an online site. Stored information may include, for example, language settings on a website, login status, a shopping cart, or where a video was watched. We further include in the term cookies other technologies that perform the same functions as cookies (e.g., when user details are stored using pseudonymous online identifiers, also referred to as “user IDs”)\n\n.\n\nThe following cookie types and functions are distinguished:\n\n\n\nTemporary cookies (also: session or session cookies): Temporary cookies are deleted at the latest after a user has left an online offer and closed his browser.\n\n\nPermanent cookies: Permanent cookies remain stored even after closing the browser. For example, the login status can be saved or preferred content can be displayed directly when the user revisits a website. Likewise, the interests of users used for range measurement or marketing purposes can be stored in such a cookie.\n\n\nFirst-party cookies: First-party cookies are set by ourselves.\n\n\nThird-party cookies (also: third-party cookies): Third-party cookies are mainly used by advertisers (so-called third parties) to process user information.\n\n\nNecessary (also: essential or absolutely necessary) cookies: Cookies may be absolutely necessary for the operation of a website (e.g. to store logins or other user input or for security reasons).\n\n\nStatistics, marketing and personalization cookies: Furthermore, cookies are usually also used in the context of range measurement and when the interests of a user or his behavior (e.g. viewing certain content, use of functions, etc.) on individual web pages are stored in a user profile. Such profiles are used, for example, to show users content that matches their potential interests. This process is also referred to as “tracking”, i.e., tracking the potential interests of users. Insofar as we use cookies or “tracking” technologies, we will inform you separately in our privacy policy or in the context of obtaining consent.\n\n\n\nNotes on legal bases: On which legal basis we process your personal data using cookies depends on whether we ask you for consent. If this is the case and you consent to the use of cookies, the legal basis for the processing of your data is the declared consent. Otherwise, the data processed with the help of cookies is processed on the basis of our legitimate interests (e.g. in a business operation of our online offer and its improvement) or, if the use of cookies is necessary to fulfill our contractual obligations.\n\n.\n\nDuration of storage: If we do not provide you with explicit information about the storage period of permanent cookies (e.g. in the context of a so-called cookie opt-in), please assume that the storage period can be up to two years.\n\n.\n\nGeneral information on revocation and objection (opt-out):  Depending on whether the processing is based on consent or legal permission, you have the option at any time to revoke any consent given or to object to the processing of your data by cookie technologies (collectively referred to as “opt-out”). You can initially declare your objection by means of your browser settings, e.g. by deactivating the use of cookies (whereby this may also restrict the functionality of our online offer). An objection to the use of cookies for online marketing purposes can also be declared by means of a variety of services, especially in the case of tracking, via the websites https://optout.aboutads.info and https://www.youronlinechoices.com/. In addition, you can receive further objection notices in the context of the information on the service providers and cookies used.\n\n.\n\nProcessing of cookie data on the basis of consent: We use a cookie consent management procedure, in the context of which the consent of users to the use of cookies, or the processing and providers mentioned in the cookie consent management procedure can be obtained and managed and revoked by users. Here, the declaration of consent is stored in order not to have to repeat its query and to be able to prove the consent in accordance with the legal obligation. The storage can take place on the server side and/or in a cookie (so-called opt-in cookie, or with the help of comparable technologies), in order to be able to assign the consent to a user or their device. Subject to individual information on the providers of cookie management services, the following information applies: The duration of the storage of consent can be up to two years. Here, a pseudonymous user identifier is formed and stored with the time of consent, information on the scope of consent (e.g., which categories of cookies and/or service providers) as well as the browser, system and end device used.\n\n.\n\n\nTypes of data processed: Usage data (e.g. websites visited, interest in content, access times), meta/communication data (e.g. device information, IP addresses).\n\n\nPersons concerned: Users (e.g. website visitors, users of online services).\n\n\nLegal basis: Consent (Art. 6 para. 1 p. 1 lit. a. DSGVO), Legitimate Interests (Art. 6 para. 1 p. 1 lit. f. DSGVO).\n\n\n\n\nThe surveys and polls (hereinafter “surveys”) conducted by us are evaluated anonymously. Personal data is only processed insofar as this is necessary for the provision and technical implementation of the surveys (e.g. processing of the IP address to display the survey in the user’s browser or to enable a resumption of the survey with the help of a temporary cookie (session cookie)) or users have consented.\n\n.\n\nNotes on legal basis: If we ask participants for consent to process their data, this is the legal basis of the processing, otherwise the processing of participants’ data is based on our legitimate interests in conducting an objective survey.\n\n \n\n\nTypes of data processed: Contact data (e.g. email, phone numbers), content data (e.g. input in online forms), usage data (e.g. web pages visited, interest in content, access times), meta/communication data (e.g. device information, IP addresses).\n\n\nParticipants concerned: Communication partners.\n\n\nPurposes of processing: Contact requests and communication, direct marketing (e.g. by e-mail or postal mail).\n\n\nLegal basis: Consent (Art. 6 para. 1 p. 1 lit. a. DSGVO), Legitimate Interests (Art. 6 para. 1 p. 1 lit. f. DSGVO).\n\n\n\n\nWe encourage you to periodically review the contents of our Privacy Policy. We adapt the Privacy Policy as soon as the changes in the data processing activities we carry out make it necessary. We will inform you as soon as the changes require an act of cooperation on your part (e.g. consent) or other individual notification.\n\n.\n\nWhere we provide addresses and contact information for companies and organizations in this Privacy Policy, please note that addresses may change over time and please check the information before contacting us.\n\n.\n\n\nAs a data subject, you are entitled to various rights under the GDPR, which arise in particular from Art. 15 to 21 DSGVO:\n\n\n\nRight to object: You have the right to object at any time, on grounds relating to your particular situation, to the processing of personal data relating to you which is carried out on the basis of Art. 6(1)(e) or (f) DSGVO; this also applies to profiling based on these provisions. If the personal data concerning you is processed for the purpose of direct marketing, you have the right to object at any time to the processing of personal data concerning you for the purpose of such marketing; this also applies to profiling, insofar as it is associated with such direct marketing.\n\n\nRight of withdrawal in the case of consent: You have the right to withdraw any consent you have given at any time.\n\n\nRight of access: You have the right to request confirmation as to whether data in question is being processed and to information about this data, as well as further information and copy of the data in accordance with the legal requirements.\n\n\nRight of rectification: You have the right, in accordance with the legal requirements, to request the completion of the data concerning you or the correction of incorrect data concerning you.\n\n\nRight to erasure and restriction of processing: You have, in accordance with the law, the right to request that data concerning you be erased without undue delay, or alternatively, in accordance with the law, to request restriction of the processing of the data.\n\n\nRight to data portability: You have the right to receive data concerning you, which you have provided to us, in a structured, common and machine-readable format in accordance with the legal requirements, or to demand its transfer to another responsible party.\n\n\nComplaint to supervisory authority: Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority, in particular in the Member State of your habitual residence, place of work or the place of the alleged infringement, if you consider that the processing of personal data concerning you infringes the requirements of the GDPR.\n\n\n.\n\n\nThis section provides you with an overview of the terms used in this Privacy Policy. Many of the terms are taken from the law and defined primarily in Article 4 of the GDPR. The legal definitions are binding. The following explanations, on the other hand, are primarily intended to aid understanding. The terms are sorted alphabetically.\n\n \n\n\nPersonal data: “Personal data” means any information relating to an identified or identifiable natural person (hereinafter “data subject”); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier (eg. e.g. cookie) or to one or more special characteristics that are an expression of the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.\n\n\nController: The “controller” is the natural or legal person, public authority, agency or other body which alone or jointly with others determines the purposes and means of the processing of personal data.\n\n\nProcessing: “Processing” means any operation or set of operations which is performed upon personal data, whether or not by automatic means. The term is broad and includes virtually any handling of data, whether collecting, evaluating, storing, transmitting or deleting.\n\n\n\nCreated with free Datenschutz-Generator.de by Dr. Thomas Schwenke",
+    "text": "KlimaCheck-Schulhof ist ein vereinfachtes, physikalisch basiertes Vergleichsmodell für das Klima auf einem Schulhof. Es zeigt, wie sich Flächen, Gebäude, Bäume, Schatten und Begrünung auf Wärme, Abkühlung und Hitzelast auswirken.\nDas Modell ist kein exaktes Vorhersagemodell. Es dient dazu, Unterschiede sichtbar zu machen: zum Beispiel zwischen Asphalt und Rasen, zwischen offenen und verschatteten Bereichen oder zwischen einem normalen Gebäude und einem begrünten Gebäude.\n Modell in eigenem Tab öffnen",
     "crumbs": [
       "Ilias",
-      "Über",
-      "Impressum"
+      "03 KlimaCheck Schulhof",
+      "Interaktives Schulhofklima-Modell"
     ]
   },
   {
-    "objectID": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html",
-    "href": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html",
-    "title": "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche",
+    "objectID": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html#interaktives-modell",
+    "href": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html#interaktives-modell",
+    "title": "Interaktives Schulhofklima-Modell",
     "section": "",
-    "text": "Teamname:",
+    "text": "KlimaCheck-Schulhof ist ein vereinfachtes, physikalisch basiertes Vergleichsmodell für das Klima auf einem Schulhof. Es zeigt, wie sich Flächen, Gebäude, Bäume, Schatten und Begrünung auf Wärme, Abkühlung und Hitzelast auswirken.\nDas Modell ist kein exaktes Vorhersagemodell. Es dient dazu, Unterschiede sichtbar zu machen: zum Beispiel zwischen Asphalt und Rasen, zwischen offenen und verschatteten Bereichen oder zwischen einem normalen Gebäude und einem begrünten Gebäude.\n Modell in eigenem Tab öffnen",
     "crumbs": [
       "Ilias",
-      "01 Treibhaus to Go",
-      "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche"
+      "03 KlimaCheck Schulhof",
+      "Interaktives Schulhofklima-Modell"
     ]
   },
   {
-    "objectID": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html#aufgabe-a-experiment-planen",
-    "href": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html#aufgabe-a-experiment-planen",
-    "title": "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche",
-    "section": "Aufgabe A – Experiment planen",
-    "text": "Aufgabe A – Experiment planen\n\n1. Aufbau planen\nWie müssen die beiden Flaschen vorbereitet werden, damit man sie vergleichen kann?\n\nVersuchsaufbau-Zeichnung/Beschreibung\n\n\n\n2. Durchführung planen\nWer macht was? Wann wird gemessen? Wie lange läuft das Experiment? Erstellt eine geeignete Tabelle.\n\nDurchführungsplan und Tabelle\n\n\n\n\n\n\n\nDas Experiment muss mindestens 15 Minuten lang durchgeführt werden\n\n\n\n\n\nMaterial\n\nzwei gleich große, durchsichtige Flaschen\nThermometer\nKnete zum Abdichten\nStoppuhr oder Timer (Tablet)\nWärmelampe\nEssig und Backpulver, damit kann CO₂ hergestellt werden\nMessprotokoll",
+    "objectID": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html#arbeiten-mit-dem-modell",
+    "href": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html#arbeiten-mit-dem-modell",
+    "title": "Interaktives Schulhofklima-Modell",
+    "section": "Arbeiten mit dem Modell",
+    "text": "Arbeiten mit dem Modell\nFür einen einfachen Vorher/Nachher-Vergleich wird zuerst der Ausgangszustand vollständig simuliert. Danach wird mit Massnahme aktivieren der Vergleichszustand vorbereitet. Anschließend kann eine Maßnahme gesetzt werden, zum Beispiel Rasen, Bäume, Hecken oder Gebäudebegrünung. Nach dem zweiten Tageslauf zeigt die Ansicht Hitzelast Änderung, wo sich die Belastung verbessert oder verschlechtert hat.\nMit Gebiet-auswählen kann zusätzlich eine konkrete Aufenthaltsfläche markiert werden. Der Button Auswahlgebiet vergleichen wertet dann nur diese Fläche aus.",
     "crumbs": [
       "Ilias",
-      "01 Treibhaus to Go",
-      "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche"
-    ]
-  },
-  {
-    "objectID": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html#aufgabe-b-experiment-durchführen",
-    "href": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html#aufgabe-b-experiment-durchführen",
-    "title": "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche",
-    "section": "Aufgabe B – Experiment durchführen",
-    "text": "Aufgabe B – Experiment durchführen\n\nStellt eure Ergebnisse übersichtlich dar (z. B. Tabelle oder Diagramm)\nBeschreibt, was ihr beobachtet habt\nEntscheidet: Welche Vermutung passt besser?\n\nStreicht die falsche Vermutung durch und macht ein Häkchen bei der richtigen.",
-    "crumbs": [
-      "Ilias",
-      "01 Treibhaus to Go",
-      "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche"
-    ]
-  },
-  {
-    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html",
-    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html",
-    "title": "Schwankt das noch – oder schmilzt das schon?",
-    "section": "",
-    "text": "Teamname\n\n\n\n\n\n\n\nWir wissen: Die Erde ist in den letzten Jahrzehnten wärmer geworden. Eine mögliche Folge davon ist, dass das Eis im Nordpolarmeer, also in der Arktis, weniger wird.\nAber reichen einige Beobachtungen? In manchen Jahren ist mehr Eis zu sehen, in anderen weniger. Das kann eine normale Schwankung sein. Erst wenn sich über Jahre eine klare Richtung zeigt, spricht man von einem Trend.\nIn dieser Aufgabe überprüft ihr deshalb selbst: Stimmt die Aussage, dass das arktische Meereis weniger wird? Und wie kann man das überhaupt herausfinden?\n\n\n\n\n\n\n1979-2025 Auswahl der Meer-Eis Bedeckung in der Arktis",
-    "crumbs": [
-      "Ilias",
-      "02 Arktik Eis",
-      "Schwankt das noch – oder schmilzt das schon?"
-    ]
-  },
-  {
-    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-1-bilder-untersuchen",
-    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-1-bilder-untersuchen",
-    "title": "Schwankt das noch – oder schmilzt das schon?",
-    "section": "Teil 1: Bilder untersuchen",
-    "text": "Teil 1: Bilder untersuchen\nIhr bekommt zu zweit jeweils (Gruppe A und Gruppe B) acht Satellitenbilder (Materialen 1) die das arktische Meereis im September (dem Monat mit der geringsten Ausdehnung) zeigen.\n\nSchätzt ob sich die Eisfläche in den jeweiligen Jahren zunimmt oder abnimmt.\nSchätzt dann ob insgesamt eine klare Richtung zu erkennen ist oder ob einzelne Jahre nur anders aussehen.\n\n\nUnsere erste Einschätzung:\nWelche Vermutung passt nach dem ersten Betrachten besser? Kreuzt an!\n\nGruppe A: ☐ Vermutung 1 ☐ Vermutung 0 ☐ unklar\nGruppe B: ☐ Vermutung 1 ☐ Vermutung 0 ☐ unklar",
-    "crumbs": [
-      "Ilias",
-      "02 Arktik Eis",
-      "Schwankt das noch – oder schmilzt das schon?"
-    ]
-  },
-  {
-    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-2-ergebnisse-zusammenführen",
-    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-2-ergebnisse-zusammenführen",
-    "title": "Schwankt das noch – oder schmilzt das schon?",
-    "section": "Teil 2: Ergebnisse zusammenführen",
-    "text": "Teil 2: Ergebnisse zusammenführen\nOrdnet nun die Bilder beider Gruppen den Jahren nach in eine gemeinsame Reihe.\nWas kann man mit allen Daten besser erkennen als mit den Teildaten?\n\nAntwort:\n\n\nUnsere Einschätzung:\nWelche Vermutung passt nach dem Betrachten aller Bilder besser? Kreuzt an!\n\nGruppe A: ☐ Vermutung 1 ☐ Vermutung 0 ☐ unklar\nGruppe B: ☐ Vermutung 1 ☐ Vermutung 0 ☐ unklar",
-    "crumbs": [
-      "Ilias",
-      "02 Arktik Eis",
-      "Schwankt das noch – oder schmilzt das schon?"
-    ]
-  },
-  {
-    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-3-eine-fläche-annähernd-messen",
-    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-3-eine-fläche-annähernd-messen",
-    "title": "Schwankt das noch – oder schmilzt das schon?",
-    "section": "Teil 3: Eine Fläche annähernd messen",
-    "text": "Teil 3: Eine Fläche annähernd messen\nNun nutzt ihr das Rasterbild mit den Kästchen (Materialien 2). Dort werden die Jahre 1980 und 2012 verglichen.\n\nganze Kästchen zählen als 1\nhalbe Kästchen ungefähr als 0,5\nRandbereiche müsst ihr schätzen.\n\nGruppe A zählt die Meereis-Kästchen, die zu 2012 gehören.\nErgebnis:___________________________\nGruppe B die Meereis-Kästchen die nicht zu 2012, sondern nur zu 1980 gehören.\nErgebnis:__________________________\n1980: __________ Kästchen gesamt (ihr müsst die Kästchen aus 2012 addieren)\nUnterschied 1980/2012 gesamt: __________ Kästchen\nWas zeigt diese Messung besser als das bloße Anschauen der Bilder?\n\nAntwort:\n\nWo kann es bei dieser Methode Fehler geben?\n\nAntwort:",
-    "crumbs": [
-      "Ilias",
-      "02 Arktik Eis",
-      "Schwankt das noch – oder schmilzt das schon?"
-    ]
-  },
-  {
-    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-3-wie-kommen-wir-zu-einer-zuverlässigen-beantwortung-unserer-fragen",
-    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-3-wie-kommen-wir-zu-einer-zuverlässigen-beantwortung-unserer-fragen",
-    "title": "Schwankt das noch – oder schmilzt das schon?",
-    "section": "Teil 3: Wie kommen wir zu einer zuverlässigen Beantwortung unserer Fragen?",
-    "text": "Teil 3: Wie kommen wir zu einer zuverlässigen Beantwortung unserer Fragen?\nÜberlegt nun: Wenn man wissenschaftlich prüfen will, ob das Meereis wirklich weniger wird, was braucht man zusätzlich?\n\nAntwort:",
-    "crumbs": [
-      "Ilias",
-      "02 Arktik Eis",
-      "Schwankt das noch – oder schmilzt das schon?"
-    ]
-  },
-  {
-    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-4-messwerte-auswerten",
-    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-4-messwerte-auswerten",
-    "title": "Schwankt das noch – oder schmilzt das schon?",
-    "section": "Teil 4: Messwerte auswerten",
-    "text": "Teil 4: Messwerte auswerten\nIhr bekommt jetzt eine Tabelle mit Flächenwerten in Millionen km² die eure Auszählung schon enthält (Materialien 3). Erstellt daraus eine Darstellung, mit der man die Eisflächen-Entwicklung erkennen kann. Ein Tipp: Geeignet ist ein Diagramm, bei dem die Jahre auf der x-Achse und die Eisfläche auf der y-Achse stehen.\nBeschreibt anschließend, was eure Daten zeigen.\nUnsere Beobachtung aus der Tabelle und dem Diagramm:\n\nBeobachtung:\n\nGibt es nur Schwankungen, oder erkennt ihr eine Richtung?\n\nAntwort:",
-    "crumbs": [
-      "Ilias",
-      "02 Arktik Eis",
-      "Schwankt das noch – oder schmilzt das schon?"
-    ]
-  },
-  {
-    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#schlussfolgerung",
-    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#schlussfolgerung",
-    "title": "Schwankt das noch – oder schmilzt das schon?",
-    "section": "Schlussfolgerung",
-    "text": "Schlussfolgerung\nUnsere Antwort auf die Fragestellung lautet:\nWir entscheiden uns für:\n\n☐ Vermutung 1: Das arktische Meereis wird langfristig weniger.\n☐ Vermutung 0: Das arktische Meereis schwankt nur, ohne dauerhaft weniger zu werden.\n☐ Unklar\n\n\nBegründung:",
-    "crumbs": [
-      "Ilias",
-      "02 Arktik Eis",
-      "Schwankt das noch – oder schmilzt das schon?"
-    ]
-  },
-  {
-    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#material",
-    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#material",
-    "title": "Schwankt das noch – oder schmilzt das schon?",
-    "section": "Material",
-    "text": "Material\n\nMaterial 1 + 2\nDownload Arktik-Eisbedeckung\n\n\nMaterial 3\n\n\n\nAuswahl A+B\nJahr\nMio. km²\n\n\n\n\n\n1979\n6,9\n\n\n\n1980\n7,5\n\n\n\n1984\n6,4\n\n\n\n1989\n6,9\n\n\n\n1991\n6,3\n\n\n\n1997\n6,6\n\n\n\n1998\n6,4\n\n\n\n2001\n6,6\n\n\n\n2005\n5,3\n\n\n\n2008\n4,6\n\n\n\n2009\n5,1\n\n\n\n2010\n4,6\n\n\n\n2012\n3,4\n\n\n\n2017\n4,7\n\n\n\n2018\n4,7\n\n\n\n2024\n4,3\n\n\n\n2025\n4,6",
-    "crumbs": [
-      "Ilias",
-      "02 Arktik Eis",
-      "Schwankt das noch – oder schmilzt das schon?"
+      "03 KlimaCheck Schulhof",
+      "Interaktives Schulhofklima-Modell"
     ]
   },
   {
@@ -1128,158 +935,363 @@
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html",
-    "href": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html",
-    "title": "Interaktives Schulhofklima-Modell",
+    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html",
+    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html",
+    "title": "Schwankt das noch – oder schmilzt das schon?",
     "section": "",
-    "text": "KlimaCheck-Schulhof ist ein vereinfachtes, physikalisch basiertes Vergleichsmodell für das Klima auf einem Schulhof. Es zeigt, wie sich Flächen, Gebäude, Bäume, Schatten und Begrünung auf Wärme, Abkühlung und Hitzelast auswirken.\nDas Modell ist kein exaktes Vorhersagemodell. Es dient dazu, Unterschiede sichtbar zu machen: zum Beispiel zwischen Asphalt und Rasen, zwischen offenen und verschatteten Bereichen oder zwischen einem normalen Gebäude und einem begrünten Gebäude.\n Modell in eigenem Tab öffnen",
+    "text": "Teamname\n\n\n\n\n\n\n\nWir wissen: Die Erde ist in den letzten Jahrzehnten wärmer geworden. Eine mögliche Folge davon ist, dass das Eis im Nordpolarmeer, also in der Arktis, weniger wird.\nAber reichen einige Beobachtungen? In manchen Jahren ist mehr Eis zu sehen, in anderen weniger. Das kann eine normale Schwankung sein. Erst wenn sich über Jahre eine klare Richtung zeigt, spricht man von einem Trend.\nIn dieser Aufgabe überprüft ihr deshalb selbst: Stimmt die Aussage, dass das arktische Meereis weniger wird? Und wie kann man das überhaupt herausfinden?\n\n\n\n\n\n\n1979-2025 Auswahl der Meer-Eis Bedeckung in der Arktis",
     "crumbs": [
       "Ilias",
-      "03 KlimaCheck Schulhof",
-      "Interaktives Schulhofklima-Modell"
+      "02 Arktik Eis",
+      "Schwankt das noch – oder schmilzt das schon?"
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html#interaktives-modell",
-    "href": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html#interaktives-modell",
-    "title": "Interaktives Schulhofklima-Modell",
+    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-1-bilder-untersuchen",
+    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-1-bilder-untersuchen",
+    "title": "Schwankt das noch – oder schmilzt das schon?",
+    "section": "Teil 1: Bilder untersuchen",
+    "text": "Teil 1: Bilder untersuchen\nIhr bekommt zu zweit jeweils (Gruppe A und Gruppe B) acht Satellitenbilder (Materialen 1) die das arktische Meereis im September (dem Monat mit der geringsten Ausdehnung) zeigen.\n\nSchätzt ob sich die Eisfläche in den jeweiligen Jahren zunimmt oder abnimmt.\nSchätzt dann ob insgesamt eine klare Richtung zu erkennen ist oder ob einzelne Jahre nur anders aussehen.\n\n\nUnsere erste Einschätzung:\nWelche Vermutung passt nach dem ersten Betrachten besser? Kreuzt an!\n\nGruppe A: ☐ Vermutung 1 ☐ Vermutung 0 ☐ unklar\nGruppe B: ☐ Vermutung 1 ☐ Vermutung 0 ☐ unklar",
+    "crumbs": [
+      "Ilias",
+      "02 Arktik Eis",
+      "Schwankt das noch – oder schmilzt das schon?"
+    ]
+  },
+  {
+    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-2-ergebnisse-zusammenführen",
+    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-2-ergebnisse-zusammenführen",
+    "title": "Schwankt das noch – oder schmilzt das schon?",
+    "section": "Teil 2: Ergebnisse zusammenführen",
+    "text": "Teil 2: Ergebnisse zusammenführen\nOrdnet nun die Bilder beider Gruppen den Jahren nach in eine gemeinsame Reihe.\nWas kann man mit allen Daten besser erkennen als mit den Teildaten?\n\nAntwort:\n\n\nUnsere Einschätzung:\nWelche Vermutung passt nach dem Betrachten aller Bilder besser? Kreuzt an!\n\nGruppe A: ☐ Vermutung 1 ☐ Vermutung 0 ☐ unklar\nGruppe B: ☐ Vermutung 1 ☐ Vermutung 0 ☐ unklar",
+    "crumbs": [
+      "Ilias",
+      "02 Arktik Eis",
+      "Schwankt das noch – oder schmilzt das schon?"
+    ]
+  },
+  {
+    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-3-eine-fläche-annähernd-messen",
+    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-3-eine-fläche-annähernd-messen",
+    "title": "Schwankt das noch – oder schmilzt das schon?",
+    "section": "Teil 3: Eine Fläche annähernd messen",
+    "text": "Teil 3: Eine Fläche annähernd messen\nNun nutzt ihr das Rasterbild mit den Kästchen (Materialien 2). Dort werden die Jahre 1980 und 2012 verglichen.\n\nganze Kästchen zählen als 1\nhalbe Kästchen ungefähr als 0,5\nRandbereiche müsst ihr schätzen.\n\nGruppe A zählt die Meereis-Kästchen, die zu 2012 gehören.\nErgebnis:___________________________\nGruppe B die Meereis-Kästchen die nicht zu 2012, sondern nur zu 1980 gehören.\nErgebnis:__________________________\n1980: __________ Kästchen gesamt (ihr müsst die Kästchen aus 2012 addieren)\nUnterschied 1980/2012 gesamt: __________ Kästchen\nWas zeigt diese Messung besser als das bloße Anschauen der Bilder?\n\nAntwort:\n\nWo kann es bei dieser Methode Fehler geben?\n\nAntwort:",
+    "crumbs": [
+      "Ilias",
+      "02 Arktik Eis",
+      "Schwankt das noch – oder schmilzt das schon?"
+    ]
+  },
+  {
+    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-3-wie-kommen-wir-zu-einer-zuverlässigen-beantwortung-unserer-fragen",
+    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-3-wie-kommen-wir-zu-einer-zuverlässigen-beantwortung-unserer-fragen",
+    "title": "Schwankt das noch – oder schmilzt das schon?",
+    "section": "Teil 3: Wie kommen wir zu einer zuverlässigen Beantwortung unserer Fragen?",
+    "text": "Teil 3: Wie kommen wir zu einer zuverlässigen Beantwortung unserer Fragen?\nÜberlegt nun: Wenn man wissenschaftlich prüfen will, ob das Meereis wirklich weniger wird, was braucht man zusätzlich?\n\nAntwort:",
+    "crumbs": [
+      "Ilias",
+      "02 Arktik Eis",
+      "Schwankt das noch – oder schmilzt das schon?"
+    ]
+  },
+  {
+    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-4-messwerte-auswerten",
+    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#teil-4-messwerte-auswerten",
+    "title": "Schwankt das noch – oder schmilzt das schon?",
+    "section": "Teil 4: Messwerte auswerten",
+    "text": "Teil 4: Messwerte auswerten\nIhr bekommt jetzt eine Tabelle mit Flächenwerten in Millionen km² die eure Auszählung schon enthält (Materialien 3). Erstellt daraus eine Darstellung, mit der man die Eisflächen-Entwicklung erkennen kann. Ein Tipp: Geeignet ist ein Diagramm, bei dem die Jahre auf der x-Achse und die Eisfläche auf der y-Achse stehen.\nBeschreibt anschließend, was eure Daten zeigen.\nUnsere Beobachtung aus der Tabelle und dem Diagramm:\n\nBeobachtung:\n\nGibt es nur Schwankungen, oder erkennt ihr eine Richtung?\n\nAntwort:",
+    "crumbs": [
+      "Ilias",
+      "02 Arktik Eis",
+      "Schwankt das noch – oder schmilzt das schon?"
+    ]
+  },
+  {
+    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#schlussfolgerung",
+    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#schlussfolgerung",
+    "title": "Schwankt das noch – oder schmilzt das schon?",
+    "section": "Schlussfolgerung",
+    "text": "Schlussfolgerung\nUnsere Antwort auf die Fragestellung lautet:\nWir entscheiden uns für:\n\n☐ Vermutung 1: Das arktische Meereis wird langfristig weniger.\n☐ Vermutung 0: Das arktische Meereis schwankt nur, ohne dauerhaft weniger zu werden.\n☐ Unklar\n\n\nBegründung:",
+    "crumbs": [
+      "Ilias",
+      "02 Arktik Eis",
+      "Schwankt das noch – oder schmilzt das schon?"
+    ]
+  },
+  {
+    "objectID": "02-Arktik-Eis/sus-handreichung-arktikeis.html#material",
+    "href": "02-Arktik-Eis/sus-handreichung-arktikeis.html#material",
+    "title": "Schwankt das noch – oder schmilzt das schon?",
+    "section": "Material",
+    "text": "Material\n\nMaterial 1 + 2\nDownload Arktik-Eisbedeckung\n\n\nMaterial 3\n\n\n\nAuswahl A+B\nJahr\nMio. km²\n\n\n\n\n\n1979\n6,9\n\n\n\n1980\n7,5\n\n\n\n1984\n6,4\n\n\n\n1989\n6,9\n\n\n\n1991\n6,3\n\n\n\n1997\n6,6\n\n\n\n1998\n6,4\n\n\n\n2001\n6,6\n\n\n\n2005\n5,3\n\n\n\n2008\n4,6\n\n\n\n2009\n5,1\n\n\n\n2010\n4,6\n\n\n\n2012\n3,4\n\n\n\n2017\n4,7\n\n\n\n2018\n4,7\n\n\n\n2024\n4,3\n\n\n\n2025\n4,6",
+    "crumbs": [
+      "Ilias",
+      "02 Arktik Eis",
+      "Schwankt das noch – oder schmilzt das schon?"
+    ]
+  },
+  {
+    "objectID": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html",
+    "href": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html",
+    "title": "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche",
     "section": "",
-    "text": "KlimaCheck-Schulhof ist ein vereinfachtes, physikalisch basiertes Vergleichsmodell für das Klima auf einem Schulhof. Es zeigt, wie sich Flächen, Gebäude, Bäume, Schatten und Begrünung auf Wärme, Abkühlung und Hitzelast auswirken.\nDas Modell ist kein exaktes Vorhersagemodell. Es dient dazu, Unterschiede sichtbar zu machen: zum Beispiel zwischen Asphalt und Rasen, zwischen offenen und verschatteten Bereichen oder zwischen einem normalen Gebäude und einem begrünten Gebäude.\n Modell in eigenem Tab öffnen",
+    "text": "Teamname:",
     "crumbs": [
       "Ilias",
-      "03 KlimaCheck Schulhof",
-      "Interaktives Schulhofklima-Modell"
+      "01 Treibhaus to Go",
+      "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche"
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html#arbeiten-mit-dem-modell",
-    "href": "03-KlimaCheck-Schulhof/lehrerin-handreichung-klimacheck.html#arbeiten-mit-dem-modell",
-    "title": "Interaktives Schulhofklima-Modell",
-    "section": "Arbeiten mit dem Modell",
-    "text": "Arbeiten mit dem Modell\nFür einen einfachen Vorher/Nachher-Vergleich wird zuerst der Ausgangszustand vollständig simuliert. Danach wird mit Massnahme aktivieren der Vergleichszustand vorbereitet. Anschließend kann eine Maßnahme gesetzt werden, zum Beispiel Rasen, Bäume, Hecken oder Gebäudebegrünung. Nach dem zweiten Tageslauf zeigt die Ansicht Hitzelast Änderung, wo sich die Belastung verbessert oder verschlechtert hat.\nMit Gebiet-auswählen kann zusätzlich eine konkrete Aufenthaltsfläche markiert werden. Der Button Auswahlgebiet vergleichen wertet dann nur diese Fläche aus.",
+    "objectID": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html#aufgabe-a-experiment-planen",
+    "href": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html#aufgabe-a-experiment-planen",
+    "title": "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche",
+    "section": "Aufgabe A – Experiment planen",
+    "text": "Aufgabe A – Experiment planen\n\n1. Aufbau planen\nWie müssen die beiden Flaschen vorbereitet werden, damit man sie vergleichen kann?\n\nVersuchsaufbau-Zeichnung/Beschreibung\n\n\n\n2. Durchführung planen\nWer macht was? Wann wird gemessen? Wie lange läuft das Experiment? Erstellt eine geeignete Tabelle.\n\nDurchführungsplan und Tabelle\n\n\n\n\n\n\n\nDas Experiment muss mindestens 15 Minuten lang durchgeführt werden\n\n\n\n\n\nMaterial\n\nzwei gleich große, durchsichtige Flaschen\nThermometer\nKnete zum Abdichten\nStoppuhr oder Timer (Tablet)\nWärmelampe\nEssig und Backpulver, damit kann CO₂ hergestellt werden\nMessprotokoll",
     "crumbs": [
       "Ilias",
-      "03 KlimaCheck Schulhof",
-      "Interaktives Schulhofklima-Modell"
+      "01 Treibhaus to Go",
+      "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche"
     ]
   },
   {
-    "objectID": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html",
-    "href": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html",
-    "title": "Hitzebelastung auf dem Schulhof untersuchen",
+    "objectID": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html#aufgabe-b-experiment-durchführen",
+    "href": "01-Treibhaus-to-Go/sus-handreichung-co2-lab.html#aufgabe-b-experiment-durchführen",
+    "title": "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche",
+    "section": "Aufgabe B – Experiment durchführen",
+    "text": "Aufgabe B – Experiment durchführen\n\nStellt eure Ergebnisse übersichtlich dar (z. B. Tabelle oder Diagramm)\nBeschreibt, was ihr beobachtet habt\nEntscheidet: Welche Vermutung passt besser?\n\nStreicht die falsche Vermutung durch und macht ein Häkchen bei der richtigen.",
+    "crumbs": [
+      "Ilias",
+      "01 Treibhaus to Go",
+      "Ein Gas schreibt Klimageschichte - Treibhausklima in der Flasche"
+    ]
+  },
+  {
+    "objectID": "Über/impressum.html",
+    "href": "Über/impressum.html",
+    "title": "Impressum",
     "section": "",
-    "text": "Im dieser Aufgabe prüft ihr die Planung der Stadt: Auf dem Schulhof sollen neue Sportflächen entstehen. Eure Aufgabe ist es, klimatologisch zu bewerten, ob diese Planung während der Schulzeit zu mehr oder weniger Hitzebelastung auf den freien Flächen führt.\n\nTeamname\n\n\n\n\n\n\n\nAuf dem Schulhof wird es nicht überall gleich heiß. Ihr sucht im Modell die heißesten Stellen auf den freien Flächen: Wege, Rasen, Sand, Sportfeld, Pflaster und Asphalt.\nWichtig ist die Schulzeit: Welche heißen Flächen liegen dort, wo sich Schüler*innen aufhalten können?\nDanach aktiviert ihr die geplante Umgestaltung und prüft, ob die Hitzebelastung besser oder schlechter wird. Am Ende entscheidet ihr: Soll die Planung so umgesetzt werden?\n\n\n\n\n\n\nAbbildung 1: Visualisierung des Modell-Schulhofs",
-    "crumbs": [
-      "Ilias",
-      "03 KlimaCheck Schulhof",
-      "Hitzebelastung auf dem Schulhof untersuchen"
-    ]
-  },
-  {
-    "objectID": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#wo-entstehen-hitzestellen",
-    "href": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#wo-entstehen-hitzestellen",
-    "title": "Hitzebelastung auf dem Schulhof untersuchen",
-    "section": "1. Wo entstehen Hitzestellen?",
-    "text": "1. Wo entstehen Hitzestellen?\nStartet das Modell mit Modellstart / Reset.\nDrückt danach Tageslauf berechnen.\nSchaut euch diese Karten an:\n\nHitzelast aktuell\nHitzelast Schulzeit\n\nSucht zuerst die heißesten Stellen auf dem Schulhof. Achtet dabei nur auf Flächen außerhalb der Gebäude, also zum Beispiel Wege, Rasen, Sand, Sportflächen, Pflaster und Asphalt. Entscheidend ist nicht nur, wo es heiß wird, sondern ob diese Stellen während der Schulzeit für Schüler*innen wichtig sind.\nMarkiert oder merkt euch:\n\nWo sind die stärksten Hotspots?\nLiegen diese Hotspots auf Flächen, die in der Schulzeit genutzt werden?\nWelche Oberflächen liegen dort: Asphalt, Pflaster, Rasen, Sand oder Bäume?\n\n\n\n\nModell-Karte\n\n\nUnsere Beobachtung:\n\nHotspot 1:\n\n\nHotspot 2:",
-    "crumbs": [
-      "Ilias",
-      "03 KlimaCheck Schulhof",
-      "Hitzebelastung auf dem Schulhof untersuchen"
-    ]
-  },
-  {
-    "objectID": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#was-verändert-die-geplante-umgestaltung",
-    "href": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#was-verändert-die-geplante-umgestaltung",
-    "title": "Hitzebelastung auf dem Schulhof untersuchen",
-    "section": "2. Was verändert die geplante Umgestaltung?",
-    "text": "2. Was verändert die geplante Umgestaltung?\nDie Stadt möchte den Schulhof verändern: Es sollen neue Sportflächen entstehen. Im Modell prüft ihr, ob diese Planung die Hitzebelastung während der Schulzeit verbessert oder verschlechtert.\nDrückt Städtische Planung aktivieren.\nDas Modell setzt automatisch:\n\nein Sportfeld im südwestlichen Bereich,\nzwei Sandflächen für Beachvolleyball im nördlicheren Bereich.\n\nDrückt danach wieder Tageslauf berechnen.\nSchaltet auf die Karte:\n\nHitzelast Änderung\n\nBeschreibt kurz:\n\nWo wird die Hitzelast größer? Wo wird sie kleiner?",
-    "crumbs": [
-      "Ilias",
-      "03 KlimaCheck Schulhof",
-      "Hitzebelastung auf dem Schulhof untersuchen"
-    ]
-  },
-  {
-    "objectID": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#ist-die-planung-sinnvoll",
-    "href": "03-KlimaCheck-Schulhof/sus-handreichung-klimacheck.html#ist-die-planung-sinnvoll",
-    "title": "Hitzebelastung auf dem Schulhof untersuchen",
-    "section": "3. Ist die Planung sinnvoll?",
-    "text": "3. Ist die Planung sinnvoll?\nEntscheidet euch für eine Position:\n\nDie Planung ist sinnvoll.\nDie Planung ist problematisch.\nDie Planung ist nur mit Änderungen sinnvoll.\n\nUnsere Entscheidung:\n\nWir entscheiden uns für:\n\nUnsere Begründung aus dem Modell:\n\nWelche Hotspots und welche Schulzeit-Flächen sind für eure Entscheidung wichtig?",
-    "crumbs": [
-      "Ilias",
-      "03 KlimaCheck Schulhof",
-      "Hitzebelastung auf dem Schulhof untersuchen"
-    ]
-  },
-  {
-    "objectID": "index.html#klimawandel-verstehen-aber-wie-eigentlich",
-    "href": "index.html#klimawandel-verstehen-aber-wie-eigentlich",
-    "title": "KlimaResilienzSchule",
-    "section": "Klimawandel verstehen – aber wie eigentlich?",
-    "text": "Klimawandel verstehen – aber wie eigentlich?\nDass sich die Erde menschengemacht rasant erwärmt, ist wissenschaftlich sehr gut belegt. Im öffentlichen Raum werden diese Befunde trotzdem immer wieder infrage gestellt. Daraus ergeben sich für Schule zwei zentrale Aufgaben: Klimawandel fachlich verständlich machen und -vielleicht wichtiger- zu zeigen, wie verlässliches Wissen entsteht.\nDie KlimaResilienzSchule setzt dort an, wo Klimawandel im Schulumfeld sichtbar und untersuchbar wird: auf heißen Asphaltflächen, an sonnenexponierten Fassaden, unter Bäumen, auf hellen und dunklen Materialien und in unterschiedlich gestalteten Stadträumen. Treibhauseffekt, Eis-Albedo-Rückkopplung, Stadtklima und Hitzebelastung werden dabei nicht als isolierte Fachbegriffe behandelt, sondern über konkrete Messungen, Karten, Modelle und Gestaltungsfragen erschlossen. Die Schüler*innen arbeiten mit Daten, vergleichen Situationen und leiten daraus ab, welche Maßnahmen lokal wirksam sein können."
-  },
-  {
-    "objectID": "index.html#stationslernen-mit-kritischer-reflexion-von-ki-gestütztem-lernen",
-    "href": "index.html#stationslernen-mit-kritischer-reflexion-von-ki-gestütztem-lernen",
-    "title": "KlimaResilienzSchule",
-    "section": "Stationslernen mit kritischer Reflexion von KI-gestütztem Lernen",
-    "text": "Stationslernen mit kritischer Reflexion von KI-gestütztem Lernen\nIm Schülerlabor werden Klimawandel und KI-gestütztes Lernen gemeinsam bearbeitet. Die fachliche Arbeit an den Stationen steht im Mittelpunkt. Parallel dazu wird sichtbar, wann KI beim Strukturieren, Vergleichen und Erklären unterstützt und wann sie eigenes Verstehen verkürzt.\nDie Schüler*innen arbeiten abwechselnd mit und ohne KI-Unterstützung. Dadurch werden Unterschiede im Arbeitsprozess, im Verständnis und in der Ergebnisqualität direkt vergleichbar. Am Ende stehen fachliche Ergebnisse und eine Reflexion der Lernwege: Welche Aufgabe konnte durch KI besser erschlossen werden? Wo war eigenes Nachdenken entscheidend? Welche Antwort musste überprüft, begründet oder korrigiert werden?"
-  },
-  {
-    "objectID": "index.html#ablauf",
-    "href": "index.html#ablauf",
-    "title": "KlimaResilienzSchule",
-    "section": "Ablauf",
-    "text": "Ablauf\nNach einer kurzen Einführung bearbeiten die Schüler*innen mehrere Stationen zu Klimawandel, Klimaresilienz und wissenschaftlichem Arbeiten. Die Stationen kombinieren Experimente, digitale Modelle, Kartenarbeit und Auswertung. Einzelne Bausteine können auch unabhängig voneinander im Unterricht eingesetzt werden.\nDer gemeinsame Kern aller Stationen ist die Übersetzung von Klimawissen in konkrete Unterrichtshandlungen: ein Phänomen untersuchen, eine Methode nutzen, Ergebnisse vergleichen und die Aussagekraft prüfen. Dadurch entsteht ein Zugang, der fachliches Lernen, räumliches Denken und reflektierten Umgang mit KI verbindet."
-  },
-  {
-    "objectID": "index.html#weiterentwicklung",
-    "href": "index.html#weiterentwicklung",
-    "title": "KlimaResilienzSchule",
-    "section": "Weiterentwicklung",
-    "text": "Weiterentwicklung\nDie KlimaResilienzSchule ist als wachsende Materialstruktur angelegt. Weitere Stationen, Modelle, Aufgaben, Datensätze und Unterrichtsmaterialien können fortlaufend ergänzt werden."
-  },
-  {
-    "objectID": "index.html#lizenz",
-    "href": "index.html#lizenz",
-    "title": "KlimaResilienzSchule",
-    "section": "Lizenz",
-    "text": "Lizenz\n© 2026 Rieke Ammoneit\nDieses Material steht unter der Lizenz Creative Commons Attribution 4.0 International (CC BY 4.0). Es darf geteilt und bearbeitet werden, solange die Urheber*innen genannt werden."
-  },
-  {
-    "objectID": "Über/kontakt.html",
-    "href": "Über/kontakt.html",
-    "title": "Kontakt",
-    "section": "",
-    "text": "Geographiedidaktik mit dem Schwerpunkt Physische Geographie\nGronewaldstr. 2\n50931 Köln\nRaum 1.123\n\nMail an: Jun.-Prof. Rieke Ammoneit",
+    "text": "This website is brought with the background of Open Educational Resources initiative coordinated by the Leibniz-Institut für Bildungsforschung und Bildungsinformation and integrated in the official teaching and reproducible research framework of the Cologne University, Germany. It is developed at the Didactic Institute of Geography under responsibility of the Didactic of Physical Geography.\n\n\nThe responsibility for the content rests with the instructors. Statements, opinions and/or conclusions are the ones from the instructors and do not necessarily reflect the opinion of the representatives of Marburg University.\n\n\n\nThis work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.\n\n\nAs of 16. March 2026\n\n\n\nWith the following data protection declaration, we would like to inform you about the types of your personal data (hereinafter also referred to as “data” for short) that we process, for what purposes and to what extent. The privacy policy applies to all processing of personal data carried out by us, both in the context of the provision of our services and in particular on our websites, in mobile applications and within external online presences, such as our social media profiles (hereinafter collectively referred to as “Online Offerings”).\n\n\nThe terms used are not gender-specific.\n\n\n\nProf. Dr. Rieke AmmoneitGronewaldstr. 250931 Köln\n\n\nEmail address: rammoneit[at]uni-koeln.de.\n\n\nImprint: webadress impressum uni koeln\n\n\n\nThe following overview summarizes the types of data processed and the purposes of their processing, and refers to the data subjects.\n\n\n\n\nContent data (e.g. input in online forms).\n\n\nContact data (e.g. email, phone numbers).\n\n\nMeta/communication data (e.g. device information, IP addresses).\n\n\nUse data (e.g. websites visited, interest in content, access times).\n\n\n\n\n\nCommunication partners.\n\n\nUsers (e.g.. Website visitors, users of online services).\n\n\n\n\n\nDirect marketing (e.g., by email or postal mail).\n\n\nContact requests and communications.\n\n\n\n\nThe following is an overview of the legal basis of the GDPR on the basis of which we process personal data. Please note that in addition to the provisions of the GDPR, national data protection regulations may apply in your or our country of residence or domicile. Furthermore, should more specific legal bases be decisive in individual cases, we will inform you of these in the data protection declaration.\n\n \n\n\nConsent (Art. 6 para. 1 p. 1 lit. a. DSGVO) - The data subject has given his or her consent to the processing of personal data concerning him or her for a specific purpose or purposes.\n\n\nRegistered interests (Art. 6 para. 1 p. 1 lit. f. DSGVO) - Processing is necessary to protect the legitimate interests of the controller or a third party, unless such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require the protection of personal data.\n\n\n\nNational data protection regulations in Germany: In addition to the data protection regulations of the General Data Protection Regulation, national regulations on data protection apply in Germany. These include, in particular, the Act on Protection against Misuse of Personal Data in Data Processing (Federal Data Protection Act - BDSG). In particular, the BDSG contains special regulations on the right to information, the right to erasure, the right to object, the processing of special categories of personal data, processing for other purposes and transmission, as well as automated decision-making in individual cases, including profiling. Furthermore, it regulates data processing for employment purposes (Section 26 BDSG), in particular with regard to the establishment, implementation or termination of employment relationships as well as the consent of employees. Furthermore, state data protection laws of the individual federal states may apply.\n\n \n\n\nWe take appropriate technical and organizational measures in accordance with the legal requirements, taking into account the state of the art, the implementation costs and the nature, scope, circumstances and purposes of the processing, as well as the different probabilities of occurrence and the extent of the threat to the rights and freedoms of natural persons, in order to ensure a level of protection appropriate to the risk.\n\n.\n\nMeasures include, in particular, ensuring the confidentiality, integrity, and availability of data by controlling physical and electronic access to data as well as access to, entry into, disclosure of, assurance of availability of, and segregation of data concerning them. Furthermore, we have established procedures to ensure the exercise of data subjects’ rights, the deletion of data, and responses to data compromise. Furthermore, we take the protection of personal data into account as early as the development or selection of hardware, software as well as procedures in accordance with the principle of data protection, through technology design and through data protection-friendly default settings.\n\n \n\n\nThe data processed by us will be deleted in accordance with legal requirements as soon as their consents permitted for processing are revoked or other permissions cease to apply (e.g. if the purpose of processing this data has ceased to apply or it is not necessary for the purpose).\n\n \n\nIf the data are not deleted because they are required for other and legally permissible purposes, their processing will be limited to these purposes. That is, the data will be blocked and not processed for other purposes. This applies, for example, to data that must be retained for reasons of commercial or tax law or whose storage is necessary for the assertion, exercise or defense of legal claims or for the protection of the rights of another natural person or legal entity.\n\n \n\nOur privacy notices may also include further information on the retention and deletion of data that takes precedence for the processing operations in question.\n\n \n\n\nCookies are text files that contain data from websites or domains visited and are stored by a browser on the user’s computer. The primary purpose of a cookie is to store information about a user during or after their visit within an online site. Stored information may include, for example, language settings on a website, login status, a shopping cart, or where a video was watched. We further include in the term cookies other technologies that perform the same functions as cookies (e.g., when user details are stored using pseudonymous online identifiers, also referred to as “user IDs”)\n\n.\n\nThe following cookie types and functions are distinguished:\n\n\n\nTemporary cookies (also: session or session cookies): Temporary cookies are deleted at the latest after a user has left an online offer and closed his browser.\n\n\nPermanent cookies: Permanent cookies remain stored even after closing the browser. For example, the login status can be saved or preferred content can be displayed directly when the user revisits a website. Likewise, the interests of users used for range measurement or marketing purposes can be stored in such a cookie.\n\n\nFirst-party cookies: First-party cookies are set by ourselves.\n\n\nThird-party cookies (also: third-party cookies): Third-party cookies are mainly used by advertisers (so-called third parties) to process user information.\n\n\nNecessary (also: essential or absolutely necessary) cookies: Cookies may be absolutely necessary for the operation of a website (e.g. to store logins or other user input or for security reasons).\n\n\nStatistics, marketing and personalization cookies: Furthermore, cookies are usually also used in the context of range measurement and when the interests of a user or his behavior (e.g. viewing certain content, use of functions, etc.) on individual web pages are stored in a user profile. Such profiles are used, for example, to show users content that matches their potential interests. This process is also referred to as “tracking”, i.e., tracking the potential interests of users. Insofar as we use cookies or “tracking” technologies, we will inform you separately in our privacy policy or in the context of obtaining consent.\n\n\n\nNotes on legal bases: On which legal basis we process your personal data using cookies depends on whether we ask you for consent. If this is the case and you consent to the use of cookies, the legal basis for the processing of your data is the declared consent. Otherwise, the data processed with the help of cookies is processed on the basis of our legitimate interests (e.g. in a business operation of our online offer and its improvement) or, if the use of cookies is necessary to fulfill our contractual obligations.\n\n.\n\nDuration of storage: If we do not provide you with explicit information about the storage period of permanent cookies (e.g. in the context of a so-called cookie opt-in), please assume that the storage period can be up to two years.\n\n.\n\nGeneral information on revocation and objection (opt-out):  Depending on whether the processing is based on consent or legal permission, you have the option at any time to revoke any consent given or to object to the processing of your data by cookie technologies (collectively referred to as “opt-out”). You can initially declare your objection by means of your browser settings, e.g. by deactivating the use of cookies (whereby this may also restrict the functionality of our online offer). An objection to the use of cookies for online marketing purposes can also be declared by means of a variety of services, especially in the case of tracking, via the websites https://optout.aboutads.info and https://www.youronlinechoices.com/. In addition, you can receive further objection notices in the context of the information on the service providers and cookies used.\n\n.\n\nProcessing of cookie data on the basis of consent: We use a cookie consent management procedure, in the context of which the consent of users to the use of cookies, or the processing and providers mentioned in the cookie consent management procedure can be obtained and managed and revoked by users. Here, the declaration of consent is stored in order not to have to repeat its query and to be able to prove the consent in accordance with the legal obligation. The storage can take place on the server side and/or in a cookie (so-called opt-in cookie, or with the help of comparable technologies), in order to be able to assign the consent to a user or their device. Subject to individual information on the providers of cookie management services, the following information applies: The duration of the storage of consent can be up to two years. Here, a pseudonymous user identifier is formed and stored with the time of consent, information on the scope of consent (e.g., which categories of cookies and/or service providers) as well as the browser, system and end device used.\n\n.\n\n\nTypes of data processed: Usage data (e.g. websites visited, interest in content, access times), meta/communication data (e.g. device information, IP addresses).\n\n\nPersons concerned: Users (e.g. website visitors, users of online services).\n\n\nLegal basis: Consent (Art. 6 para. 1 p. 1 lit. a. DSGVO), Legitimate Interests (Art. 6 para. 1 p. 1 lit. f. DSGVO).\n\n\n\n\nThe surveys and polls (hereinafter “surveys”) conducted by us are evaluated anonymously. Personal data is only processed insofar as this is necessary for the provision and technical implementation of the surveys (e.g. processing of the IP address to display the survey in the user’s browser or to enable a resumption of the survey with the help of a temporary cookie (session cookie)) or users have consented.\n\n.\n\nNotes on legal basis: If we ask participants for consent to process their data, this is the legal basis of the processing, otherwise the processing of participants’ data is based on our legitimate interests in conducting an objective survey.\n\n \n\n\nTypes of data processed: Contact data (e.g. email, phone numbers), content data (e.g. input in online forms), usage data (e.g. web pages visited, interest in content, access times), meta/communication data (e.g. device information, IP addresses).\n\n\nParticipants concerned: Communication partners.\n\n\nPurposes of processing: Contact requests and communication, direct marketing (e.g. by e-mail or postal mail).\n\n\nLegal basis: Consent (Art. 6 para. 1 p. 1 lit. a. DSGVO), Legitimate Interests (Art. 6 para. 1 p. 1 lit. f. DSGVO).\n\n\n\n\nWe encourage you to periodically review the contents of our Privacy Policy. We adapt the Privacy Policy as soon as the changes in the data processing activities we carry out make it necessary. We will inform you as soon as the changes require an act of cooperation on your part (e.g. consent) or other individual notification.\n\n.\n\nWhere we provide addresses and contact information for companies and organizations in this Privacy Policy, please note that addresses may change over time and please check the information before contacting us.\n\n.\n\n\nAs a data subject, you are entitled to various rights under the GDPR, which arise in particular from Art. 15 to 21 DSGVO:\n\n\n\nRight to object: You have the right to object at any time, on grounds relating to your particular situation, to the processing of personal data relating to you which is carried out on the basis of Art. 6(1)(e) or (f) DSGVO; this also applies to profiling based on these provisions. If the personal data concerning you is processed for the purpose of direct marketing, you have the right to object at any time to the processing of personal data concerning you for the purpose of such marketing; this also applies to profiling, insofar as it is associated with such direct marketing.\n\n\nRight of withdrawal in the case of consent: You have the right to withdraw any consent you have given at any time.\n\n\nRight of access: You have the right to request confirmation as to whether data in question is being processed and to information about this data, as well as further information and copy of the data in accordance with the legal requirements.\n\n\nRight of rectification: You have the right, in accordance with the legal requirements, to request the completion of the data concerning you or the correction of incorrect data concerning you.\n\n\nRight to erasure and restriction of processing: You have, in accordance with the law, the right to request that data concerning you be erased without undue delay, or alternatively, in accordance with the law, to request restriction of the processing of the data.\n\n\nRight to data portability: You have the right to receive data concerning you, which you have provided to us, in a structured, common and machine-readable format in accordance with the legal requirements, or to demand its transfer to another responsible party.\n\n\nComplaint to supervisory authority: Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority, in particular in the Member State of your habitual residence, place of work or the place of the alleged infringement, if you consider that the processing of personal data concerning you infringes the requirements of the GDPR.\n\n\n.\n\n\nThis section provides you with an overview of the terms used in this Privacy Policy. Many of the terms are taken from the law and defined primarily in Article 4 of the GDPR. The legal definitions are binding. The following explanations, on the other hand, are primarily intended to aid understanding. The terms are sorted alphabetically.\n\n \n\n\nPersonal data: “Personal data” means any information relating to an identified or identifiable natural person (hereinafter “data subject”); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier (eg. e.g. cookie) or to one or more special characteristics that are an expression of the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.\n\n\nController: The “controller” is the natural or legal person, public authority, agency or other body which alone or jointly with others determines the purposes and means of the processing of personal data.\n\n\nProcessing: “Processing” means any operation or set of operations which is performed upon personal data, whether or not by automatic means. The term is broad and includes virtually any handling of data, whether collecting, evaluating, storing, transmitting or deleting.\n\n\n\nCreated with free Datenschutz-Generator.de by Dr. Thomas Schwenke",
     "crumbs": [
       "Ilias",
       "Über",
-      "Kontakt"
+      "Impressum"
     ]
   },
   {
-    "objectID": "04-summer-in-the-city/konfigurator-lst-paket.html",
-    "href": "04-summer-in-the-city/konfigurator-lst-paket.html",
-    "title": "LST-Datenpaket konfigurieren",
+    "objectID": "Über/impressum.html#content-responsibility",
+    "href": "Über/impressum.html#content-responsibility",
+    "title": "Impressum",
     "section": "",
-    "text": "Zweck dieser Seite\nDer Konfigurator ist ein Hilfswerkzeug für Lehrkräfte, die ein eigenes LST-Materialpaket erzeugen möchten. Er berechnet keine Karten im Browser. Er erzeugt nur eine saubere Konfiguration für den lokalen R-Workflow.\nFür den direkten Unterrichtseinsatz ist diese Seite nicht notwendig. Dafür reicht das vorbereitete Köln-Demo-Paket. Der Konfigurator ist sinnvoll, wenn ein anderer Ausschnitt, ein anderer Zeitraum oder ein eigenes AOI getestet werden soll.\nDie aktuelle Version ist auf den reduzierten Unterrichtsworkflow ausgerichtet: Hot-LST q90, DOP-RGB, DOP-CIR-Oberflächenmaske und vier passgenaue QGIS-Printlayouts. Cold-Produkte und OSM-Zusatzlayer werden hier nicht mehr als Standardoption geführt.\n\n\n\nDer Konfigurator übersetzt didaktische Entscheidungen in Skriptparameter.\n\n\n\n\nWas wird konfiguriert?\nDer Konfigurator beschreibt vier Entscheidungen:\n\nWelcher Raum wird analysiert?\nAus welchem Zeitraum werden Landsat-Szenen gesucht?\nNach welcher heißen Temperaturtendenz werden Szenen ausgewählt?\nSoll danach automatisch ein QGIS-Projekt mit Printlayouts erzeugt werden?\n\n\n\n\nDas Datenpaket entsteht aus AOI, Zeitraum und Extremmodus.\n\n\nDie technische Umsetzung bleibt lokal. Der Browser erzeugt nur JSON oder einen R-Konfigurationsblock. Die eigentliche Verarbeitung läuft über:\nRscript scripts/00_run_lst_oberflaechenmaske_dop_cir.R\nAm Ende kann dieses Skript den QGIS-Launcher starten:\nscripts/run_create_qgis_project.sh\nscripts/run_create_qgis_project.bat\n\n\nKonfigurator\n\n\n\n  Empfehlung für den ersten eigenen Lauf: kleine AOI, Sommermonate Juni–August, Hot-Modus q90, DOP-CIR-Maske aktiv, QGIS-Projekt automatisch erzeugen.\n\n\n\n  Aktueller Unterrichtsstandard: Es werden drei Oberflächenklassen verwendet: Vegetation, Wasser und Versiegelung / Bebauung. Die QGIS-Ausgabe nutzt nur das Hot-q90-Produkt.\n\n\n\n  \n    1. Untersuchungsraum\n    Der AOI bestimmt, für welchen Raum LST-Produkte, DOP-CIR-Maske und QGIS-Layouts erzeugt werden.\n\n    AOI-Name\n    \n\n    AOI-Modus\n    \n      Köln Stadtbezirke\n      Bounding Box\n      eigene Datei im Skript setzen\n    \n\n    \n      Bounding Box xmin\n      Bounding Box ymin\n      Bounding Box xmax\n      Bounding Box ymax\n    \n  \n\n  \n    2. Zeitraum und Szenenfilter\n    Für Stadtwärme sind Sommermonate am sinnvollsten. Der aktuelle Köln-Demo-Workflow nutzt Juni bis August.\n\n    Startdatum\n    \n\n    Enddatum\n    \n\n    Monate\n    \n      Sommer Juni–August\n      Sommerhalbjahr April–September\n      Ganzes Jahr\n    \n\n    max. Szenen-Wolkenanteil [%]\n    \n  \n\n  \n    3. Hot-LST-Produkt\n    Der aktuelle Unterrichtsworkflow nutzt nur den Hot-Modus. Szenen werden nach hoher q90-Temperatur ausgewählt.\n\n    Extremmodus\n    \n      hot / heiße Szenen\n    \n\n    Hot-Metrik\n    \n      q90_C / obere Temperaturtendenz\n    \n\n    Anzahl heißer Szenen\n    \n\n    Mindestzahl gültiger Pixel\n    \n  \n\n  \n    4. DOP-CIR-Maske und QGIS-Ausgabe\n    Die DOP-CIR-Maske erzeugt drei didaktische Oberflächenklassen. Danach kann automatisch das QGIS-Projekt mit Printlayouts erstellt werden.\n\n    DOP-CIR-Maske erzeugen\n    \n      ja\n    \n\n    DOP-CIR-Zielauflösung [m]\n    \n\n    QGIS-Projekt und Printlayouts erzeugen\n    \n      ja\n      nein\n    \n\n    LST-Deckkraft im QGIS-Projekt\n    \n  \n\n\n\n  JSON erzeugen\n  R-Block erzeugen\n  run_config.json herunterladen\n\n\n\n\n\n\n\nNutzung\nDer erzeugte R-Block kann in den Konfigurationsteil von scripts/00_run_lst_oberflaechenmaske_dop_cir.R übernommen werden. Alternativ kann die JSON-Ausgabe als Dokumentation der gewählten Parameter gespeichert werden.\nDer Browser erzeugt keine LST-Karte und keine Maske. Die Verarbeitung läuft lokal. Für die Köln-Demo ist der zentrale Start:\nRscript scripts/00_run_lst_oberflaechenmaske_dop_cir.R\nWenn run_external_qgis_project &lt;- TRUE gesetzt ist, startet der R-Runner anschließend den passenden QGIS-Launcher und erzeugt das QGIS-Projekt mit vier Printlayouts.\n\n\nWas der aktuelle Workflow erzeugt\n\n\n\nTechnischer Datenfluss vom AOI zur QGIS-Projektdatei.\n\n\nDer konfigurierte Workflow erzeugt:\nAOI\n→ Landsat-LST-Szenen\n→ Auswahl heißer Szenen nach q90_C\n→ Hot-q90-Komposit\n→ DOP-CIR-Oberflächenmaske mit drei Klassen\n→ QGIS-Projekt\n→ vier passgleiche Drucklayouts\nDie didaktische Reduktion bleibt in allen Ausgaben gleich:\nVegetation\nWasser\nVersiegelung / Bebauung\n\n\n\nDie drei Unterrichtsklassen bündeln reale Oberflächen: versiegelte und bebaute Flächen, Vegetation und Wasser.\n\n\n\n\nHinweise zur Anpassung\nFür eigene Räume sollte zuerst mit einer kleinen AOI getestet werden. Große Stadtgebiete erhöhen Downloadzeit, WMS-Last, Rastergröße und QGIS-Exportzeit. Der DOP-CIR-WMS wird für die Maske auf ein Zielraster geladen. Im Standard sind das 30 m, weil die Maske didaktisch zur Landsat-LST-Ebene passen soll.\nDas QGIS-Projekt nutzt in der aktuellen Fassung nur noch:\nkoeln_LST_hot_q90_C_EPSG25832.tif\nkoeln_dop_cir_30m_3klassen.gpkg\nDOP RGB WMS\nKartenrahmen-Layer\nDie übrigen LST-Produkte können weiterhin als Zwischenprodukte entstehen, werden aber nicht in das reduzierte Unterrichtsprojekt geladen.\n\n\nTechnische Grenzen\nDer Konfigurator ersetzt keine Plausibilitätsprüfung. Nach jedem neuen Lauf sollten diese Punkte kontrolliert werden:\n\nGibt es genügend gültige Landsat-Pixel?\nIst die AOI nicht zu groß?\nWurde das DOP-CIR-WMS vollständig geladen?\nSind Wasser und Vegetation in der Maske plausibel?\nStimmen Kartenrahmen und Ausdrucke im QGIS-Layout überein?\nWurde beim Drucken 100 % / tatsächliche Größe verwendet?\n\nWenn das DOP in der QGIS-Layoutvorschau grob erscheint, ist zuerst der PDF-Export zu prüfen. Die Vorschau kann WMS-Layer gröber darstellen als der finale Export. Wenn auch der PDF grob ist, sollte für den festen Kartenausschnitt ein lokales, hochaufgelöstes DOP-Raster verwendet werden.\n\n\nGit-Hinweis\nDie erzeugten Daten gehören nicht ins Repository. In .gitignore sollten mindestens diese Einträge stehen:\n/data/\n/.venv-folienvorlage/\nDas Repository sollte Skripte, Quarto-Seiten und Abbildungen enthalten, nicht Landsat-Szenen, DOP-Downloads, GeoPackages, QGIS-Projektdateien oder Print-PDFs.",
+    "text": "The responsibility for the content rests with the instructors. Statements, opinions and/or conclusions are the ones from the instructors and do not necessarily reflect the opinion of the representatives of Marburg University.",
     "crumbs": [
       "Ilias",
-      "04 Summer in the City",
-      "LST-Datenpaket konfigurieren"
+      "Über",
+      "Impressum"
     ]
   },
   {
-    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-fachlich.html",
-    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-fachlich.html",
-    "title": "Oberflächentemperaturen in der Stadt",
+    "objectID": "Über/impressum.html#content-license",
+    "href": "Über/impressum.html#content-license",
+    "title": "Impressum",
     "section": "",
-    "text": "Worum es in dieser Stunde geht\nKöln ist im Sommer kein gleichmäßig warmer Raum. Wer sich an einem heißen Tag durch die Stadt bewegt, erlebt deutliche Unterschiede zwischen großen Platzflächen, breiten Straßen, Parkplätzen, dichten Baublöcken, Gewerbeflächen, Parks, Wiesen, Baumgruppen, dem Rhein und offenen Bodenflächen. Diese Unterschiede lassen sich fachlich als Unterschiede der Oberfläche lesen: Asphalt, Beton, Pflaster, Dachmaterial, Vegetation, Wasser, Schotter und Boden nehmen Strahlung unterschiedlich auf, speichern Wärme unterschiedlich lange und geben Energie unterschiedlich stark über Verdunstung ab.\nDie Stadt Köln beschreibt diesen städtischen Wärmehaushalt ausdrücklich als verändert: Gebäude, Straßen und versiegelte Flächen erhitzen sich intensiver und speichern Wärme länger als unbebaute Landschaftsräume (Stadt Köln: Stadtklima). Köln behandelt Hitze außerdem als kommunales Anpassungs- und Gesundheitsthema; das Hitze-Portal verweist darauf, dass sommerliche Hitzeperioden im Klimawandel zunehmen und gesundheitlich belastend sein können (Stadt Köln: Hitze-Portal). Der Kölner Hitzeknigge ordnet Hitze als praktisches Vorsorgethema für die Bevölkerung ein (Stadt Köln: Hitzeknigge). Die Stunde greift diese lokale Relevanz auf, behandelt Hitze aber nicht zuerst als Verhaltensthema, sondern als räumlich sichtbares Oberflächenproblem.\n\n\n\nBekannte Kölner Orte dienen nicht als fertige Antwort, sondern als Hypothesenräume.\n\n\nDer Einstieg sollte deshalb nicht lauten: „Hier sieht man die heißesten Orte Kölns.“ Treffender ist: „Welche Oberflächen erkennen wir hier, und welche davon müssten sich an einem sonnigen Sommertag besonders stark erwärmen?“ Die Lernenden sollen zuerst aus dem Luftbild argumentieren. Erst danach wird die LST-Karte als Prüfebene eingesetzt.\n\n\nVom bekannten Ort zur Oberflächenklasse\nFür Schülerinnen und Schüler ist Stadthitze zunächst eine Alltagserfahrung. Man sucht Schatten, meidet aufgeheizte Platzflächen, bleibt lieber im Park oder am Wasser und spürt die Hitze an Straßen, Fassaden und Haltestellen. Diese Erfahrung ist ein guter Einstieg, aber sie muss fachlich übersetzt werden. Die zentrale Frage lautet nicht: „Wo fühlt es sich heiß an?“, sondern: „Welche Oberfläche liegt dort, und wie reagiert diese Oberfläche thermisch?“\nEin großer Platz kann aus hellem Pflaster bestehen, wenig Schatten haben und sich stark aufheizen. Eine breite Straße ist nicht nur Verkehrsraum, sondern eine dunkle, trockene, versiegelte Oberfläche. Ein Parkplatz kombiniert Asphalt, Blech, wenig Verdunstung und oft wenig Schatten. Ein Gewerbe- oder Industriegebiet besteht häufig aus großen Dachflächen, Zufahrten, Ladeflächen und Parkplätzen. Ein Park enthält dagegen Baumkronen, Rasen, Wege, trockene Wiesen, beschattete Bereiche und manchmal Wasser. Genau diese Mischung macht den Vergleich von Luftbild und LST-Karte fachlich interessant.\nAus diesen realen Oberflächen werden für die Stunde drei Arbeitsklassen gebildet. Versiegelung / Bebauung umfasst Straßen, Parkplätze, Plätze, Dächer, Gewerbe- und Industrieflächen, Bahnanlagen, befestigte Innenhöfe und stark versiegelte Schulhöfe. Vegetation umfasst Parks, Wiesen, Baumgruppen, Alleen, Friedhöfe, Grünzüge und begrünte Innenhöfe. Wasser umfasst Rhein, Hafenbecken, Weiher, Teiche und größere offene Wasserflächen.\nDiese drei Klassen sind kein Ersatz für eine vollständige Stadtklimaanalyse. Sie sind ein bewusst reduziertes Unterrichtsmodell: Die Lernenden sollen die drei dominanten Oberflächentypen erkennen und prüfen, wie sie sich in der LST-Karte räumlich niederschlagen. Offene Böden, Schotter, Baustellen oder trockene Brachen werden nicht als vierte Hauptklasse geführt, sondern als Misch- und Grenzfälle im Gespräch aufgegriffen, wenn sie im Ausschnitt auffallen.\n\n\nWas Oberflächentemperaturen (LST) messen\nLST bedeutet Land Surface Temperature. Gemeint ist die Temperatur der Landoberfläche, die aus der thermischen Infrarotstrahlung der Oberfläche abgeleitet wird. Die ESA Climate Change Initiative beschreibt LST als wichtige Variable des Klimasystems, weil sie Prozesse des Energie- und Wasseraustauschs zwischen Landoberfläche und Atmosphäre beschreibt (ESA CCI: Land Surface Temperature). LST ist damit eine Oberflächengröße und keine direkte Messung der Lufttemperatur in zwei Metern Höhe.\nDiese Unterscheidung ist für die Stunde zentral. Eine Asphaltfläche, ein Dach oder ein Parkplatz kann in der LST-Karte sehr warm erscheinen, während die Lufttemperatur in zwei Metern Höhe niedriger und räumlich weniger scharf abgegrenzt ist. Menschen erleben Hitze zusätzlich über Lufttemperatur, Luftfeuchte, Wind, direkte Sonnenstrahlung, Schatten, Kleidung, körperliche Aktivität und Aufenthaltsdauer. Die LST-Karte zeigt deshalb nicht die gesamte gefühlte Hitze, sondern die thermische Antwort der Oberfläche.\n\n\n\nDer Satellit erfasst die thermische Antwort der Oberfläche. Die 2-m-Lufttemperatur ist eine andere Messgröße.\n\n\nEine präzise Unterrichtssprache vermeidet deshalb den Satz „dort ist die Luft heißer“. Treffender ist: „Diese Oberfläche erscheint in dieser Satellitenszene wärmer.“ Diese Formulierung ist nicht nur sprachlich genauer, sondern führt direkt zur fachlichen Frage: Welche Oberfläche kann diese thermische Antwort erklären?\n\n\nWarum Oberflächen unterschiedlich warm sind\nOberflächen erwärmen sich nicht nur, weil Sonne auf sie fällt. Entscheidend ist, was mit der eingehenden Strahlungsenergie geschieht. Ein Teil wird reflektiert, ein Teil wird als Wärme gespeichert, ein Teil wird an die Luft abgegeben, und bei feuchten oder bewachsenen Oberflächen kann ein Teil der Energie in Verdunstung umgesetzt werden. Die Oberflächentemperatur ist deshalb das Ergebnis von Materialeigenschaften, Feuchte, Vegetation, Schatten, Wasseranteil, Oberflächenstruktur und Aufnahmezeitpunkt.\nVersiegelte Flächen sind häufig warm, weil sie wenig Wasser verdunsten und Wärme speichern können. NASA beschreibt den urbanen Wärmeinseleffekt unter anderem damit, dass Asphalt, Beton, Stein, Stahl und andere undurchlässige Oberflächen Wärme aufnehmen und die natürliche Kühlwirkung von Vegetation unterbrechen (NASA Earth Observatory: Vegetation Limits City Warming Effects). Die Stadt Köln beschreibt denselben Grundzusammenhang lokal: Gebäude, Straßen und versiegelte Flächen erhitzen sich stärker und speichern Wärme länger (Stadt Köln: Stadtklima).\nVegetation kann die Erwärmung abschwächen, weil sie Schatten erzeugt und Wasser verdunstet. NASA beschreibt die natürliche Kühlwirkung von Vegetation im Zusammenhang mit städtischer Erwärmung (NASA Earth Observatory: Vegetation Limits City Warming Effects). Für den Unterricht ist wichtig, Vegetation nicht zu idealisieren. Ein dichter Baumbestand kann durch Schatten und Verdunstung deutlich kühler wirken als ein trockener kurzrasiger Bereich. Eine sonnige, trockene Wiese kann dagegen deutlich wärmer erscheinen als Schülerinnen und Schüler zunächst erwarten.\nWasserflächen reagieren träger als viele feste Oberflächen. Wasser hat eine hohe Wärmekapazität, verteilt Wärme im Wasserkörper und erwärmt sich am Tag oft langsamer als Asphalt, Beton oder trockener Boden. In LST-Karten können Rhein, Weiher oder Hafenbecken deshalb als kühlere Flächen erscheinen. Diese Wirkung ist aber zeitabhängig: Wasser speichert Wärme und kann sich im Tages- und Jahresgang anders verhalten als feste Oberflächen.\nOffene Böden, Schotterflächen oder Baustellen bleiben als Grenzfälle wichtig. Sie werden in diesem Unterrichtsmaterial nicht als eigene Hauptklasse geführt, weil die Stunde auf die drei zentralen Kontraste fokussiert: versiegelt/bebaut, Vegetation und Wasser. Fachlich sind solche Grenzflächen wertvoll, weil sie zeigen, dass „nicht bebaut“ nicht automatisch „kühl“ bedeutet. Entscheidend bleiben Material, Feuchte, Bewuchs und Sonnenexposition.\n\n\n\nDie drei Unterrichtsklassen bündeln reale Oberflächen: versiegelte und bebaute Flächen, Vegetation und Wasser.\n\n\n\n\nDie drei Oberflächenklassen als Arbeitsmodell\nDie Klasse Versiegelung / Bebauung bündelt alle stark befestigten und baulich geprägten Oberflächen: Straßen, Kreuzungen, Parkplätze, Plätze, Dächer, Gewerbe- und Industrieflächen, Bahnanlagen, befestigte Schulhöfe und Innenhöfe. In der LST-Karte erscheinen solche Flächen häufig warm bis sehr warm, besonders wenn sie groß, trocken und unbeschattet sind. Helle Materialien, Schatten, Dachaufbauten oder unterschiedliche Beläge können das Muster abschwächen.\nDie Klasse Vegetation bündelt alle Flächen, bei denen Pflanzen die thermische Wirkung prägen: Baumgruppen, Parks, Wiesen, Grünzüge, Friedhöfe, Alleen und begrünte Innenhöfe. Vegetation kann durch Schatten und Verdunstung kühlen. Die Wirkung hängt aber vom Zustand der Vegetation ab. Ein schattiger Baumbestand, eine bewässerte Wiese und eine trockene Rasenfläche sind im Luftbild alle „grün“, thermisch aber nicht identisch.\nDie Klasse Wasser bleibt eigenständig. Rhein, Weiher, Hafenbecken und Teiche sind keine Sonderform von „kühl“, sondern Oberflächen mit eigener thermischer Dynamik. Sie reagieren träge, können tagsüber kühl erscheinen und Wärme zeitlich verzögert speichern oder abgeben. Gerade am Rhein können Lernende gut sehen, dass eine Wasserfläche im LST-Bild oft anders reagiert als die angrenzende befestigte Uferzone.\n\n\nVerwendung der Landoberflächen Schablone\nDie automatische Maske wird im Unterricht nicht als Lösung gezeigt. Die Lernenden erhalten nur neutrale Umrisse. Sie sollen diese Umrisse zuerst im Luftbild interpretieren und anschließend dieselben Flächen mit der LST-Karte vergleichen. Die Klassennamen stehen nur in der Lehrkraftversion.\nDas hat einen fachlichen Grund. Fernerkundungsdaten liefern keine fertige Erklärung. Sie liefern Beobachtungen, die interpretiert werden müssen. Wenn die Karte sofort „Versiegelung / Bebauung“, „Vegetation“ und „Wasser“ anzeigt, wird die Deutungsarbeit vorweggenommen. Wenn die Umrisse blind bleiben, müssen die Lernenden selbst begründen, welche Oberfläche sie erkennen und warum diese Oberfläche thermisch plausibel wärmer oder kühler erscheint.\n\n\n\nDie Schablone trennt typisiert grob die Hauptklassen der Landoberflächen. Die SuS sehen die Flächen, die Lehrkraft hat die Klassenzuordnung der Fläche aus der automatisierten Erstellung.\n\n\nDie Maske ist deshalb ein Arbeitsgerüst, kein Wahrheitslayer. Besonders wertvoll sind uneindeutige Flächen: Parkplätze mit Bäumen, helle Dächer, trockene Wiesen, Baustellen, schmale Uferzonen oder Mischbereiche zwischen Straße und Park. Dort wird sichtbar, dass Oberflächenklassen Vereinfachungen sind und reale Stadträume aus Mischflächen bestehen.\n\n\nUnterrichtsablauf\nDie Stunde beginnt mit dem Luftbild. Die LST-Karte bleibt zunächst verdeckt. Die Lernenden orientieren sich im Kölner Ausschnitt: Rhein, Parks, große Straßen, Plätze, dichte Bebauung, Gewerbeflächen, Parkplätze und Dachlandschaften werden gesucht und beschrieben. Danach markieren sie auf Folie oder Transparentpapier Flächen, die sie für eher warm oder eher kühl halten.\nErst danach wird die LST-Karte aufgelegt. Jetzt prüfen die Lernenden ihre Vermutungen. Stimmen große versiegelte Flächen mit warmen Bereichen überein? Erscheinen Wasser und größere Vegetationsflächen kühler? Gibt es überraschend warme Rand- oder Mischflächen oder überraschend kühle versiegelte Teilflächen? Der Unterrichtsgewinn liegt im Vergleich, nicht im bloßen Ablesen der Farbskala.\n\n\n\nDer Ablauf führt von der sichtbaren Oberfläche zur thermischen Prüfung.\n\n\nDie Sicherung sollte nicht aus einer starren Tabelle bestehen. Ziel ist eine begründete Deutung. Eine gute Schüleraussage verbindet sichtbare Oberfläche, Temperaturtendenz, Prozess und Unsicherheit. Ein Beispiel wäre: „Diese Fläche wirkt wie ein großer Parkplatz. Sie erscheint in der LST-Karte warm. Das passt zu Versiegelung, Wärmespeicherung und geringer Verdunstung. Wenn ein Teil weniger warm ist, könnte dort Schatten oder ein anderes Material liegen.“\n\n\nDas Materialpaket\nDas vorbereitete Paket enthält ein RGB-Luftbild, eine LST-hot-Karte, Folienvorlagen beziehungsweise blinde Umrisse und ein QGIS-Projekt. Für den direkten Unterrichtseinsatz reichen Luftbild, LST-Karte und transparente Markierebene. Das QGIS-Projekt ist für Anpassungen gedacht: Ausschnitt ändern, Ebenen ein- oder ausblenden, Layout neu drucken.\n\n\n\nDas Materialpaket trennt direkte Unterrichtsmaterialien von optionaler technischer Anpassung.\n\n\nMaterialpaket Köln-Demo herunterladen\nAlle Materialien müssen denselben Ausschnitt und denselben Maßstab verwenden. Die Lernenden markieren nicht auf der Karte selbst, sondern auf einer eigenen Ebene. Dadurch bleibt sichtbar, dass ihre Markierung eine Interpretation ist. Diese Interpretation kann zuerst auf das Luftbild und danach auf die LST-Karte gelegt werden.\n\n\nFachliche Gesprächsführung\nWenn Lernende sagen: „Dort ist die Luft heißer“, sollte die Lehrkraft präzisieren: „Die Karte zeigt die Oberfläche. Die Lufttemperatur ist eine andere Messgröße.“ Wenn Lernende sagen: „Alles Grüne ist kühl“, sollte die Antwort differenzieren: „Vegetation kann durch Schatten und Verdunstung kühlen, aber trockene oder kurzrasige Flächen können warm sein.“ Wenn Lernende sagen: „Alles, was nicht Straße oder Dach ist, ist kühl“, lohnt der Blick auf Mischflächen, trockene Randflächen, Schotter, Baustellen oder kurzrasige Bereiche. Diese Flächen werden nicht als eigene Hauptklasse geführt, müssen aber im Gespräch als mögliche Abweichungen benannt werden.\nDie zentrale fachliche Sprache sollte vorsichtig bleiben. Geeignete Formulierungen sind: „erscheint wärmer“, „passt zu“, „könnte erklärt werden durch“, „abweichend davon“, „vermutlich wegen“. Ungeeignet sind absolute Sätze wie „Asphalt ist immer heiß“ oder „Wasser ist immer kalt“.\n\n\nSicherung\nAm Ende steht keine perfekte Klassifikation, sondern eine fachlich begründete Deutung des Kartenausschnitts. Die Lernenden sollen mehrere Flächen beschreiben, ihre Temperaturtendenz aus der LST-Karte ablesen und eine plausible Ursache nennen. Eine gute Sicherung enthält außerdem eine Ausnahme oder Unsicherheit.\nEin möglicher Sicherungssatz lautet: „Große versiegelte Flächen wie Straßenräume, Plätze, Parkplätze oder Dächer erscheinen in dieser Szene häufig wärmer als Vegetations- und Wasserflächen. Das passt zu Wärmespeicherung und geringer Verdunstung. Abweichungen können durch Schatten, Materialfarbe, Feuchte, Mischflächen oder Aufnahmezeitpunkt entstehen.“\nEin zweiter Sicherungssatz lautet: „Vegetation und Wasser erscheinen häufig kühler, aber aus unterschiedlichen Gründen. Vegetation wirkt über Schatten und Verdunstung, Wasser über seine thermische Trägheit. Grenzflächen wie Schotter, trockener Boden oder Baustellen müssen gesondert beschrieben werden, weil Feuchte und Material dort stark entscheiden.“\n\n\nQuellen\nStadt Köln. Stadtklima. Gebäude, Straßen und versiegelte Flächen erhitzen sich intensiver und speichern Wärme länger als unbebaute Landschaftsräume. https://www.stadt-koeln.de/artikel/60838/index.html\nStadt Köln. Hitze-Portal Köln. Sommerliche Hitzeperioden nehmen im Klimawandel zu und können gesundheitlich belasten. https://www.stadt-koeln.de/leben-in-koeln/umwelt-tiere/klima/hitzeportal/index.html\nStadt Köln. Der Hitzeknigge. Lokale Hinweise und Verhaltenstipps zum Umgang mit Hitze in Köln. https://www.stadt-koeln.de/artikel/69221/index.html\nESA Climate Change Initiative. Land Surface Temperature. LST beschreibt Prozesse des Energie- und Wasseraustauschs zwischen Landoberfläche und Atmosphäre. https://climate.esa.int/en/projects/land-surface-temperature/\nNASA Earth Observatory. Vegetation Limits City Warming Effects. Impervious surfaces wie Asphalt, Beton, Stein und Stahl tragen zur städtischen Erwärmung bei; Vegetation wirkt kühlend. https://science.nasa.gov/earth/earth-observatory/vegetation-limits-city-warming-effects-86440/",
+    "text": "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.\n\n\nAs of 16. March 2026\n\n\n\nWith the following data protection declaration, we would like to inform you about the types of your personal data (hereinafter also referred to as “data” for short) that we process, for what purposes and to what extent. The privacy policy applies to all processing of personal data carried out by us, both in the context of the provision of our services and in particular on our websites, in mobile applications and within external online presences, such as our social media profiles (hereinafter collectively referred to as “Online Offerings”).\n\n\nThe terms used are not gender-specific.\n\n\n\nProf. Dr. Rieke AmmoneitGronewaldstr. 250931 Köln\n\n\nEmail address: rammoneit[at]uni-koeln.de.\n\n\nImprint: webadress impressum uni koeln\n\n\n\nThe following overview summarizes the types of data processed and the purposes of their processing, and refers to the data subjects.\n\n\n\n\nContent data (e.g. input in online forms).\n\n\nContact data (e.g. email, phone numbers).\n\n\nMeta/communication data (e.g. device information, IP addresses).\n\n\nUse data (e.g. websites visited, interest in content, access times).\n\n\n\n\n\nCommunication partners.\n\n\nUsers (e.g.. Website visitors, users of online services).\n\n\n\n\n\nDirect marketing (e.g., by email or postal mail).\n\n\nContact requests and communications.\n\n\n\n\nThe following is an overview of the legal basis of the GDPR on the basis of which we process personal data. Please note that in addition to the provisions of the GDPR, national data protection regulations may apply in your or our country of residence or domicile. Furthermore, should more specific legal bases be decisive in individual cases, we will inform you of these in the data protection declaration.\n\n \n\n\nConsent (Art. 6 para. 1 p. 1 lit. a. DSGVO) - The data subject has given his or her consent to the processing of personal data concerning him or her for a specific purpose or purposes.\n\n\nRegistered interests (Art. 6 para. 1 p. 1 lit. f. DSGVO) - Processing is necessary to protect the legitimate interests of the controller or a third party, unless such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require the protection of personal data.\n\n\n\nNational data protection regulations in Germany: In addition to the data protection regulations of the General Data Protection Regulation, national regulations on data protection apply in Germany. These include, in particular, the Act on Protection against Misuse of Personal Data in Data Processing (Federal Data Protection Act - BDSG). In particular, the BDSG contains special regulations on the right to information, the right to erasure, the right to object, the processing of special categories of personal data, processing for other purposes and transmission, as well as automated decision-making in individual cases, including profiling. Furthermore, it regulates data processing for employment purposes (Section 26 BDSG), in particular with regard to the establishment, implementation or termination of employment relationships as well as the consent of employees. Furthermore, state data protection laws of the individual federal states may apply.\n\n \n\n\nWe take appropriate technical and organizational measures in accordance with the legal requirements, taking into account the state of the art, the implementation costs and the nature, scope, circumstances and purposes of the processing, as well as the different probabilities of occurrence and the extent of the threat to the rights and freedoms of natural persons, in order to ensure a level of protection appropriate to the risk.\n\n.\n\nMeasures include, in particular, ensuring the confidentiality, integrity, and availability of data by controlling physical and electronic access to data as well as access to, entry into, disclosure of, assurance of availability of, and segregation of data concerning them. Furthermore, we have established procedures to ensure the exercise of data subjects’ rights, the deletion of data, and responses to data compromise. Furthermore, we take the protection of personal data into account as early as the development or selection of hardware, software as well as procedures in accordance with the principle of data protection, through technology design and through data protection-friendly default settings.\n\n \n\n\nThe data processed by us will be deleted in accordance with legal requirements as soon as their consents permitted for processing are revoked or other permissions cease to apply (e.g. if the purpose of processing this data has ceased to apply or it is not necessary for the purpose).\n\n \n\nIf the data are not deleted because they are required for other and legally permissible purposes, their processing will be limited to these purposes. That is, the data will be blocked and not processed for other purposes. This applies, for example, to data that must be retained for reasons of commercial or tax law or whose storage is necessary for the assertion, exercise or defense of legal claims or for the protection of the rights of another natural person or legal entity.\n\n \n\nOur privacy notices may also include further information on the retention and deletion of data that takes precedence for the processing operations in question.\n\n \n\n\nCookies are text files that contain data from websites or domains visited and are stored by a browser on the user’s computer. The primary purpose of a cookie is to store information about a user during or after their visit within an online site. Stored information may include, for example, language settings on a website, login status, a shopping cart, or where a video was watched. We further include in the term cookies other technologies that perform the same functions as cookies (e.g., when user details are stored using pseudonymous online identifiers, also referred to as “user IDs”)\n\n.\n\nThe following cookie types and functions are distinguished:\n\n\n\nTemporary cookies (also: session or session cookies): Temporary cookies are deleted at the latest after a user has left an online offer and closed his browser.\n\n\nPermanent cookies: Permanent cookies remain stored even after closing the browser. For example, the login status can be saved or preferred content can be displayed directly when the user revisits a website. Likewise, the interests of users used for range measurement or marketing purposes can be stored in such a cookie.\n\n\nFirst-party cookies: First-party cookies are set by ourselves.\n\n\nThird-party cookies (also: third-party cookies): Third-party cookies are mainly used by advertisers (so-called third parties) to process user information.\n\n\nNecessary (also: essential or absolutely necessary) cookies: Cookies may be absolutely necessary for the operation of a website (e.g. to store logins or other user input or for security reasons).\n\n\nStatistics, marketing and personalization cookies: Furthermore, cookies are usually also used in the context of range measurement and when the interests of a user or his behavior (e.g. viewing certain content, use of functions, etc.) on individual web pages are stored in a user profile. Such profiles are used, for example, to show users content that matches their potential interests. This process is also referred to as “tracking”, i.e., tracking the potential interests of users. Insofar as we use cookies or “tracking” technologies, we will inform you separately in our privacy policy or in the context of obtaining consent.\n\n\n\nNotes on legal bases: On which legal basis we process your personal data using cookies depends on whether we ask you for consent. If this is the case and you consent to the use of cookies, the legal basis for the processing of your data is the declared consent. Otherwise, the data processed with the help of cookies is processed on the basis of our legitimate interests (e.g. in a business operation of our online offer and its improvement) or, if the use of cookies is necessary to fulfill our contractual obligations.\n\n.\n\nDuration of storage: If we do not provide you with explicit information about the storage period of permanent cookies (e.g. in the context of a so-called cookie opt-in), please assume that the storage period can be up to two years.\n\n.\n\nGeneral information on revocation and objection (opt-out):  Depending on whether the processing is based on consent or legal permission, you have the option at any time to revoke any consent given or to object to the processing of your data by cookie technologies (collectively referred to as “opt-out”). You can initially declare your objection by means of your browser settings, e.g. by deactivating the use of cookies (whereby this may also restrict the functionality of our online offer). An objection to the use of cookies for online marketing purposes can also be declared by means of a variety of services, especially in the case of tracking, via the websites https://optout.aboutads.info and https://www.youronlinechoices.com/. In addition, you can receive further objection notices in the context of the information on the service providers and cookies used.\n\n.\n\nProcessing of cookie data on the basis of consent: We use a cookie consent management procedure, in the context of which the consent of users to the use of cookies, or the processing and providers mentioned in the cookie consent management procedure can be obtained and managed and revoked by users. Here, the declaration of consent is stored in order not to have to repeat its query and to be able to prove the consent in accordance with the legal obligation. The storage can take place on the server side and/or in a cookie (so-called opt-in cookie, or with the help of comparable technologies), in order to be able to assign the consent to a user or their device. Subject to individual information on the providers of cookie management services, the following information applies: The duration of the storage of consent can be up to two years. Here, a pseudonymous user identifier is formed and stored with the time of consent, information on the scope of consent (e.g., which categories of cookies and/or service providers) as well as the browser, system and end device used.\n\n.\n\n\nTypes of data processed: Usage data (e.g. websites visited, interest in content, access times), meta/communication data (e.g. device information, IP addresses).\n\n\nPersons concerned: Users (e.g. website visitors, users of online services).\n\n\nLegal basis: Consent (Art. 6 para. 1 p. 1 lit. a. DSGVO), Legitimate Interests (Art. 6 para. 1 p. 1 lit. f. DSGVO).\n\n\n\n\nThe surveys and polls (hereinafter “surveys”) conducted by us are evaluated anonymously. Personal data is only processed insofar as this is necessary for the provision and technical implementation of the surveys (e.g. processing of the IP address to display the survey in the user’s browser or to enable a resumption of the survey with the help of a temporary cookie (session cookie)) or users have consented.\n\n.\n\nNotes on legal basis: If we ask participants for consent to process their data, this is the legal basis of the processing, otherwise the processing of participants’ data is based on our legitimate interests in conducting an objective survey.\n\n \n\n\nTypes of data processed: Contact data (e.g. email, phone numbers), content data (e.g. input in online forms), usage data (e.g. web pages visited, interest in content, access times), meta/communication data (e.g. device information, IP addresses).\n\n\nParticipants concerned: Communication partners.\n\n\nPurposes of processing: Contact requests and communication, direct marketing (e.g. by e-mail or postal mail).\n\n\nLegal basis: Consent (Art. 6 para. 1 p. 1 lit. a. DSGVO), Legitimate Interests (Art. 6 para. 1 p. 1 lit. f. DSGVO).\n\n\n\n\nWe encourage you to periodically review the contents of our Privacy Policy. We adapt the Privacy Policy as soon as the changes in the data processing activities we carry out make it necessary. We will inform you as soon as the changes require an act of cooperation on your part (e.g. consent) or other individual notification.\n\n.\n\nWhere we provide addresses and contact information for companies and organizations in this Privacy Policy, please note that addresses may change over time and please check the information before contacting us.\n\n.\n\n\nAs a data subject, you are entitled to various rights under the GDPR, which arise in particular from Art. 15 to 21 DSGVO:\n\n\n\nRight to object: You have the right to object at any time, on grounds relating to your particular situation, to the processing of personal data relating to you which is carried out on the basis of Art. 6(1)(e) or (f) DSGVO; this also applies to profiling based on these provisions. If the personal data concerning you is processed for the purpose of direct marketing, you have the right to object at any time to the processing of personal data concerning you for the purpose of such marketing; this also applies to profiling, insofar as it is associated with such direct marketing.\n\n\nRight of withdrawal in the case of consent: You have the right to withdraw any consent you have given at any time.\n\n\nRight of access: You have the right to request confirmation as to whether data in question is being processed and to information about this data, as well as further information and copy of the data in accordance with the legal requirements.\n\n\nRight of rectification: You have the right, in accordance with the legal requirements, to request the completion of the data concerning you or the correction of incorrect data concerning you.\n\n\nRight to erasure and restriction of processing: You have, in accordance with the law, the right to request that data concerning you be erased without undue delay, or alternatively, in accordance with the law, to request restriction of the processing of the data.\n\n\nRight to data portability: You have the right to receive data concerning you, which you have provided to us, in a structured, common and machine-readable format in accordance with the legal requirements, or to demand its transfer to another responsible party.\n\n\nComplaint to supervisory authority: Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority, in particular in the Member State of your habitual residence, place of work or the place of the alleged infringement, if you consider that the processing of personal data concerning you infringes the requirements of the GDPR.\n\n\n.\n\n\nThis section provides you with an overview of the terms used in this Privacy Policy. Many of the terms are taken from the law and defined primarily in Article 4 of the GDPR. The legal definitions are binding. The following explanations, on the other hand, are primarily intended to aid understanding. The terms are sorted alphabetically.\n\n \n\n\nPersonal data: “Personal data” means any information relating to an identified or identifiable natural person (hereinafter “data subject”); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier (eg. e.g. cookie) or to one or more special characteristics that are an expression of the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.\n\n\nController: The “controller” is the natural or legal person, public authority, agency or other body which alone or jointly with others determines the purposes and means of the processing of personal data.\n\n\nProcessing: “Processing” means any operation or set of operations which is performed upon personal data, whether or not by automatic means. The term is broad and includes virtually any handling of data, whether collecting, evaluating, storing, transmitting or deleting.\n\n\n\nCreated with free Datenschutz-Generator.de by Dr. Thomas Schwenke",
+    "crumbs": [
+      "Ilias",
+      "Über",
+      "Impressum"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "",
+    "text": "Teamname\n\n\n\n\n\n\n\nWir wissen: Städte bestehen aus sehr unterschiedlichen Oberflächen. Es gibt Asphalt, Dächer, Beton, Wiesen, Bäume, Wasser, offene Plätze und dicht bebaute Bereiche. Diese Oberflächen erwärmen sich an heißen Sommertagen unterschiedlich stark.\nEine Satellitenkarte kann diese Unterschiede sichtbar machen. Sie zeigt die Oberflächentemperatur. Gemeint ist die Temperatur der Dinge, die der Satellit von oben sieht: Straßen, Dächer, Plätze, Wasserflächen, Wiesen oder Baumkronen. Die Lufttemperatur in 2 m Höhe ist eine andere Messgröße.\nIn dieser Aufgabe überprüft ihr deshalb selbst: Welche Stadtflächen erscheinen in der Satellitenkarte heißer oder kühler? Und welche Erklärung passt dazu?\n\n\n\n\n\n\nDie LST-Karte zeigt die Temperatur der Oberfläche. Die Lufttemperatur in 2 m Höhe ist eine andere Messgröße.",
     "crumbs": [
       "Ilias",
       "04 Summer in the City",
-      "Oberflächentemperaturen in der Stadt"
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-1-luftbild-untersuchen",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-1-luftbild-untersuchen",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Teil 1: Luftbild untersuchen",
+    "text": "Teil 1: Luftbild untersuchen\nIhr bekommt ein Luftbild und eine transparente Folie. Legt die Folie zuerst auf das Luftbild.\nMarkiert mindestens fünf größere Flächen, die gut unterscheidbare Oberflächen zeigen. Geeignet sind zum Beispiel Straßen, Parkplätze, Dächer, Wiesen, Parks, Wasserflächen, Innenhöfe oder gemischte Stadtflächen.\nNutzt einfache Kürzel:\n\n\n\nKürzel\nOberfläche\n\n\n\n\nS\nStraße, Parkplatz, versiegelter Platz\n\n\nD\ngroßes Dach oder Gebäudefläche\n\n\nG\nWiese, Park, Baumfläche\n\n\nW\nWasserfläche\n\n\nM\nMischfläche, zum Beispiel Blockrand, Innenhof oder Bahnanlage\n\n\n\nWelche Oberflächen habt ihr markiert?\n\nAntwort:",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-2-oberflächentemperatur-prüfen",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-2-oberflächentemperatur-prüfen",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Teil 2: Oberflächentemperatur prüfen",
+    "text": "Teil 2: Oberflächentemperatur prüfen\nLegt dieselbe Folie nun auf die LST-Karte. LST bedeutet Land Surface Temperature, also Oberflächentemperatur.\nPrüft für jede markierte Fläche: erscheint sie eher heiß, mittel oder kühl?\n\n\n\nIhr arbeitet zuerst mit dem Luftbild und danach mit der LST-Karte.\n\n\nWelche Vermutung passt nach dem ersten Vergleich besser? Kreuzt an!\n\n☐ Vermutung 1: Versiegelte und bebaute Flächen erscheinen häufiger warm.\n☐ Vermutung 0: Die Unterschiede wirken zufällig.\n☐ unklar",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-3-ergebnisse-sichern",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-3-ergebnisse-sichern",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Teil 3: Ergebnisse sichern",
+    "text": "Teil 3: Ergebnisse sichern\nFüllt die Tabelle aus. Die Erklärung ist wichtiger als das genaue einzelne Pixel.\n\n\n\nNr.\nmarkierte Fläche\nOberfläche\nLST-Tendenz\nkurze Erklärung\n\n\n\n\n1\n\n\nheiß / mittel / kühl\n\n\n\n2\n\n\nheiß / mittel / kühl\n\n\n\n3\n\n\nheiß / mittel / kühl\n\n\n\n4\n\n\nheiß / mittel / kühl\n\n\n\n5\n\n\nheiß / mittel / kühl",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-4-erklärung-entwickeln",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-4-erklärung-entwickeln",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Teil 4: Erklärung entwickeln",
+    "text": "Teil 4: Erklärung entwickeln\nEine gute Erklärung verbindet drei Dinge: Was ist im Luftbild zu sehen? Wie erscheint die Fläche auf der LST-Karte? Welcher Prozess könnte die Temperatur erklären?\n\n\n\nEine gute Erklärung verbindet Beobachtung, Zuordnung, Vergleich und Prozess.\n\n\nNutzt diese Begriffe, wenn sie zu euren Flächen passen:\n\n\n\nBegriff\nBedeutung für die Karte\n\n\n\n\nVersiegelung\nwenig Verdunstung, oft starke Erwärmung\n\n\nWärmespeicherung\nMaterial nimmt Wärme auf und gibt sie langsam ab\n\n\nVerdunstung\nentzieht der Oberfläche Wärme\n\n\nSchatten\nverringert direkte Erwärmung\n\n\nVegetation\nkühlt oft durch Schatten und Verdunstung\n\n\nWasser\nerwärmt sich anders als feste Stadtoberflächen\n\n\nBebauungsdichte\nviele warme Oberflächen liegen dicht nebeneinander\n\n\n\nWelche Erklärung passt zu eurer deutlichsten warmen Fläche?\n\nAntwort:\n\nWelche Erklärung passt zu eurer deutlichsten kühlen Fläche?\n\nAntwort:",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-5-grenzen-der-karte-prüfen",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#teil-5-grenzen-der-karte-prüfen",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Teil 5: Grenzen der Karte prüfen",
+    "text": "Teil 5: Grenzen der Karte prüfen\nDie LST-Karte zeigt Oberflächentemperaturen. Dadurch erkennt man räumliche Muster sehr gut. Für die Bewertung von Aufenthaltsqualität braucht man zusätzlich weitere Informationen, zum Beispiel Schatten, Wind, Lufttemperatur, Nutzung und Tageszeit.\nWelche Aussage könnt ihr mit eurer Karte gut begründen?\n\nAntwort:\n\nWelche Aussage wäre mit dieser Karte allein zu unsicher?\n\nAntwort:",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#schlussfolgerung",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#schlussfolgerung",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Schlussfolgerung",
+    "text": "Schlussfolgerung\nUnsere Antwort auf die Fragestellung lautet:\nWir entscheiden uns für:\n\n☐ Vermutung 1: Versiegelte und bebaute Flächen erscheinen häufiger warm.\n☐ Vermutung 0: Die Unterschiede wirken zufällig.\n☐ Unklar\n\n\nBegründung:",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#merksatz",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#merksatz",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Merksatz",
+    "text": "Merksatz\n\nDie LST-Karte zeigt, wie unterschiedlich sich Stadtoberflächen erwärmen. Dadurch wird sichtbar, dass Wärme in der Stadt mit Oberflächen, Materialien, Vegetation, Wasser und Stadtstruktur zusammenhängt.",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#material",
+    "href": "04-summer-in-the-city/sus-handreichung-lst-stadtklima.html#material",
+    "title": "Warum sind manche Stadtflächen heißer?",
+    "section": "Material",
+    "text": "Material\n\nMaterial 1\nLuftbild des Untersuchungsraums\n\n\nMaterial 2\nLST-Karte des gleichen Ausschnitts\n\n\nMaterial 3\nTransparente Folie und Stift zur Markierung der Vergleichsflächen",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Warum sind manche Stadtflächen heißer?"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html",
+    "title": "Technische Dokumentation",
+    "section": "",
+    "text": "Diese Seite dokumentiert die lokale Materialproduktion für das Köln-Demo-Paket. Sie richtet sich an Personen, die die Datenprodukte, das QGIS-Projekt und die Drucklayouts neu erzeugen, prüfen oder für einen anderen Ausschnitt anpassen wollen.\nDer Workflow erzeugt aus einem Untersuchungsgebiet, einem Zeitraum und einer DOP-CIR-basierten Oberflächenmaske ein QGIS-Projekt mit passgenauen Drucklayouts. Die Skripte erzeugen das Material. Im Unterricht liegen anschließend fertige Karten, Folien und Beobachtungsaufgaben vor.\n\n\n\nDas Datenpaket entsteht aus AOI, Zeitraum und Extremmodus.",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Technische Dokumentation"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#qgis-wird-nicht-gefunden",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#qgis-wird-nicht-gefunden",
+    "title": "Technische Dokumentation",
+    "section": "QGIS wird nicht gefunden",
+    "text": "QGIS wird nicht gefunden\nWenn der R-Workflow am Ende bei run_create_qgis_project.bat abbricht, ist meist QGIS_BIN nicht korrekt gesetzt. Dann zuerst prüfen, wo QGIS installiert ist. Typische Pfade sind:\nC:\\Program Files\\QGIS 3.34.4\\bin\\qgis-bin.exe\nC:\\OSGeo4W\\bin\\qgis-ltr-bin.exe\nDer Pfad wird vor dem Start gesetzt:\nset QGIS_BIN=C:\\Program Files\\QGIS 3.34.4\\bin\\qgis-bin.exe\nRscript scripts\\00_run_lst_oberflaechenmaske_dop_cir.R",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Technische Dokumentation"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#pyqgis-importfehler",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#pyqgis-importfehler",
+    "title": "Technische Dokumentation",
+    "section": "PyQGIS-Importfehler",
+    "text": "PyQGIS-Importfehler\nEin Fehler wie ModuleNotFoundError: No module named 'qgis' bedeutet: Das Skript wurde mit normalem Python gestartet oder QGIS hat eine falsche Python-Umgebung geerbt. Der Aufruf muss über die BAT-Datei laufen:\nscripts\\run_create_qgis_project.bat\nNicht über:\npython scripts\\create_qgis_project.py\nDie BAT-Datei leert PYTHONHOME, PYTHONPATH, VIRTUAL_ENV, RETICULATE_PYTHON und RETICULATE_PYTHON_FALLBACK, damit QGIS seine eigene Python-Umgebung nutzt.",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Technische Dokumentation"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#file__-ist-nicht-definiert",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#file__-ist-nicht-definiert",
+    "title": "Technische Dokumentation",
+    "section": "__file__ ist nicht definiert",
+    "text": "__file__ ist nicht definiert\nQGIS --code setzt kein __file__. Die BAT-Datei setzt deshalb:\nQGIS_SCRIPT_DIR\nPROJECT_ROOT\nund das Python-Skript liest genau diese Variablen. Path(__file__) darf in diesem Skript nicht verwendet werden.",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Technische Dokumentation"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#r-pakete-fehlen",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#r-pakete-fehlen",
+    "title": "Technische Dokumentation",
+    "section": "R-Pakete fehlen",
+    "text": "R-Pakete fehlen\nDer R-Workflow benötigt unter anderem:\nsf\nterra\nrstac\ndplyr\npurrr\ntibble\nreadr\njsonlite\npng\nhere\nFehlende Pakete werden installiert oder müssen manuell installiert werden:\ninstall.packages(c(\n  \"sf\", \"terra\", \"rstac\", \"dplyr\", \"purrr\",\n  \"tibble\", \"readr\", \"jsonlite\", \"png\", \"here\"\n))\nBei Paketinstallationen aus Quellcode wird Rtools passend zur R-Version benötigt. CRAN-Binaries vermeiden diesen Schritt meist.",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Technische Dokumentation"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#keine-oder-leere-printprodukte",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#keine-oder-leere-printprodukte",
+    "title": "Technische Dokumentation",
+    "section": "Keine oder leere Printprodukte",
+    "text": "Keine oder leere Printprodukte\nZuerst die Eingabedateien prüfen:\ndata/landsat_lst/koeln/05_teaching_layers/projected_lst/koeln_LST_hot_q90_C_EPSG25832.tif\ndata/landsat_lst/koeln/05_teaching_layers/dop_cir_surface_mask/koeln_dop_cir_30m_3klassen.gpkg\nDanach prüfen, ob die Exporte geschrieben wurden:\ndata/landsat_lst/koeln/06_qgis_project/print_exports/\nEin erzeugtes QGIS-Projekt ohne PDFs verweist auf den PyQGIS-Layoutteil als Fehlerort.",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Technische Dokumentation"
+    ]
+  },
+  {
+    "objectID": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#ausdrucke-passen-nicht-exakt-übereinander",
+    "href": "04-summer-in-the-city/lehrerin-handreichung-lst-stadtklima-technisch.html#ausdrucke-passen-nicht-exakt-übereinander",
+    "title": "Technische Dokumentation",
+    "section": "Ausdrucke passen nicht exakt übereinander",
+    "text": "Ausdrucke passen nicht exakt übereinander\nSeitenskalierung zerstört die Passgenauigkeit. Alle Ausdrucke müssen mit 100 % beziehungsweise tatsächliche Größe gedruckt werden.",
+    "crumbs": [
+      "Ilias",
+      "04 Summer in the City",
+      "Technische Dokumentation"
     ]
   }
 ]
