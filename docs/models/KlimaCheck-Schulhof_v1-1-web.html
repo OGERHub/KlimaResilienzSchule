@@ -80906,7 +80906,7 @@ _nS('controllers.Local'); _root['controllers']['Local']['standalone'] =
 </script>
 
     <!-- This can be used to insert NetLogo code into this page -->
-    <script type="text/nlogo" id="nlogo-code" data-filename="KlimaCheck-Schulhof_v1-6_webfix_no_file_io_reset.nlogox"><?xml version="1.0" encoding="utf-8"?>
+    <script type="text/nlogo" id="nlogo-code" data-filename="KlimaCheck-Schulhof_v1-1-web.nlogox"><?xml version="1.0" encoding="utf-8"?>
 <model version="NetLogo 7.0.0" snapToGrid="true">
   <code><![CDATA[; =============================================================================
 ; Schulhofklima 2D
@@ -86400,29 +86400,8 @@ end
 ]]></code>
   <widgets>
     <view x="5" wrappingAllowedX="false" y="15" frameRate="30.0" minPycor="-25" height="514" showTickCounter="true" patchSize="10.0" fontSize="10" wrappingAllowedY="false" width="514" tickCounterLabel="ticks" maxPycor="25" updateMode="1" maxPxcor="25" minPxcor="-25"></view>
-    <button x="523" y="318" height="42" disableUntilTicks="false" forever="true" kind="Observer" width="182" display="Karte bearbeiten">interaktiv</button>
-    <chooser x="523" y="363" height="60" variable="Element" current="0" width="182" display="Element">
-      <choice type="string" value="Gebiet-auswählen"></choice>
-      <choice type="string" value="Station-setzen"></choice>
-      <choice type="string" value="Station-entfernen"></choice>
-      <choice type="string" value="Baum"></choice>
-      <choice type="string" value="Hecke"></choice>
-      <choice type="string" value="Rasen"></choice>
-      <choice type="string" value="Sand"></choice>
-      <choice type="string" value="Offenpflaster"></choice>
-      <choice type="string" value="Pflaster"></choice>
-      <choice type="string" value="Sportbelag"></choice>
-      <choice type="string" value="Asphalt"></choice>
-    </chooser>
-    <slider x="523" step="1" y="425" max="3" width="182" display="Pinselgrösse" height="50" min="0" direction="Horizontal" default="2.0" variable="Pinselgrösse"></slider>
-    <slider x="523" step="1" y="480" max="20" width="182" display="Baumhöhe" height="50" min="3" direction="Horizontal" default="20.0" variable="Baumhöhe"></slider>
-    <note x="525" y="5" backgroundDark="0" fontSize="10" width="370" markdown="true" height="31" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">Pflicht: Planung bewerten</note>
-    <button x="720" y="318" height="36" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Gebäude begrünen">toggle-alle-daecher
-toggle-alle-waende</button>
-    <button x="810" y="356" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="95" display="Sportfeld">toggle-tartanfeld</button>
     <monitor x="910" precision="17" y="420" height="60" fontSize="11" width="195" display="Fläche mittlerer Hitzebelastung">report-yellow-area comparison-patches</monitor>
     <monitor x="910" precision="17" y="368" height="60" fontSize="11" width="195" display="Fläche extremer Hitzebelastung">report-red-area comparison-patches</monitor>
-    <button x="720" y="355" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="85" display="Sandplatz">toggle-sand</button>
     <monitor x="910" precision="17" y="475" height="60" fontSize="11" width="415" display="Zusammenfassender Vergleich der Veränderungen">report-improvement-summary comparison-patches</monitor>
     <monitor x="1130" precision="17" y="420" height="60" fontSize="11" width="195" display="Unkritische Hitzebelastung">report-lowmid-area comparison-patches</monitor>
     <monitor x="1130" precision="17" y="368" height="60" fontSize="11" width="195" display="Fläche kritischer Hitzebelastung">report-orange-area comparison-patches</monitor>
@@ -86437,12 +86416,38 @@ toggle-alle-waende</button>
     <note x="910" y="5" backgroundDark="0" fontSize="8" width="166" markdown="true" height="25" textColorDark="-1" textColorLight="-16777216" backgroundLight="14868697">Punkte: Oberflächentemperatur
 Linie: Lufttemperatur
 </note>
-    <note x="520" y="285" backgroundDark="0" fontSize="10" width="383" markdown="true" height="20" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
+    <note x="525" y="280" backgroundDark="0" fontSize="10" width="383" markdown="true" height="20" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
 Versuch bearbeiten</note>
-    <button x="523" y="25" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Modellstart / Reset">reset-modellstart</button>
-    <button x="715" y="25" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Städtische Planung aktivieren">staedtische-planung-aktivieren</button>
-    <button x="525" y="65" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Tageslauf berechnen">tageslauf-berechnen-schueler</button>
-    <chooser x="715" y="155" height="60" variable="Kartenansicht" current="0" width="187" display="Kartenansicht">
+    <button x="720" y="495" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Auswahlgebiet vergleichen">auswahl-vergleichen</button>
+    <button x="720" y="455" height="35" disableUntilTicks="false" forever="true" kind="Observer" width="185" display="Freien Versuch starten">erweiterungslauf-starten</button>
+    <button x="720" y="415" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Maßnahme aktivieren">massnahme-aktivieren</button>
+    <note x="720" y="387" backgroundDark="0" fontSize="10" width="186" markdown="true" height="32" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
+Versuche vergleichen</note>
+    <button x="725" y="350" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="85" display="Sandplatz">toggle-sand</button>
+    <button x="815" y="351" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="95" display="Sportfeld">toggle-tartanfeld</button>
+    <button x="725" y="313" height="36" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Gebäude begrünen">toggle-alle-daecher
+toggle-alle-waende</button>
+    <slider x="528" step="1" y="475" max="20" width="182" display="Baumhöhe" height="50" min="3" direction="Horizontal" default="20.0" variable="Baumhöhe"></slider>
+    <slider x="528" step="1" y="420" max="3" width="182" display="Pinselgrösse" height="50" min="0" direction="Horizontal" default="2.0" variable="Pinselgrösse"></slider>
+    <chooser x="528" y="358" height="60" variable="Element" current="0" width="182" display="Element">
+      <choice type="string" value="Gebiet-auswählen"></choice>
+      <choice type="string" value="Station-setzen"></choice>
+      <choice type="string" value="Station-entfernen"></choice>
+      <choice type="string" value="Baum"></choice>
+      <choice type="string" value="Hecke"></choice>
+      <choice type="string" value="Rasen"></choice>
+      <choice type="string" value="Sand"></choice>
+      <choice type="string" value="Offenpflaster"></choice>
+      <choice type="string" value="Pflaster"></choice>
+      <choice type="string" value="Sportbelag"></choice>
+      <choice type="string" value="Asphalt"></choice>
+    </chooser>
+    <button x="528" y="313" height="42" disableUntilTicks="false" forever="true" kind="Observer" width="182" display="Karte bearbeiten">interaktiv</button>
+    <button x="525" y="160" height="40" disableUntilTicks="false" forever="true" kind="Observer" width="180" display="Karte aktualisieren">Kartenansicht-aktualisieren</button>
+    <button x="525" y="205" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="180" display="Legende an/aus">toggle-legende</button>
+    <note x="525" y="135" backgroundDark="0" fontSize="11" width="380" markdown="true" height="25" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
+                                           Kartenansicht wählen</note>
+    <chooser x="715" y="185" height="60" variable="Kartenansicht" current="0" width="187" display="Kartenansicht">
       <choice type="string" value="Materialien &amp; Elemente"></choice>
       <choice type="string" value="Schatten aktuell"></choice>
       <choice type="string" value="Oberflächentemperatur aktuell"></choice>
@@ -86451,15 +86456,10 @@ Versuch bearbeiten</note>
       <choice type="string" value="Hitzelast Schulzeit"></choice>
       <choice type="string" value="Hitzelast Änderung"></choice>
     </chooser>
-    <note x="525" y="105" backgroundDark="0" fontSize="11" width="380" markdown="true" height="25" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
-                                           Kartenansicht wählen</note>
-    <button x="525" y="130" height="40" disableUntilTicks="false" forever="true" kind="Observer" width="180" display="Karte aktualisieren">Kartenansicht-aktualisieren</button>
-    <button x="525" y="175" height="40" disableUntilTicks="false" forever="false" kind="Observer" width="180" display="Legende an/aus">toggle-legende</button>
-    <note x="715" y="392" backgroundDark="0" fontSize="10" width="186" markdown="true" height="32" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">---
-Versuche vergleichen</note>
-    <button x="715" y="420" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Maßnahme aktivieren">massnahme-aktivieren</button>
-    <button x="715" y="460" height="35" disableUntilTicks="false" forever="true" kind="Observer" width="185" display="Freien Versuch starten">erweiterungslauf-starten</button>
-    <button x="715" y="500" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="185" display="Auswahlgebiet vergleichen">auswahl-vergleichen</button>
+    <button x="525" y="35" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Modellstart / Reset">reset-modellstart</button>
+    <button x="527" y="75" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Tageslauf berechnen">tageslauf-berechnen-schueler</button>
+    <button x="717" y="35" height="35" disableUntilTicks="false" forever="false" kind="Observer" width="187" display="Städtische Planung aktivieren">staedtische-planung-aktivieren</button>
+    <note x="527" y="15" backgroundDark="0" fontSize="10" width="370" markdown="true" height="31" textColorDark="-1" textColorLight="-16777216" backgroundLight="0">Pflicht: Planung bewerten</note>
   </widgets>
   <info><![CDATA[# Schulhof KlimaLab
 
